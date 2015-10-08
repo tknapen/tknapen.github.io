@@ -1,7 +1,7 @@
 ---
 layout: page
-title: info
-permalink: /info/
+title: contact
+permalink: /contact/
 ---
 
 Here, you can find email and other address information. 
