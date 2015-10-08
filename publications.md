@@ -5,7 +5,7 @@ title: publications
 description: our publications
 ---
 
-{% for project in site.publications %}
+<!-- {% for project in site.publications %}
 
 {% if project.redirect %}
 <div class="project">
@@ -46,3 +46,14 @@ description: our publications
 {% endif %}
 
 {% endfor %}
+ -->
+
+<ul class="post-list">
+{% for publication in site.publications reversed %}
+    <li>
+        <h4><a class="person-title" href="{{ publication.url | prepend: site.baseurl }}">{{ publication.title }}</a></h4>
+        <p class="post-meta">{{ publication.date | date: '%B %-d, %Y — %H:%M' }}</p>
+            <p>{{ publication.description }}</p>
+      </li>
+{% endfor %}
+</ul>

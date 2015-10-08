@@ -3,6 +3,7 @@ layout: post
 title:  New paper out in Nature Neuroscience!
 date:   2015-10-05 16:40:16
 description: Paper on neural correlates of perceptual switches in bistable perception published!
+img: /img/publications/bistable_brain.png
 ---
 
 

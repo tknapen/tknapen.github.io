@@ -5,7 +5,7 @@ date: 2015-10-06 07:59:00
 description: Lab PI
 ---
 
-<img class="col one right" src="/img/tk.jpg">
+<img class="col one right" src="/img/people/tk.jpg">
 
 I received my PhD in 'Physics of Man' from Utrecht University.
 I did postdoc work at Université Paris Descartes, Vanderbilt University and the University of Amsterdam, before starting the lab at the Vrije Universiteit. My interests include the encoding of visual information in the cerebral cortex, and how cognitive factors influence this.
