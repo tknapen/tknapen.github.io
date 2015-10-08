@@ -2,7 +2,7 @@
 layout: page
 permalink: /science/
 title: science
-description: the science we do, in different projects
+description: the topics our science covers
 ---
 
 {% for project in site.science %}

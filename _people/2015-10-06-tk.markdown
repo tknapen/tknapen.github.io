@@ -11,3 +11,6 @@ I received my PhD in 'Physics of Man' from Utrecht University.
 I did postdoc work at Université Paris Descartes, Vanderbilt University and the University of Amsterdam, before starting the lab at the Vrije Universiteit. My interests include the encoding of visual information in the cerebral cortex, and how cognitive factors influence this.
 
 I come from a psychophysics background, after which I started doing imaging work. This personal scientific history ensures that I strongly emphasise the behavioral aspects of tasks we investigate. Coming from a physics department, I really like having a model to explain my findings. Also, I attach a lot of importance to understanding the signals we use in our studies as fully as we can.  
+
+
+<a class="twitter-timeline" href="https://twitter.com/Tknapen" data-widget-id="652195684205072384">Tweets by @Tknapen</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
