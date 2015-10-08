@@ -12,6 +12,10 @@ top:0px;
 height:56px;
 width:100%;
 z-index: 50;
+background:url(../img/voronoi.png);
+background-position:top center;
+background-repeat:x; 
+background-attachment:fixed;
 }
 
 .site-title {
@@ -220,7 +224,7 @@ width: 100%;
 height: 230px;
 }
 .thumbnail a span {
-display: none;
+/* display: none; */
 position: absolute;
 top: 0;
 left: 0;

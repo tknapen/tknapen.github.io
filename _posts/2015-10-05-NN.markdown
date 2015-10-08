@@ -6,6 +6,7 @@ description: Paper on neural correlates of perceptual switches in bistable perce
 img: /img/publications/bistable_brain.png
 ---
 
+<img class="col one right" src="/img/publications/bistable_brain.png">
 
 New paper published!
 

@@ -4,6 +4,7 @@ permalink: /people/
 title: people
 description: People in the lab
 ---
+<img class="col one right" src="/img/people/lab_wine.jpg">
 
 <ul class="post-list">
 {% for person in site.people reversed %}
