@@ -1,0 +1,17 @@
+---
+layout: post
+title: Decision-related pupil dilation reflects upcoming choice and individual bias.
+description: PNAS - Pupil reflects decision making
+date:   2014-01-22 12:00:00
+---
+
+"<a href="http://www.pnas.org/content/111/5/E618.abstract" target="_blank" alt="Decision-related pupil dilation reflects upcoming choice and individual bias." >Decision-related pupil dilation reflects upcoming choice and individual bias.</a>". 
+
+
+
+de Gee, J. W., Knapen, T. & Donner, T. H. 
+<strong>PNAS</strong> 111, E618–25 (2014).
+
+<img class="col one right" src="/img/publications/EL_pupil.png">
+
+A number of studies have shown that pupil size increases transiently during effortful decisions. These decision-related changes in pupil size are mediated by central neuromodulatory systems, which also influence the internal state of brain regions engaged in decision making. It has been proposed that pupil-linked neuromodulatory systems are activated by the termination of decision processes, and, consequently, that these systems primarily affect the postdecisional brain state. Here, we present pupil results that run contrary to this proposal, suggesting an important intradecisional role. We measured pupil size while subjects formed protracted decisions about the presence or absence ("yes" vs. "no") of a visual contrast signal embedded in dynamic noise. Linear systems analysis revealed that the pupil was significantly driven by a sustained input throughout the course of the decision formation. This sustained component was larger than the transient component during the final choice (indicated by button press). The overall amplitude of pupil dilation during decision formation was bigger before yes than no choices, irrespective of the physical presence of the target signal. Remarkably, the magnitude of this pupil choice effect (yes > no) reflected the individual criterion: it was strongest in conservative subjects choosing yes against their bias. We conclude that the central neuromodulatory systems controlling pupil size are continuously engaged during decision formation in a way that reveals how the upcoming choice relates to the decision maker's attitude. Changes in brain state seem to interact with biased decision making in the face of uncertainty.
