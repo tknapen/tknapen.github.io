@@ -1,0 +1,10 @@
+---
+layout: post
+title: Daan van Es
+date: 2015-10-06 07:59:00
+description: PhD Student
+---
+
+Daan received his Master's from the University of Amsterdam, with honours. During his Master's he performed EEG and fMRI experiments, focusing on time-frequency mechanisms of cross-modal integration and retinotopic analysis of experiments on synesthesia. 
+
+These days, Daan works on how the brain changes its representation of visual space under the influence of attention. 

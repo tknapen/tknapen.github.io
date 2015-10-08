@@ -1,0 +1,32 @@
+# Site settings
+title: Knapen lab website
+email: tknapen@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A simple, whitespace, helvetica based portfolio theme.
+baseurl:  # the subpath of your site, e.g. /blog/
+url:  # the base hostname & protocol for your site
+twitter_username: tknapen
+github_username:  tknapen
+
+# Build settings
+markdown: kramdown
+
+highlighter: pygments
+
+# Pagination
+paginate: 15
+paginate_path: "/blog/page:num/"
+
+
+collections:
+  science:
+    output: true
+    permalink: /science/:path/
+  people:
+    output: true
+    permalink: /people/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
+
+

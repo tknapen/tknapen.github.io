@@ -1,0 +1,9 @@
+---
+layout: post
+title:  ABMP Postdoc grant awarded
+date:   2015-10-05 16:40:16
+description: Our lab received an ABMP Postdoc grant, for an upcoming collaboration with Heleen Slagter and Steven Scholte at the UvA
+---
+
+For an upcoming collaboration between UvA and VU, we have received €240000 for a 2-year postdoc position. The postdoc will be working on the effects of predictions and attention in visual cortex. We will also investigate how meditative state influences the interactions of expectations and attention in the visual brain.
+
