@@ -35,7 +35,7 @@ $black: #000000;
 
 
 $grey-color-dark: #333;   /* footer */
-$grey-color-light: #ddd;  /* navigation bar border */
+$grey-color-light: #EEEEEE;  /* navigation bar border */
 $text-color:     #666;
 
 /* Set theme color *************************/
@@ -174,9 +174,11 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 500;
     border-radius: 3px;
     background-color: $grey-color-light;
+    background-opacity: 0.5;
 }
 
 code {

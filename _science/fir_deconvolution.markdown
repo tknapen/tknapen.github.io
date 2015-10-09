@@ -15,13 +15,15 @@ It's essential to understand the signals you're looking at. The standard approac
 
 Finite impulse response fitting has some advantages over and above event-related averages. If the impulse-response your data were filtered by is slow, i.e. a low-pass filter, it may be the case that responses to multiple events overlap. This causes problems for epoch-based event-related averaging, since some parts of the data will end up in the event-related responses of several different event types. Provided enough events of all types are present in the experiment (aided even more when <a href="http://www.stat.wisc.edu/~mchung/teaching/MIA/reading/fMRI.dale.HBM.1999.pdf" target="_blank">inter-event periods are randomly drawn from an exponential distribution</a>), deconvolution can take into account this overlap and correctly attribute the signal to specific types of events. 
 
-We have created a python class package, <a href="http://tknapen.github.io/FIRDeconvolution/" target="_blank">FIRDeconvolution</a>, to do this. This package makes it very easy to perform quite sophisticated analyses, distilling event-related responses from timeseries signals. See below for a brief example, for more elaborate examples, see <a href="https://github.com/tknapen/FIRDeconvolution/blob/master/FIRDeconvolution_test.ipynb" target="_blank">this IPython notebook on GitHub</a>
+We have created a python class package, <a href="http://tknapen.github.io/FIRDeconvolution/" target="_blank">fir</a>, to do this. This package makes it very easy to perform quite sophisticated analyses, distilling event-related responses from timeseries signals. See below for a brief example, for more elaborate examples, see <a href="https://github.com/tknapen/FIRDeconvolution/blob/master/src/test/FIRDeconvolution_test.ipynb" target="_blank">this IPython notebook on GitHub</a> 
+
+The package can be installed by issuing ```pip install fir --pre```, where the ```--pre``` allows you to install software that's still in development -- as fir is. 
 
 <hr />
 <br />
 {% highlight python %}
 
-from FIRDeconvolution import FIRDeconvolution
+from fir import FIRDeconvolution
 
 # input_data is a numpy array sampled at signal_sample_frequency
 # events are numpy arrays with event onsets in seconds 
