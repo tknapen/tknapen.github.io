@@ -1,0 +1,15 @@
+---
+layout: post
+title: GABA Shapes the Dynamics of Bistable Perception.
+description: Current Biology - Visual GABA determines Bistable Perception
+date:   2013-04-16 12:00:00
+---
+
+"<a href="http://www.sciencedirect.com/science/article/pii/S0960982213003692" target="_blank" alt="GABA Shapes the Dynamics of Bistable Perception." >GABA Shapes the Dynamics of Bistable Perception.</a>"
+
+Anouk M van Loon*, <strong>Tomas Knapen*</strong>, H Steven Scholte, Elexa St John-Saaltink, Tobias H Donner, Victor AF Lamme
+<strong>Current Biology</strong> 23-9, 823-827 (2013).
+
+Sometimes, perception fluctuates spontaneously between two distinct interpretations of a constant sensory input. These bistable perceptual phenomena provide a unique window into the neural mechanisms that create the contents of conscious perception [1]. Models of bistable perception posit that mutual inhibition between stimulus-selective neural populations in visual cortex plays a key role in these spontaneous perceptual fluctuations [2, 3]. However, a direct link between neural inhibition and bistable perception has not yet been established experimentally. Here, we link perceptual dynamics in three distinct bistable visual illusions (binocular rivalry, motion-induced blindness, and structure from motion) to measurements of gamma-aminobutyric acid (GABA) concentrations in human visual cortex (as measured with magnetic resonance spectroscopy) and to pharmacological stimulation of the GABAA receptor by means of lorazepam. As predicted by a model of neural interactions underlying bistability, both higher GABA concentrations in visual cortex and lorazepam administration induced slower perceptual dynamics, as reflected in a reduced number of perceptual switches and a lengthening of percept durations. <img class="col two left" src="/img/publications/GABA.png">
+Thus, we show that GABA, the main inhibitory neurotransmitter, shapes the dynamics of bistable perception. These results pave the way for future studies into the competitive neural interactions across the visual cortical hierarchy that elicit conscious perception.
+

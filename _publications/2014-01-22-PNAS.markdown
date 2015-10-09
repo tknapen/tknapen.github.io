@@ -7,9 +7,7 @@ date:   2014-01-22 12:00:00
 
 "<a href="http://www.pnas.org/content/111/5/E618.abstract" target="_blank" alt="Decision-related pupil dilation reflects upcoming choice and individual bias." >Decision-related pupil dilation reflects upcoming choice and individual bias.</a>". 
 
-
-
-de Gee, J. W., Knapen, T. & Donner, T. H. 
+de Gee, J. W.,<strong> Knapen, T.</strong> & Donner, T. H. <br /> 
 <strong>PNAS</strong> 111, E618–25 (2014).
 
 <img class="col one right" src="/img/publications/EL_pupil.png">

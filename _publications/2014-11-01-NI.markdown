@@ -1,0 +1,15 @@
+---
+layout: post
+title: Interregional alpha-band synchrony supports temporal cross-modal integration
+description: NeuroImage - Cross-modal integration in EEG
+date:   2014-11-01 12:00:00
+---
+
+"<a href="http://www.sciencedirect.com/science/article/pii/S1053811914005941" target="_blank" alt="Interregional alpha-band synchrony supports temporal cross-modal integration" >Interregional alpha-band synchrony supports temporal cross-modal integration</a>". 
+
+Joram van Driel, <strong>Tomas Knapen, Daniel M van Es</strong>, Michael X Cohen <br /> 
+<strong>NeuroImage</strong> (2014). 101 : 404-415
+
+<img class="col one right" src="/img/publications/auditory_eeg.png">
+
+In a continuously changing environment, time is a key property that tells us whether information from the different senses belongs together. Yet, little is known about how the brain integrates temporal information across sensory modalities. Using high-density EEG combined with a novel psychometric timing task in which human subjects evaluated durations of audiovisual stimuli, we show that the strength of alpha-band (8-12Hz) phase synchrony between localizer-defined auditory and visual regions depended on cross-modal attention: during encoding of a constant 500ms standard interval, audiovisual alpha synchrony decreased when subjects attended audition while ignoring vision, compared to when they attended both modalities. In addition, alpha connectivity during a variable target interval predicted the degree to which auditory stimulus duration biased time estimation while attending vision. This cross-modal interference effect was estimated using a hierarchical Bayesian model of a psychometric function that also provided an estimate of each individual's tendency to exhibit attention lapses. This lapse rate, in turn, was predicted by single-trial estimates of the stability of interregional alpha synchrony: when attending to both modalities, trials with greater stability in patterns of connectivity were characterized by reduced contamination by lapses. Together, these results provide new insights into a functional role of the coupling of alpha phase dynamics between sensory cortices in integrating cross-modal information over time.

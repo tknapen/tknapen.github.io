@@ -1,0 +1,15 @@
+---
+layout: post
+title: Visual cortex activity predicts subjective experience after reading books with colored letters
+description: Neuropsychologia - Synesthesia in Visual Cortex
+date:   2015-07-08 12:00:00
+---
+
+"<a href="http://www.sciencedirect.com/science/article/pii/S0028393215300919" target="_blank" alt="Visual cortex activity predicts subjective experience after reading books with colored letters" >Visual cortex activity predicts subjective experience after reading books with colored letters</a>". 
+
+Olympia Colizoli, Jaap MJ Murre, H Steven Scholte, <strong>Daniel M van Es, Tomas Knapen</strong>, Romke Rouw<br /> 
+<strong>Neuropsychologia</strong> (2015). 101 : 404-415
+
+<img class="col one left" src="/img/publications/synesthesia.png">
+
+One of the most astonishing properties of synesthesia is that the evoked concurrent experiences are perceptual. Is it possible to acquire similar effects after learning cross-modal associations that resemble synesthetic mappings? In this study, we examine whether brain activation in early visual areas can be directly related to letter-color associations acquired by training. Non-synesthetes read specially prepared books with colored letters for several weeks and were scanned using functional magnetic resonance imaging. If the acquired letter-color associations were visual in nature, then brain activation in visual cortex while viewing the trained black letters (compared to untrained black letters) should predict the strength of the associations, the quality of the color experience, or the vividness of visual mental imagery. Results showed that training-related activation of area V4 was correlated with differences in reported subjective color experience. Trainees who were classified as having stronger 'associator' types of color experiences also had more negative activation for trained compared to untrained achromatic letters in area V4. In contrast, the strength of the acquired associations (measured as the Stroop effect) was not reliably reflected in visual cortex activity. The reported vividness of visual mental imagery was related to veridical color activation in early visual cortex, but not to the acquired color associations. We show for the first time that subjective experience related to a synesthesia-training paradigm was reflected in visual brain activation.

@@ -8,8 +8,8 @@ img: /img/publications/bistable_brain.png
 
 "<a href="http://www.nature.com/neuro/journal/vaop/ncurrent/full/nn.4130.html" target="_blank" alt="Negligible fronto-parietal BOLD activity accompanying unreportable switches in bistable perception" >Negligible fronto-parietal BOLD activity accompanying unreportable switches in bistable perception</a>". 
 
-Brascamp, J., Blake, R. & Knapen, T. 
-<strong>Nature Neuroscience </strong>(2015). doi:10.1038/nn.4130
+Brascamp, J., Blake, R. & <strong>Knapen, T.</strong><br /> 
+<strong>Nature Neuroscience</strong> (2015). doi:10.1038/nn.4130
 
 <img class="col one right" src="/img/publications/bistable_brain.png">
 
