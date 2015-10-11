@@ -1,0 +1,15 @@
+---
+layout: post
+title: The Role of Frontal and Parietal Brain Areas in Bistable Perception.
+description: Journal of Neuroscience - fMRI of Bistable Perception
+date:   2011-07-13 18:00:00
+---
+
+"<a href="http://www.jneurosci.org/cgi/doi/10.1523/JNEUROSCI.1727-11.2011" target="_blank" alt="The Role of Frontal and Parietal Brain Areas in Bistable Perception" >The Role of Frontal and Parietal Brain Areas in Bistable Perception</a>". 
+
+<strong>Tomas Knapen*</strong>, Jan Brascamp\*, Joel Pearson, Raymond van Ee, and Randolph Blake<br /> 
+<strong>Journal of Neuroscience</strong> (2011) 31:28, 10293-10301
+
+<img class="col one right" src="/img/publications/bistable_brain.png">
+
+When sensory input allows for multiple, competing perceptual interpretations, observers' perception can fluctuate over time, which is called bistable perception. Imaging studies in humans have revealed transient responses in a right-lateralized network in the frontal-parietal cortex (rFPC) around the time of perceptual transitions between interpretations, potentially reflecting the neural initiation of transitions. We investigated the role of this activity in male human observers, with specific interest in its relation to the temporal structure of transitions, which can be either instantaneous or prolonged by periods during which observers experience a mix of both perceptual interpretations. Using both bistable apparent motion and binocular rivalry, we show that transition-related rFPC activity is larger for transitions that last longer, suggesting that rFPC remains active as long as a transition lasts. We also replicate earlier findings that rFPC activity during binocular rivalry transitions exceeds activity during yoked transitions that are simulated using video replay. However, we show that this established finding holds only when perceptual transitions are replayed as instantaneous events. When replay, instead, depicts transitions with the actual durations reported during rivalry, yoked transitions and genuine rivalry transitions elicit equal activity. Together, our results are consistent with the view that at least a component of rFPC activation during bistable perception reflects a response to perceptual transitions, both real and yoked, rather than their cause. This component of activity could reflect the change in sensory experience and task demand that occurs during transitions, which fits well with the known role of these areas in attention and decision making.
