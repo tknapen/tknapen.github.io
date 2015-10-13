@@ -176,7 +176,7 @@ font-size: 42px;
 
 /** Poem formatting ********************************************/
 .poem-title {
-font-size: 24px;
+font-size: 20px;
 letter-spacing: -1px;
 line-height: 1;
 @include media-query($on-laptop) {
