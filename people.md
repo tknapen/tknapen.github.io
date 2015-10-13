@@ -15,3 +15,10 @@ description: People in the lab
       </li>
 {% endfor %}
 </ul>
+
+## collaborators
+
+<p>
+	We have extensive collaborations, both nationally and internationally. 
+
+</p>

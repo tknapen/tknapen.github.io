@@ -14,7 +14,7 @@ New paper published!
 
 In this paper we show that binocular rivalry transitions keep happening even when the observers are not aware of them because they cannot distinguish between the different eyes' images. When performing fMRI using this novel paradigm, we show that frontal and parietal brain regions' activations become negligible.
 
-Thhus, this paper, by Jan Brascamp, Randolph Blake and Tomas shows how frontal and parietal activations in bistable perception are likely due to noticing transitions instead of causing them. 
+Thus, this paper, by Jan Brascamp, Randolph Blake and Tomas shows how frontal and parietal activations in bistable perception are likely due to noticing transitions instead of causing them. 
 
 There's a <a href="https://www.youtube.com/watch?v=WYqZnGtwZgI">cool movie about our study on YouTube:</a>
 <br />
