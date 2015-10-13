@@ -4,7 +4,7 @@ email: tknapen@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Website of the Knapen Visual Neuroscience lab at the Vrije Universiteit Amsterdam.
 baseurl:  # the subpath of your site, e.g. /blog/
-url:  # the base hostname & protocol for your site
+url:  https://tknapen.github.io # the base hostname & protocol for your site
 twitter_username: tknapen
 github_username:  tknapen
 
