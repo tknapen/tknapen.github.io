@@ -16,4 +16,7 @@ In this paper we show that binocular rivalry transitions keep happening even whe
 
 Thhus, this paper, by Jan Brascamp, Randolph Blake and Tomas shows how frontal and parietal activations in bistable perception are likely due to noticing transitions instead of causing them. 
 
-There's a cool movie about our study: <a href="https://www.youtube.com/watch?v=WYqZnGtwZgI">YouTube</a>
+There's a <a href="https://www.youtube.com/watch?v=WYqZnGtwZgI">cool movie about our study on YouTube:</a><br />
+<div align = "center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WYqZnGtwZgI" frameborder="0" allowfullscreen></iframe>
+</div>
