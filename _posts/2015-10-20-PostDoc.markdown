@@ -1,15 +1,19 @@
 ---
 layout: post
-title:  Postdoc Job Application
+title:  Postdoc Job Advertisement
 date:   2015-10-20 09:40:16
-description: Advertisement - 2-year Postdoctoral Fellowship in Computational Neuroimaging of Flexible Visual Processing in Amsterdam.
+description: 2-year Postdoctoral Fellowship in Computational Neuroimaging of Flexible Visual Processing in Amsterdam.
 
 ---
 
 #2-year Postdoctoral Fellowship in Computational Neuroimaging of Flexible Visual Processing in Amsterdam.
+
+<br />
 
 We are seeking an enthusiastic postdoctoral fellow with excellent qualifications for a 7T functional imaging project. In this project, we will investigate how expectations and attention influence visual processing and perception in normal observers and expert meditators. A main ingredient of the project is a detailed mapping of retinotopic brain areas by constructing forward models based on <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" target="_blank">convolutional neural networks</a>. Therefore, we will consider applicants with strong quantitative skills from fields such as neuroscience, cognitive science, psychology, physics, mathematics, and engineering. Experience with functional imaging, programming, data analysis, machine learning and computational modelling would be advantageous but not required.
 
 This is an interdisciplinary collaborative project between cognitive neuroscience groups at the two universities in Amsterdam (Vrije Universiteit (VU) & Universiteit van Amsterdam (UvA)), funded through ABMP. The research will be supervised by Tomas Knapen (VU), Heleen Slagter (UvA) & Steven Scholte (UvA) in a dynamic research environment. The successful applicant will be stationed at the VU and imaging will be performed on the new 7T scanner at the Amsterdam Spinoza Center. The appointment will be for one year, with potential for a one-year renewal contingent on positive evaluation. Salary will be commensurate with experience, according to the Dutch universities’ collective labour agreement. 
 
 Applications may be submitted by email to tknapen@gmail.com, with ABMP application in the subject line. Send an application letter, CV, and arrange for up to 3 letters of recommendation to be sent with the applicant’s name in the subject line. Applications will be considered from the 1st of November, continuing until the position is filled. Starting date is flexible, preferably around January 2016.
+
+<hr />
