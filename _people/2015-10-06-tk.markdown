@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Tomas Knapen
 date: 2015-10-06 07:59:00
 description: Lab PI

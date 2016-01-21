@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Postdoc Job Advertisement
+title:  New Post-Doc Martijn Barendregt
 date:   2016-01-20 06:40:16
-description: Martijn Barendregt starting Post-Doc in the lab!
+description: Martijn Barendregt is starting a Post-Doc in the lab!
 
 ---
 
