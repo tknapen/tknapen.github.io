@@ -8,8 +8,6 @@ description: Martijn Barendregt is starting a Post-Doc in the lab!
 
 Martijn Barendregt, currently finishing his PhD in Serge Dumoulin's lab in Utrecht, will start on a 2-year Postdoctoral Fellowship in Computational Neuroimaging of Flexible Visual Processing in Amsterdam.
 
-<br />
-
 In this project, we will investigate how expectations and attention influence visual processing and perception in normal observers and expert meditators. A main ingredient of the project is a detailed mapping of retinotopic brain areas by constructing forward models based on <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" target="_blank">convolutional neural networks</a>. 
 
 We're really happy with Martijn as our PostDoc, and are excited about starting this project using the 7T scanner at the Spinoza center.
