@@ -6,7 +6,7 @@ description: Martijn Barendregt is starting a Post-Doc in the lab!
 
 ---
 
-#Martijn Barendregt, currently finishing his PhD in Serge Dumoulin's lab in Utrecht, will start on a 2-year Postdoctoral Fellowship in Computational Neuroimaging of Flexible Visual Processing in Amsterdam.
+Martijn Barendregt, currently finishing his PhD in Serge Dumoulin's lab in Utrecht, will start on a 2-year Postdoctoral Fellowship in Computational Neuroimaging of Flexible Visual Processing in Amsterdam.
 
 <br />
 
