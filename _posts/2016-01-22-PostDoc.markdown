@@ -1,0 +1,16 @@
+---
+layout: post
+title:  New Marie-Curie Post-Doc Martin Szinte
+date:   2016-01-22 06:40:16
+description: Martin Szinte is starting as a Marie Curie Post-Doc in the lab!
+
+---
+
+Martin Szinte, now a Post-Doc in Heiner Deubel's lab in Munich, will start as a Post-Doc in the lab, after winning a prestigious Marie Curie grant.
+
+From around summer 2016, Martin will use MRI-derived forward models to investigate human eye movement planning and visual stability.  
+
+<img class="col three" src="/img/science/retmaps.png">
+
+
+<hr />
