@@ -2,8 +2,7 @@
 layout: post
 title: Cognitive and ocular factors jointly determine pupil responses under equiluminance
 description: PLoS ONE - Pupil size analysis
-date:   2015-10-05 18:00:00
-img: /img/publications/bistable_brain.png
+date:   2016-05-03 16:00:00
 ---
 
 "<a href="" target="_blank" alt="Cognitive and ocular factors jointly determine pupil responses under equiluminance" >Cognitive and ocular factors jointly determine pupil responses under equiluminance</a>". 
