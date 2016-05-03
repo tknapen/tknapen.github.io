@@ -7,7 +7,7 @@ date:   2016-05-03 16:00:00
 
 "<a href="" target="_blank" alt="Cognitive and ocular factors jointly determine pupil responses under equiluminance" >Cognitive and ocular factors jointly determine pupil responses under equiluminance</a>". 
 
-<strong>Knapen T.</strong>, de Gee JW, Brascamp J., Nuiten S, Hoppenbrouwers S & Theeuwes J<br /> 
+<strong>Knapen T.</strong>, de Gee JW, Brascamp J, Nuiten S, Hoppenbrouwers S & Theeuwes J<br /> 
 <strong>PLoS ONE</strong> (2016). accepted
 
 <img class="col one right" src="/img/science/more_time_signals.png">
