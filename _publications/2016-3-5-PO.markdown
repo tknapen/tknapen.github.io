@@ -1,0 +1,16 @@
+---
+layout: post
+title: Cognitive and ocular factors jointly determine pupil responses under equiluminance
+description: PLoS ONE - Pupil size analysis
+date:   2015-10-05 18:00:00
+img: /img/publications/bistable_brain.png
+---
+
+"<a href="" target="_blank" alt="Cognitive and ocular factors jointly determine pupil responses under equiluminance" >Cognitive and ocular factors jointly determine pupil responses under equiluminance</a>". 
+
+<strong>Knapen T.</strong>, de Gee JW, Brascamp J., Nuiten S, Hoppenbrouwers S & Theeuwes J<br /> 
+<strong>PLoS ONE</strong> (2016). accepted
+
+<img class="col one right" src="/img/publications/more_time_signals.png">
+
+Changes in pupil diameter can reflect high-level cognitive signals that depend on central neuromodulatory mechanisms. However, brain mechanisms that adjust pupil size are also exquisitely sensitive to changes in luminance and other events that would be considered a nuisance in cognitive experiments recording pupil size. We implemented a simple auditory experiment involving no changes in visual stimulation. Using finite impulse-response fitting we found pupil responses triggered by different types of events. Among these are pupil responses to auditory events and associated surprise: cognitive effects. However, these cognitive responses were overshadowed by pupil responses associated with blinks and eye movements, both inevitable nuisance factors that lead to changes in effective luminance. Of note, these latter pupil responses were not recording artifacts caused by blinks and eye movements, but endogenous pupil responses that occurred in the wake of these events. Furthermore, we identified slow (tonic) changes in pupil size that differentially influenced faster (phasic) pupil responses. Fitting all pupil responses using gamma functions, we provide accurate characterisations of cognitive and non-cognitive response shapes, and quantify each response's dependence on tonic pupil size. These results allow us to create a set of recommendations for pupil size analysis in cognitive neuroscience, which we have implemented in freely available software.
