@@ -27,8 +27,10 @@ from fir import FIRDeconvolution
 
 # input_data is a numpy array sampled at signal_sample_frequency
 # events are numpy arrays with event onsets in seconds 
-# deconvolution_frequency is the frequency at which to perform the fit of the event-related signals
-# deconvolution_interval is the interval over which to estimate the curves.
+# sample_frequency (Hz) is the frequency at which the original data are sampled (for example, 0.5 Hz for fMRI)
+# deconvolution_frequency (Hz) is the frequency at which to perform the fit of the event-related signals
+# the data will be resampled to this frequency before estimation.
+# deconvolution_interval is a tuple, the interval in seconds over which to estimate the curves.
 
 fd = FIRDeconvolution(
             signal = input_data, 								
@@ -42,7 +44,7 @@ fd = FIRDeconvolution(
 # we then tell it to create its design matrix
 fd.create_design_matrix()
 
-# perform the actual regression, in this case with the statsmodels backend
+# perform the actual regression, in this case with the standard numpy.linalg backend
 fd.regress(method = 'lstsq')
 
 # and partition the resulting betas according to the different event types
