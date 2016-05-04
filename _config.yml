@@ -13,8 +13,22 @@ gems:
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  # hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: 
+    # css_class: highlight
+    inline_theme: thankful_eyes
+    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-highlighter: rouge
+# highlighter: rouge
+# permalink: pretty
 
 # Pagination
 paginate: 5

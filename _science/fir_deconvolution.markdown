@@ -25,8 +25,10 @@ The package can be installed by issuing ```pip install fir --pre```, where the `
 
 from fir import FIRDeconvolution
 
-# input_data is a numpy array sampled at signal_sample_frequency
-# events are numpy arrays with event onsets in seconds 
+# input_data is a numpy array sampled at signal_sample_frequency, for each of the separate signals (such as fMRI voxels). 
+#     type: numpy array, (nr_signals x nr_samples)
+# events are numpy arrays with event onsets in seconds. 
+#     type: list of numpy arrays, (nr_event_types x nr_events_per_type)
 # sample_frequency (Hz) is the frequency at which the original data are sampled (for example, 0.5 Hz for fMRI)
 # deconvolution_frequency (Hz) is the frequency at which to perform the fit of the event-related signals
 # the data will be resampled to this frequency before estimation.
