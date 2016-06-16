@@ -40,7 +40,7 @@ fd = FIRDeconvolution(
             event_names = ['event_1', 'event_2'], 			
             sample_frequency = signal_sample_frequency,		
             deconvolution_frequency = deconv_sample_frequency,	
-            deconvolution_interval = deconvolution_interval		
+            deconvolution_interval = (-5,15)		
             )
 
 # we then tell it to create its design matrix

@@ -10,6 +10,7 @@ github_username:  tknapen
 
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 # Build settings
 markdown: kramdown

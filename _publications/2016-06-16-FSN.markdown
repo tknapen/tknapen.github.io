@@ -1,0 +1,15 @@
+---
+layout: post
+title: Oculomotor remapping of visual information to foveal retinotopic cortex.
+description: Frontiers in Systems Neuroscience - fMRI of oculomotor remapping signals
+date:   2016-06-16 16:00:00
+---
+
+"<a href="" target="_blank" alt="Oculomotor remapping of visual information to foveal retinotopic cortex." >Oculomotor remapping of visual information to foveal retinotopic cortex.</a>". 
+
+<strong>Knapen T.\*</strong>,  Swisher J.D., Tong F. and Cavanagh P.<br /> 
+<strong>Frontiers in Systems Neuroscience</strong> (2016). accepted. 
+
+<img class="col one left" src="/img/publications/remap.png">
+
+Our eyes continually jump around the visual scene to bring the high-resolution, central part of our vision onto objects of interest. We are oblivious to these abrupt shifts, perceiving the visual world to appear reassuringly stable. A process called remapping has been proposed to mediate this perceptual stability for attended objects by shifting their retinotopic representation to compensate for the effects of the upcoming eye movement. In everyday vision, observers make goal-directed eye movements towards items of interest bringing them to the fovea and, for these items, the remapped activity should impinge on foveal regions of the retinotopic maps in visual cortex. Previous research has focused instead on remapping for targets that were not saccade goals, where activity is remapped to a new peripheral location rather than to the foveal representation. We used functional MRI and a phase-encoding design to investigate remapping of spatial patterns of activity towards the fovea/parafovea for saccade targets that were removed prior to completion of the eye movement. We found strong evidence of foveal remapping in retinotopic visual areas, which failed to occur when observers merely attended to the same peripheral target without making eye movements toward it. Significantly, the spatial profile of the remapped response matched the orientation and size of the saccade target, and was appropriately scaled to reflect the retinal extent of the stimulus had it been foveated. We conclude that this remapping of spatially structured information to the fovea may serve as an important mechanism to support our world-centered sense of location across goal-directed eye movements under natural viewing conditions. 
