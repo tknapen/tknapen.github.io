@@ -5,7 +5,7 @@ description: Frontiers in Systems Neuroscience - fMRI of oculomotor remapping si
 date:   2016-06-16 12:00:00
 ---
 
-"<a href="" target="_blank" alt="Oculomotor remapping of visual information to foveal retinotopic cortex." >Oculomotor remapping of visual information to foveal retinotopic cortex.</a>". 
+"<a href="http://journal.frontiersin.org/article/10.3389/fnsys.2016.00054/full" target="_blank" alt="Oculomotor remapping of visual information to foveal retinotopic cortex." >Oculomotor remapping of visual information to foveal retinotopic cortex.</a>". 
 
 <strong>Knapen T.</strong>,  Swisher J.D., Tong F. and Cavanagh P.<br /> 
 <strong>Frontiers in Systems Neuroscience</strong> (2016). accepted. 
