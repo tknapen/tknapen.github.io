@@ -14,5 +14,4 @@ Then, we also published a project started long ago, investigating the remapping 
 
 <img class="col three" src="/img/science/retmaps.png">
 
-
 <hr />
