@@ -1,0 +1,68 @@
+---
+layout: post
+title: Python
+description: Python toolchain install on Aeneas.
+date:   2016-09-14 11:00:00
+---
+
+<img class="col one right" src="/img/IT/python-logo.png">
+
+The reasons for using python are discussed [elsewhere](http://journal.frontiersin.org/researchtopic/8/python-in-neuroscience). Fact is, there is a solid and growing toolchain to perform analysis on complex data. This is the de facto standard in much of *"Data Science"*. 
+<br />
+
+
+#### Packaging
+<br />
+This toolchain is a collection of packages that work together. This means we need a system to maintain the right versions to ensure that all these packages work together. For this, we use [(ana)conda](http://conda.pydata.org/docs/)<br />
+
+### Installing (Ana)conda
+<br />
+First, you'll want to [download the latest version of anaconda](https://www.continuum.io/downloads). You'll want to download the command-line installer, and choose your version of python wisely. Python 3.5 is more modern, but not all relevant packages are supported yet. Python 2.7 ensures full support for more packages, but: `from __future__ import division`!. 
+
+Once you have downloaded the `.sh` file from the anaconda website, install by entering:
+{% highlight bash %}
+bash Anaconda3-4.1.1-MacOSX-x86_64.sh 
+{% endhighlight %}
+or the name of the relevant installer, of course. Install in your home directory and have it change `.bashrc`, too. 
+
+### Installing a virtual environment
+<br />
+Always use a virtual environment in which to run your analyses. This encapsulates the software collection used, and makes it easy to publish the exact software packages and their versions used to create your results. 
+
+##### Word of Warning
+<br />
+Make sure that you take care of your virtual environments!
+
+Don't hesitate to clone/duplicate an environment before you start installing and/or updating new packages, because they may alter the way your analyses run.
+
+#### One option: using intel packages
+<br />
+We're starting to use an intel-provided distribution of packages, which have all been compiled to be faster than standard python and numerical packages on our server. Follow the instructions on the [intel website](https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda).
+Briefly, these are the commands:
+{% highlight bash %}
+conda update conda
+# add the intel channels:
+conda config --add channels intel
+
+# a new virtual environment for python 2.7:
+conda create -n i2 intelpython2_full python=2
+
+# a new virtual environment for python 3.5:
+conda create -n i3 intelpython3_full python=3
+
+# to activate:
+source activate i2
+{% endhighlight %}
+
+Once you're in the environment, you can start installing neuroimaging related packages, such as `nilearn`, `fir`, etc. 
+Also, feel free to add the activation of your 'standard environment' to your `~/.bash_profile`.
+
+
+
+
+
+
+
+
+
+

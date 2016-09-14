@@ -45,6 +45,9 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
+  IT:
+    output: true
+    permalink: /IT/:path/
 
 
 future: true
