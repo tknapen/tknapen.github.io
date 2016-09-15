@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python
-description: Python toolchain install on Aeneas.
+description: Python programming language, data analysis packages in python and toolchain install on Aeneas/Ascanius.
 date:   2016-09-14 11:00:00
 ---
 
@@ -23,6 +23,9 @@ A few excellent introductions to python and data analysis in python:
 - [Tutorials, Green Tea Press](http://www.greenteapress.com/)
 
 - [Quick reference](http://rgruet.free.fr/PQR27/PQR2.7.html)
+
+
+Also, if you want to learn neuroimaging data analysis, look at [nilearn](https://nilearn.github.io) and for machine learning use [sklearn](http://scikit-learn.org/stable/).
 
 <br />
 
