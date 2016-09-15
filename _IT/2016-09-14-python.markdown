@@ -10,6 +10,21 @@ date:   2016-09-14 11:00:00
 The reasons for using python are discussed [elsewhere](http://journal.frontiersin.org/researchtopic/8/python-in-neuroscience). Fact is, there is a solid and growing toolchain to perform analysis on complex data. This is the de facto standard in much of *"Data Science"*. 
 <br />
 
+A few excellent introductions to python and data analysis in python:
+
+- [WhirlwindTourOfPython](https://github.com/jakevdp/WhirlwindTourOfPython)
+
+- [Scipy Lectures](http://scipy-lectures.github.io/)
+
+- [MIT course](http://ocw.mit.edu/courses/electrical-engineering-and-computer-scince/6-00-introduction-to-computer-science-and-programming-fall-2008/vido-lectures/)
+
+- [Dive Into Python](http://www.diveintopython.net/)
+
+- [Tutorials, Green Tea Press](http://www.greenteapress.com/)
+
+- [Quick reference](http://rgruet.free.fr/PQR27/PQR2.7.html)
+
+<br />
 
 #### Packaging
 <br />

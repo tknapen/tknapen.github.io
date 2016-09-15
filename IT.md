@@ -7,7 +7,9 @@ description: lab computer stuff
 
 <img class="col two right" src="/img/IT/innards.jpg">
 
-This section of the website is a wiki-like collection of instructions on how we do computer stuff. In order to create a reproducible data analysis pipeline, we only use open-source software, and track our own programming on [GitHub](github.com).  
+This section of the website is a wiki-like collection of instructions on how we do computer stuff. In order to create a reproducible data analysis pipeline, we only use open-source software, and track our own programming on [GitHub](github.com). 
+
+We have two data analysis servers, Aeneas (general purpose, CUDA) and Ascanius (Xeon Phi). 
 
 
 <ul class="post-list">
