@@ -29,12 +29,11 @@ Also, if you want to learn neuroimaging data analysis, look at [nilearn](https:/
 
 <br />
 
-#### Packaging
-<br />
-This toolchain is a collection of packages that work together. This means we need a system to maintain the right versions to ensure that all these packages work together. For this, we use [(ana)conda](http://conda.pydata.org/docs/)<br />
-
 ### Installing (Ana)conda
 <br />
+The python toolchain is a collection of packages that work together. This means we need a system to maintain the right versions to ensure that all these packages work together. For this, we use [(ana)conda](http://conda.pydata.org/docs/)
+<br />
+
 First, you'll want to [download the latest version of anaconda](https://www.continuum.io/downloads). You'll want to download the command-line installer, and choose your version of python wisely. Python 3.5 is more modern, but not all relevant packages are supported yet. Python 2.7 ensures full support for more packages, but: `from __future__ import division`!. 
 
 Once you have downloaded the `.sh` file from the anaconda website, install by entering:
