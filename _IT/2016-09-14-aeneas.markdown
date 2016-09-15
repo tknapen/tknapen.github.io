@@ -34,7 +34,10 @@ To connect from a UNIX terminal:
 
 #### sshfs
 <br />
-To mount disks from a UNIX terminal, it helps to create a few aliases. Here's the first, which mounts your user folder on aeneas at `~/disks/Aeneas_Home/`, assuming again that your usernames are the same everywhere.
+To mount disks from a UNIX terminal, it helps to create a few aliases. 
+These commands can of course also be used outside of the aliases. We mount our user folder on aeneas at `~/disks/Aeneas_Home/`, assuming again that your usernames are the same everywhere.
+
+##### sshfs from Mac OS X
 
 {% highlight bash %}
 alias aeneas_home='sshfs -p 22 $USER@aeneas.psy.vu.nl:/home/$USER ~/disks/Aeneas_Home/ \
@@ -45,7 +48,7 @@ This line can be duplicated for several other folders on the server, most import
 
 {% highlight bash %}
 alias aeneas_shared='sshfs -p 22 $USER@aeneas.psy.vu.nl:/home/shared ~/disks/Aeneas_Shared/ \
- -oauto_cache,reconnect,defer_permissions,noappledouble,negative_vncache,volname=shared'
+ -oauto_cache,reconnect,defer_permissions,noappledouble,negative_vncache,volname=shared &'
 {% endhighlight %}
 
 Then, if you want to unmount the server's disks:
@@ -54,6 +57,24 @@ Then, if you want to unmount the server's disks:
 alias ua_home='umount ~/disks/Aeneas_Home'
 {% endhighlight %}
 
+##### sshfs from Linux
+
+
+{% highlight bash %}
+alias aeneas_home='sshfs -p 22 $USER@aeneas.psy.vu.nl:/home/$USER ~/disks/Aeneas_Home/ -o idmap=user,auto_cache,reconnect &'
+{% endhighlight %}
+
+As for Mac OS X, this line can be duplicated for several other folders on the server, most importantly the `/home/shared/` folder, mounted at `~/disks/Aeneas_Shared/`. 
+
+{% highlight bash %}
+alias aeneas_shared='sshfs -p 22 $USER@aeneas.psy.vu.nl:/home/fs_subjects ~/disks/Aeneas_Subjects -o idmap=user,auto_cache,reconnect &'
+{% endhighlight %}
+
+Then, if you want to unmount the server's disks:
+
+{% highlight bash %}
+alias ua_home='fusermount -u ~/disks/Aeneas_Home'
+{% endhighlight %}
 
 
 

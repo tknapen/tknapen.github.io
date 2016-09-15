@@ -23,7 +23,7 @@ Once you have downloaded the `.sh` file from the anaconda website, install by en
 {% highlight bash %}
 bash Anaconda3-4.1.1-MacOSX-x86_64.sh 
 {% endhighlight %}
-or the name of the relevant installer, of course. Install in your home directory and have it change `.bashrc`, too. 
+or the name of the relevant installer, of course. Install in your home directory, perhaps even in the `~/bin` location. Don't have it change `.bashrc`, but preferably do that in your own `~/.bash_profile`. 
 
 ### Installing a virtual environment
 <br />
@@ -54,7 +54,7 @@ conda create -n i3 intelpython3_full python=3
 source activate i2
 {% endhighlight %}
 
-Once you're in the environment, you can start installing neuroimaging related packages, such as `nilearn`, `fir`, etc. 
+Once you're in the environment, you can start installing neuroimaging related packages, such as `nilearn`, `bottleneck`, `lmfit`, `fir`, etc. 
 Also, feel free to add the activation of your 'standard environment' to your `~/.bash_profile`.
 
 
