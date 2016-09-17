@@ -25,7 +25,7 @@ For specific software installation issues, refer to the specific pages in the [I
 
 ### Access
 <br />
-To connect to Ascanius: [SSH](https://en.wikipedia.org/wiki/Secure_Shell) from Aeneas. This allows you to run analyses from the terminal. Ascanius can load Aeneas' disks using sshfs, thus operating on the same data as Aeneas [sshfs](https://en.wikipedia.org/wiki/SSHFS). For instructions on how to do this, see the [Aeneas section](/IT/2016-09-14-aeneas/).
+To connect to Ascanius: [SSH](https://en.wikipedia.org/wiki/Secure_Shell) from Aeneas. This allows you to run analyses from the terminal. In terms of data access, Ascanius can load the Aeneas Home folders as an `NFS` mount, thus operating on the same data as Aeneas. These home directories are then accessible via `/data/shared/`, for example.
 
 
 
