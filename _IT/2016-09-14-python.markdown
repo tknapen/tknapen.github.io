@@ -88,8 +88,8 @@ Also, feel free to add the activation of your 'standard environment' to your `~/
 <br />
 Some packages are used in our legacy code, and are not in conda because they are less/not actively maintained. Two examples: [ParallelPython](http://www.parallelpython.com) has been superseded by [joblib](https://pythonhosted.org/joblib/), which is easier to use. PyNifti (no website) is an older package for accessing nifti files that has been superseded by [nibabel](http://nipy.org/nibabel/) (in `conda-forge`). To install these packages into a 2.7 virtual environment use the following zipfiles:
 
-* (PyNifti)[/img/bin/pynifti.zip]
-* (ParallelPython)[/img/bin/pp.zip]
+* [PyNifti](/img/bin/pynifti.zip)
+* [ParallelPython](/img/bin/pp.zip)
 
 Unzip these files, go to the enclosing folder and install them into your VE using `pip install -e pynifti` or `pip install -e pp`.
 
