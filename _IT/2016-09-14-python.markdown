@@ -58,8 +58,10 @@ We're starting to use an intel-provided distribution of packages, which have all
 Briefly, these are the commands:
 {% highlight bash %}
 conda update conda
-*Note: *the latest version of conda breaks the intel channel; see the intel website link for more information.
+{% endhighlight %}
+*Note: the latest version of conda breaks the intel channel; see the intel website link for more information.*
 
+{% highlight bash %}
 # add the intel channel:
 conda config --add channels intel
 
