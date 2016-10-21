@@ -32,6 +32,8 @@ There is one way to connect to Aeneas: [SSH](https://en.wikipedia.org/wiki/Secur
 To connect from a UNIX terminal:
 `ssh -YC $USER@aeneas.psy.vu.nl`, assuming that your usernames are the same everywhere. If not, fill it in. From Windows, use [putty](https://en.wikipedia.org/wiki/PuTTY), but you're on your own. It helps to make an alias of this command: `alias aeneas='ssh -YC $USER@aeneas.psy.vu.nl'`.
 
+If you are experiencing dropped connections in your ssh sessions, you could try to use mosh: [mosh website](https://mosh.org)
+
 #### sshfs
 <br />
 To mount disks from a UNIX terminal, it helps to create a few aliases. 
