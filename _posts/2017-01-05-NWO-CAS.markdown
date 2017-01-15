@@ -1,0 +1,10 @@
+---
+layout: post
+title:  NWO-CAS grant awarded
+date:   2017-01-05 12:00:00
+description: Our lab received an NWO-CAS grant, for an upcoming collaboration with the Beijing lab of Peng Zhang and Sheng He.
+---
+
+For an international collaboration between our lab and the Beijing lab of Peng Zhang and Sheng He, we have received €360000 for a 3-year postdoc or a 4-year PhD position. We will use state-of-the-art high-resolution fMRI and MEG recordings to answer the question how bottom-up and top-down information flows in the brain give rise to our conscious perception, using a paradigm called [Binocular Rivalry](https://en.wikipedia.org/wiki/Binocular_rivalry). 
+
+For information about the call, see [the NWO website](http://www.nwo.nl/actueel/nieuws/2016/nihc/1-5-miljoen-voor-chinees-nederlands-onderzoek-naar-hersenen-en-cognitie.html)
