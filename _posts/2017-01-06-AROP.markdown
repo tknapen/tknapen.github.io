@@ -1,0 +1,8 @@
+---
+layout: post
+title:  Review on Bistable Perception accepted at Annual Reviews
+date:   2017-01-06 12:40:00
+description: Collaborative Review between Our lab @ the VU, Charité Berlin, Michigan State University and Vanderbilt.
+---
+
+For Annual Reviews of Psychology, Jan Brascamp, Philipp Sterzer, Randolph Blake and Tomas have collaborated to produce an overview of the mechanisms behind transitions in bistable perception, and the neural mechanisms behind them. The review has been accepted, and will appear sometime in 2017.
