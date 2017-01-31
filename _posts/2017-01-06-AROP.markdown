@@ -5,4 +5,11 @@ date:   2017-01-06 12:40:00
 description: Collaborative Review between Our lab @ the VU, Charité Berlin, Michigan State University and Vanderbilt.
 ---
 
-For Annual Reviews of Psychology, Jan Brascamp, Philipp Sterzer, Randolph Blake and Tomas have collaborated to produce an overview of the mechanisms behind transitions in bistable perception, and the neural mechanisms behind them. The review has been accepted, and will appear sometime in 2017.
+For Annual Reviews of Psychology, [Jan Brascamp](https://psychology.msu.edu/brascamplab/publications.html), [Philipp Sterzer](https://psy-ccm.charite.de/en/research/neuroimaging/visual_perception_laboratory/), [Randolph Blake](http://www.psy.vanderbilt.edu/faculty/blake/blake.html) and Tomas have collaborated to produce an overview of the mechanisms behind transitions in bistable perception, and the neural mechanisms behind them. The review has been accepted, and will appear online sometime in 2017.
+
+Keep an eye on [the Annual Reviews of Psychology website](http://www.annualreviews.org/doi/10.1146/annurev-psych-010417-085944).
+<br/>
+
+#### Abstract  
+<br/>
+  A given pattern of optical stimulation can arise from countless possible real-world sources, creating a dilemma for vision: what in the world actually gives rise to the current pattern? This dilemma was pointed out centuries ago by the astronomer/mathematician Ibn al-Haytham, and was forcefully restated 150 years ago when Helmholtz characterized perception as unconscious inference. To buttress his contention, Helmholtz cited multistable perception: recurring changes in perception despite unchanging sensory input. Recent neuroscientific studies have exploited multistable perception to identify brain areas uniquely activated in association with these perceptual changes, but the specific roles of those activations remain controversial. This essay provides an overview of theoretical models of multistable perception, a review of recent neuroimaging and brain stimulation studies focused on mechanisms associated with these perceptual changes, and a synthesis of available evidence within the context of current notions about Bayesian inference that find their historical roots in Helmholtz’s work.
