@@ -13,6 +13,6 @@ The project is a collaboration with the Zhang lab at the Chinese Academy of Scie
 
 <img class="col one" src="/img/posts/laminar.png">
 
-Feel free to contact [Tomas Knapen](mailto:tknapen@gmail.com) for informal inquiries. More information on bistable perception can be found in our soon-to-appear review of the topic on [the Annual Reviews of Psychology website](http://www.annualreviews.org/doi/10.1146/annurev-psych-010417-085944). The lab website can be found at [tknapen.github.io](http://tknapen.github.io), and we are part of the [cognitive psychology group](http://vupsy.nl) ath the VU.
+Feel free to contact [Tomas Knapen](mailto:tknapen@gmail.com) for informal inquiries. More information on bistable perception can be found in our soon-to-appear review of the topic on [the Annual Reviews of Psychology website](http://www.annualreviews.org/doi/10.1146/annurev-psych-010417-085944). The lab website can be found at [tknapen.github.io](http://tknapen.github.io), and we are part of the [cognitive psychology group](http://vupsy.nl) at the VU.
 
 A formal application should contain a CV, statement of interest and two letters of recommendation, and be sent to [Barbara Goudriaan](barbara.goudriaan@vu.nl), with reference number 00034515. We will entertain applications continuously from now.
