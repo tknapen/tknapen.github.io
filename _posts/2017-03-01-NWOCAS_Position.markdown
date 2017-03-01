@@ -13,6 +13,11 @@ The project is a collaboration with the Zhang lab at the Chinese Academy of Scie
 
 <img class="col one" src="/img/posts/laminar.png">
 
-Feel free to contact [Tomas Knapen](mailto:tknapen@gmail.com) for informal inquiries. More information on bistable perception can be found in our soon-to-appear review of the topic on [the Annual Reviews of Psychology website](http://www.annualreviews.org/doi/10.1146/annurev-psych-010417-085944). The lab website can be found at [tknapen.github.io](http://tknapen.github.io), and we are part of the [cognitive psychology group](http://vupsy.nl) at the VU.
+Feel free to contact [Tomas Knapen](mailto:tknapen@gmail.com) for informal inquiries. More information on bistable perception can be found in our soon-to-appear review of the topic on [the Annual Reviews of Psychology website](http://www.annualreviews.org/doi/10.1146/annurev-psych-010417-085944). The lab website can be found at [tknapen.github.io](http://tknapen.github.io), and we are part of the [cognitive psychology group](http://vupsy.nl) in the department of Behavioural and Movement Sciences at the VU.
 
-A formal application should contain a CV, statement of interest and two letters of recommendation, and be sent to [Barbara Goudriaan](barbara.goudriaan@vu.nl), with reference number 00034515. We will entertain applications continuously from now.
+A formal application should contain a CV, two-page statement of interest and two names of persons that can provide letters of recommendation, and be sent to [Barbara Goudriaan](barbara.goudriaan@vu.nl), with reference number 00034515. We will entertain applications continuously from now.
+
+_Further particulars _ 
+The salary will be in accordance with university regulations for academic personnel. As an indication, this is a minimum of €2191 gross per month for a PhD position, and €2717 for a PostDoc position, depending on experience.
+
+The appointment will be initially for 1 year. After satisfactory evaluation of the initial appointment, it will be extended. You can find information about benefits of employment at [www.workingatvu.nl](www.workingatvu.nl)
