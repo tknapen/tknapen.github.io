@@ -19,7 +19,7 @@ _**Information & Application**_
 
 Feel free to contact [Tomas Knapen](mailto:tknapen@gmail.com) for informal inquiries. More information on bistable perception can be found in our soon-to-appear review of the topic on [the Annual Reviews of Psychology website](http://www.annualreviews.org/doi/10.1146/annurev-psych-010417-085944). The lab website can be found at [tknapen.github.io](http://tknapen.github.io), and we are part of the [cognitive psychology group](http://vupsy.nl) in the department of Behavioural and Movement Sciences at the VU.
 
-A formal application should contain a CV, two-page statement of interest and two names of persons that can provide letters of recommendation, and be sent to [Barbara Goudriaan](barbara.goudriaan@vu.nl), with reference number 00034515 in the subject line of the application email. We will entertain applications continuously from now.
+A formal application should contain a CV, two-page statement of interest and two names of persons that can provide letters of recommendation, and be sent to [Barbara Goudriaan](mailto:barbara.goudriaan@vu.nl), with reference number 00034515 in the subject line of the application email. We will entertain applications continuously from now.
 
 _**Further particulars **_
 
