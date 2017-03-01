@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Open position: High resolution fMRI of bistable perception
+title:  Open position - High resolution fMRI of bistable perception
 date:   2017-03-01 12:00:00
 description: Open PhD/postdoc position on CAS/NWO collaboration.
 ---
@@ -11,6 +11,8 @@ In this project, we will study the interplay between top-down and bottom-up proc
 
 The project is a collaboration with the Zhang lab at the Chinese Academy of Science, Beijing and the He lab at the University of Minnesota, and will involve regular travel between these labs. 
 
-Feel free to contact Tomas Knapen (tknapen@gmail.com) for informal inquiries. More information on bistable perception can be found in our recent review of the topic on [the Annual Reviews of Psychology website](http://www.annualreviews.org/doi/10.1146/annurev-psych-010417-085944). The lab website can be found at [tknapen.github.io](http://tknapen.github.io), and we are part of the [cognitive psychology group](http://vupsy.nl) ath the VU.
+<img class="col one" src="/img/posts/laminar.png">
 
-A formal application should contain a CV, statement of interest and two letters of recommendation, and be sent to barbara.goudriaan@vu.nl, with reference number 00034515. We will entertain applications continuously from now.
+Feel free to contact [Tomas Knapen](mailto:tknapen@gmail.com) for informal inquiries. More information on bistable perception can be found in our soon-to-appear review of the topic on [the Annual Reviews of Psychology website](http://www.annualreviews.org/doi/10.1146/annurev-psych-010417-085944). The lab website can be found at [tknapen.github.io](http://tknapen.github.io), and we are part of the [cognitive psychology group](http://vupsy.nl) ath the VU.
+
+A formal application should contain a CV, statement of interest and two letters of recommendation, and be sent to [Barbara Goudriaan](barbara.goudriaan@vu.nl), with reference number 00034515. We will entertain applications continuously from now.
