@@ -25,4 +25,4 @@ _**Further particulars **_
 
 The salary will be in accordance with university regulations for academic personnel. As an indication, this is a minimum of €2191 gross per month for a PhD position, and €2717 for a PostDoc position, depending on experience.
 
-The appointment will be initially for 1 year. After satisfactory evaluation of the initial appointment, it will be extended. You can find information about benefits of employment at [www.workingatvu.nl](www.workingatvu.nl)
+The appointment will be initially for 1 year. After satisfactory evaluation of the initial appointment, it will be extended. You can find information about benefits of employment at [www.workingatvu.nl](http://www.workingatvu.nl)
