@@ -1,0 +1,15 @@
+---
+layout: post
+title:  Paper accepted at eLIFE
+date:   2017-03-20 12:00:00
+description: Paper on fMRI-pupil relationship during decision-making accepted at eLIFE.
+---
+
+
+In a collaboration with the Donner and Nieuwenhuis labs, we investigated how pupil-linked arousal impacts decision-making, both in the cortex and in the brain stem. Especially the link to the brainstem and other subcortical regions is, in my opinion, very compelling. 
+<br/>
+
+#### Abstract  
+<img class="col one" src="/img/posts/brainstem_stats.png">
+<br/>
+  Decision-makers often arrive at different choices when faced with repeated presentations of the same evidence. Variability of behavior is commonly attributed to noise in the brain’s decision-making machinery. We hypothesized that phasic responses of brainstem arousal systems are a significant source of this variability. We tracked pupil responses (a proxy of phasic arousal) during sensory-motor decisions in humans, across different sensory modalities and task protocols. Large pupil responses generally predicted a reduction in decision bias. Using fMRI, we showed that the pupil-linked bias reduction was (i) accompanied by a modulation of choice-encoding pattern signals in parietal and prefrontal cortex and (ii) predicted by phasic, pupil-linked responses of a number of neuromodulatory brainstem centers involved in the control of cortical arousal state, including the noradrenergic locus coeruleus. We conclude that phasic arousal suppresses decision bias on a trial-by-trial basis, thus accounting for a significant component of the variability of choice behavior.
