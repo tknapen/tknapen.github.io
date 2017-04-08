@@ -9,6 +9,8 @@ description: Paper on fMRI-pupil relationship during decision-making accepted at
 In a collaboration with the Donner and Nieuwenhuis labs, we investigated how pupil-linked arousal impacts decision-making, both in the cortex and in the brain stem. Especially the link to the brainstem and other subcortical regions is, in my opinion, very compelling. 
 <br/>
 
+The full paper is at the [eLIFE website](https://elifesciences.org/content/6/e23232)
+
 #### Abstract  
 <img class="col one" src="/img/posts/brainstem_stats.png">
 <br/>
