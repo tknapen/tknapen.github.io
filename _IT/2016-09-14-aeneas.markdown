@@ -9,30 +9,28 @@ date:   2016-09-14 10:00:00
 
 ### Hardware
 <br />
-Aeneas houses 2 3.1GHz 8-core Xeon processors with 128 GB of installed memory. There are three disk arrays; the `/` system is a RAID-0 SSD pair, and the `/home` system is a 18TB RAID-5 array of 4 disks. For backup there is a `/home2` file system, a RAID-5 array of 4 disks, with 8 TB in total. For CUDA computations there is an Nvidia Titan X.
+Aeneas houses 2 3.1GHz 8-core Xeon processors with 128 GB of installed memory. There are three disk arrays; the `/` system is a fast SSD, and the `/home` system is a 80TB RAID-6 array of 8 disks. For CUDA computations there is an Nvidia Titan X.
 <br />
 
 
 ### Software
 <br />
-Aeneas runs Centos 7.2 minimal install. Our goal is to provide as much flexibility to the users while expending as little effort as possible. This means that we try to take care of operating system type stuff, and users are expected to take care of their own userland software installations. 
+Aeneas runs Centos 7.3 install. Our goal is to provide as much flexibility to the users while expending as little effort as possible. This means that we try to take care of operating system type stuff, and users are expected to take care of their own userland software installations. 
 
-In practice, we have installed daemons, CUDA drivers, Xfce4 etc, but the installation of neuroimaging packages, python toolchains, etc. is left in the hands of the users. 
+In practice, we have installed daemons, CUDA 8.0 drivers, intel compiler package, Xfce4 etc, but the installation of neuroimaging packages, python toolchains, etc. is left to the users. 
 
-For specific software installation issues, refer to the specific pages in the [IT section of this website](/IT). 
+For specific software installations, refer to the specific pages in the [IT section of this website](/IT). 
 <br />
 
 
 ### Access
 <br />
-There is one way to connect to Aeneas: [SSH](https://en.wikipedia.org/wiki/Secure_Shell). This allows you to run analyses from the terminal, view plotting windows across an X connection, and mount Aeneas' disks using [sshfs](https://en.wikipedia.org/wiki/SSHFS).
+There is one way to connect to Aeneas: [SSH](https://en.wikipedia.org/wiki/Secure_Shell). This allows you to run analyses from the terminal, view plotting windows across an X connection, and mount Aeneas' disks using [sshfs](https://en.wikipedia.org/wiki/SSHFS). There is a strict university-enforced firewall in place, so no other modes of connection are possible.
 
 #### ssh
 <br />
 To connect from a UNIX terminal:
 `ssh -YC $USER@aeneas.psy.vu.nl`, assuming that your usernames are the same everywhere. If not, fill it in. From Windows, use [putty](https://en.wikipedia.org/wiki/PuTTY), but you're on your own. It helps to make an alias of this command: `alias aeneas='ssh -YC $USER@aeneas.psy.vu.nl'`.
-
-If you are experiencing dropped connections in your ssh sessions, you could try to use mosh: [mosh website](https://mosh.org)
 
 #### sshfs
 <br />
