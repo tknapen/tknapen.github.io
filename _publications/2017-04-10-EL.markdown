@@ -1,0 +1,13 @@
+---
+layout: post
+title: Dynamic modulation of decision biases by brainstem arousal systems
+date:   2017-04-10 12:00:00
+---
+
+"<a href="https://elifesciences.org/content/6/e23232" target="_blank" alt="Dynamic modulation of decision biases by brainstem arousal systems." >Dynamic modulation of decision biases by brainstem arousal systems.</a>". 
+
+Jan Willem de Gee, Olympia Colizoli, Niels A Kloosterman, **Tomas Knapen**, Sander Nieuwenhuis, Tobias H Donner
+
+<img class="col one right" src="/img/posts/brainstem_stats.png">
+
+Decision-makers often arrive at different choices when faced with repeated presentations of the same evidence. Variability of behavior is commonly attributed to noise in the brain's decision-making machinery. We hypothesized that phasic responses of brainstem arousal systems are a significant source of this variability. We tracked pupil responses (a proxy of phasic arousal) during sensory-motor decisions in humans, across different sensory modalities and task protocols. Large pupil responses generally predicted a reduction in decision bias. Using fMRI, we showed that the pupil-linked bias reduction was (i) accompanied by a modulation of choice-encoding pattern signals in parietal and prefrontal cortex and (ii) predicted by phasic, pupil-linked responses of a number of neuromodulatory brainstem centers involved in the control of cortical arousal state, including the noradrenergic locus coeruleus. We conclude that phasic arousal suppresses decision bias on a trial-by-trial basis, thus accounting for a significant component of the variability of choice behavior.
