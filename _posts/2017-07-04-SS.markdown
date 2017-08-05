@@ -1,0 +1,29 @@
+---
+layout: post
+title:  MVPA Summerschool class
+date:   2017-07-04 12:40:16
+description: Install instructions for the one-day MVPA course
+---
+
+For those who've participated in our *Brain & Mind* summerschool, here are some instructions that allow you to run through our MVPA tutorial. The tutorial is composed of a collection of `nilearn` and `sklearn` demos/examples.
+
+*The prerequisite packages.* These are all python packages, so we need to first install an environment for this. If you go to this link: [Continuum Analytics website](https://www.continuum.io/downloads). From this website, you can download the python 3.6 version of anaconda, a python management environment. After download, install the package with the standard settings. 
+
+Then, go into a terminal and install some more specialist packages that our tutorial needs:
+
+```
+conda config --add channels conda-forge
+conda install -y scipy matplotlib scikit-learn nibabel nilearn pandas jupyter ipython-notebook
+```
+
+This should work without a hitch. Then, you can download the [.ipynb notebook file](/science/mvpa_tutorial.ipynb), and start up the ipython notebook interface by opening a terminal window where the `.ipynb` file is, by typing `jupyter notebook`
+
+This will open a website-like interface that mixes text and code together. You should read the text, which explains the code and you can then run the code by selecting the code cell and pressing shift-enter. If you see warnings, these are not important. While a cell's computation is running, the cell index (to the left of the cell) will show a `*`, which will be replaced with an index when the computation is finished. 
+
+The notebook 
+1. treats the concepts of overfitting, 
+2. compares different classification algorithms, 
+3. shows how to apply these analyses to neuroimaging data using the standard 'Haxby' dataset
+4. and demonstrates the use of a Searchlight decoder in a single slice of fMRI data
+
+If you want to learn more about these topics, you can follow a course on data science, we recommend the Jake vanderPlas book, which also uses this notebook format, and for which you've now already installed all you need. [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
