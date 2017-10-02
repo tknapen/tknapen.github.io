@@ -5,7 +5,7 @@ date:   2017-07-04 12:40:16
 description: Install instructions for the one-day MVPA course
 ---
 
-For those who've participated in our *Brain & Mind* summerschool, here are some instructions that allow you to run through our MVPA tutorial. The tutorial is composed of a collection of `nilearn` and `sklearn` demos/examples.
+For those who've participated in our *Brain & Mind* summerschool, here are some instructions that allow you to run through our MVPA tutorial. The tutorial is composed of a collection of `nilearn` and `sklearn` demos/examples. This should work on Linux and MacOS, and might work on Windows although we haven't tested. 
 
 *The prerequisite packages.* These are all python packages, so we need to first install an environment for this. If you go to this link: [Continuum Analytics website](https://www.continuum.io/downloads). From this website, you can download the python 3.6 version of anaconda, a python management environment. After download, install the package with the standard settings. 
 

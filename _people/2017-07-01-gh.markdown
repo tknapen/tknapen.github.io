@@ -1,0 +1,10 @@
+---
+layout: page
+title: Gilles de Hollander
+date: 2017-07-01 07:59:00
+description: PostDoctoral Fellow NWO/CAS
+---
+
+<img class="col one right" src="/img/people/gh.jpg">
+
+After a master's in AI, Gilles did a PhD in Birte Forstmann's lab at the UvA. During this time, he investigated decision-making in the deeper regions of the brain, measuring high-resolution BOLD responses at 7T. 

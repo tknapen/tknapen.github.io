@@ -1,0 +1,13 @@
+---
+layout: post
+title: Individual differences in eye blink rate predict both transient and tonic pupil responses during reversal learning
+date:   2017-10-01 12:00:00
+---
+
+"<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185665" target="_blank" alt="Individual differences in eye blink rate predict both transient and tonic pupil responses during reversal learning." >Individual differences in eye blink rate predict both transient and tonic pupil responses during reversal learning.</a>". 
+
+Joanne C. Van Slooten , Sara Jahfari, **Tomas Knapen**, Jan Theeuwes
+
+<img class="col one right" src="/img/posts/pupil_eye.jpg">
+
+The pupil response under constant illumination can be used as a marker of cognitive processes. In the past, pupillary responses have been studied in the context of arousal and decision-making. However, recent work involving Parkinson's patients suggested that pupillary responses are additionally affected by reward sensitivity. Here, we build on these findings by examining how pupil responses are modulated by reward and loss while participants (N = 30) performed a Pavlovian reversal learning task. In fast (transient) pupil responses, we observed arousal-based influences on pupil size both during the expectation of upcoming value and the evaluation of unexpected monetary outcomes. Importantly, after incorporating eye blink rate (EBR), a behavioral correlate of striatal dopamine levels, we observed that participants with lower EBR showed stronger pupil dilation during the expectation of upcoming reward. Subsequently, when reward expectations were violated, participants with lower EBR showed stronger pupil responses after experiencing unexpected loss. Across trials, the detection of a reward contingency reversal was reflected in a slow (tonic) dilatory pupil response observed already several trials prior to the behavioral report. Interestingly, EBR correlated positively with this tonic detection response, suggesting that variability in the arousal-based detection response may reflect individual differences in striatal dopaminergic tone. Our results provide evidence that a behavioral marker of baseline striatal dopamine level (EBR) can potentially be used to describe the differential effects of value-based learning in the arousal-based pupil response.
