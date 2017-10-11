@@ -7,4 +7,12 @@ description: PostDoctoral Fellow NWO/CAS
 
 <img class="col one right" src="/img/people/gh.jpg">
 
-After a master's in AI, Gilles did a PhD in Birte Forstmann's lab at the UvA. During this time, he investigated decision-making in the deeper regions of the brain, measuring high-resolution BOLD responses at 7T. 
+After a master's in Artificial Intelligence, Gilles did a PhD in Birte Forstmann's lab at the UvA. 
+Using cognitive modelling approaches and 7T structural and functional MRI, he tried to understand
+the functional anatomy of the subthalamic nucleus, a small node of the basal ganglia deep down
+in the brain. He worked on optimizing functional MRI protocols for this particular brain region.
+He also likes to think about how cognitive computational models can help us understand neural
+signals.
+
+Currently, he is investigating the neural subtrate of binocular rivalry in primary visual
+cortex using laminar-resolved functional MRI. 
