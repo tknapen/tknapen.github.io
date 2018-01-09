@@ -84,18 +84,27 @@ Keep in mind, you're of course also very welcome to fix this yourself, by instal
 
 Also, feel free to add the activation of your 'standard environment' to your `~/.bash_profile`.
 
-#### Legacy packages
-<br />
-Some packages are used in our legacy code, and are not in conda because they are less/not actively maintained. Two examples: [ParallelPython](http://www.parallelpython.com) has been superseded by [joblib](https://pythonhosted.org/joblib/), which is easier to use. PyNifti (no website) is an older package for accessing nifti files that has been superseded by [nibabel](http://nipy.org/nibabel/) (in `conda-forge`). To install these packages into a 2.7 virtual environment use the following zipfiles:
+### Environment for experiments in pygaze and psychopy
 
-* [PyNifti](/img/bin/pynifti.zip)
-* [ParallelPython](/img/bin/pp.zip)
+{% highlight bash %}
+conda create -n e2 intelpython2_full python=2.7
 
-Unzip these files, go to the enclosing folder and install them into your VE using `pip install -e pynifti` or `pip install -e pp`.
+source activate e2
 
+conda install pyserial sphinx pyobjc-core pandas pyopengl pyglet pillow moviepy lxml openpyxl configobj pyyaml gevent greenlet msgpack-python psutil pytables requests pyosf cffi seaborn pyaudio
 
+conda install -c cogsci pygame psychopy python-pygaze
 
+git clone git@github.com:VU-Cog-Sci/exptools.git
+cd exptools 
+python setup.py install
 
+#####################################################################
+# Now, install all the SR Research software, downloaded from their support website, 
+# copy the 'pylink' folder from the SR Research Eyelink Software folder, to your miniconda3/envs/e2/lib/python2.7/site-packages/ folder
+#####################################################################
+
+{% endhighlight %}
 
 
 
