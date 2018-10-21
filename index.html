@@ -8,7 +8,7 @@ layout: default
 <br/>
   <img class="col one right" src="/img/polar_2mm_7T.png">
 <p>We are the Visual Neuroscience Lab within the <a href="http://www.vupsy.nl" target="_blank">Cognitive Psychology</a> group at the Vrije Universiteit Amsterdam. Our lab is also based at the <a href="http://www.spinozacentre.nl" target="_blank">Spinoza Centre for Neuroimaging</a> of the <a href="http://www.knaw.nl" target="_blank">Royal Dutch Academy of Sciences</a>.</p>
-<p>We perform imaging and eye movement experiments to investigate how the visual brain represents information, and how its information processing changes under influence of cognitive factors such as attention and reward. For more information on the topics we research, please see <a href="https://tknapen.github.io/science/">the science section</a>.</p>
+<p>We perform imaging and eye movement experiments to investigate how the visual brain represents information, and how its information processing changes under influence of cognitive factors such as attention and reward. For more information on the topics we research, please see <a href="https://tknapen.github.io/science/">the science section</a>, or click any of the topics below.</p>
 <br />
   <!-- <br/> -->
   <hr>
@@ -27,7 +27,7 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         {% if post.img %}
-       <!--  <img class="col half left" src="{{ post.img }}"> -->
+        <img class="col half" src="{{ post.img }}">
         {% endif %}
         <h6><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
