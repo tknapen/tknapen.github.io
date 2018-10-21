@@ -16,12 +16,6 @@ layout: default
 <div class="header-bar">
   <h3>News from the lab:</h3>
 </div>
-  <!-- <p class="post-meta" align = "center">News from the lab:</p> -->
-  <!-- <hr> -->
-  <!-- <p class="post-meta">&nbsp</p> -->
-
-<!-- Here, just a static piece of text in the index.html. -->
-
 
 <ul class="post-list">
     {% for post in paginator.posts %}
@@ -32,7 +26,6 @@ layout: default
         <h6><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
         <p>{{ post.description }}</p>
-        <!-- <br/> -->
         <hr/>
       </li>
     {% endfor %}
@@ -47,7 +40,6 @@ layout: default
   {% else %}
     <span>&laquo; Prev</span>
   {% endif %}
-
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
       <em>{{ page }}</em>
@@ -61,7 +53,6 @@ layout: default
       </a>
     {% endif %}
   {% endfor %}
-
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | relative_url }}">
       Next &raquo;
@@ -88,8 +79,8 @@ layout: default
         {% endif %}    
         <span>
             <h3>{{ project.title }}</h3>
-            <br/>
-            <p>{{ project.description }}</p>
+<!--             <br/>
+            <p>{{ project.description }}</p> -->
         </span>
       </a>
     </div>
