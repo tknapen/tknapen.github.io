@@ -5,7 +5,7 @@ date: 2017-07-02 07:59:00
 description: Marie-Curie PostDoctoral Fellow 
 ---
 
-<img class="col one right" src="/img/people/ms.jpg">
+<img class="col one right" src="/img/people/ms.png">
 
 Martin Szinte moved to Amsterdam on a Marie-Curie grant. He will investigate the interaction between eye movements and vision in the human brain, using 7T fMRI. 
 
