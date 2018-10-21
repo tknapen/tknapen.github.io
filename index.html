@@ -26,10 +26,10 @@ layout: default
 <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <h6><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
         {% if post.img %}
         <img class="post-img" src="{{ post.img }}">
         {% endif %}
+        <h6><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
         <p>{{ post.description }}</p>
         <!-- <br/> -->
