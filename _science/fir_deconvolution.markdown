@@ -2,6 +2,7 @@
 layout: post
 title: Finite Impulse Response Fitting
 description: Estimating event-related responses from time series signals
+frontpage: true
 img: /img/science/more_time_signals.png
 ---
 

@@ -5,10 +5,10 @@ layout: default
 <div class="header-bar">
   <h1>Visual Neuroscience Lab</h1>
 </div>
-
+<br/>
   <img class="col one right" src="/img/polar_2mm_7T.png">
-<p>We are the Visual Neuroscience Lab within the <a href="http://www.vupsy.nl" target="_blank">Cognitive Psychology</a> group at the Vrije Universiteit Amsterdam. Our lab is also based at the <a href="http://www.spinozacentre.nl" target="_blank">Spinoza Centre for Neuroimaging</a> of the <a href="http://www.knaw.nl" target="_blank">Royal Dutch Academy of Sciences</a>.
-We perform imaging and eye movement experiments to investigate how the visual brain represents information, and how its information processing changes under influence of cognitive factors such as attention and reward. For more information on the topics we research, please see <a href="https://tknapen.github.io/science/">the science section</a>.</p>
+<p>We are the Visual Neuroscience Lab within the <a href="http://www.vupsy.nl" target="_blank">Cognitive Psychology</a> group at the Vrije Universiteit Amsterdam. Our lab is also based at the <a href="http://www.spinozacentre.nl" target="_blank">Spinoza Centre for Neuroimaging</a> of the <a href="http://www.knaw.nl" target="_blank">Royal Dutch Academy of Sciences</a>.</p>
+<p>We perform imaging and eye movement experiments to investigate how the visual brain represents information, and how its information processing changes under influence of cognitive factors such as attention and reward. For more information on the topics we research, please see <a href="https://tknapen.github.io/science/">the science section</a>.</p>
 <br />
   <!-- <br/> -->
   <hr>
@@ -23,7 +23,7 @@ We perform imaging and eye movement experiments to investigate how the visual br
 <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <h5><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+        <h6><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
         <p>{{ post.description }}</p>
         <!-- <br/> -->
@@ -32,7 +32,31 @@ We perform imaging and eye movement experiments to investigate how the visual br
     {% endfor %}
 </ul>
 
+<br/>
+<div class="header-bar">
+  <h3>Topics</h3>
+</div>
 
+{% for project in site.science %}
+{% if project.frontpage %}
+<div class="project">
+    <div class="thumbnail">
+        <a href="{{ site.baseurl }}{{ project.url }}">
+        {% if project.img %}
+        <img class="thumbnail" src="{{ project.img }}"/>
+        {% else %}
+        <div class="thumbnail blankbox"></div>
+        {% endif %}    
+        <span>
+            <h1>{{ project.title }}</h1>
+            <br/>
+            <p>{{ project.description }}</p>
+        </span>
+        </a>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
 
 <p class="post-meta" align = "center">Search this site:</p>
 <div class="post-content" align="center">

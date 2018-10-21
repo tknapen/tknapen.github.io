@@ -2,6 +2,7 @@
 layout: post
 title: Population Receptive Field Mapping
 description: Mapping how visual information is encoded in the human brain
+frontpage: true
 img: /img/prf/eccen_quadrant.png
 ---
 

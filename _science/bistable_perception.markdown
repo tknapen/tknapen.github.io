@@ -2,6 +2,7 @@
 layout: post
 title: Bistable Perception
 description: Dynamic visual decision-making 
+frontpage: true
 img: /img/science/radio_active.png
 ---
 
