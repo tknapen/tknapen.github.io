@@ -28,7 +28,7 @@ layout: default
       <li>
         <h6><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
         {% if post.img %}
-        <img class="col one left" src="{{ post.img }}">
+        <img class="post-img" src="{{ post.img }}">
         {% endif %}
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
         <p>{{ post.description }}</p>
