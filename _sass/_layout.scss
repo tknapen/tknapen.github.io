@@ -221,8 +221,7 @@ top: -5%;
 }
 .thumbnail a{
 float: left;
-position: absolute;
-z-index: 9999;
+position: relative;
 width: 100%;
 height: 230px;
 }
