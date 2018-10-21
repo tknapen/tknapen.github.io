@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How Visual Cortical Organization Is Altered by Ophthalmologic and Neurologic Disorders
+description: Annual Reviews of Vision Science - review of population receptive field applications together with Serge Dumoulin
 date:   2018-6-11 12:00:00
 ---
 

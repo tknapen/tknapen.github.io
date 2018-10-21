@@ -5,9 +5,8 @@ title: IT
 description: lab computer stuff
 ---
 
-<img class="col two right" src="/img/IT/innards.jpg">
 
-This section of the website is a wiki-like collection of instructions on how we do computer stuff. In order to create a reproducible data analysis pipeline, we only use open-source software, and track our own programming on [GitHub](github.com), our collection of tools is on [our lab github page](https://github.com/VU-Cog-Sci).
+This section of the website is a wiki-like collection of instructions on how we do computer stuff. In order to create a reproducible data analysis pipeline, we only use open-source software. We track our own programming on [GitHub](github.com), our collection of tools is on [our lab github page](https://github.com/VU-Cog-Sci).
 
 We have multiple in-house data analysis servers, and use the Lisa and Cartesius clusters of the surfsara organization. 
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Multistable perception and the role of the frontoparietal cortex in perceptual inference
+description: Annual Reviews of Psychology - review of the state of the field of Bistable Perception, with Jan Brascamp, Randolph Blake and Philipp Sterzer
 date:   2018-6-11 12:00:00
 ---
 
