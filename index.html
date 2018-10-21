@@ -27,7 +27,7 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         {% if post.img %}
-        <img class="col half left" src="{{ post.img }}">
+       <!--  <img class="col half left" src="{{ post.img }}"> -->
         {% endif %}
         <h6><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
