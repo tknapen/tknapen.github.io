@@ -16,20 +16,6 @@ layout: default
 <div class="header-bar">
   <h3>News from the lab:</h3>
 </div>
-
-<ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        {% if post.img %}
-        <img class="col half" src="{{ post.img }}">
-        {% endif %}
-        <h6><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
-        <p>{{ post.description }}</p>
-        <hr/>
-      </li>
-    {% endfor %}
-</ul>
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
@@ -62,6 +48,19 @@ layout: default
   {% endif %}
 </div>
 {% endif %}
+<ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        {% if post.img %}
+        <img class="col half" src="{{ post.img }}">
+        {% endif %}
+        <h6><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
+        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
+        <p>{{ post.description }}</p>
+        <hr/>
+      </li>
+    {% endfor %}
+</ul>
 
 <div class="header-bar">
   <h3>Topics</h3>
