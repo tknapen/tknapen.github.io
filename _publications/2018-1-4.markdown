@@ -1,0 +1,13 @@
+---
+layout: post
+title: Multistable perception and the role of the frontoparietal cortex in perceptual inference
+date:   2018-6-11 12:00:00
+---
+
+"<a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-psych-010417-085944" target="_blank" alt="Multistable perception and the role of the frontoparietal cortex in perceptual inference." >Multistable perception and the role of the frontoparietal cortex in perceptual inference.</a>". 
+
+Jan Brascamp, Philipp Sterzer, Randolph Blake and **Tomas Knapen**
+
+<img class="col one right" src="/img/science/necker.png">
+
+A given pattern of optical stimulation can arise from countless possible real-world sources, creating a dilemma for vision: What in the world actually gives rise to the current pattern? This dilemma was pointed out centuries ago by the astronomer and mathematician Ibn Al-Haytham and was forcefully restated 150 years ago when von Helmholtz characterized perception as unconscious inference. To buttress his contention, von Helmholtz cited multistable perception: recurring changes in perception despite unchanging sensory input. Recent neuroscientific studies have exploited multistable perception to identify brain areas uniquely activated in association with these perceptual changes, but the specific roles of those activations remain controversial. This article provides an overview of theoretical models of multistable perception, a review of recent neuroimaging and brain stimulation studies focused on mechanisms associated with these perceptual changes, and a synthesis of available evidence within the context of current notions about Bayesian inference that find their historical roots in von Helmholtz's work.
