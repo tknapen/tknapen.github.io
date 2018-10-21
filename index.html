@@ -78,8 +78,8 @@ layout: default
 
 {% for project in site.science %}
 {% if project.frontpage %}
-<div class="project">
-    <div class="thumbnail">
+<!-- <div class="project">
+ -->    <div class="thumbnail">
         <a href="{{ site.baseurl }}{{ project.url }}">
         {% if project.img %}
         <img class="thumbnail" src="{{ project.img }}"/>
@@ -87,14 +87,14 @@ layout: default
         <div class="thumbnail blankbox"></div>
         {% endif %}    
         <span>
-            <h1>{{ project.title }}</h1>
+            <h3>{{ project.title }}</h3>
             <br/>
             <p>{{ project.description }}</p>
         </span>
         </a>
     </div>
-</div>
-{% endif %}
+<!-- </div>
+ -->{% endif %}
 {% endfor %}
 
 <div class="header-bar">

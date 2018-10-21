@@ -35,7 +35,7 @@ description: the topics our science covers
         <div class="thumbnail blankbox"></div>
         {% endif %}    
         <span>
-            <h1>{{ project.title }}</h1>
+            <h3>{{ project.title }}</h3>
             <br/>
             <p>{{ project.description }}</p>
         </span>
