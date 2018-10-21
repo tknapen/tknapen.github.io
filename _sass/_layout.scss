@@ -97,8 +97,7 @@ width:100%;
 max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
 text-align: center;
 width: 100%;
-position: fixed;
-bottom: 50px;
+bottom: 10px;
 }
 .paginationicon {
 font-size: 50px;
