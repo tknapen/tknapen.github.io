@@ -31,7 +31,7 @@ layout: default
     {% endfor %}
 </ul>
 <!-- Pagination links -->
-<!-- {% if paginator.total_pages > 1 %}
+{% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | relative_url }}">
@@ -61,7 +61,7 @@ layout: default
     <span>Next &raquo;</span>
   {% endif %}
 </div>
-{% endif %} -->
+{% endif %}
 
 <div class="header-bar">
   <h3>Topics</h3>
@@ -71,18 +71,18 @@ layout: default
 {% if project.frontpage %}
 <div class="project">
     <div class="thumbnail">
-      <a href="{{ site.baseurl }}{{ project.url }}">
+        <a href="{{ site.baseurl }}{{ project.url }}">
         {% if project.img %}
-          <img class="thumbnail" src="{{ project.img }}"/>
+        <img class="thumbnail" src="{{ project.img }}"/>
         {% else %}
-          <div class="thumbnail blankbox"></div>
+        <div class="thumbnail blankbox"></div>
         {% endif %}    
         <span>
             <h3>{{ project.title }}</h3>
-<!--             <br/>
-            <p>{{ project.description }}</p> -->
+            <br/>
+            <p>{{ project.description }}</p>
         </span>
-      </a>
+        </a>
     </div>
 </div>
 {% endif %}
