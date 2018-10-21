@@ -1,4 +1,3 @@
-
 /**
  * Site header   **********************************************************
  */
@@ -97,7 +96,8 @@ width:100%;
 max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
 text-align: center;
 width: 100%;
-bottom: 10px;
+position: fixed;
+bottom: 50px;
 }
 .paginationicon {
 font-size: 50px;
@@ -173,7 +173,14 @@ margin-bottom: 0px;
 display: block;
 font-size: 42px;
 }
-
+.post-img img{
+float: left;
+width: 200px;
+height: auto;
+position: relative;
+left: -25%;
+top: -5%;
+}
 
 /** Poem formatting ********************************************/
 .poem-title {
