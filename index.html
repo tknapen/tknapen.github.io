@@ -60,7 +60,7 @@ layout: default
 </div>
 {% endif %}
 
-<!-- 
+
 <hr/>
 
 <div class="header-bar">
@@ -71,12 +71,12 @@ layout: default
 {% if project.frontpage %}
 <div class="project">
     <div class="thumbnail">
-        <a href="{{ site.baseurl }}{{ project.url }}">
         {% if project.img %}
         <img class="thumbnail" src="{{ project.img }}"/>
         {% else %}
         <div class="thumbnail blankbox"></div>
         {% endif %}    
+        <a href="{{ site.baseurl }}{{ project.url }}">        
         <span>
             <h3>{{ project.title }}</h3>
             <br/>
@@ -87,7 +87,7 @@ layout: default
 </div>
 {% endif %}
 {% endfor %}
-<hr/> -->
+<hr/>
 
 <div class="header-bar">
   <h3>Search the site:</h3>
