@@ -9,7 +9,6 @@ layout: default
   <img class="col one right" src="/img/polar_2mm_7T.png">
 <p>We are the Visual Neuroscience Lab at the <a href="http://www.vupsy.nl" target="_blank">Cognitive Psychology</a> department at the Vrije Universiteit Amsterdam, led by Tomas Knapen. Our lab is also based at the <a href="http://www.spinozacentre.nl" target="_blank">Spinoza Centre for Neuroimaging</a> of the <a href="http://www.knaw.nl" target="_blank">Royal Dutch Academy of Sciences</a>.</p>
 <p>We perform imaging, psychophysics, and eye movement experiments to investigate how the brain represents information - with a focus on vision. We are principally interested in how processing of sensory information changes under the influence of cognitive factors such as attention and reward. For more information on the topics we research, please see <a href="https://tknapen.github.io/science/">the science section</a>, or click any of the topics below.</p>
-<br />
 
 <!-- News (blog) section -->
 <div class="header-bar">
@@ -60,7 +59,7 @@ layout: default
   {% endif %}
 </div>
 {% endif %}
-
+<br />
 
 <hr/>
 <!-- Topics (science) section -->
@@ -72,27 +71,27 @@ layout: default
 {% if project.frontpage %}
 <div class="project">
     <div class="thumbnail">
+      <a href="{{ site.baseurl }}{{ project.url }}">   
         {% if project.img %}
         <img class="thumbnail" src="{{ project.img }}"/>
         {% else %}
         <div class="thumbnail blankbox"></div>
         {% endif %}    
-        <a href="{{ site.baseurl }}{{ project.url }}">        
         <span>
             <h3>{{ project.title }}</h3>
             <br/>
             <p>{{ project.description }}</p>
         </span>
-        </a>
+      </a>
     </div>
 </div>
 {% endif %}
 {% endfor %}
 <hr/>
-
-<div class="header-bar">
-  <h3>Search the site:</h3>
-</div>
+<br /><br /><br />
+<!-- <div class="header-bar"> -->
+  <h2>Search the site:</h2>
+<!-- </div> -->
 
 <div class="post-content" align="center">
   <script>
