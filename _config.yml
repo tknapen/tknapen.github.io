@@ -52,6 +52,8 @@ collections:
   IT:
     output: true
     permalink: /IT/:path/
-
+  data:
+    output: true
+    permalink: /data/:path/
 
 future: true

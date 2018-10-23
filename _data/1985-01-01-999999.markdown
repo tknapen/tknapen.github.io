@@ -1,0 +1,20 @@
+---
+layout: post
+title:  Across Subjects Timeseries Average
+date:   1985-01-01 00:59:00
+description: Across Subjects Timeseries Average
+---
+
+
+### Subject 999999
+
+#### Retinotopy quantifications
+some text
+
+[Eccentricity Size relationships](/999999/eccensize.html)
+
+#### Retinotopy on surface
+then, there is a pycortex viewer:
+
+[Eccentricity Size relationships](/999999/brainviewer.html)
+
