@@ -18,7 +18,7 @@ Check out our growing list of code projects on GitHub, or just hit the envelope 
 <hr />
 <br />
 We're located in the Medical Department building at the VU campus, and the <a href="http://www.spinozacentre.nl" target="_blank">Spinoza Centre Amsterdam </a>, where we also do our neuroimaging data acquisition.  
-
+Tomas is in room MF C-577A. 
 <br />
 <hr />
 <br />
