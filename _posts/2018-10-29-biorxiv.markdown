@@ -10,6 +10,6 @@ img: /img/posts/cerebellum_retmap.png
 
 D.M. van Es, W. van der Zwaag, T. Knapen
 
-<img class="col one right" src="/img/posts/cerebellum_retmap.png">
+<img class="col two right" src="/img/posts/cerebellum_retmap.png">
 
 **New preprint on Biorxiv:** While the cerebellum is instrumental for motor control, it is not traditionally implicated in vision. Here, we report the existence of 5 ipsilateral visual field maps in the human cerebellum. These maps are located within the oculomotor vermis and cerebellar nodes of the dorsal attention and visual networks. These findings imply that the cerebellum is closely involved in visuospatial cognition, and that its contributions are anchored in sensory coordinates.
