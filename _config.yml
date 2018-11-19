@@ -46,9 +46,9 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
-  publications:
+  data:
     output: false
-    permalink: /publications/:path/
+    permalink: /data/:path/
   IT:
     output: true
     permalink: /IT/:path/
