@@ -1,0 +1,15 @@
+---
+layout: post
+title: New paper on Saccadic Adaptation
+description: Implicit and explicit learning in reactive and voluntary saccade adaptation
+date:   2019-01-16 12:00:00
+img: /img/science/sa.png
+---
+
+"<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0203248" target="_blank" alt="Implicit and explicit learning in reactive and voluntary saccade adaptation" >Implicit and explicit learning in reactive and voluntary saccade adaptation</a>". 
+
+D.M. van Es, T. Knapen
+
+<img class="col two right" src="/img/science/sa.png">
+
+**New paper accepted in PLoS ONE:** Saccades can either be elicited automatically by salient peripheral stimuli or can additionally depend on explicit cognitive goals. Similarly, it is thought that motor adaptation is driven by the combination of a more automatic, implicit process and a more explicit, cognitive process. However, the degree to which such implicit and explicit learning contribute to the adaptation of more reactive and voluntary saccades remains elusive. To study this question, we employed a global saccadic adaptation paradigm with both increasing and decreasing saccade amplitudes. We assessed the resulting adaptation using a dual state model of motor adaptation. This model decomposes learning into a fast and slow process, which are thought to constitute explicit and implicit learning, respectively. Our results show that adaptation of reactive saccades is equally driven by fast and slow learning, while fast learning is nearly absent when adapting voluntary (i.e. scanning) saccades. This pattern of results was present both when saccade gain was increased or decreased. Our results suggest that the increased cognitive demands associated with voluntary compared to reactive saccade planning interfere specifically with explicit learning.
