@@ -1,0 +1,14 @@
+---
+layout: post
+title: eLife paper on attentional warping of visual space published
+description: Spatial sampling in human visual cortex is modulated by both spatial and feature-based attention
+date:   2018-12-07 12:00:00
+---
+
+"<a href="https://elifesciences.org/articles/36928" target="_blank" alt="Spatial sampling in human visual cortex is modulated by both spatial and feature-based attention" >Spatial sampling in human visual cortex is modulated by both spatial and feature-based attention</a>". 
+
+D.M. van Es, J. Theeuwes, T. Knapen
+
+<img class="col two right" src="/img/prf/retmaps.png">
+
+**New paper published in eLife:** Spatial attention changes the sampling of visual space. Behavioral studies suggest that feature-based attention modulates this resampling to optimize the attended feature's sampling. We investigate this hypothesis by estimating spatial sampling in visual cortex while independently varying both feature-based and spatial attention. Our results show that spatial and feature-based attention interacted: resampling of visual space depended on both the attended location and feature (color vs. temporal frequency). This interaction occurred similarly throughout visual cortex, regardless of an area's overall feature preference. However, the interaction did depend on spatial sampling properties of voxels that prefer the attended feature. These findings are parsimoniously explained by variations in the precision of an attentional gain field. Our results demonstrate that the deployment of spatial attention is tailored to the spatial sampling properties of units that are sensitive to the attended feature.
