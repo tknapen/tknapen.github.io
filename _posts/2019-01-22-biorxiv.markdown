@@ -1,0 +1,14 @@
+---
+layout: post
+title: preprint on the role of visual cortex in reinforcement learning online!
+description: Learning in visual regions as support for the bias in future value-driven choice
+date:   2019-01-22 12:00:00
+---
+
+"<a href="https://www.biorxiv.org/content/early/2019/01/21/523340" target="_blank" alt="Learning in visual regions as support for the bias in future value-driven choice" >Learning in visual regions as support for the bias in future value-driven choice</a>". 
+
+S Jahfari, J Theeuwes, T Knapen
+
+<img class="col two right" src="/img/prf/retmaps.png">
+
+**New preprint online @ biorxiv:** Learning biases decision-making towards higher expected outcomes. Cognitive theories describe this through the tracking of value and outcome evaluations within striatum and prefrontal cortex. Decisions however first require processing of sensory input, and to-date, far less is known about the learning perception interplay. This fMRI study (N=43), relates visual BOLD responses to value-beliefs during choice, and, signed prediction errors after outcomes. To understand these relationships, which co-occurred in striatum, we next evaluated relevance with the prediction of future value-based choices, using a separate transfer-phase with learning already established. We decoded choice outcomes with a 69% accuracy with a machine learning algorithm that was given trial-by-trial BOLD from visual regions alongside traditional prefrontal, and striatal regions. Importantly, this decoding of value-driven choice outcomes again showed an important role for visual activity. These results raise the intriguing possibility that value learning in visual cortex is supportive for the striatal bias towards valued options.
