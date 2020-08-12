@@ -1,0 +1,12 @@
+---
+layout: post
+title: Preprint on the visual organization of DMN and Hippocampus online!
+description: Using topographic connectivity mapping, we show that hippocampus is visually organized.
+date: 2020-08-08 12:00:00
+---
+
+"<a href="https://www.biorxiv.org/content/10.1101/2020.07.30.228403v1" target="_blank" alt="Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain" >Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain</a>".
+
+T Knapen
+
+**New preprint online @ biorxiv:** The human visual system is organized as a hierarchy of maps that share the topography of the retina. These retinotopic maps have been identified throughout the brain, but how much of the brain is visually organized remains unknown. Here we demonstrate widespread stable visual organization beyond the traditional visual system. We analyzed detailed topographic connectivity with primary visual cortex during moviewatching, rest, and retinotopic mapping experiments to reveal that visual-spatial representations are warped by experimental condition and cognitive state. Specifically, traditionally visual regions alternate with default mode network and hippocampus in preferentially representing the center of the visual field. This visual role of hippocampus would allow it to implement sensory predictions by interfacing between abstract memories and concrete perceptions. These results indicate that pervasive sensory coding facilitates the communication between far-flung brain regions.
