@@ -2,7 +2,7 @@
 layout: post
 title: Current Biology on eCoG of Binocular Rivalry online!
 description: Intracranial Recordings Reveal Unique Shape and Timing of Responses in Human Visual Cortex during Illusory Visual Events.
-date: 2020-07-08 12:00:00
+date: 2020-07-02 12:00:00
 ---
 
 "<a href="https://www.cell.com/current-biology/fulltext/S0960-9822(20)30769-7" target="_blank" alt="Intracranial Recordings Reveal Unique Shape and Timing of Responses in Human Visual Cortex during Illusory Visual Events" >Intracranial Recordings Reveal Unique Shape and Timing of Responses in Human Visual Cortex during Illusory Visual Events</a>".
