@@ -1,0 +1,11 @@
+---
+layout: post
+title: A line through the brain - implementation of human line-scanning at 7T for ultra-high spatiotemporal resolution fMRI
+date:   2021-08-20 12:00:00
+---
+
+"<a href="https://doi.org/10.1523/JNEUROSCI.1990-20.2020" target="_blank" alt="A line through the brain: implementation of human line-scanning at 7T for ultra-high spatiotemporal resolution fMRI" >A line through the brain: implementation of human line-scanning at 7T for ultra-high spatiotemporal resolution fMRI</a>". 
+
+Luisa Raimondo, Tomas Knapen, ĺcaro AF Oliveira, Xin Yu, Serge O Dumoulin, Wietske van der Zwaag, Jeroen CW Siero
+
+**Abstract** Functional magnetic resonance imaging (fMRI) is a widely used tool in neuroscience to detect neurally evoked responses, e.g. the blood oxygenation level-dependent (BOLD) signal. Typically, BOLD fMRI has millimeter spatial resolution and temporal resolution of one to few seconds. To study the sub-millimeter structures and activity of the cortical gray matter, the field needs an fMRI method with high spatial and temporal resolution. Line-scanning fMRI achieves very high spatial resolution and high sampling rate, at the cost of a sacrifice in volume coverage. Here, we present a human line-scanning implementation on a 7T MRI system. First, we investigate the quality of the saturation pulses that suppress MR signal outside the line. Second, we established the best coil combination for reconstruction. Finally, we applied the line-scanning method in the occipital lobe during a visual stimulation task, showing BOLD responses along cortical depth, every 250 µm with a 200 ms repetition time (TR). We found a good correspondence of t-statistics values with 2D gradient-echo echo planar imaging (GE-EPI) BOLD fMRI data with the same temporal resolution and voxel volume (R = 0.6 ± 0.2). In summary, we demonstrate the feasibility of line-scanning in humans and this opens line-scanning fMRI for applications in cognitive and clinical neuroscience.

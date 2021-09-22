@@ -1,0 +1,16 @@
+---
+layout: post
+title: Representation of Contralateral Visual Space in the Human Hippocampus
+date:   2021-03-17 12:00:00
+---
+
+"<a href="https://doi.org/10.1523/JNEUROSCI.1990-20.2020" target="_blank" alt="Representation of Contralateral Visual Space in the Human Hippocampus" >Representation of Contralateral Visual Space in the Human Hippocampus</a>". 
+
+Edward H. Silson, Peter Zeidman, Tomas Knapen and Chris I. Baker
+
+***SIGNIFICANCE STATEMENT***
+
+ Retinotopic encoding of visual information is an organizing principle of visual cortex. Recent work demonstrates this sensitivity in structures far beyond early visual cortex, including those anatomically connected to the hippocampus. Here, using population receptive field (pRF) modeling in two independent sets of data we demonstrate a consistent bias for the contralateral visual field in bilateral hippocampus. Such a bias highlights the truly pervasive influence of retinotopy, with important implications for understanding how the presence of retinotopy relates to more allocentric spatial representations.
+
+
+**Abstract** The initial encoding of visual information primarily from the contralateral visual field is a fundamental organizing principle of the primate visual system. Recently, the presence of such retinotopic sensitivity has been shown to extend well beyond early visual cortex to regions not historically considered retinotopically sensitive. In particular, human scene-selective regions in parahippocampal and medial parietal cortex exhibit prominent biases for the contralateral visual field. Here, we used fMRI to test the hypothesis that the human hippocampus, which is thought to be anatomically connected with these scene-selective regions, would also exhibit a biased representation of contralateral visual space. First, population receptive field (pRF) mapping with scene stimuli revealed strong biases for the contralateral visual field in bilateral hippocampus. Second, the distribution of retinotopic sensitivity suggested a more prominent representation in anterior medial portions of the hippocampus. Finally, the contralateral bias was confirmed in independent data taken from the Human Connectome Project (HCP) initiative. The presence of contralateral biases in the hippocampus, a structure considered by many as the apex of the visual hierarchy, highlights the truly pervasive influence of retinotopy. Moreover, this finding has important implications for understanding how visual information relates to the allocentric global spatial representations known to be encoded therein.
