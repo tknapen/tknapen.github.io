@@ -13,11 +13,6 @@ We will also link to [openneuro.org](https://openneuro.org) dataset which we put
 
 
 <ul class="post-list">
-
-<!-- {% debug %} -->
-
-<!-- {{ page | jsonify}} -->
-
 {% for item in site.data %}
     <li>
     {% if item.img %}
