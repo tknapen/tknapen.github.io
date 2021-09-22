@@ -2,7 +2,7 @@
 title: Knapen lab website
 email: tknapen@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Website of the Knapen Visual Neuroscience lab at the Vrije Universiteit Amsterdam.
+  Website of the Knapen Computational Cognitive Neuroscience lab at the Vrije Universiteit Amsterdam.
 baseurl:  # the subpath of your site, e.g. /blog/
 url:  https://tknapen.github.io # the base hostname & protocol for your site
 twitter_username: tknapen
@@ -47,11 +47,7 @@ collections:
     output: true
     permalink: /publications/:path/
   data:
-    output: false
-    permalink: /data/:path/
-  IT:
     output: true
-    permalink: /IT/:path/
-
+    permalink: /data/:path/
 
 future: true

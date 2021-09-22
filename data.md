@@ -2,25 +2,29 @@
 layout: page
 permalink: /data/
 title: data
-description: We publish our data here.
+description: We publish our datasets here.
 ---
 
-<!-- <img class="col one left" src="/img/prf/retmap_flat.png"> -->
 
 We are very much devoted to open science. All our analyses appear on GitHub, and here we provide access to our results. This can be in the form of interactive plots, and/or [pycortex-based](https://github.com/gallantlab/pycortex) brain viewers. 
-We will also link to [openneuro.org](https://openneuro.org) dataset which we are about to put online.
+We will also link to [openneuro.org](https://openneuro.org) dataset which we put online.
 
-**More to come soon!**
+<img class="col three" src="/img/science/999999/999999_sulcaldepth.png">
 
 
 <ul class="post-list">
-{% for data in site.data %}
+
+{% debug %}
+
+<!-- {{ page | jsonify}} -->
+
+{% for item in site.data %}
     <li>
-    {% if data.img %}
-            <img class="col one right" src="{{ data.img }}">
+    {% if item.img %}
+            <img class="col two right" src="{{ item.img }}">
     {% endif %}     
-        <h4><a class="person-title" href="{{ data.url | prepend: site.baseurl }}">{{ data.title }}</a></h4>
-            <p>{{ data.description }}</p>
+        <h4><a class="person-title" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a></h4>
+            <p>{{ item.description }}</p>
       </li>
 {% endfor %}
 </ul>
