@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /data/
-title: data
-description: We publish our datasets here.
+permalink: /resources/
+title: resources
+description: We publish our datasets & other stuff here.
 ---
 
 
@@ -10,7 +10,6 @@ We are very much devoted to open science. All our analyses appear on GitHub, and
 We will also link to [openneuro.org](https://openneuro.org) dataset which we put online.
 
 <img class="col three" src="/img/science/999999/999999_sulcaldepth.png">
-
 
 <ul class="post-list">
 {% for item in site.data %}
