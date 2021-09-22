@@ -3,6 +3,7 @@ layout: page
 title: Gilles de Hollander
 date: 2017-07-01 07:59:00
 description: PostDoctoral Fellow NWO/CAS
+img: /img/science/999999_thickness.png
 ---
 
 <img class="col one right" src="/img/people/gh.jpg">

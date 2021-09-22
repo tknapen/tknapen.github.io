@@ -9,7 +9,7 @@ twitter_username: tknapen
 github_username:  tknapen
 comments: true
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
@@ -43,11 +43,12 @@ collections:
   people:
     output: true
     permalink: /people/:path/
-  publications:
-    output: true
-    permalink: /publications/:path/
   data:
     output: true
     permalink: /data/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
+
 
 future: true
