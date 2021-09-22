@@ -12,7 +12,7 @@ We will also link to [openneuro.org](https://openneuro.org) dataset which we put
 <img class="col three" src="/img/science/999999/999999_sulcaldepth.png">
 
 <ul class="post-list">
-{% for item in site.data %}
+{% for item in site.resources %}
     <li>
     {% if item.img %}
             <img class="col two right" src="{{ item.img }}">
