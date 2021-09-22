@@ -1,0 +1,12 @@
+---
+layout: page
+title: Luisa Raimondo
+date: 2019-07-02 07:59:00
+description: PhD Student @ Spinoza, linescanning
+img: /img/science/more_time_signals.png
+---
+
+<img class="col one right" src="/img/people/lr.jpg">
+
+Luisa is an MR physics PhD student working on linescanning. She is developing state-of-the-art methodologies for optimizing precision and SNR of the lines we scan.
+

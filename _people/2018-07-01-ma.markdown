@@ -1,0 +1,12 @@
+---
+layout: page
+title: Marco Aqil
+date: 2018-07-01 07:59:00
+description: PhD Student shared with Dumoulin Lab
+img: /img/posts/pupil_eye.png
+---
+
+<img class="col one right" src="/img/people/ma.jpg">
+
+Marco's is a PhD student on Serge Dumoulin's VICI project. He is developing novel pRF models to explain non-linear processing in the visual system, and relate these processing characteristics to biological foundations. 
+

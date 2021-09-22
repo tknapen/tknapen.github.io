@@ -1,0 +1,13 @@
+---
+layout: page
+title: Ron Van De Klundert
+date: 2021-09-01 07:59:00
+description: PhD Student @ VU
+img: /img/posts/pupil_eye.png
+---
+
+<img class="col one right" src="/img/people/rk.jpg">
+
+After a master's in Cognitive Sciences at the UvA, Ron has just started his PhD in the lab. 
+
+He'll be working on brain-based encoding models. 

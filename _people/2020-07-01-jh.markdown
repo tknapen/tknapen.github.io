@@ -1,0 +1,12 @@
+---
+layout: page
+title: Jurjen Heij
+date: 2020-07-02 07:59:00
+description: PhD Student @ Spinoza, linescanning
+img: /img/science/more_time_signals.png
+---
+
+<img class="col one right" src="/img/people/jh.jpg">
+
+Jurjen is a neuroscience PhD student working on linescanning. He is developing the methods to plan the line, perfectly targeting a tiny patch of cortex. He's using pRF modeling and time-course estimation to answer his questions. 
+

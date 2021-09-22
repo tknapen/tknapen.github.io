@@ -3,6 +3,7 @@ layout: page
 title: Tomas Knapen
 date: 2015-10-06 07:59:00
 description: Lab PI
+img: /img/prf/retmap_flat.png
 ---
 
 <img class="col one right" src="/img/people/tk.jpg">

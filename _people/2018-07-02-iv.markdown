@@ -1,0 +1,11 @@
+---
+layout: page
+title: Ines Verissimo
+date: 2018-07-02 07:59:00
+description: PhD student @ VU
+img: /img/prf/eccen_quadrant.png
+---
+
+<img class="col one right" src="/img/people/iv.jpg">
+
+Ines is a PhD student in the lab of Chris Olivers and is co-supervised by Tomas. Her interests are in retinotopic and somatotopic mapping, and the interactions between feature-based attention and visual-spatial representations. 

@@ -2,6 +2,14 @@
 
 Based on the folio theme.
 
+
+## Environment
+
+This is a jekyll website, so when working on changes you can 'host' the website on your own computer by installing and running jekyll. See instructions [here](https://jekyllrb.com)
+
+
+## To Edit:
+
 To work on the webpage: checkout the 'content' branch when you want to edit things. This 'content' branch is the development branch of the website. Change stuff there, and only when you git merge content while in master, will the changes affect the website after a push.
 
 So, that is:

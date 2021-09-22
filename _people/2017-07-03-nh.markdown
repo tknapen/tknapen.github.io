@@ -1,0 +1,11 @@
+---
+layout: page
+title: Nick Hedger
+date: 2017-07-03 07:59:00
+description: Leverhulme Trust Fellow, Reading & Amsterdam
+img: /img/prf/eccen_quadrant.png
+---
+
+<img class="col one right" src="/img/people/nh.jpg">
+
+Nick Hedger has a junior faculty position at Reading University, where he is a Leverhulme Trust fellow. He is working on extending connective field models to other species and modalities, and is interested in trying to find clinical applications of these brain-based encoding models. 

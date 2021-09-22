@@ -1,0 +1,11 @@
+---
+layout: page
+title: Sumiya Abdirashid
+date: 2020-07-02 07:59:00
+description: PhD Student shared with Dumoulin Lab
+img: /img/prf/eccen_quadrant.png
+---
+
+<img class="col one right" src="/img/people/sa.jpg">
+
+Sumiya is a PhD student on Serge Dumoulin's VICI project, where we investigate attentional influences on visual processing using pRF models. 

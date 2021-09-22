@@ -1,0 +1,13 @@
+---
+layout: page
+title: Ningkai Wang
+date: 2021-09-02 07:59:00
+description: PhD Student @ VU
+img: /img/posts/pupil_eye.png
+---
+
+<img class="col one right" src="/img/people/nw.jpg">
+
+Ninkai has a Chinese PhD student grant to do a PhD in the lab of Jan Theeuwes, co-supervised by Tomas
+
+He'll be working on statistical/reinforcement learning, and fMRI of the hippocampus.
