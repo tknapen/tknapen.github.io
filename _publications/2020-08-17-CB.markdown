@@ -1,0 +1,20 @@
+---
+layout: post
+title: Intracranial recordings reveal unique shape and timing of responses in human visual cortex during illusory visual events
+date:   2020-08-17 12:00:00
+---
+
+"<a href="https://doi.org/10.1016/j.cub.2020.05.082" target="_blank" alt="Intracranial recordings reveal unique shape and timing of responses in human visual cortex during illusory visual events" >Intracranial recordings reveal unique shape and timing of responses in human visual cortex during illusory visual events</a>". 
+
+Maartje C de Jong, Mariska J Vansteensel, Raymond van Ee, Frans SS Leijten, Nick F Ramsey, H Chris Dijkerman, Serge O Dumoulin, Tomas Knapen
+
+***Highlights***
+
+- Stimulus changes elicit a hierarchical processing cascade in visual regions
+- Perceptual changes during binocular rivalry elicit a reversed-hierarchy cascade
+- Responses during binocular rivalry rise characteristically slowly
+- Top-down signals may serve to stabilize a new percept during binocular rivalry
+
+<img class="col two right" src="/img/posts/cerebellum_retmap.png">
+
+**Paper in Current Biology:** During binocular rivalry, perception spontaneously changes without any alteration to the visual stimulus. What neural events bring about this illusion that a constant stimulus is changing? We recorded from intracranial electrodes placed on the occipital and posterior temporal cortex of two patients with epilepsy while they experienced illusory changes of a face-house binocular-rivalry stimulus or observed a control stimulus that physically changed. We performed within-patient comparisons of broadband high-frequency responses, focusing on single epochs recorded along the ventral processing stream. We found transient face- and house-selective responses localized to the same electrodes for illusory and physical changes, but the temporal characteristics of these responses markedly differed. In comparison with physical changes, responses to illusory changes were longer lasting, in particular exhibiting a characteristic slow rise. Furthermore, the temporal order of responses across the visual hierarchy was reversed for illusory as compared to physical changes: for illusory changes, higher order fusiform and parahippocampal regions responded before lower order occipital regions. Our tentative interpretation of these findings is that two stages underlie the initiation of illusory changes: a destabilization stage in which activity associated with the impending change gradually accumulates across the visual hierarchy, ultimately graduating in a top-down cascade of activity that may stabilize the new perceptual interpretation of the stimulus.
