@@ -1,0 +1,21 @@
+---
+layout: post
+title: Topographic Maps of Visual Space in the Human Cerebellum
+date:   2019-05-20 12:00:00
+---
+
+"<a href="https://www.sciencedirect.com/science/article/pii/S0960982219304105" target="_blank" alt="Topographic Maps of Visual Space in the Human Cerebellum" >Topographic Maps of Visual Space in the Human Cerebellum</a>". 
+
+D.M. van Es, W van der Zwaag, T. Knapen
+
+***Highlights***
+
+- The cerebellum contains multiple retinotopic maps of visual space
+- Retinotopic visual selectivity is found in 3 clusters, located in OMV, VIIb, and VIIIb
+- These topographic maps represent visual space similarly to the cerebral visual system
+- We provide an atlas of retinotopic regions in the human cerebellum
+
+
+<img class="col two right" src="/img/posts/cerebellum_retmap.png">
+
+**Paper accepted in Current Biology:** The purported role of the cerebellum has shifted from one that is exclusively sensorimotor related to one that encompasses a wide range of cognitive and associative functions [1, 2, 3, 4, 5]. Within sensorimotor areas of the cerebellum, functional organization is characterized by ipsilateral representations of the body [6]. Yet, in the remaining cerebellar cognitive and associative networks, functional organization remains less well understood. Regions of cerebral cortex [7, 8, 9] and subcortex [10] important for visual perception and cognition are organized topographically: neural organization mirrors the retina. Recently, it was shown that known retinotopic areas in cerebral cortex are functionally connected to nodes in the cerebellum [2, 11, 12]. In fact, this revealed signals with visuospatial selectivity in the cerebellum [13]. Here, we analyzed the highly powered Human Connectome Project (HCP) retinotopy dataset [14] to create a comprehensive and detailed overview of visuospatial organization in the cerebellum. This revealed 5 ipsilateral topographic maps in 3 cerebellar clusters (oculomotor vermis [OMV]-lobule VIIb-lobule VIIIb), of which we quantified visual field coverage and topography. These quantifications dovetail with the known roles of these areas in eye movements (OMV) [5, 15], attention (OMV-VIIb) [5, 13], working memory (VIIb) [13], and the integration of visuomotor information with respect to effector movements (VIIIb) [5]. To aid future research on visual perception in the cerebellum, we provide an online atlas of the visuospatial maps in Montreal Neurological Institute (MNI) space. Our findings demonstrate that the cerebellum is abundant with visuospatial information and, moreover, that it is organized according to known retinotopic properties.

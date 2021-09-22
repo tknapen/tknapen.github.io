@@ -1,0 +1,13 @@
+---
+layout: post
+title: Visual Organization of the Default Network
+date:   2020-04-01 12:00:00
+---
+
+"<a href="https://doi.org/10.1093/cercor/bhz323" target="_blank" alt="Visual Organization of the Default Network" >Visual Organization of the Default Network</a>". 
+
+Martin Szinte,  Tomas Knapen
+
+<img class="col two right" src="/img/science/999999/999999_myelin.png">
+
+**Abstract** The default network (DN) is a brain network with correlated activities spanning frontal, parietal, and temporal cortical lobes. The DN activates for high-level cognition tasks and deactivates when subjects are actively engaged in perceptual tasks. Despite numerous observations, the role of DN deactivation remains unclear. Using computational neuroimaging applied to a large dataset of the Human Connectome Project (HCP) and to two individual subjects scanned over many repeated runs, we demonstrate that the DN selectively deactivates as a function of the position of a visual stimulus. That is, we show that spatial vision is encoded within the DN by means of deactivation relative to baseline. Our results suggest that the DN functions as a set of high-level visual regions, opening up the possibility of using vision-science tools to understand its putative function in cognition and perception.

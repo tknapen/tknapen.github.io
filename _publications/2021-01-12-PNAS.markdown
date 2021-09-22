@@ -1,0 +1,17 @@
+---
+layout: post
+title: Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain
+date:   2021-01-12 12:00:00
+---
+
+"<a href="https://doi.org/10.1073/pnas.2017032118" target="_blank" alt="Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain" >Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain</a>". 
+
+Tomas Knapen
+
+***Significance***
+
+Vision is organized retinotopically—according to the reference frame of the retina. How much of the brain is retinotopically organized remains unknown, because traditional retinotopic mapping experiments require strict fixation and sparse stimuli. Conversely, in everyday vision we use eye movements and interaction, to derive meaning from our complex surroundings. Here, I discover retinotopic activations by explaining brain-wide BOLD signals during several experiments in terms of the pattern on the surface of primary visual cortex. This revealed visually organized processing also in regions outside the visual system, in brain regions traditionally thought devoted to memory. This visual organization in default-mode network and hippocampus speaks to the joint operation of sensations and memory in everyday vision and mental life.
+
+<img class="col two right" src="/img/science/999999/999999-RS-movie.png">
+
+**Abstract** The human visual system is organized as a hierarchy of maps that share the topography of the retina. Known retinotopic maps have been identified using simple visual stimuli under strict fixation, conditions different from everyday vision which is active, dynamic, and complex. This means that it remains unknown how much of the brain is truly visually organized. Here I demonstrate widespread stable visual organization beyond the traditional visual system, in default-mode network and hippocampus. Detailed topographic connectivity with primary visual cortex during movie-watching, resting-state, and retinotopic-mapping experiments revealed that visual–spatial representations throughout the brain are warped by cognitive state. Specifically, traditionally visual regions alternate with default-mode network and hippocampus in preferentially representing the center of the visual field. This visual role of default-mode network and hippocampus would allow these regions to interface between abstract memories and concrete sensory impressions. Together, these results indicate that visual–spatial organization is a fundamental coding principle that structures the communication between distant brain regions.

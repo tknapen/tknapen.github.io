@@ -1,0 +1,13 @@
+---
+layout: post
+title: Learning in Visual Regions as Support for the Bias in Future Value-Driven Choice
+date:   2020-04-01 12:00:00
+---
+
+"<a href="https://doi.org/10.1093/cercor/bhz218" target="_blank" alt="Learning in Visual Regions as Support for the Bias in Future Value-Driven Choice" >Learning in Visual Regions as Support for the Bias in Future Value-Driven Choice</a>". 
+
+Sara Jahfari,  Jan Theeuwes,  Tomas Knapen
+
+<img class="col two right" src="/img/posts/brainstem_stats.png">
+
+**Abstract** Reinforcement learning can bias decision-making toward the option with the highest expected outcome. Cognitive learning theories associate this bias with the constant tracking of stimulus values and the evaluation of choice outcomes in the striatum and prefrontal cortex. Decisions however first require processing of sensory input, and to date, we know far less about the interplay between learning and perception. This functional magnetic resonance imaging study (N = 43) relates visual blood oxygen level–dependent (BOLD) responses to value beliefs during choice and signed prediction errors after outcomes. To understand these relationships, which co-occurred in the striatum, we sought relevance by evaluating the prediction of future value-based decisions in a separate transfer phase where learning was already established. We decoded choice outcomes with a 70% accuracy with a supervised machine learning algorithm that was given trial-by-trial BOLD from visual regions alongside more traditional motor, prefrontal, and striatal regions. Importantly, this decoding of future value-driven choice outcomes again highlighted an important role for visual activity. These results raise the intriguing possibility that the tracking of value in visual cortex is supportive for the striatal bias toward the more valued option in future choice.

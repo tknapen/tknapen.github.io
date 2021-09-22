@@ -1,0 +1,13 @@
+---
+layout: post
+title: Dopaminergic medication reduces striatal sensitivity to negative outcomes in Parkinson’s disease
+date:   2019-11-20 12:00:00
+---
+
+"<a href="https://academic.oup.com/brain/article/142/11/3605/5585793?login=true" target="_blank" alt="Dopaminergic medication reduces striatal sensitivity to negative outcomes in Parkinson’s disease" >Dopaminergic medication reduces striatal sensitivity to negative outcomes in Parkinson’s disease</a>". 
+
+Brónagh McCoy,  Sara Jahfari,  Gwenda Engels,  Tomas Knapen,  Jan Theeuwes
+
+<img class="col two right" src="/img/posts/brainstem_stats.png">
+
+**Abstract** Reduced levels of dopamine in Parkinson’s disease contribute to changes in learning, resulting from the loss of midbrain neurons that transmit a dopaminergic teaching signal to the striatum. Dopamine medication used by patients with Parkinson’s disease has previously been linked to behavioural changes during learning as well as to adjustments in value-based decision-making after learning. To date, however, little is known about the specific relationship between dopaminergic medication-driven differences during learning and subsequent changes in approach/avoidance tendencies in individual patients. Twenty-four Parkinson’s disease patients ON and OFF dopaminergic medication and 24 healthy controls subjects underwent functional MRI while performing a probabilistic reinforcement learning experiment. During learning, dopaminergic medication reduced an overemphasis on negative outcomes. Medication reduced negative (but not positive) outcome learning rates, while concurrent striatal blood oxygen level-dependent responses showed reduced prediction error sensitivity. Medication-induced shifts in negative learning rates were predictive of changes in approach/avoidance choice patterns after learning, and these changes were accompanied by systematic striatal blood oxygen level-dependent response alterations. These findings elucidate the role of dopamine-driven learning differences in Parkinson’s disease, and show how these changes during learning impact subsequent value-based decision-making.
