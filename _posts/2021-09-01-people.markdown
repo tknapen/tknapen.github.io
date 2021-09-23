@@ -5,4 +5,4 @@ description: New PhD and Master's students starting this month!
 date: 2021-09-01 12:00:00
 ---
 
-[Ron](/people/2121-09-01-rk/) & [Ningkai](/people/2121-09-02-nw/) are new PhD students in the lab. Niklas is a new Master's student from AI, that's also going to be lab assistant in the Dumoulin lab at Spinoza. 
+[Ron](/people/2021-09-01-rk/) & [Ningkai](/people/2021-09-02-nw/) are new PhD students in the lab. Niklas is a new Master's student from AI, that's also going to be lab assistant in the Dumoulin lab at Spinoza. 
