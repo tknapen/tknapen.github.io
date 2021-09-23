@@ -243,13 +243,31 @@
 }
 
 .project {
-    width: 33.33%;
+    // width: 33.33%;
     height: 250px;
     float: left;
     vertical-align: middle;
     box-sizing: border-box;
-    padding: 10px;
+    // padding: 10px;
 }
+
+.app {
+    display: grid;
+    grid-gap: 15px; 
+    overflow: hidden;
+  /*   grid-template-columns: repeat(auto-fill, 200px); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /*   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) 150px); */
+    grid-auto-flow: dense;
+  }
+
+  .project:nth-of-type(2n) {
+    grid-column: span 2;  
+  }
+  
+  .project:nth-of-type(3n) {
+    grid-row: span 2;  
+  }
 
 .person {
     width: 50%;

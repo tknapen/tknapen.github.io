@@ -5,7 +5,9 @@ title: science
 description: the topics our science covers
 ---
 
-{% for project in site.science %}
+<div class="app">
+{% assign projects = site.science | sample:120 %}
+{% for project in projects %}
 
 {% if project.redirect %}
 <div class="project">
@@ -46,3 +48,4 @@ description: the topics our science covers
 {% endif %}
 
 {% endfor %}
+</div>
