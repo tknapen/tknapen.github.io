@@ -1,0 +1,14 @@
+---
+layout: post
+title: Hippocampal and DMN retinotopy paper out in PNAS
+description: Using topographic connectivity mapping, we show that hippocampus is visually organized.
+date: 2021-01-12 12:00:00
+---
+
+"<a href="https://doi.org/10.1073/pnas.2017032118" target="_blank" alt="Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain" >Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain</a>".
+
+T Knapen
+
+<img class="col two right" src="/img/science/999999/999999-RS-movie.png">
+
+**Abstract** The human visual system is organized as a hierarchy of maps that share the topography of the retina. Known retinotopic maps have been identified using simple visual stimuli under strict fixation, conditions different from everyday vision which is active, dynamic, and complex. This means that it remains unknown how much of the brain is truly visually organized. Here I demonstrate widespread stable visual organization beyond the traditional visual system, in default-mode network and hippocampus. Detailed topographic connectivity with primary visual cortex during movie-watching, resting-state, and retinotopic-mapping experiments revealed that visual–spatial representations throughout the brain are warped by cognitive state. Specifically, traditionally visual regions alternate with default-mode network and hippocampus in preferentially representing the center of the visual field. This visual role of default-mode network and hippocampus would allow these regions to interface between abstract memories and concrete sensory impressions. Together, these results indicate that visual–spatial organization is a fundamental coding principle that structures the communication between distant brain regions.

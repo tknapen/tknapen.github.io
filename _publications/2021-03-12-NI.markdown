@@ -6,7 +6,7 @@ date:   2021-03-12 12:00:00
 
 "<a href="https://doi.org/10.1016/j.neuroimage.2020.117683" target="_blank" alt="Ultra-high field fMRI reveals origins of feedforward and feedback activity within laminae of human ocular dominance columns" >Ultra-high field fMRI reveals origins of feedforward and feedback activity within laminae of human ocular dominance columns</a>". 
 
-Tomas Knapen
+Gilles de Hollander, Wietske van der Zwaag, Chencan Qian, Peng Zhang, Tomas Knapen
 
 ***Highlights***
 

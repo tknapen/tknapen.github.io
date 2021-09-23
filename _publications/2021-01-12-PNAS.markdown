@@ -7,7 +7,7 @@ img: /img/science/999999/999999-RS-movie.png
 
 "<a href="https://doi.org/10.1073/pnas.2017032118" target="_blank" alt="Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain" >Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain</a>". 
 
-Gilles de Hollander, Wietske van der Zwaag, Chencan Qian, Peng Zhang, Tomas Knapen
+Tomas Knapen
 
 ***Significance***
 
