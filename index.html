@@ -68,13 +68,15 @@ We perform imaging, psychophysics, and eye movement experiments to investigate h
   <h3>Topics</h3>
 </div>
 
-{% for project in site.science %}
+<div class="app">
+{% assign projects = site.science | sample:8 %}
+{% for project in projects %}
 {% if project.frontpage %}
 <div class="project">
     <div class="thumbnail">
       <a href="{{ site.baseurl }}{{ project.url }}">   
         {% if project.img %}
-        <img class="thumbnail" src="{{ project.img }}"/>
+        <img class="thumbnail" src="{{ project.img }}" width=100%/>
         {% else %}
         <div class="thumbnail blankbox"></div>
         {% endif %}    
@@ -88,6 +90,7 @@ We perform imaging, psychophysics, and eye movement experiments to investigate h
 </div>
 {% endif %}
 {% endfor %}
+</div>
 <hr/>
 <br /><br /><br />
 <!-- <div class="header-bar"> -->
