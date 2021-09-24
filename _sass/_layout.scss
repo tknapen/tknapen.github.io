@@ -105,7 +105,7 @@
  * Pagination   **********************************************************
  */
 .pagination {
-    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+    max-width: -webkit-calc(900px - (#{$horizontal-spacing-unit} * 2));
     text-align: center;
     width: 100%;
     /*position: fixed;*/
@@ -171,7 +171,9 @@
 
 .post-content {
     h2 {
-        font-size: 42px;
+        font-size: 28px;
+        margin-bottom: 15px;
+        margin-top: 15px;
 
         @include media-query($on-laptop) {
             font-size: 24px;
@@ -179,7 +181,8 @@
     }
 
     h3 {
-        font-size: 24px;
+        font-size: 21px;
+        margin-bottom: 10px;
 
         @include media-query($on-laptop) {
             font-size: 20px;
@@ -188,6 +191,7 @@
 
     h4 {
         font-size: 18px;
+        margin-bottom: 10px;
 
         @include media-query($on-laptop) {
             font-size: 16px;
