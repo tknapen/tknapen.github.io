@@ -283,6 +283,7 @@
     width: 100%;
     height: 230px;
     overflow: hidden;
+    box-shadow: 7px 7px 4px grey;
 }
 
 .thumbnailperson {
@@ -294,11 +295,12 @@
 }
 
 .thumbnail img {
-    width: 500px;
+    width: 700px;
     height: auto;
     position: relative;
-    left: -25%;
-    top: -5%;
+    left: -5%;
+    // top: -5%;
+    object-fit: cover;
 }
 
 .thumbnail a {
