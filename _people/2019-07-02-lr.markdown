@@ -10,3 +10,4 @@ img: /img/science/more_time_signals.png
 
 Luisa is an MR physics PhD student working on linescanning. She is developing state-of-the-art methodologies for optimizing precision and SNR of the lines we scan.
 
+Her first, proof of concept linescanning publication can be found [here]({{ site.baseurl }}/publications/2021-08-20-JCBFM)
