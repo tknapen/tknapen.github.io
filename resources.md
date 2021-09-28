@@ -9,7 +9,6 @@ description: We publish our datasets & other stuff here.
 We are very much devoted to open science. All our analyses appear on GitHub, and here we provide access to our results. This can be in the form of interactive plots, and/or [pycortex-based](https://github.com/gallantlab/pycortex) brain viewers. 
 We will also link to [openneuro.org](https://openneuro.org) dataset which we put online.
 
-<img class="col three" src="/img/science/999999/999999_sulcaldepth.png">
 
 <ul class="post-list">
 {% for item in site.resources %}
@@ -22,3 +21,6 @@ We will also link to [openneuro.org](https://openneuro.org) dataset which we put
       </li>
 {% endfor %}
 </ul>
+
+
+<img class="col three" src="/img/science/999999/999999_sulcaldepth.png">
