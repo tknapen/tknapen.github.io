@@ -4,7 +4,7 @@ title: A line through the brain - implementation of human line-scanning at 7T fo
 date:   2021-08-20 12:00:00
 ---
 
-"<a href="https://doi.org/10.1523/JNEUROSCI.1990-20.2020" target="_blank" alt="A line through the brain: implementation of human line-scanning at 7T for ultra-high spatiotemporal resolution fMRI" >A line through the brain: implementation of human line-scanning at 7T for ultra-high spatiotemporal resolution fMRI</a>". 
+"<a href="https://doi.org/10.1177/0271678X211037266" target="_blank" alt="A line through the brain: implementation of human line-scanning at 7T for ultra-high spatiotemporal resolution fMRI" >A line through the brain: implementation of human line-scanning at 7T for ultra-high spatiotemporal resolution fMRI</a>". 
 
 Luisa Raimondo, Tomas Knapen, ĺcaro AF Oliveira, Xin Yu, Serge O Dumoulin, Wietske van der Zwaag, Jeroen CW Siero
 
