@@ -71,7 +71,7 @@
     /*    height: 100px;
 */
     text-align: center;
-    padding-top: 15px;
+    padding-top: 0px;
     line-height: 3em;
     z-index: 25;
 
@@ -124,7 +124,7 @@
  * Page content   **********************************************************
  */
 .page-content {
-    padding: 100px 0;
+    padding: 60px 0;
     /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */
 }
 
@@ -159,10 +159,11 @@
 }
 
 .post-title {
-    font-size: 21px;
+    font-size: 31px;
     letter-spacing: -1px;
     line-height: 1;
     text-align: center;
+    padding: 20px 0;
 
     @include media-query($on-laptop) {
         font-size: 21px;
