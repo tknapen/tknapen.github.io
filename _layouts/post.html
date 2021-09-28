@@ -3,10 +3,10 @@ layout: default
 ---
 <div class="post">
 
-  <header class="post-header">
+  <div class="header-bar">
     <h2>{{ page.title }}</h2>
     <p class="post-meta">{{ page.date | date: "%B %-d, %Y — %H:%M" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+  </div>
 
   <article class="post-content">
     {{ content }}
