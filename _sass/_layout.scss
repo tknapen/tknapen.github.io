@@ -159,14 +159,16 @@
 }
 
 .post-title {
-    font-size: 21px;
-    letter-spacing: -1px;
+    font-size: 18px;
+    font-weight: 400;
+    // font-style: oblique;
+    // letter-spacing: -1px;
     line-height: 1;
     text-align: center;
-    padding: 20px 0;
+    padding: 8px 0;
 
     @include media-query($on-laptop) {
-        font-size: 21px;
+        font-size: 18px;
     }
 }
 
