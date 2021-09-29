@@ -65,30 +65,35 @@ We perform computational modeling, imaging, psychophysics, and eye movement expe
 <hr/>
 <!-- Topics (science) section -->
 <div class="header-bar">
-  <h3>Topics</h3>
+  <a href="{{ site.baseurl }}/science"><h3>Science Topics</h3></a>
 </div>
 
-<div class="app">
 {% assign projects = site.science | sample:8 %}
-{% for project in projects %}
-{% if project.frontpage %}
-<div class="project">
-    <div class="thumbnail">
-      <a href="{{ site.baseurl }}{{ project.url }}">   
-        {% if project.img %}
-        <img class="thumbnail" src="{{ project.img }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
-        <span>
-            <h3>{{ project.title }}</h3>
-            <br/>
-            <p>{{ project.description }}</p>
-        </span>
-      </a>
-    </div>
+<div class="slider">
+  <div class="slides">
+  {% for project in projects%}
+  {% assign loopindex = forloop.index %}
+    <div id="slide-{{ loopindex }}" class="thumbnail">
+        <a href="{{ site.baseurl }}{{ project.url }}">   
+          {% if project.img %}
+          <img src="{{ project.img }}"/>
+          {% else %}
+          <div class="blankbox"></div>
+          {% endif %}    
+          <span>
+              <br/>
+              <h2>{{ project.title }}</h2>
+              <br/>
+              <p>{{ project.description }}</p>
+          </span>
+        </a>
+
+  </div>
+{% endfor %}
 </div>
-{% endif %}
+{% for project in projects %}
+{% assign loopindex = forloop.index %}
+<a href="#slide-{{ loopindex }}">{{ loopindex }}</a>
 {% endfor %}
 </div>
 <hr/>

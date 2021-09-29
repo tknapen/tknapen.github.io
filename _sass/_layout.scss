@@ -295,18 +295,18 @@
 
 .thumbnailperson {
     width: 50%;
-    height: 230px;
+    height: 250px;
     overflow: hidden;
     background-color: #fff;
     opacity: 80%;
 }
 
 .thumbnail img {
-    width: 700px;
+    width: 600px;
     height: auto;
     position: relative;
     left: -5%;
-    // top: -5%;
+    top: -5%;
     object-fit: cover;
 }
 
@@ -314,7 +314,7 @@
     float: left;
     position: relative;
     width: 100%;
-    height: 230px;
+    height: 250px;
 }
 
 .thumbnail a span {
@@ -324,7 +324,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(99, 82, 82, 0.4);
     color: $grey-color-light;
     padding: 40px;
     text-align: center;
@@ -333,6 +333,69 @@
 .thumbnail a:hover span {
     display: block;
 }
+
+/** 
+ * Caroussel **********************************************************
+*/
+
+.slider {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+    // padding-top: 10px;
+    
+    /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+  }
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+}
+  .slides::-webkit-scrollbar-thumb {
+    background: rgb(197, 197, 197);
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 500px;
+    height: 250px;
+    margin-right: 50px;
+    border-radius: 25px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // font-size: 100px;
+    box-shadow: 7px 7px 4px grey;
+  }
+  .slides > div:target {
+  /*   transform: scale(0.8); */
+  }
+
 
 /** 
  * Portfolio pages **********************************************************
