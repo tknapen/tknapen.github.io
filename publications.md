@@ -16,6 +16,7 @@ description: our publications
         <h4><a class="person-title" href="{{ publication.url | prepend: site.baseurl }}">{{ publication.title }}</a></h4>
         <p class="pub-meta">{{ publication.date | date: '%Y' }}, {{publication.journal }}</p>
             <p class="post-meta">{{ publication.description }}</p>
+      <hr />
       </li>
 {% endfor %}
 </ul>
