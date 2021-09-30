@@ -5,7 +5,7 @@ title: science
 description: the topics our science covers
 ---
 
-<div class="app">
+<!-- <div class="app"> -->
 {% assign projects = site.science | sample:120 %}
 {% for project in projects %}
 
@@ -14,14 +14,14 @@ description: the topics our science covers
     <div class="thumbnail">
         <a href="{{ project.redirect }}" target="_blank">
         {% if project.img %}
-        <img class="thumbnail" src="{{ project.img }}"/>
+        <img class="thumbnailperson" src="{{ project.img }}"/>
         {% else %}
         <div class="thumbnail blankbox"></div>
         {% endif %}    
         <span>
-            <h1>{{ project.title }}</h1>
+            <h2 class="slide">{{ project.title }}</h2>
             <br/>
-            <p>{{ project.description }}</p>
+            <h3 class="slide">{{ project.description }}</h3>
         </span>
         </a>
     </div>
@@ -32,14 +32,14 @@ description: the topics our science covers
     <div class="thumbnail">
         <a href="{{ site.baseurl }}{{ project.url }}">
         {% if project.img %}
-        <img class="thumbnail" src="{{ project.img }}"/>
+        <img class="thumbnailperson" src="{{ project.img }}"/>
         {% else %}
         <div class="thumbnail blankbox"></div>
         {% endif %}    
         <span>
-            <h3>{{ project.title }}</h3>
+            <h2 class="slide">{{ project.title }}</h2>
             <br/>
-            <p>{{ project.description }}</p>
+            <h3 class="slide">{{ project.description }}</h3>
         </span>
         </a>
     </div>
@@ -48,4 +48,4 @@ description: the topics our science covers
 {% endif %}
 
 {% endfor %}
-</div>
+<!-- </div> -->

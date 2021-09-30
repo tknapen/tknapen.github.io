@@ -2,6 +2,7 @@
 layout: post
 title: Dopaminergic medication reduces striatal sensitivity to negative outcomes in Parkinson’s disease
 date:   2019-11-20 12:00:00
+journal: Brain
 ---
 
 "<a href="https://academic.oup.com/brain/article/142/11/3605/5585793?login=true" target="_blank" alt="Dopaminergic medication reduces striatal sensitivity to negative outcomes in Parkinson’s disease" >Dopaminergic medication reduces striatal sensitivity to negative outcomes in Parkinson’s disease</a>". 

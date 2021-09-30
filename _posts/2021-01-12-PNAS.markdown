@@ -3,6 +3,7 @@ layout: post
 title: Hippocampal and DMN retinotopy paper out in PNAS
 description: Using topographic connectivity mapping, we show that hippocampus is visually organized.
 date: 2021-01-12 12:00:00
+journal: Proceedings of the National Academy of Sciences
 ---
 
 "<a href="https://doi.org/10.1073/pnas.2017032118" target="_blank" alt="Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain" >Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain</a>".

@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Interregional alpha-band synchrony supports temporal cross-modal integration
-description: NeuroImage - Cross-modal integration in EEG
+description: Cross-modal integration in EEG
 date:   2014-11-01 12:00:00
+journal: Neuroimage
 ---
 
 "<a href="http://www.sciencedirect.com/science/article/pii/S1053811914005941" target="_blank" alt="Interregional alpha-band synchrony supports temporal cross-modal integration" >Interregional alpha-band synchrony supports temporal cross-modal integration</a>". 

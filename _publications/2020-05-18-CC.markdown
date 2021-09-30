@@ -2,6 +2,7 @@
 layout: post
 title: Visual Organization of the Default Network
 date:   2020-04-01 12:00:00
+journal: Cerebral Cortex
 ---
 
 "<a href="https://doi.org/10.1093/cercor/bhz323" target="_blank" alt="Visual Organization of the Default Network" >Visual Organization of the Default Network</a>". 

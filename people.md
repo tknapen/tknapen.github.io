@@ -17,9 +17,9 @@ description: Knapen Lab Team
         <div class="thumbnail blankbox"></div>
         {% endif %}    
         <span>
-            <h4>{{ person.title }}</h4>
+            <h2 class="slide">{{ person.title }}</h2>
             <br/>
-            <p>{{ person.description }}</p>
+            <h3 class="slide">{{ person.description }}</h3>
         </span>
         </a>
     </div>
@@ -35,9 +35,9 @@ description: Knapen Lab Team
         <div class="thumbnail blankbox"></div>
         {% endif %}    
         <span>
-            <h3>{{ person.title }}</h3>
+            <h2 class="slide">{{ person.title }}</h2>
             <br/>
-            <p>{{ person.description }}</p>
+            <h3 class="slide">{{ person.description }}</h3>
         </span>
         </a>
     </div>

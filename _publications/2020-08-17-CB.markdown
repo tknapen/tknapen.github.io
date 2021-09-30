@@ -2,6 +2,7 @@
 layout: post
 title: Intracranial recordings reveal unique shape and timing of responses in human visual cortex during illusory visual events
 date:   2020-08-17 12:00:00
+journal: Current Biology
 ---
 
 "<a href="https://doi.org/10.1016/j.cub.2020.05.082" target="_blank" alt="Intracranial recordings reveal unique shape and timing of responses in human visual cortex during illusory visual events" >Intracranial recordings reveal unique shape and timing of responses in human visual cortex during illusory visual events</a>". 

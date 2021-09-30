@@ -2,6 +2,7 @@
 layout: post
 title: Representation of Contralateral Visual Space in the Human Hippocampus
 date:   2021-03-17 12:00:00
+journal: Journal of Neuroscience
 ---
 
 "<a href="https://doi.org/10.1523/JNEUROSCI.1990-20.2020" target="_blank" alt="Representation of Contralateral Visual Space in the Human Hippocampus" >Representation of Contralateral Visual Space in the Human Hippocampus</a>". 

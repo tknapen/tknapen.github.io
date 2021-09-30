@@ -14,8 +14,8 @@ description: our publications
             <img class="col one right" src="{{ publication.img }}">
     {% endif %}     
         <h4><a class="person-title" href="{{ publication.url | prepend: site.baseurl }}">{{ publication.title }}</a></h4>
-        <p class="post-meta">{{ publication.date | date: '%B %-d, %Y — %H:%M' }}</p>
-            <p>{{ publication.description }}</p>
+        <p class="pub-meta">{{ publication.date | date: '%Y' }}, {{publication.journal }}</p>
+            <p class="post-meta">{{ publication.description }}</p>
       </li>
 {% endfor %}
 </ul>

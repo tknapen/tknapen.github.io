@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Negligible fronto-parietal BOLD activity accompanying unreportable switches in bistable perception
-description: Nature Neuroscience - fMRI of Bistable Perception
+description: fMRI of Bistable Perception
 date:   2015-10-05 18:00:00
 img: /img/publications/bistable_brain.png
+journal: Nature Neuroscience
 ---
 
 "<a href="http://www.nature.com/neuro/journal/vaop/ncurrent/full/nn.4130.html" target="_blank" alt="Negligible fronto-parietal BOLD activity accompanying unreportable switches in bistable perception" >Negligible fronto-parietal BOLD activity accompanying unreportable switches in bistable perception</a>". 

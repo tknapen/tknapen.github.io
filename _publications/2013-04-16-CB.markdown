@@ -3,6 +3,7 @@ layout: post
 title: GABA Shapes the Dynamics of Bistable Perception.
 description: Current Biology - Visual GABA determines Bistable Perception
 date:   2013-04-16 12:00:00
+journal: Current Biology
 ---
 
 "<a href="http://www.sciencedirect.com/science/article/pii/S0960982213003692" target="_blank" alt="GABA Shapes the Dynamics of Bistable Perception." >GABA Shapes the Dynamics of Bistable Perception.</a>"

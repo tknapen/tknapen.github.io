@@ -2,6 +2,7 @@
 layout: post
 title: Dynamic modulation of decision biases by brainstem arousal systems
 date:   2017-04-10 12:00:00
+journal: eLife
 ---
 
 "<a href="https://elifesciences.org/content/6/e23232" target="_blank" alt="Dynamic modulation of decision biases by brainstem arousal systems." >Dynamic modulation of decision biases by brainstem arousal systems.</a>". 

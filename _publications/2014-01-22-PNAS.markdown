@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Decision-related pupil dilation reflects upcoming choice and individual bias.
-description: PNAS - Pupil reflects decision making
+description: Pupil reflects decision making
 date:   2014-01-22 12:00:00
+journal: Proceedings of the National Academy of Sciences
 ---
 
 "<a href="http://www.pnas.org/content/111/5/E618.abstract" target="_blank" alt="Decision-related pupil dilation reflects upcoming choice and individual bias." >Decision-related pupil dilation reflects upcoming choice and individual bias.</a>". 

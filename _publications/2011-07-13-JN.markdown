@@ -1,8 +1,9 @@
 ---
 layout: post
 title: The Role of Frontal and Parietal Brain Areas in Bistable Perception.
-description: Journal of Neuroscience - fMRI of Bistable Perception
+description: fMRI of Bistable Perception
 date:   2011-07-13 18:00:00
+journal: Journal of Neuroscience
 ---
 
 "<a href="http://www.jneurosci.org/cgi/doi/10.1523/JNEUROSCI.1727-11.2011" target="_blank" alt="The Role of Frontal and Parietal Brain Areas in Bistable Perception" >The Role of Frontal and Parietal Brain Areas in Bistable Perception</a>". 

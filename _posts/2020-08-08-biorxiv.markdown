@@ -3,6 +3,7 @@ layout: post
 title: Preprint on the visual organization of DMN and Hippocampus online!
 description: Using topographic connectivity mapping, we show that hippocampus is visually organized.
 date: 2020-08-08 12:00:00
+journal: Biorxiv Preprint
 ---
 
 "<a href="https://www.biorxiv.org/content/10.1101/2020.07.30.228403v1" target="_blank" alt="Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain" >Topographic connectivity reveals task-dependent retinotopic processing throughout the human brain</a>".

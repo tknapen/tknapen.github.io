@@ -2,6 +2,7 @@
 layout: post
 title: Implicit and explicit learning in reactive and voluntary saccade adaptation
 date:   2019-01-16 12:00:00
+journal: PLoS ONE
 ---
 
 "<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0203248" target="_blank" alt="Implicit and explicit learning in reactive and voluntary saccade adaptation" >Implicit and explicit learning in reactive and voluntary saccade adaptation</a>". 

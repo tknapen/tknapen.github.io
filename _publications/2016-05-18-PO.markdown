@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Cognitive and ocular factors jointly determine pupil responses under equiluminance
-description: PLoS ONE - Cognitive and non-cognitive pupil size signals
+description: Cognitive and non-cognitive pupil size signals
 date:   2016-05-18 16:00:00
+journal: PLoS ONE
 ---
 
 "<a href="http://dx.doi.org/10.1371/journal.pone.0155574" target="_blank" alt="Cognitive and ocular factors jointly determine pupil responses under equiluminance" >Cognitive and ocular factors jointly determine pupil responses under equiluminance</a>". 

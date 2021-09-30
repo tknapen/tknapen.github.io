@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Oculomotor remapping of visual information to foveal retinotopic cortex
-description: Frontiers in Systems Neuroscience - fMRI of oculomotor remapping signals
+description: fMRI of oculomotor remapping signals
 date:   2016-06-16 12:00:00
+journal: Frontiers in Systems Neuroscience
 ---
 
 "<a href="http://journal.frontiersin.org/article/10.3389/fnsys.2016.00054/full" target="_blank" alt="Oculomotor remapping of visual information to foveal retinotopic cortex." >Oculomotor remapping of visual information to foveal retinotopic cortex.</a>". 

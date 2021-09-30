@@ -222,6 +222,13 @@
     top: -5%;
 }
 
+.pub-meta {
+    font-size: $base-font-size;
+    color: $grey-color;
+    margin-bottom: 0px;
+    font-style: italic, bold;
+}
+
 /** Poem formatting ********************************************/
 .poem-title {
     font-size: 20px;
@@ -250,40 +257,43 @@
 }
 
 .project {
-    // width: 33.33%;
-    height: 250px;
+    width: 45%;
+    height:240px;
     float: left;
     vertical-align: middle;
     box-sizing: border-box;
-    // padding: 10px;
+    padding: 10px;
+    margin: 15px;
 }
 
 .app {
     display: grid;
-    grid-gap: 15px; 
+    grid-gap: 5px; 
     overflow: hidden;
   /*   grid-template-columns: repeat(auto-fill, 200px); */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /*   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) 150px); */
-    grid-auto-flow: dense;
+    // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) 150px); 
+    // grid-auto-flow: dense;
   }
 
-  .project:nth-of-type(2n) {
-    grid-column: span 2;  
-  }
+//   .project:nth-of-type(2n) {
+//     grid-column: span 2;  
+//   }
   
-  .project:nth-of-type(3n) {
-    grid-row: span 2;  
-  }
+//   .project:nth-of-type(3n) {
+//     grid-row: span 2;  
+//   }
 
 .person {
-    width: 50%;
+    width: 45%;
     height: 250px;
     float: left;
     vertical-align: middle;
     box-sizing: border-box;
     padding: 10px;
     background-color: #fff;
+    border-radius: 25px;
+    margin: 15px;
 }
 
 .thumbnail {
@@ -291,14 +301,19 @@
     height: 230px;
     overflow: hidden;
     box-shadow: 7px 7px 4px grey;
+    padding: 10px;
+    border-radius: 25px;
+    opacity: 90%;
+    background-color: rgb(49, 49, 49);
 }
 
 .thumbnailperson {
-    width: 50%;
+    // width: 50%;
     height: 250px;
     overflow: hidden;
-    background-color: #fff;
-    opacity: 80%;
+    background-color: rgb(230, 230, 230);
+    opacity: 90%;
+    border-radius: 25px;
 }
 
 .thumbnail img {
@@ -308,6 +323,8 @@
     left: -5%;
     top: -5%;
     object-fit: cover;
+    background: rgba(99, 82, 82, 0.4);
+    float: left;
 }
 
 .thumbnail a {
@@ -324,7 +341,6 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(99, 82, 82, 0.4);
     color: $grey-color-light;
     padding: 40px;
     text-align: center;
@@ -374,7 +390,7 @@
     background: transparent;
   }
   .slides > div {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     flex-shrink: 0;
     width: 500px;
     height: 250px;
@@ -385,17 +401,43 @@
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
+    background-color: rgba(49, 49, 49, 0.5);
     
     display: flex;
     justify-content: center;
     align-items: center;
     // font-size: 100px;
     box-shadow: 7px 7px 4px grey;
+    transform: translate3d(0, 0, 0);
+    // animation: slideshow 10s linear infinite;
   }
   .slides > div:target {
   /*   transform: scale(0.8); */
   }
 
+// @keyframes moveslide {
+// 100% { 
+//     transform: translateX(-66.6666%);  
+// }
+// }
+
+// @keyframes slideshow {
+//     0%    { left: 0; }
+//     100%  { left: -200%; }
+// }
+
+h2.slide {
+    font-size: 28px;
+    color: black;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+}
+
+h3.slide {
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    font-weight: 400;
+}
 
 /** 
  * Portfolio pages **********************************************************
@@ -423,6 +465,12 @@
 
 .right {
     float: right;
+    padding-left: 10px;
+}
+
+.left {
+    float: left;
+    padding-right: 10px;
 }
 
 .half {
@@ -432,10 +480,12 @@
 .one {
     width: 33.33%;
     box-shadow: 7px 7px 4px grey;
+    margin: 15px;
 }
 
 .two {
     width: 66.66%;
+    margin: 15px;
 }
 
 .three {

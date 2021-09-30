@@ -2,6 +2,7 @@
 layout: post
 title: Individual differences in eye blink rate predict both transient and tonic pupil responses during reversal learning
 date:   2017-10-01 12:00:00
+journal: PLoS ONE
 ---
 
 "<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185665" target="_blank" alt="Individual differences in eye blink rate predict both transient and tonic pupil responses during reversal learning." >Individual differences in eye blink rate predict both transient and tonic pupil responses during reversal learning.</a>". 

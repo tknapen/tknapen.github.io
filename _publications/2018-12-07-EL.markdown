@@ -2,6 +2,7 @@
 layout: post
 title: Spatial sampling in human visual cortex is modulated by both spatial and feature-based attention
 date:   2018-12-07 12:00:00
+journal: eLife
 ---
 
 "<a href="https://elifesciences.org/articles/36928" target="_blank" alt="Spatial sampling in human visual cortex is modulated by both spatial and feature-based attention" >Spatial sampling in human visual cortex is modulated by both spatial and feature-based attention</a>". 

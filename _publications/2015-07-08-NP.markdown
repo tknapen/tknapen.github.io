@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Visual cortex activity predicts subjective experience after reading books with colored letters
-description: Neuropsychologia - Synesthesia in Visual Cortex
+description: Synesthesia in Visual Cortex
 date:   2015-07-08 12:00:00
+journal: Neuropsychologia
 ---
 
 "<a href="http://www.sciencedirect.com/science/article/pii/S0028393215300919" target="_blank" alt="Visual cortex activity predicts subjective experience after reading books with colored letters" >Visual cortex activity predicts subjective experience after reading books with colored letters</a>". 

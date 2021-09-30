@@ -2,6 +2,7 @@
 layout: post
 title: Learning in visual regions as support for the bias in future value-driven choice
 date:   2019-01-22 12:00:00
+journal: Biorxiv preprint
 ---
 
 "<a href="https://www.biorxiv.org/content/early/2019/01/21/523340" target="_blank" alt="Learning in visual regions as support for the bias in future value-driven choice" >Learning in visual regions as support for the bias in future value-driven choice</a>". 
