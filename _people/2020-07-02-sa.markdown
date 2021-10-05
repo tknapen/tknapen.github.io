@@ -6,6 +6,6 @@ description: PhD Student shared with Dumoulin Lab
 img: /img/prf/eccen_quadrant.png
 ---
 
-<img class="col one right" src="/img/people/sa.jpg">
+<img class="col one right" src="/img/people/sa.png">
 
 Sumiya is a PhD student on Serge Dumoulin's VICI project, where we investigate attentional influences on visual processing using pRF models. 
