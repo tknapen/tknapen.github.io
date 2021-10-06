@@ -76,12 +76,22 @@
     z-index: 25;
 
     h1 {
-        color: $theme-color;
+        color: rgb(0, 0, 0);
         font-size: 55px;
     }
 
     h2 {
+        color: rgb(0, 0, 0);
         font-size: 25px;
+        text-shadow: 1px 1px 6px rgb(255, 255, 255);
+    }
+
+
+    h3 {
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        line-height: 32px;
+        text-shadow: 1px 1px 6px rgb(255, 255, 255);
     }
 }
 
