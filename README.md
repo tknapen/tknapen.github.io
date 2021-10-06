@@ -31,3 +31,33 @@ git push
 ```
 
 and wrinse and repeat.
+
+## For creating movies that work in the webpage
+
+This assumes you have a bunch of .png files that are, for instance, screenshots of a brain viewer, and that next to the folder containing these .png files, there exist folders named _bg_ and _cropped_ for subsequent processing steps.
+
+```
+for s in *
+do
+convert -background "rgb(225,225,225)" -flatten ../cropped/$s ../bg/$s &
+done
+
+
+cd ../bg
+
+for s in *
+do
+convert -crop 800x600+560+200 $s ../cropped/$s &
+done
+
+```
+_________________________
+
+```
+cd ../cropped
+
+ffmpeg -y -framerate 30 -pattern_type glob -i "*.png" -b:v 4M -c:v libx264 -pix_fmt yuv420p -profile:v baseline ../rotate_avs.mp4
+ffmpeg -y -framerate 30 -pattern_type glob -i "*.png" -b:v 4M -c:v libtheora ../rotate_avs.ogv
+ffmpeg -y -framerate 30 -pattern_type glob -i "*.png" -b:v 4M -c:v libvpx-vp9 ../rotate_avs.webm
+```
+
