@@ -9,6 +9,8 @@ description: We publish our datasets & other stuff here.
 We are very much devoted to open science. All our analyses appear on GitHub, and here we provide access to our results. This can be in the form of interactive plots, and/or [pycortex-based](https://github.com/gallantlab/pycortex) brain viewers. 
 We will also link to [openneuro.org](https://openneuro.org) dataset which we put online.
 
+The first place to look for how-tos that detail how we work with data etc. is on the <a href="https://github.com/tknapen/tknapen.github.io/wiki" target="_blank">lab wiki</a>, where such documents live. 
+
 
 <ul class="post-list">
 {% for item in site.resources %}
