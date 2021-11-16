@@ -1,0 +1,20 @@
+---
+layout: post
+title: Divisive Normalization paper out in PNAS
+description: Our new Divisive Normalisation population Receptive Field model explains responses throughout visual cortex. 
+date: 2021-11-15 12:00:00
+journal: Proceedings of the National Academy of Sciences
+---
+
+"<a href="https://doi.org/10.1073/pnas.2108713118" target="_blank" alt="Divisive normalization unifies disparate response signatures throughout the human visual hierarchy" >Divisive normalization unifies disparate response signatures throughout the human visual hierarchy</a>".
+
+M Aqil, T Knapen, S Dumoulin
+
+
+***SIGNIFICANCE STATEMENT***
+
+A canonical neural computation is a mathematical operation applied by the brain in a wide variety of contexts and capable of explaining and unifying seemingly unrelated neural and perceptual phenomena. Here, we use a combination of state-of-the-art experiments (ultra-high-field functional MRI) and mathematical methods (population receptive field [pRF] modeling) to uniquely demonstrate the role of divisive normalization (DN) as the canonical neural computation underlying visuospatial responses throughout the human visual hierarchy. The DN pRF model provides a tool to investigate and interpret the computational processes underlying neural responses in human and animal recordings, but also in clinical and cognitive dimensions.
+
+**Abstract** Neural processing is hypothesized to apply the same mathematical operations in a variety of contexts, implementing so-called canonical neural computations. Divisive normalization (DN) is considered a prime candidate for a canonical computation. Here, we propose a population receptive field (pRF) model based on DN and evaluate it using ultra-high-field functional MRI (fMRI). The DN model parsimoniously captures seemingly disparate response signatures with a single computation, superseding existing pRF models in both performance and biological plausibility. We observe systematic variations in specific DN model parameters across the visual hierarchy and show how they relate to differences in response modulation and visuospatial information integration. The DN model delivers a unifying framework for visuospatial responses throughout the human visual hierarchy and provides insights into its underlying information-encoding computations. These findings extend the role of DN as a canonical computation to neuronal populations throughout the human visual hierarchy.
+
+
