@@ -1,0 +1,22 @@
+---
+layout: post
+title: Visuospatial coding as ubiquitous scaffolding for human cognition
+description: Review on how the brain uses visual code as a fundamental coding mechanism
+date: 2021-11-16 12:00:00
+journal: Trends in Cognitive Sciences
+---
+
+"<a href="https://doi.org/10.1016/j.tics.2021.10.011" target="_blank" alt="Visuospatial coding as ubiquitous scaffolding for human cognition" >Visuospatial coding as ubiquitous scaffolding for human cognition</a>".
+
+I Groen, T Dekker, T Knapen, E Silson
+
+
+***Highlights***
+
+- Visuospatial coding in the brain comes in at least two forms: retinotopic maps and visual field biases. Visuospatial coding is not restricted to early visual cortex but extends throughout the brain.
+- Evidence for visuospatial coding is present across a broad array of functionally disparate systems beyond visual cortex including the cerebellum, hippocampus, frontal eye fields, and the default mode network.
+- Category-selective regions of visual cortex often spatially overlap multiple retinotopic maps, and exhibit biases for visual field locations typically containing their preferred stimulus.
+- Visuospatial coding is present prior to the emergence of category selectivity and offers a plausible explanation for why such regions emerge where they do in cortex. Visual location tuning of these regions changes throughout development and correlates with changes in viewing behaviour.
+- The ubiquity of visuospatial coding suggests that the brain does not ‘throw away’ this frame of reference but instead holds onto it to scaffold human cognition in a common framework.
+
+**Abstract** For more than 100 years we have known that the visual field is mapped onto the surface of visual cortex, imposing an inherently spatial reference frame on visual information processing. Recent studies highlight visuospatial coding not only throughout visual cortex, but also brain areas not typically considered visual. Such widespread access to visuospatial coding raises important questions about its role in wider cognitive functioning. Here, we synthesise these recent developments and propose that visuospatial coding scaffolds human cognition by providing a reference frame through which neural computations interface with environmental statistics and task demands via perception–action loops.
