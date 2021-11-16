@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visuospatial coding as ubiquitous scaffolding for human cognition
+title: TiCS review on visuospatial coding out!
 description: Review on how the brain uses visual code as a fundamental coding mechanism
 date: 2021-11-16 12:00:00
 journal: Trends in Cognitive Sciences

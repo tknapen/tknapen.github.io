@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Divisive Normalization paper out in PNAS
+title: Divisive normalization unifies disparate response signatures throughout the human visual hierarchy
 description: Our new Divisive Normalisation population Receptive Field model explains responses throughout visual cortex. 
 date: 2021-11-15 12:00:00
 journal: Proceedings of the National Academy of Sciences
