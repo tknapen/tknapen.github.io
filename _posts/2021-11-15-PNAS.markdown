@@ -10,7 +10,6 @@ journal: Proceedings of the National Academy of Sciences
 
 M Aqil, T Knapen, S Dumoulin
 
-
 ***SIGNIFICANCE STATEMENT***
 
 A canonical neural computation is a mathematical operation applied by the brain in a wide variety of contexts and capable of explaining and unifying seemingly unrelated neural and perceptual phenomena. Here, we use a combination of state-of-the-art experiments (ultra-high-field functional MRI) and mathematical methods (population receptive field [pRF] modeling) to uniquely demonstrate the role of divisive normalization (DN) as the canonical neural computation underlying visuospatial responses throughout the human visual hierarchy. The DN pRF model provides a tool to investigate and interpret the computational processes underlying neural responses in human and animal recordings, but also in clinical and cognitive dimensions.

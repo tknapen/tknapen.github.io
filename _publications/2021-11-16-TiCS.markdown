@@ -10,7 +10,6 @@ journal: Trends in Cognitive Sciences
 
 I Groen, T Dekker, T Knapen, E Silson
 
-
 ***Highlights***
 
 - Visuospatial coding in the brain comes in at least two forms: retinotopic maps and visual field biases. Visuospatial coding is not restricted to early visual cortex but extends throughout the brain.
