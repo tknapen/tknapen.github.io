@@ -10,7 +10,9 @@ description: Basic rules for coding, best practices
 
 Python is a beautiful programming language precisely because it emphasises **readability**. 
 
-Besides being pythonic in our coding, we want to code not as if we're coding to make our program run(!). But: **the way we write code should be intended for someone less skilled than us to be able to read it, in two years time.** 
+Besides being pythonic in our coding, we want to code not as if we're coding to make our program run(!). But: 
+
+**The way we write code should be intended for someone less skilled than us to be able to read it, in two years time.** 
 
 It's likely that this person will be one of your colleagues, it could be someone somewhere on the other side of the world, but most likely it is going to be your future self with a hangover. The motto is: **have mercy on your future self**. Any shortcuts you take now are going to mean hours of work when you have to revisit the code. And revisit the code you will - research isn't called **re**-search for nothing!
 
@@ -47,7 +49,7 @@ Make sure you understand what is meant by each of these lines in the [Zen of Pyt
 
 - never hardcode any numbers in your code. Values used in an analysis should propagate from function arguments and/or come from a .yml file containing the settings of your analysis or experiment.
 - use [pep8](https://pep8.org). no discussion.
-- the names of variables, classes, and functions/methods should be descriptive. The reader should immediately understand what your code does. 
+- the names of variables, classes, and functions/methods should be descriptive, unambiguous, and correct. The reader should immediately understand what your code does from the name's implications as to types of inputs, outputs, etc. 
 - always use docstrings, following [pep257](https://www.python.org/dev/peps/pep-0257/). Keep them up to date. 
 - use git, preferably in a [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)-type setup
 - .....
