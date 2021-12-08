@@ -8,11 +8,11 @@ description: Basic rules for coding, best practices
 
 ## Python
 
-Python is a beautiful programming language precisely because it emphasises ***readability***. 
+Python is a beautiful programming language precisely because it emphasises **readability**. 
 
-Besides being pythonic in our coding, we want to code not as if we're coding to make our program run(!). But: ***the way we write code should be intended for someone less skilled than us to be able to read it, in two years time.*** 
+Besides being pythonic in our coding, we want to code not as if we're coding to make our program run(!). But: **the way we write code should be intended for someone less skilled than us to be able to read it, in two years time.** 
 
-It's likely that this person will be one of your colleagues, it could be someone somewhere on the other side of the world, but most likely it is going to be your future self with a hangover. The motto is: ***have mercy on your future self***. Any shortcuts you take now are going to mean hours of work when you have to revisit the code. And revisit the code you will - research isn't called ***re***-search for nothing!
+It's likely that this person will be one of your colleagues, it could be someone somewhere on the other side of the world, but most likely it is going to be your future self with a hangover. The motto is: **have mercy on your future self**. Any shortcuts you take now are going to mean hours of work when you have to revisit the code. And revisit the code you will - research isn't called **re**-search for nothing!
 
 
 First step: do ```import this```
