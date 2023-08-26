@@ -1,0 +1,13 @@
+---
+layout: page
+title: Robert Satzger
+date: 2023-08-25 07:59:00
+description: Research Intern
+img: /img/publications/bistable_brain.png
+---
+
+<img class="col one right" src="/img/people/rs.jpg">
+
+Robert is doing a research internship as part of the Cognitive Science track within the MSc Artificial Intelligence at the VU.
+
+He is investigating how the brain generates predictions of visual features.
