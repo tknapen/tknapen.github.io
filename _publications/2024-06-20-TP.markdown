@@ -1,0 +1,11 @@
+---
+layout: post
+title: Quantitative MRI at 7-Tesla reveals novel frontocortical myeloarchitecture anomalies in major depressive disorder
+description: Quantitative 7T MRI findings on frontocortical myeloarchitecture in depression.
+date: 2024-06-20 12:00:00
+journal: Translational Psychiatry
+---
+
+"<a href="https://doi.org/10.1038/s41398-024-02976-y" target="_blank" alt="Quantitative MRI at 7-Tesla reveals novel frontocortical myeloarchitecture anomalies in major depressive disorder" >Quantitative MRI at 7-Tesla reveals novel frontocortical myeloarchitecture anomalies in major depressive disorder</a>".
+
+Jurjen Heij, Wietske van der Zwaag, Tomas Knapen, Matthan W.A. Caan, Birte Forstman, Dick J. Veltman, Guido van Wingen, Moji Aghajani

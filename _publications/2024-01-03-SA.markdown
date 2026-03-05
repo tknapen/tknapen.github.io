@@ -1,0 +1,11 @@
+---
+layout: post
+title: Computational model links normalization to chemoarchitecture in the human visual system
+description: Linking divisive normalization to chemoarchitecture in visual cortex.
+date: 2024-01-03 12:00:00
+journal: Science Advances
+---
+
+"<a href="https://doi.org/10.1126/sciadv.adj6102" target="_blank" alt="Computational model links normalization to chemoarchitecture in the human visual system" >Computational model links normalization to chemoarchitecture in the human visual system</a>".
+
+Marco Aqil, Tomas Knapen, Serge O. Dumoulin

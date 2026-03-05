@@ -1,0 +1,11 @@
+---
+layout: post
+title: What makes a theory of consciousness unscientific?
+description: Perspective on scientific standards for theories of consciousness.
+date: 2025-03-10 12:00:00
+journal: Nature Neuroscience
+---
+
+"<a href="https://doi.org/10.1038/s41593-025-01881-x" target="_blank" alt="What makes a theory of consciousness unscientific?" >What makes a theory of consciousness unscientific?</a>".
+
+Michal Klincewicz et al. (including Tomas Knapen)

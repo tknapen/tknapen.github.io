@@ -1,0 +1,11 @@
+---
+layout: post
+title: Visual Working Memory Adapts to the Nature of Anticipated Interference
+description: Visual working memory adapts to expected distraction.
+date: 2022-01-01 12:00:00
+journal: Journal of Cognitive Neuroscience
+---
+
+"<a href="https://doi.org/10.1162/jocn_a_01853" target="_blank" alt="Visual Working Memory Adapts to the Nature of Anticipated Interference" >Visual Working Memory Adapts to the Nature of Anticipated Interference</a>".
+
+Benchi Wang, Tomas Knapen, Christian N. L. Olivers

@@ -1,0 +1,11 @@
+---
+layout: post
+title: A selection and targeting framework of cortical locations for line-scanning fMRI
+description: Framework to select and target cortical locations for line-scanning fMRI.
+date: 2023-08-22 12:00:00
+journal: Human Brain Mapping
+---
+
+"<a href="https://doi.org/10.1002/hbm.26459" target="_blank" alt="A selection and targeting framework of cortical locations for line-scanning fMRI" >A selection and targeting framework of cortical locations for line-scanning fMRI</a>".
+
+Jurjen Heij, Luisa Raimondo, Jeroen C.W. Siero, Serge O. Dumoulin, Wietske van der Zwaag, Tomas Knapen

@@ -1,0 +1,11 @@
+---
+layout: post
+title: Vicarious body maps bridge vision and touch in the human brain
+description: Vicarious body maps link visual and tactile processing in human cortex.
+date: 2025-11-26 12:00:00
+journal: Nature
+---
+
+"<a href="https://doi.org/10.1038/s41586-025-09796-0" target="_blank" alt="Vicarious body maps bridge vision and touch in the human brain" >Vicarious body maps bridge vision and touch in the human brain</a>".
+
+Nicholas Hedger, Thomas Naselaris, Kendrick Kay, Tomas Knapen

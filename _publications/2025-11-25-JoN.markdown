@@ -1,0 +1,11 @@
+---
+layout: post
+title: Task-Dependent Visual Topographic Connectivity in the Human Cerebellum
+description: Task-dependent topographic connectivity of visual representations in cerebellum.
+date: 2025-11-25 12:00:00
+journal: Journal of Neuroscience
+---
+
+"<a href="https://doi.org/10.1523/jneurosci.1370-23.2025" target="_blank" alt="Task-Dependent Visual Topographic Connectivity in the Human Cerebellum" >Task-Dependent Visual Topographic Connectivity in the Human Cerebellum</a>".
+
+Wietske Zuiderbaan, Wietske van der Zwaag, Tomas Knapen

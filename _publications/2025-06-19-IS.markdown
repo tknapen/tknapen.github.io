@@ -1,0 +1,11 @@
+---
+layout: post
+title: Contextual responses drive a unique laminar signature in human V1
+description: Contextual responses produce a distinct laminar signature in human V1.
+date: 2025-06-19 12:00:00
+journal: iScience
+---
+
+"<a href="https://doi.org/10.1016/j.isci.2025.112967" target="_blank" alt="Contextual responses drive a unique laminar signature in human V1" >Contextual responses drive a unique laminar signature in human V1</a>".
+
+Jurjen Heij, Luisa Raimondo, Jeroen C.W. Siero, Wietske van der Zwaag, Tomas Knapen, Serge O. Dumoulin

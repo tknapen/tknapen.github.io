@@ -1,0 +1,11 @@
+---
+layout: post
+title: Principles of intensive human neuroimaging
+description: Review of design principles for intensive human neuroimaging studies.
+date: 2024-10-24 12:00:00
+journal: Trends in Neurosciences
+---
+
+"<a href="https://doi.org/10.1016/j.tins.2024.09.011" target="_blank" alt="Principles of intensive human neuroimaging" >Principles of intensive human neuroimaging</a>".
+
+Soazig Guyomarc'h, Tomas Knapen, Elisha P. Merriam, Kendrick Kay

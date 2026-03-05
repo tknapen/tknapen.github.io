@@ -1,0 +1,11 @@
+---
+layout: post
+title: Does the Cortical-Depth Dependence of the Hemodynamic Response Function Differ Between Age Groups?
+description: Cortical-depth dependence of the hemodynamic response across age groups.
+date: 2025-02-28 12:00:00
+journal: Brain Topography
+---
+
+"<a href="https://doi.org/10.1007/s10548-025-01107-0" target="_blank" alt="Does the Cortical-Depth Dependence of the Hemodynamic Response Function Differ Between Age Groups?" >Does the Cortical-Depth Dependence of the Hemodynamic Response Function Differ Between Age Groups?</a>".
+
+Luisa Raimondo, Jurjen Heij, Tomas Knapen, Jeroen C.W. Siero, Wietske van der Zwaag, Serge O. Dumoulin

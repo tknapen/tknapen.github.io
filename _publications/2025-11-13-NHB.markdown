@@ -1,0 +1,11 @@
+---
+layout: post
+title: Mesoscale cortical mechanisms of perceptual conflict resolution in binocular rivalry
+description: Mesoscale mechanisms of perceptual conflict resolution in binocular rivalry.
+date: 2025-11-13 12:00:00
+journal: Nature Human Behaviour
+---
+
+"<a href="https://doi.org/10.1038/s41562-025-02320-4" target="_blank" alt="Mesoscale cortical mechanisms of perceptual conflict resolution in binocular rivalry" >Mesoscale cortical mechanisms of perceptual conflict resolution in binocular rivalry</a>".
+
+Chencan Qian, Zihao Zhang, Zhiqiang Chen, Gilles de Hollander, Tomas Knapen, Sheng He, Peng Zhang

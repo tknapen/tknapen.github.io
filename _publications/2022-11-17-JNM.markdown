@@ -1,0 +1,11 @@
+---
+layout: post
+title: Robust high spatio-temporal line-scanning fMRI in humans at 7T using multi-echo readouts, denoising and prospective motion correction
+description: Methods for robust high spatio-temporal line-scanning fMRI at 7T.
+date: 2022-11-17 12:00:00
+journal: Journal of Neuroscience Methods
+---
+
+"<a href="https://doi.org/10.1016/j.jneumeth.2022.109746" target="_blank" alt="Robust high spatio-temporal line-scanning fMRI in humans at 7T using multi-echo readouts, denoising and prospective motion correction" >Robust high spatio-temporal line-scanning fMRI in humans at 7T using multi-echo readouts, denoising and prospective motion correction</a>".
+
+Luisa Raimondo, Nikos Priovoulos, Catarina Passarinho, Jurjen Heij, Tomas Knapen, Serge O. Dumoulin, Jeroen C.W. Siero, Wietske van der Zwaag

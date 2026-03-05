@@ -1,0 +1,11 @@
+---
+layout: post
+title: Towards functional spin-echo BOLD line-scanning in humans at 7T
+description: Functional spin-echo BOLD line-scanning implementation in humans at 7T.
+date: 2023-01-10 12:00:00
+journal: Magnetic Resonance Materials in Physics Biology and Medicine
+---
+
+"<a href="https://doi.org/10.1007/s10334-022-01059-7" target="_blank" alt="Towards functional spin-echo BOLD line-scanning in humans at 7T" >Towards functional spin-echo BOLD line-scanning in humans at 7T</a>".
+
+Luisa Raimondo, Jurjen Heij, Tomas Knapen, Serge O. Dumoulin, Wietske van der Zwaag, Jeroen C.W. Siero

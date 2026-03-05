@@ -1,0 +1,11 @@
+---
+layout: post
+title: Psilocybin alters visual contextual computations
+description: Effects of psilocybin on contextual computations in visual processing.
+date: 2025-11-21 12:00:00
+journal: Nature Communications
+---
+
+"<a href="https://doi.org/10.1038/s41467-025-65150-y" target="_blank" alt="Psilocybin alters visual contextual computations" >Psilocybin alters visual contextual computations</a>".
+
+Marco Aqil, Gilles de Hollander, Nina Vreugdenhil, Tomas Knapen, Serge O. Dumoulin
