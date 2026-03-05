@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mesoscale cortical mechanisms of perceptual conflict resolution in binocular rivalry
+title: Nature Human Behaviour paper on binocular rivalry published
 description: Mesoscale mechanisms of perceptual conflict resolution in binocular rivalry.
 date: 2025-11-13 12:00:00
 journal: Nature Human Behaviour

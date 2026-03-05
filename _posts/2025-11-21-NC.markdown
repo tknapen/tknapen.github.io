@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Psilocybin alters visual contextual computations
+title: Nature Communications paper on psilocybin and visual context published
 description: Effects of psilocybin on contextual computations in visual processing.
 date: 2025-11-21 12:00:00
 journal: Nature Communications

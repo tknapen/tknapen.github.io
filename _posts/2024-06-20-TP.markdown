@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quantitative MRI at 7-Tesla reveals novel frontocortical myeloarchitecture anomalies in major depressive disorder
+title: Translational Psychiatry paper on 7T myeloarchitecture published
 description: Quantitative 7T MRI findings on frontocortical myeloarchitecture in depression.
 date: 2024-06-20 12:00:00
 journal: Translational Psychiatry

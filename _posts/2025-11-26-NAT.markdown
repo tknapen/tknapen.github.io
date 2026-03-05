@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vicarious body maps bridge vision and touch in the human brain
+title: Nature paper on vicarious body maps published
 description: Vicarious body maps link visual and tactile processing in human cortex.
 date: 2025-11-26 12:00:00
 journal: Nature
