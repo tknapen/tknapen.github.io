@@ -9,3 +9,5 @@ journal: Nature Communications
 "<a href="https://doi.org/10.1038/s41467-025-65150-y" target="_blank" alt="Psilocybin alters visual contextual computations" >Psilocybin alters visual contextual computations</a>".
 
 Marco Aqil, Gilles de Hollander, Nina Vreugdenhil, Tomas Knapen, Serge O. Dumoulin
+
+**Abstract** Psilocybin alters perception and brain dynamics. Here we combined psychophysics, ultra-high-field fMRI, and computational modeling to test its effects on contextual computations. We found that psilocybin alters contextual perception in the Ebbinghaus illusion, alters contextual modulation in cortical responses to visual stimuli, and is captured by a computational model linking these effects. These findings suggest altered contextual computation as a potential general mechanism underlying psychedelic action.

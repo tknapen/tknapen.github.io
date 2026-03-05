@@ -9,3 +9,5 @@ journal: Trends in Neurosciences
 "<a href="https://doi.org/10.1016/j.tins.2024.09.011" target="_blank" alt="Principles of intensive human neuroimaging" >Principles of intensive human neuroimaging</a>".
 
 Soazig Guyomarc'h, Tomas Knapen, Elisha P. Merriam, Kendrick Kay
+
+**Abstract** The rise of large, publicly shared functional magnetic resonance imaging (fMRI) data sets in human neuroscience has focused on acquiring either a few hours of data on many individuals (wide fMRI) or many hours of data on a few individuals (deep fMRI). In this opinion article, we highlight an emerging approach within deep fMRI, which we refer to as intensive fMRI: one that strives for extensive sampling of cognitive phenomena to support computational modeling and detailed investigation of brain function at the single-voxel level. We discuss the fundamental principles, trade-offs, and practical considerations of intensive fMRI. We also emphasize that intensive fMRI does not simply mean collecting more data: it requires careful design of experiments to enable a rich hypothesis space, optimizing data quality, and strategically curating public resources to maximize community impact.
