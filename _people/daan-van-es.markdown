@@ -9,6 +9,8 @@ now: "Industry"
 pubname: "van Es DM"
 themes: [topographic-maps, perception-awareness]
 description: "Mapped visual space in the human cerebellum and studied how attention changes the sampling of visual space in visual cortex."
+links:
+  github: https://github.com/daanvanes
 ---
 Daan van Es worked in the lab on how the brain maps visual space. In the Human Connectome Project retinotopy data he found five ipsilateral visual field maps in three clusters of the human cerebellum, and released an atlas of them ([van Es et al., 2019](/publications/2019-05-20-CB/)).
 
