@@ -1,63 +1,130 @@
-# Knapen lab website
+# Knapen Lab website
 
-Based on the folio theme.
+Source of https://tknapen.github.io. GitHub Pages builds the site from the `master` branch with Jekyll; anything merged into `master` is live within a few minutes.
 
+Most changes are one file: add a markdown file to the right folder and open a pull request. The sections below give a template for each kind of content.
 
-## Environment
+## Preview locally
 
-This is a jekyll website, so when working on changes you can 'host' the website on your own computer by installing and running jekyll. See instructions [here](https://jekyllrb.com)
-
-
-## To Edit:
-
-To work on the webpage: checkout the 'content' branch when you want to edit things. This 'content' branch is the development branch of the website. Change stuff there, and only when you git merge content while in master, will the changes affect the website after a push.
-
-So, that is:
-
-```git
-
-git checkout content 
-
-make your changes
-
-git add .
-git commit -am 'a message saying what I just changed'
-
-git checkout master
-git merge content
-
-git push
-
+```bash
+bundle install
 ```
 
-and wrinse and repeat.
-
-## For creating movies that work in the webpage
-
-This assumes you have a bunch of .png files that are, for instance, screenshots of a brain viewer, and that next to the folder containing these .png files, there exist folders named _bg_ and _cropped_ for subsequent processing steps.
-
-```
-for s in *
-do
-convert -background "rgb(225,225,225)" -flatten ../cropped/$s ../bg/$s &
-done
-
-
-cd ../bg
-
-for s in *
-do
-convert -crop 800x600+560+200 $s ../cropped/$s &
-done
-
-```
-_________________________
-
-```
-cd ../cropped
-
-ffmpeg -y -framerate 30 -pattern_type glob -i "*.png" -b:v 4M -c:v libx264 -pix_fmt yuv420p -profile:v baseline ../rotate_avs.mp4
-ffmpeg -y -framerate 30 -pattern_type glob -i "*.png" -b:v 4M -c:v libtheora ../rotate_avs.ogv
-ffmpeg -y -framerate 30 -pattern_type glob -i "*.png" -b:v 4M -c:v libvpx-vp9 ../rotate_avs.webm
+```bash
+bundle exec jekyll serve
 ```
 
+Then open http://localhost:4000. The `Gemfile` pins the same gem versions GitHub Pages uses, so what builds here builds there.
+
+## Where things live
+
+| What | Where | URL |
+|---|---|---|
+| Home page | `index.html` | `/` |
+| Research themes | `_research/<slug>.md` | `/research/<slug>/` |
+| Publications | `_publications/YYYY-MM-DD-<abbr>.markdown` | `/publications/<file>/` |
+| People | `_people/<name>.markdown` | `/people/<file>/` |
+| Software and datasets | `_data/software.yml` | `/software/` |
+| News | `_posts/YYYY-MM-DD-<name>.markdown` | `/YYYY/MM/DD/<name>.html` |
+| Lab handbook pages | `_resources/` | `/resources/<file>/` |
+| Lab-wide facts (affiliations, links, funders, dataset info) | `_data/lab.yml` | used on many pages |
+| Menu | `_data/navigation.yml` | |
+| Layouts, styles, scripts | `_layouts/`, `_includes/`, `assets/` | |
+
+Do not rename existing files in `_publications/`, `_people/` or `_posts/`: the filename is the URL, and other sites link to them. Images for papers go in `img/publications/`, portraits in `img/people/` (about 800 px on the long side is plenty). Leave `img/wiki/` alone: the lab wiki links to those files.
+
+## Add a publication
+
+Create `_publications/2026-03-01-JoN.markdown` (date of publication, short journal code):
+
+```yaml
+---
+title: "Exact title of the paper"
+date: 2026-03-01
+authors: [Lastname A, Knapen T]        # PubMed style, full list, in order
+journal: Journal of Neuroscience
+citation: "46(9), e1234252026"          # optional
+doi: 10.1523/JNEUROSCI.1234-25.2026
+pmid: "40000000"                        # optional
+type: article                           # article | review | perspective | preprint
+themes: [topographic-maps]              # 1-2 of: topographic-maps, precision-imaging, computational-models, perception-awareness
+selected: false                         # true puts it in "Selected work"
+img: /img/publications/my_figure.png    # optional
+description: "One sentence on what the paper shows."
+links:                                  # optional
+  preprint: https://www.biorxiv.org/content/...
+  code: https://github.com/...
+  data: https://openneuro.org/datasets/...
+---
+Abstract text.
+```
+
+Lab members' names are printed in bold automatically when they match an entry in `lab_authors` in `_data/lab.yml`. When a preprint is published, update its file (journal, DOI, `type: article`) rather than adding a second one.
+
+## Add or update a person
+
+Create `_people/firstname-lastname.markdown`:
+
+```yaml
+---
+title: Firstname Lastname
+role: PhD student
+status: current                 # pi | current | alumni
+order: 2026                     # sort key, usually the start year
+start: 2026
+end:                            # year of leaving, for alumni
+now: ""                         # alumni: current position or institution
+photo: /img/people/fl.jpg       # optional; initials are shown without it
+pubname: "Lastname F"           # how PubMed writes the name; lists their papers on their page
+themes: [computational-models]
+description: "One line about their project."
+links: { email: , website: , scholar: , orcid: , github: , x: , bluesky: , linkedin: }
+---
+Short bio in the third person. Leave the body empty if there is none yet.
+```
+
+When someone leaves, change `status` to `alumni` and fill in `end` and `now`. Also add their `pubname` to `lab_authors` in `_data/lab.yml`.
+
+## Add news
+
+Create `_posts/2026-12-15-short-name.markdown`:
+
+```yaml
+---
+title: Short headline in sentence case
+date: 2026-12-15 12:00:00
+description: One sentence shown in lists.
+img: /img/posts/optional_image.png
+---
+Text of the news item.
+```
+
+For a vacancy, add `closed: true` once it is filled; the post then shows a notice.
+
+## Add software or a dataset
+
+Add an entry to `_data/software.yml`:
+
+```yaml
+- name: toolname
+  kind: software            # software | dataset
+  status: maintained        # maintained | in development | upcoming | available | archived
+  description: "One or two sentences."
+  url: https://github.com/VU-Cog-Sci/toolname
+  docs: https://toolname.readthedocs.io
+  paper: /publications/2026-03-01-JoN/
+  themes: [computational-models]
+  featured: false           # true shows it on the home page (keep to four)
+```
+
+## Checks
+
+A GitHub Actions workflow (`.github/workflows/check.yml`) builds the site with the GitHub Pages gem set and checks internal links and images on every pull request.
+
+## Lab wiki
+
+How-tos for data handling and analysis live in the [lab wiki](https://github.com/tknapen/tknapen.github.io/wiki).
+
+## Credits
+
+Fonts: Source Serif 4 and Inter, self-hosted, SIL Open Font License (see `assets/fonts/`).

@@ -1,0 +1,15 @@
+# Main menu, in display order
+- title: Research
+  url: /research/
+- title: Publications
+  url: /publications/
+- title: People
+  url: /people/
+- title: Software & data
+  url: /software/
+- title: Join
+  url: /join/
+- title: News
+  url: /news/
+- title: Contact
+  url: /contact/

@@ -1,0 +1,35 @@
+name: Check site
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    env:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+      JEKYLL_ENV: production
+      PAGES_REPO_NWO: ${{ github.repository }}
+      JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build with the GitHub Pages gem set
+        run: bundle exec jekyll build
+
+      - name: Check internal links and images
+        run: |
+          gem install html-proofer -v "~> 5.0" --no-document
+          htmlproofer ./_site --disable-external --allow-missing-href --no-enforce-https
