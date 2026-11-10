@@ -415,7 +415,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
   white-space: nowrap;
 }
 .badge-selected { border-color: rgba(29, 95, 134, 0.35); color: var(--accent); background: var(--accent-tint); }
-.badge-maintained, .badge-available { border-color: rgba(29, 95, 134, 0.35); color: var(--accent); background: var(--accent-tint); }
+.badge-maintained, .badge-available, .badge-beta { border-color: rgba(29, 95, 134, 0.35); color: var(--accent); background: var(--accent-tint); }
 .chips {
   list-style: none;
   padding: 0;
@@ -601,6 +601,24 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 .callout-release { color: var(--muted); font-size: 0.9375rem; margin: 0; }
 .callout .button-row { margin-top: 1.25rem; }
 .callout-media { margin: 0; }
+.callout-pair { display: grid; gap: 0 2rem; }
+@media (min-width: 1000px) {
+  .callout-pair { grid-template-columns: 1fr 1fr; align-items: stretch; }
+  .callout-pair > .home-section { display: flex; flex-direction: column; }
+  .callout-pair .callout { flex: 1; align-content: start; }
+}
+.callout-code, .sw-install {
+  margin: 0 0 1rem;
+  padding: 0.6rem 0.85rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  max-width: 42rem;
+}
+.sw-install { margin: 0.75rem 0 0; font-size: 0.8125rem; }
 
 .home-split { display: grid; gap: 0 3.5rem; }
 @media (min-width: 900px) { .home-split { grid-template-columns: 1.15fr 1fr; } }

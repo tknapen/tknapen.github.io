@@ -10,5 +10,7 @@ now: ""
 pubname: "van de Klundert R"
 themes: [computational-models]
 description: "PhD student who worked on brain-based encoding models."
+links:
+  github: https://github.com/RonvdKlundert
 ---
 Ron van de Klundert joined the lab as a PhD student in September 2021, after a master's in cognitive sciences at the University of Amsterdam. His PhD project was on brain-based encoding models.

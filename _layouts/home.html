@@ -79,8 +79,31 @@ layout: default
 </section>
 {%- endif %}
 
+<div class="wrap callout-pair">
+{%- if lab.popylar %}
+<section class="home-section" aria-labelledby="h-popylar">
+  <div class="callout">
+    <div class="callout-text">
+      <h2 id="h-popylar">{{ lab.popylar.heading }}</h2>
+      <p>{{ lab.popylar.summary }}</p>
+      {%- if lab.popylar.install %}
+      <pre class="callout-code"><code>{{ lab.popylar.install }}</code></pre>
+      {%- endif %}
+      {%- if lab.popylar.note %}
+      <p class="callout-release">{{ lab.popylar.note }}{% if lab.popylar.post %} <a href="{{ lab.popylar.post | relative_url }}">About the workshop</a>.{% endif %}</p>
+      {%- endif %}
+      <ul class="button-row">
+        {%- if lab.popylar.docs %}<li><a class="button" href="{{ lab.popylar.docs }}">Documentation<span class="visually-hidden"> for prfmodel</span></a></li>{% endif %}
+        {%- if lab.popylar.code %}<li><a class="button button-secondary" href="{{ lab.popylar.code }}">Code on GitHub</a></li>{% endif %}
+        {%- if lab.popylar.workshop %}<li><a class="button button-secondary" href="{{ lab.popylar.workshop }}">Workshop materials</a></li>{% endif %}
+      </ul>
+    </div>
+  </div>
+</section>
+{%- endif %}
+
 {%- if lab.aot %}
-<section class="wrap home-section" aria-labelledby="h-aot">
+<section class="home-section" aria-labelledby="h-aot">
   <div class="callout">
     <div class="callout-text">
       <h2 id="h-aot">Arrow of Time dataset</h2>
@@ -101,6 +124,7 @@ layout: default
   </div>
 </section>
 {%- endif %}
+</div>
 
 <div class="wrap home-split">
   <section class="home-section" aria-labelledby="h-news">
@@ -121,8 +145,8 @@ layout: default
     </ol>
   </section>
 
-  {%- comment -%} The Arrow of Time dataset has its own callout above, so it is left out of this list. {%- endcomment %}
-  {%- assign featured = site.data.software | where: "featured", true | where_exp: "s", "s.name != 'Arrow of Time'" %}
+  {%- comment -%} prfmodel and the Arrow of Time dataset have their own callouts above, so they are left out of this list. {%- endcomment %}
+  {%- assign featured = site.data.software | where: "featured", true | where_exp: "s", "s.name != 'Arrow of Time'" | where_exp: "s", "s.name != 'prfmodel (Popylar)'" %}
   <section class="home-section" aria-labelledby="h-software">
     <div class="section-head">
       <h2 id="h-software">Software &amp; data</h2>

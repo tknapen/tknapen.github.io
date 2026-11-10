@@ -23,10 +23,14 @@
   <p class="sw-desc">{{ s.description }}</p>
   {%- endif %}
   {%- unless include.compact %}
+  {%- if s.install and s.install != "" %}
+  <pre class="sw-install"><code>{{ s.install }}</code></pre>
+  {%- endif %}
   {%- capture sw_links -%}
     {%- if show_url %}<li><a href="{{ s.url | relative_url }}">{% if s.url contains "github.com" %}Code{% elsif s.url contains "://" %}{% if s.kind == "dataset" %}Data{% else %}Website{% endif %}{% else %}Read more{% endif %}<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
     {%- if s.docs and s.docs != "" %}<li><a href="{{ s.docs | relative_url }}">Documentation<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
     {%- if s.paper and s.paper != "" %}<li><a href="{{ s.paper | relative_url }}">Related paper<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
+    {%- for l in s.extra_links %}<li><a href="{{ l.url | relative_url }}">{{ l.label }}</a></li>{% endfor %}
     {%- if is_aot and aot.post and aot.post != "" %}<li><a href="{{ aot.post | relative_url }}">About the dataset</a></li>{% endif %}
     {%- if is_aot and aot.signup and aot.signup != "" %}<li><a href="{{ aot.signup }}">Get notified about the release</a></li>{% endif %}
   {%- endcapture -%}

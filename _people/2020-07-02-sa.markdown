@@ -10,6 +10,8 @@ now: ""
 pubname: "Sheikh Abdirashid S"
 themes: [computational-models, perception-awareness]
 description: "PhD student who used pRF models to study how attention changes visual processing."
+links:
+  github: https://github.com/sumiyaabdi
 ---
 Sumiya Sheikh Abdirashid was a PhD student on Serge Dumoulin's VICI project, shared between the Dumoulin lab and ours. Her project used population receptive field (pRF) models to study how attention influences visual processing.
 

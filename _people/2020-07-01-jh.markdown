@@ -10,6 +10,8 @@ now: ""
 pubname: "Heij J"
 themes: [precision-imaging]
 description: "Neuroscience PhD student who developed methods to target line-scanning fMRI to a chosen patch of cortex."
+links:
+  github: https://github.com/gjheij
 ---
 Jurjen Heij was a neuroscience PhD student at the Spinoza Centre working on line-scanning fMRI. He developed the methods to plan the line so that it targets a small, preselected patch of cortex, and used pRF modeling and time-course estimation to answer his research questions.
 

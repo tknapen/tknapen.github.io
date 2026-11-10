@@ -29,4 +29,4 @@ Connective field models apply the same idea from brain to brain. They explain a 
 
 ## Open questions
 
-Can a small set of canonical computations, with parameters set by local neurochemistry, account for responses beyond visual cortex? How should encoding models handle the eye movements and complex input of natural vision? We are also developing Popylar, a community package for pRF modeling, to make these models easier to apply and extend.
+Can a small set of canonical computations, with parameters set by local neurochemistry, account for responses beyond visual cortex? How should encoding models handle the eye movements and complex input of natural vision? To make these models easier to apply and extend, the Popylar project develops [prfmodel](/software/), a community Python package for pRF and connective field modeling, released in a first beta version at our [workshop in Coimbra](/2026/11/06/popylar-workshop-coimbra.html) in November 2026.

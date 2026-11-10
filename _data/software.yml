@@ -1,23 +1,30 @@
 # Software and datasets from the lab, rendered on /software/ and (featured: true, max 4) on the home page.
-# Fields: name, kind (software | dataset), status (maintained | in development | upcoming | archived | available),
-# description, url (verified only), docs, paper (internal URL of the related paper), themes, featured.
+# Fields: name, kind (software | dataset), status (maintained | beta | in development | upcoming | archived | available),
+# description, install (optional command), url (verified only), docs, extra_links (label + url),
+# paper (internal URL of the related paper), themes, featured.
 # GitHub URLs were checked with the GitHub search API in November 2026.
+
+- name: prfmodel (Popylar)
+  kind: software
+  status: beta
+  description: "Python package for fitting population receptive field models and related models (connective field, contrast sensitivity, divisive normalization), with GPU-accelerated Keras 3 backends. Developed by the Popylar team with the Netherlands eScience Center."
+  install: pip install "prfmodel[tensorflow]"
+  url: https://github.com/popylar-org/prfmodel
+  docs: https://popylar-org.github.io/prfmodel/
+  extra_links:
+    - label: Workshop materials (Coimbra, November 2026)
+      url: https://popylar-org.github.io/2026-11-05_workshop-coimbra/
+    - label: PyPI
+      url: https://pypi.org/project/prfmodel/
+  themes: [computational-models, topographic-maps]
+  featured: true
 
 - name: prfpy
   kind: software
   status: available
-  description: "Python package to simulate and fit population receptive field (pRF) models to time series data, including the divisive normalization pRF model."
+  description: "Python package to simulate and fit population receptive field (pRF) models to time series data, including the divisive normalization pRF model. prfmodel is its successor."
   url: https://github.com/VU-Cog-Sci/prfpy
   paper: /publications/2021-11-15-PNAS/
-  themes: [computational-models, topographic-maps]
-  featured: true
-
-- name: Popylar
-  kind: software
-  status: in development
-  description: "A next-generation community package for population receptive field modeling, built with research software engineers at the Netherlands eScience Center. Its prfmodel package fits pRF and connective field models."
-  url: https://github.com/popylar-org/prfmodel
-  docs: https://popylar-org.github.io/prfmodel/
   themes: [computational-models, topographic-maps]
   featured: true
 

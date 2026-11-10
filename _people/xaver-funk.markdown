@@ -8,4 +8,4 @@ pubname: "Funk X"
 themes: [perception-awareness, topographic-maps]
 description: "Postdoctoral researcher from 2027, on body-based meditation and psilocybin."
 ---
-Xaver Funk will join the lab as a postdoctoral researcher in 2027. The project, funded by the Tiny Blue Dot Foundation, studies body-based meditation and psilocybin.
+Xaver Funk, currently at Leiden University, will join the lab as a postdoctoral researcher in 2027, on a [project funded by the Tiny Blue Dot Foundation](/2026/11/10/tiny-blue-dot.html) that studies body-based meditation and psilocybin.

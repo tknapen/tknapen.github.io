@@ -10,5 +10,8 @@ now: ""
 pubname: "Veríssimo IS"
 themes: [topographic-maps]
 description: "PhD student in Chris Olivers' lab, co-supervised by Tomas Knapen."
+links:
+  website: https://iverissimo.github.io/ISV/
+  github: https://github.com/iverissimo
 ---
 Inês Veríssimo was a PhD student in Chris Olivers' lab at the Vrije Universiteit Amsterdam, co-supervised by Tomas Knapen. Her interests were in retinotopic and somatotopic mapping, and in the interactions between feature-based attention and visual-spatial representations.
