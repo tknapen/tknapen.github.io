@@ -10,7 +10,7 @@ Early sensory cortex is laid out as maps: neighboring neurons respond to neighbo
 
 ## Approach
 
-We estimate each brain location's preferred position in visual space, or on the body, with population receptive field (pRF) [models](/research/computational-models/). We also use topographic connectivity, which explains a region's responses from the pattern of activity on a source map such as primary visual cortex (V1). It needs only brain activity, so it also works during movie watching and rest. We analyze large public datasets, such as the Human Connectome Project (HCP) retinotopy data, alongside individuals scanned over many runs.
+We estimate each brain location's preferred position in visual space with population receptive field (pRF) [models](/research/computational-models/). Topographic connectivity derives preferred positions in visual space or on the body from the pattern of activity on a source map, such as primary visual cortex (V1) or primary somatosensory cortex (S1). It needs only brain activity, so it also works during movie watching and rest. We analyze large public datasets, such as the Human Connectome Project (HCP) retinotopy data, alongside individuals scanned over many runs.
 
 ## What we have found
 
