@@ -79,7 +79,7 @@ popylar:
   install: pip install "prfmodel[tensorflow]"
   note: >-
     Version 0.2.0 (beta) was released for our hands-on workshop in Coimbra,
-    5–6 November 2026. The practicals and several of the lecture slides are public.
+    5–6 November 2026. The practicals and the slides of several lectures are public.
   docs: https://popylar-org.github.io/prfmodel/
   code: https://github.com/popylar-org/prfmodel
   workshop: https://popylar-org.github.io/2026-11-05_workshop-coimbra/

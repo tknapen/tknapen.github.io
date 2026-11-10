@@ -22,7 +22,7 @@ layout: default
       {%- if page.status == "alumni" %}
       <p class="person-status">Former lab member{% if page.start %}{% if page.end and page.end != "" %}, {{ page.start }}–{{ page.end }}{% else %} (joined {{ page.start }}){% endif %}{% endif %}{% if page.now and page.now != "" %}. Now at {{ page.now }}{% endif %}</p>
       {%- elsif page.status == "current" and page.start %}
-      <p class="person-status">In the lab since {{ page.start }}</p>
+      {%- assign this_year = site.time | date: "%Y" | plus: 0 %}<p class="person-status">{% if page.start > this_year %}Joins the lab in {{ page.start }}{% else %}In the lab since {{ page.start }}{% endif %}</p>
       {%- endif %}
       {% include person-links.html links=page.links label="Links" %}
     </div>

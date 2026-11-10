@@ -608,6 +608,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
   .callout-pair .callout { flex: 1; align-content: start; }
 }
 .callout-code, .sw-install {
+  white-space: pre-wrap;
   margin: 0 0 1rem;
   padding: 0.6rem 0.85rem;
   background: var(--bg);

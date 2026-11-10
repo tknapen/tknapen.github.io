@@ -7,7 +7,7 @@
 - name: prfmodel (Popylar)
   kind: software
   status: beta
-  description: "Python package for fitting population receptive field models and related models (connective field, contrast sensitivity, divisive normalization), with GPU-accelerated Keras 3 backends. Developed by the Popylar team with the Netherlands eScience Center."
+  description: "Python package for fitting population receptive field models (including compressive spatial summation, difference-of-Gaussians and divisive normalization variants) and related models such as connective field and contrast sensitivity models, on GPU-accelerated backends (TensorFlow, PyTorch or JAX, through Keras 3). Developed by the Popylar team with the Netherlands eScience Center."
   install: pip install "prfmodel[tensorflow]"
   url: https://github.com/popylar-org/prfmodel
   docs: https://popylar-org.github.io/prfmodel/
@@ -22,7 +22,7 @@
 - name: prfpy
   kind: software
   status: available
-  description: "Python package to simulate and fit population receptive field (pRF) models to time series data, including the divisive normalization pRF model. prfmodel is its successor."
+  description: "Python package to simulate and fit population receptive field (pRF) models to time series data, including the divisive normalization pRF model. prfmodel, developed in the Popylar project, builds on it."
   url: https://github.com/VU-Cog-Sci/prfpy
   paper: /publications/2021-11-15-PNAS/
   themes: [computational-models, topographic-maps]
