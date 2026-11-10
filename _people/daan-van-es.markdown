@@ -1,11 +1,11 @@
 ---
 title: Daan van Es
-role: ""   # role and years in the lab: to be confirmed by the PI
+role: ""   # role to be confirmed
 status: alumni
 order: 1
-start:
-end:
-now: ""
+start: 2016   # confirmed by the PI, November 2026
+end: 2020
+now: "Industry"
 pubname: "van Es DM"
 themes: [topographic-maps, perception-awareness]
 description: "Mapped visual space in the human cerebellum and studied how attention changes the sampling of visual space in visual cortex."
