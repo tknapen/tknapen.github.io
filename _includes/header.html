@@ -21,7 +21,7 @@
     <nav class="site-nav" id="site-nav" aria-label="Main">
       <ul>
         {%- for item in site.data.navigation %}
-        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% elsif current_section == item.url %} class="is-current"{% endif %}>{{ item.title }}</a></li>
+        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% elsif current_section == item.url %} class="is-current" aria-current="true"{% endif %}>{{ item.title }}</a></li>
         {%- endfor %}
       </ul>
     </nav>

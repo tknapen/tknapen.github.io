@@ -5,9 +5,26 @@
   <link rel="preload" href="{{ '/assets/fonts/inter-latin-wght-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ '/assets/fonts/source-serif-4-latin-wght-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {%- comment -%} Crawlable favicon files are used as soon as they exist; until then the inline SVG is the fallback. {%- endcomment -%}
+  {%- assign favicon_png = site.static_files | where: "path", "/assets/img/favicon-48.png" | first -%}
+  {%- assign favicon_svg = site.static_files | where: "path", "/assets/img/favicon.svg" | first -%}
+  {%- if favicon_png %}
+  <link rel="icon" href="{{ '/assets/img/favicon-48.png' | relative_url }}" sizes="48x48" type="image/png">
+  {%- endif %}
+  {%- if favicon_svg %}
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  {%- else %}
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231d5f86'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' font-weight='700' text-anchor='middle' fill='%23fff'%3EK%3C/text%3E%3C/svg%3E">
+  {%- endif %}
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }} news" href="{{ '/feed.xml' | relative_url }}">
+  {%- if page.collection == "people" %}
+  {%- assign person_body = page.content | strip_html | strip %}
+  {%- if person_body == "" %}
+  <meta name="robots" content="noindex">
+  {%- endif %}
+  {%- endif %}
   {% seo %}
   {% include google_analytics.html %}
-  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  {%- comment -%} If site.js cannot load, fall back to the no-JS layout so the mobile menu stays visible. {%- endcomment %}
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer onerror="document.documentElement.className = document.documentElement.className.replace(/\bjs\b/, 'no-js');"></script>
 </head>
