@@ -1,21 +1,12 @@
 <!DOCTYPE html>
-<html>
-<link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700' rel='stylesheet' type='text/css'>
-  {% include head.html %}
-  {% include google_analytics.html %}
-  <body>
-
-    {% include header.html %}
-
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+<html lang="{{ site.lang | default: 'en' }}" class="no-js">
+{% include head.html %}
+<body class="{% if page.layout %}layout-{{ page.layout }}{% endif %}">
+  <a class="skip-link" href="#content">Skip to content</a>
+  {% include header.html %}
+  <main id="content" tabindex="-1">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+</body>
 </html>
