@@ -7,10 +7,8 @@
 title: Knapen Lab
 tagline: Computational cognitive neuroscience
 description: >-
-  The Knapen Lab studies how the brain's topographic maps organize perception,
-  action and social cognition, using intensive high-resolution neuroimaging and
-  computational models. Vrije Universiteit Amsterdam and Spinoza Centre for
-  Neuroimaging.
+  Knapen Lab, Vrije Universiteit Amsterdam and Spinoza Centre for Neuroimaging:
+  how the brain's topographic maps organize perception, action and social cognition.
 url: https://tknapen.github.io
 baseurl: ""
 repository: tknapen/tknapen.github.io
@@ -18,12 +16,12 @@ lang: en
 
 # Used by jekyll-seo-tag for titles, descriptions and link-preview cards
 logo: /assets/img/social-card.png
-image: /assets/img/social-card.png
 twitter:
   username: tknapen
   card: summary_large_image
 author:
   name: Tomas Knapen
+  twitter: tknapen
 social:
   name: Knapen Lab
   links:
@@ -60,10 +58,17 @@ collections:
     permalink: /resources/:path/
 
 defaults:
+  # Link-preview image for every page (jekyll-seo-tag reads page.image only)
+  - scope: { path: "" }
+    values: { image: /assets/img/social-card.png }
+  - scope: { path: "google8d229e177b46e04e.html" }
+    values: { sitemap: false }
+  - scope: { path: "img" }
+    values: { sitemap: false }
   - scope: { path: "", type: posts }
     values: { layout: post }
   - scope: { path: "", type: publications }
-    values: { layout: publication }
+    values: { layout: publication, author: { name: Knapen Lab, twitter: tknapen } }
   - scope: { path: "", type: people }
     values: { layout: person }
   - scope: { path: "", type: research }
@@ -82,3 +87,6 @@ exclude:
   - "*.psd"
 
 future: true
+
+# No GitHub Pages default theme (it would add unused CSS and fallback layouts)
+theme: null

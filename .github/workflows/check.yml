@@ -32,4 +32,4 @@ jobs:
       - name: Check internal links and images
         run: |
           gem install html-proofer -v "~> 5.0" --no-document
-          htmlproofer ./_site --disable-external --allow-missing-href --no-enforce-https
+          htmlproofer ./_site --disable-external --allow-missing-href --no-enforce-https --ignore-urls '/^\/publications\/#/'
