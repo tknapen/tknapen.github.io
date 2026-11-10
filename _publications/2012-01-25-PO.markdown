@@ -1,0 +1,13 @@
+---
+title: "Opposite influence of perceptual memory on initial and prolonged perception of sensory ambiguity"
+date: 2012-01-25
+authors: [de Jong MC, Knapen T, van Ee R]
+journal: PLoS ONE
+citation: "7(1), e30595"
+doi: 10.1371/journal.pone.0030595
+pmid: "22295095"
+type: article
+themes: [perception-awareness]
+description: "After pre-exposure, an ambiguous stimulus is first seen in its familiar interpretation, but the alternative dominates prolonged viewing."
+---
+Observers continually make unconscious inferences about the state of the world based on ambiguous sensory information. This process of perceptual decision-making may be optimized by learning from experience. We investigated the influence of previous perceptual experience on the interpretation of ambiguous visual information. Observers were pre-exposed to a perceptually stabilized sequence of an ambiguous structure-from-motion stimulus by means of intermittent presentation. At the subsequent re-appearance of the same ambiguous stimulus perception was initially biased toward the previously stabilized perceptual interpretation. However, prolonged viewing revealed a bias toward the alternative perceptual interpretation. The prevalence of the alternative percept during ongoing viewing was largely due to increased durations of this percept, as there was no reliable decrease in the durations of the pre-exposed percept. Moreover, the duration of the alternative percept was modulated by the specific characteristics of the pre-exposure, whereas the durations of the pre-exposed percept were not. The increase in duration of the alternative percept was larger when the pre-exposure had lasted longer and was larger after ambiguous pre-exposure than after unambiguous pre-exposure. Using a binocular rivalry stimulus we found analogous perceptual biases, while pre-exposure did not affect eye-bias. We conclude that previously perceived interpretations dominate at the onset of ambiguous sensory information, whereas alternative interpretations dominate prolonged viewing. Thus, at first instance ambiguous information seems to be judged using familiar percepts, while re-evaluation later on allows for alternative interpretations.

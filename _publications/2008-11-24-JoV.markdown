@@ -1,0 +1,13 @@
+---
+title: "Removal of monocular interactions equates rivalry behavior for monocular, binocular, and stimulus rivalries"
+date: 2008-11-24
+authors: [van Boxtel JJ, Knapen T, Erkelens CJ, van Ee R]
+journal: Journal of Vision
+citation: "8(15), 13"
+doi: 10.1167/8.15.13
+pmid: "19146297"
+type: article
+themes: [perception-awareness]
+description: "Once monocular interactions between the patterns are removed, monocular, binocular and stimulus rivalry show indistinguishable dynamics."
+---
+When the two eyes are presented with conflicting stimuli, perception starts to fluctuate over time (i.e., binocular rivalry). A similar fluctuation occurs when two patterns are presented to a single eye (i.e., monocular rivalry), or when they are swapped rapidly and repeatedly between the eyes (i.e., stimulus rivalry). Although all these cases lead to rivalry, in quantitative terms these modes of rivalry are generally found to differ significantly. We studied these different modes of rivalry with identical intermittently shown stimuli while varying the temporal layout of stimulation. We show that the quantitative differences between the modes of rivalry are caused by the presence of monocular interactions between the rivaling patterns; the introduction of a blank period just before a stimulus swap changed the number of rivalry reports to the extent that monocular and stimulus rivalries were inducible over ranges of spatial frequency content and contrast values that were nearly identical to binocular rivalry. Moreover when monocular interactions did not occur the perceptual dynamics of monocular, binocular, and stimulus rivalries were statistically indistinguishable. This range of identical behavior exhibited a monocular (approximately 50 ms) and a binocular (approximately 350 ms) limit. We argue that a common binocular, or pattern-based, mechanism determines the temporal constraints for these modes of rivalry.

@@ -1,0 +1,13 @@
+---
+title: "The reference frame of the motion aftereffect is retinotopic"
+date: 2009-05-15
+authors: [Knapen T, Rolfs M, Cavanagh P]
+journal: Journal of Vision
+citation: "9(5), 16"
+doi: 10.1167/9.5.16
+pmid: "19757894"
+type: article
+themes: [topographic-maps, perception-awareness]
+description: "After a saccade, the motion aftereffect appears at the adapted retinal location, with no specific transfer to the adapted location in space."
+---
+Although eye-, head- and body-movements can produce large-scale translations of the visual input on the retina, perception is notable for its spatiotemporal continuity. The visual system might achieve this by the creation of a detailed map in world coordinates: a spatiotopic representation. We tested the coordinate system of the motion aftereffect by adapting observers to translational motion and then tested (1) at the same retinal and spatial location (full aftereffect condition), (2) at the same retinal location, but at a different spatial location (retinotopic condition), (3) at the same spatial, but at a different retinal location (spatiotopic condition), or (4) at a different spatial and retinal location (general transfer condition). We used large stimuli moving at high speed to maximize the likelihood of motion integration across space. In a second experiment, we added a contrast-decrement detection task to the motion stimulus to ensure attention was directed at the adapting location. Strong motion aftereffects were found when observers were tested in the full and retinotopic aftereffect conditions. We also found a smaller aftereffect at the spatiotopic location but it did not differ from that at the location that was neither spatiotopic nor retinotopic. This pattern of results did not change when attention was explicitly directed at the adapting stimulus. We conclude that motion adaptation took place at retinotopic levels of visual cortex and that no spatiotopic interaction of motion adaptation and test occurred across saccades.

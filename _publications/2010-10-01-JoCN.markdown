@@ -1,0 +1,13 @@
+---
+title: "A dissociation of attention and awareness in phase-sensitive but not phase-insensitive visual channels"
+date: 2010-10-01
+authors: [Brascamp JW, van Boxtel JJ, Knapen T, Blake R]
+journal: Journal of Cognitive Neuroscience
+citation: "22(10), 2326–2344"
+doi: 10.1162/jocn.2009.21397
+pmid: "19929762"
+type: article
+themes: [perception-awareness]
+description: "Attention and awareness have independent effects on phase-sensitive visual responses but correlated effects on phase-insensitive ones."
+---
+The elements most vivid in our conscious awareness are the ones to which we direct our attention. Scientific study confirms the impression of a close bond between selective attention and visual awareness, yet the nature of this association remains elusive. Using visual afterimages as an index, we investigate neural processing of stimuli as they enter awareness and as they become the object of attention. We find evidence of response enhancement accompanying both attention and awareness, both in the phase-sensitive neural channels characteristic of early processing stages and in the phase-insensitive channels typical of higher cortical areas. The effects of attention and awareness on phase-insensitive responses are positively correlated, but in the same experiments, we observe no correlation between the effects on phase-sensitive responses. This indicates independent signatures of attention and awareness in early visual areas yet a convergence of their effects at more advanced processing stages.

@@ -1,0 +1,13 @@
+---
+title: "The precision of attention controls attraction of population receptive fields"
+date: 2025-09-02
+authors: [Sheikh Abdirashid S, Knapen T, Dumoulin SO]
+journal: Journal of Vision
+citation: "25(11), 3"
+doi: 10.1167/jov.25.11.3
+pmid: "40900073"
+type: article
+themes: [computational-models, perception-awareness]
+description: "Focused attention pulls pRFs toward the attended location more than distributed attention does, as a Gaussian attention field model explains."
+---
+We alter our sampling of visual space not only by where we direct our gaze, but also by where and how we direct our attention. Attention attracts receptive fields toward the attended position, but our understanding of this process is limited. Here we show that the degree of this attraction toward the attended locus is dictated not just by the attended position, but also by the precision of attention. We manipulated attentional precision while using 7T functional magnetic resonance imaging to measure population receptive field (pRF) properties. Participants performed the same color-proportion detection task either focused at fixation (0.1° radius) or distributed across the entire display (>5° radius). We observed blood oxygenation level-dependent response amplitude increases as a function of the task, with selective increases in foveal pRFs for the focused attention task and vice versa for the distributed attention task. Furthermore, cortical spatial tuning changed as a function of attentional precision. Specifically, focused attention more strongly attracted pRFs toward the attended locus compared with distributed attention. This attraction also depended on the degree of overlap between a pRF and the attention field. A Gaussian attention field model with an offset on the attention field explained our results. Together, our observations indicate the spatial distribution of attention dictates the degree of its resampling of visual space.

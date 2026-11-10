@@ -1,0 +1,13 @@
+---
+title: "Slant perception, and its voluntary control, do not govern the slant aftereffect: multiple slant signals adapt independently"
+date: 2006-05-15
+authors: [Knapen T, van Ee R]
+journal: Vision Research
+citation: "46(20), 3381–3392"
+doi: 10.1016/j.visres.2006.03.027
+pmid: "16698056"
+type: article
+themes: [perception-awareness]
+description: "Monocular and binocular slant signals adapt independently, and which slant observers choose to perceive does not affect the slant aftereffect."
+---
+Although it is known that high-level spatial attention affects adaptation for a variety of stimulus features (including binocular disparity), the influence of voluntary attentional control (and the associated awareness) on adaptation has remained unexplored. We developed an ambiguous surface slant adaptation stimulus with conflicting monocular and binocular slant signals that instigated two mutually exclusive surface percepts with opposite slants. Using intermittent stimulus removal, subjects were able to voluntarily select one of the two rivaling slant percepts for extended adaptation periods, enabling us to dissociate slant adaptation due to awareness from stimulus-induced slant adaptation. We found that slant aftereffects (SAE) for monocular and binocular test patterns had opposite signs when measured simultaneously. There was no significant influence of voluntarily controlled perceptual state during adaptation on SAEs of monocular or binocular signals. In addition, the magnitude of the binocular SAE did not correlate with the magnitude of perceived slant. Using adaptation to one slant cue, and testing with the other cue, we demonstrated that multiple slant signals adapt independently. We conclude that slant adaptation occurs before the level of slant awareness. Our findings place the site of stereoscopic slant adaptation after disparity and eye posture are interpreted for slant [as demonstrated by Berends et al. (Berends, E. M., Liu, B., & Schor, C. M. (2005). Stereo-slant adaptation is high level and does not involve disparity coding. Journal of Vision 5 (1), 71-80), using that disparity scales with distance], but before other slant signals are integrated for the resulting awareness of the presented slant stimulus.

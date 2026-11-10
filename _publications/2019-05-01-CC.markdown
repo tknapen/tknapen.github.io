@@ -1,0 +1,13 @@
+---
+title: "Cross-Task Contributions of Frontobasal Ganglia Circuitry in Response Inhibition and Conflict-Induced Slowing"
+date: 2019-05-01
+authors: [Jahfari S, Ridderinkhof KR, Collins AGE, Knapen T, Waldorp LJ, Frank MJ]
+journal: Cerebral Cortex
+citation: "29(5), 1969–1983"
+doi: 10.1093/cercor/bhy076
+pmid: "29912363"
+type: article
+themes: [computational-models]
+description: "Slow choices between two bad options relate to value uncertainty from learning and, independently, to less efficient response inhibition."
+---
+Why are we so slow in choosing the lesser of 2 evils? We considered whether such slowing relates to uncertainty about the value of these options, which arises from the tendency to avoid them during learning, and whether such slowing relates to frontosubthalamic inhibitory control mechanisms. In total, 49 participants performed a reinforcement-learning task and a stop-signal task while fMRI was recorded. A reinforcement-learning model was used to quantify learning strategies. Individual differences in lose-lose slowing related to information uncertainty due to sampling, and independently, to less efficient response inhibition in the stop-signal task. Neuroimaging analysis revealed an analogous dissociation: subthalamic nucleus (STN) BOLD activity related to variability in stopping latencies, whereas weaker frontosubthalamic connectivity related to slowing and information sampling. Across tasks, fast inhibitors increased STN activity for successfully canceled responses in the stop task, but decreased activity for lose-lose choices. These data support the notion that fronto-STN communication implements a rapid but transient brake on response execution, and that slowing due to decision uncertainty could result from an inefficient release of this "hold your horses" mechanism.

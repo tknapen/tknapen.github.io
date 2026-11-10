@@ -1,0 +1,13 @@
+---
+title: "The spatial scale of perceptual memory in ambiguous figure perception"
+date: 2009-12-16
+authors: [Knapen T, Brascamp J, Adams WJ, Graf EW]
+journal: Journal of Vision
+citation: "9(13), 16"
+doi: 10.1167/9.13.16
+pmid: "20055549"
+type: article
+themes: [perception-awareness, topographic-maps]
+description: "Perceptual memory for ambiguous figures spreads to other parts of the visual field, falling off with distance in a retinal frame of reference."
+---
+Ambiguous visual stimuli highlight the constructive nature of vision: perception alternates between two plausible interpretations of unchanging input. However, when a previously viewed ambiguous stimulus reappears, its earlier perception almost entirely determines the new interpretation; memory disambiguates the input. Here, we investigate the spatial properties of this perceptual memory, taking into account strong anisotropies in percept preference across the visual field. Countering previous findings, we show that perceptual memory is not confined to the location in which it was instilled. Rather, it spreads to noncontiguous regions of the visual field, falling off at larger distances. Furthermore, this spread of perceptual memory takes place in a frame of reference that is tied to the surface of the retina. These results place the neural locus of perceptual memory in retinotopically organized sensory cortical areas, with implications for the wider function of perceptual memory in facilitating stable vision in natural, dynamic environments.

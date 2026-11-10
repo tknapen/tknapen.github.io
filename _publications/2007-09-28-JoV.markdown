@@ -1,0 +1,13 @@
+---
+title: "Flash suppression and flash facilitation in binocular rivalry"
+date: 2007-09-28
+authors: [Brascamp JW, Knapen T, Kanai R, van Ee R, van den Berg AV]
+journal: Journal of Vision
+citation: "7(12), 12"
+doi: 10.1167/7.12.12
+pmid: "17997654"
+type: article
+themes: [perception-awareness]
+description: "Previewing one rival image can make it dominant (flash facilitation) or suppressed (flash suppression), depending on its duration and contrast."
+---
+We show that previewing one half image of a binocular rivalry pair can cause it to gain initial dominance when the other half is added, a novel phenomenon we term flash facilitation. This is the converse of a known effect called flash suppression, where the previewed image becomes suppressed upon rivalrous presentation. The exact effect of previewing an image depends on both the duration and the contrast of the prior stimulus. Brief, low-contrast prior stimuli facilitate, whereas long, high-contrast ones suppress. These effects have both an eye-based component and a pattern-based component. Our results suggest that, instead of reflecting two unrelated mechanisms, both facilitation and suppression are manifestations of a single process that occurs progressively during presentation of the prior stimulus. The distinction between the two phenomena would then lie in the extent to which the process has developed during prior stimulation. This view is consistent with a neural model previously proposed to account for perceptual stabilization of ambiguous stimuli, suggesting a relation between perceptual stabilization and the present phenomena.

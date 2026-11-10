@@ -1,0 +1,15 @@
+---
+title: "Non-invasive mapping of the temporal processing hierarchy in the human visual cortex"
+date: 2026-07-10
+authors: [Eickhoff K, Hillebrand A, Knapen T, de Jong MC, Dumoulin SO]
+journal: PLoS Computational Biology
+citation: "22(7), e1014434"
+doi: 10.1371/journal.pcbi.1014434
+pmid: "42430453"
+type: article
+themes: [precision-imaging, computational-models]
+description: "A forward model combining fMRI pRF maps with MEG shows when each visual field map contributes to the response; V1 contributes most and first."
+links:
+  code: https://github.com/kateic/pRFtime
+---
+Vision, and brain processing more broadly, is inherently dynamic across space and time, so understanding brain function requires consideration of both spatial and temporal dimensions. However, simultaneously capturing the fine spatial details and the rapid temporal dynamics of visual processing remains a major challenge, resulting in a gap in our understanding of spatiotemporal dynamics. Here, we introduce a forward modeling technique that bridges high-spatial resolution fMRI with high-temporal resolution MEG, enabling us to non-invasively estimate different levels of the visual hierarchy in humans and their involvement in visual processing with millisecond precision. Using fMRI, levels of the visual hierarchy were identified by measuring individuals' population receptive fields and determining visual field maps. We predicted how much the activity patterns in each visual field map would contribute to brain responses measured with MEG. By comparing these predicted responses with the measured MEG responses, we assessed how much a given visual field map contributed to the measured MEG response, and, most importantly, when. We combined information from all MEG sensors and revealed a cortical processing hierarchy across visual field maps. We validated the method using cross-validations and demonstrated that the model generalized across MEG sensor types, stimulus shapes, and was robust to the number of visual field maps included in the model. The primary visual cortex captured most of the variance in the MEG sensors and did so earlier in time than extrastriate regions. We effectively combined the advantages of two very different neuroimaging techniques, opening avenues for answering research questions that require recordings with high spatiotemporal detail. By bridging traditionally separate areas of research, our approach helps close longstanding gaps in our understanding of brain function.

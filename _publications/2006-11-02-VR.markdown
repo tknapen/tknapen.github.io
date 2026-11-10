@@ -1,0 +1,13 @@
+---
+title: "Stimulus flicker alters interocular grouping during binocular rivalry"
+date: 2006-11-02
+authors: [Knapen T, Paffen C, Kanai R, van Ee R]
+journal: Vision Research
+citation: "47(1), 1–7"
+doi: 10.1016/j.visres.2006.09.007
+pmid: "17083956"
+type: article
+themes: [perception-awareness]
+description: "Synchronous flicker lengthens, and contrast-inversion flicker shortens, the dominance of interocularly grouped percepts in binocular rivalry."
+---
+When the two eyes are presented with sufficiently different stimuli, the stimuli will engage in binocular rivalry. During binocular rivalry, a subject's perceptual state alternates between awareness of the stimulus presented to the right eye and that presented to the left eye. There are instances in which competition is not eye-based, but instead takes place between stimulus features, as is the case in flicker and switch rivalry (F&S). Here we investigate another such instance, interocular grouping, using a Diaz-Caneja type stimulus in conjunction with synchronous stimulus flicker. Our results indicate that stimulus flicker increases the total duration of interocularly bound percepts, and that this effect occurs for a range of temporal flicker frequencies. Furthermore, the use of contrast-inversion flicker causes a decrease of total dominance duration of the interocularly bound percepts. We argue that different flickering regimes can be used to differentially stimulate lower and higher levels of visual processing involved in binocular rivalry. We propose that the amount of interocularly combined pattern-completed percept can be regarded as a measure of the level at which binocular rivalry is resolved.
