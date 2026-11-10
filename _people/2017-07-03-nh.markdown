@@ -2,7 +2,7 @@
 title: Nick Hedger
 role: Leverhulme Trust fellow (University of Reading)
 status: alumni
-order: 3
+order: 5
 start: 2017
 end:
 now: "University of Reading"  # PubMed 41152530, 2025

@@ -2,7 +2,7 @@
 title: Martin Szinte
 role: Marie Curie postdoctoral fellow
 status: alumni
-order: 1
+order: 3
 photo: /img/people/ms.png
 start: 2016
 end: 2019  # PubMed 31004064 (Apr 2019): VU only; 31575909 (Oct 2019): INT Marseille first

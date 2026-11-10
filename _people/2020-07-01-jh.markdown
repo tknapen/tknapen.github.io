@@ -2,7 +2,7 @@
 title: Jurjen Heij
 role: PhD student (line-scanning fMRI)
 status: alumni
-order: 7
+order: 9
 photo: /img/people/jh.jpg
 start: 2020
 end:

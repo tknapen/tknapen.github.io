@@ -4,7 +4,7 @@ title: Nature paper on vicarious body maps published
 description: Vicarious body maps link visual and tactile processing in human cortex.
 date: 2025-11-26 12:00:00
 journal: Nature
-img: /img/publications/nature_2025_bodymaps.png
+img: /img/publications/nature_2025_bodymaps.jpg
 ---
 
 "<a href="https://doi.org/10.1038/s41586-025-09796-0" target="_blank" alt="Vicarious body maps bridge vision and touch in the human brain" >Vicarious body maps bridge vision and touch in the human brain</a>".
@@ -13,6 +13,6 @@ Nicholas Hedger, Thomas Naselaris, Kendrick Kay, Tomas Knapen
 
 See the [publication page](/publications/2025-11-26-NAT/) for the full reference and links.
 
-<img class="col one right" src="/img/publications/nature_2025_bodymaps.png" alt="Overview figure: connective field modeling projects the visual field map of V1 and the body map of S1 onto the rest of cortex, revealing somatotopic maps on inflated and flattened cortical surfaces.">
+<img class="col one right" src="/img/publications/nature_2025_bodymaps.jpg" alt="Overview figure: connective field modeling projects the visual field map of V1 and the body map of S1 onto the rest of cortex, revealing somatotopic maps on inflated and flattened cortical surfaces.">
 
 **Abstract** Our sensory systems work together to generate a cohesive experience of the world. Observing touch to others activates regions representing one's own touch, suggesting that visual processing recruits touch-related computations. To examine this interface, we developed a model that jointly maps somatosensory body-part tuning and visual field tuning across the brain. During rest, the model recovered detailed body-part tuning in endogenous somatotopic networks. During movie viewing, somatotopic tuning explained responses throughout dorsolateral visual cortex, revealing multiple somatotopic body maps tiled across cortex. Body-position tuning aligned with visual tuning, predicting both visual field preferences and category preferences for body parts. These results suggest aligned visual-somatosensory topographic maps that connect visual and bodily reference frames and help translate sensory input into representations useful for action, social cognition, and semantic processing.

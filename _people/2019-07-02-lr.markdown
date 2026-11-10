@@ -2,7 +2,7 @@
 title: Luisa Raimondo
 role: PhD student (MR physics, line-scanning fMRI)
 status: alumni
-order: 6
+order: 8
 photo: /img/people/lr.jpg
 start: 2019
 end:

@@ -2,7 +2,7 @@
 title: Gilles de Hollander
 role: Postdoctoral researcher (NWO/CAS)
 status: alumni
-order: 2
+order: 4
 photo: /img/people/gh.jpg
 start: 2017
 end: 2020  # PubMed 33385565 (Dec 2020): VU and Zurich; 34378532 (Aug 2021): Zurich only

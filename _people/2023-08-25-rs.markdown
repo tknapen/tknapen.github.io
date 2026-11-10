@@ -2,7 +2,7 @@
 title: Robert Satzger
 role: Research intern (MSc Artificial Intelligence)
 status: alumni
-order: 10
+order: 12
 photo: /img/people/rs.jpg
 start: 2023
 end:

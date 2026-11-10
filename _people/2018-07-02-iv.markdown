@@ -2,7 +2,7 @@
 title: Inês Veríssimo
 role: PhD student (with Chris Olivers)
 status: alumni
-order: 5
+order: 7
 photo: /img/people/iv.jpg
 start: 2018
 end:

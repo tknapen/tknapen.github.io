@@ -2,7 +2,7 @@
 title: Sumiya Sheikh Abdirashid
 role: PhD student (with Serge Dumoulin)
 status: alumni
-order: 8
+order: 10
 photo: /img/people/sa.png
 start: 2020
 end:

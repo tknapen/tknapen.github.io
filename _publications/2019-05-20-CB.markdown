@@ -10,6 +10,7 @@ type: article
 themes: [topographic-maps]
 selected: true
 img: /img/posts/cerebellum_retmap.png
+img_alt: "Axial, sagittal and coronal slices of the cerebellum with voxels colored by preferred polar angle, and zoomed insets of the topographic maps in both hemispheres."
 description: "Human Connectome Project retinotopy data reveal five ipsilateral visual field maps in three cerebellar clusters; we provide an atlas."
 ---
 ### Highlights

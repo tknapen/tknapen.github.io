@@ -2,7 +2,7 @@
 title: Ron van de Klundert
 role: PhD student
 status: alumni
-order: 9
+order: 11
 photo: /img/people/rk.jpg
 start: 2021
 end:

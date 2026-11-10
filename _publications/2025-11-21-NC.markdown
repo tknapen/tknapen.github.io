@@ -10,6 +10,7 @@ type: article
 themes: [computational-models, perception-awareness]
 selected: true
 img: /img/publications/natcomms_2025_psilocybin.png
+img_alt: "Panel a shows psychometric curves for an Ebbinghaus illusion size judgment under placebo, 5 mg and 10 mg psilocybin. Panels b and c show a larger illusion at both doses than under placebo."
 description: "Psilocybin changes contextual effects in perception and in visual cortex responses, and a computational model links the two."
 ---
 Psilocybin alters perception and brain dynamics. Here, we investigate the effects of psilocybin using psychophysics, ultra-high field functional MRI, and computational modeling. We find that psilocybin alters contextual perception in the Ebbinghaus illusion, as well as contextual modulation in cortical responses to visual stimuli. We propose a computational model capable of capturing and linking these changes. Leveraging vision as a beachhead, our findings highlight the alteration of contextual computations as a potential general mechanism underlying psychedelic action.

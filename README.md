@@ -83,6 +83,8 @@ links: { email: , website: , scholar: , orcid: , github: , x: , bluesky: , linke
 Short bio in the third person. Leave the body empty if there is none yet.
 ```
 
+A person with an empty body gets a card on /people/ without a link. Add `sitemap: false` to their front matter until a bio exists, and remove it once it does.
+
 When someone joins, also add their `pubname` to `lab_authors` in `_data/lab.yml`, so their name is printed in bold in publication lists. When someone leaves, change `status` to `alumni` and fill in `end` and `now`.
 
 ## Add news

@@ -2,7 +2,7 @@
 title: Marco Aqil
 role: PhD student (with Serge Dumoulin)
 status: alumni
-order: 4
+order: 6
 photo: /img/people/ma.jpg
 start: 2018
 end:
