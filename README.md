@@ -119,6 +119,23 @@ Add an entry to `_data/software.yml`:
   featured: false           # true shows it on the home page (keep to four)
 ```
 
+## Change the home-page figures
+
+The figures that rotate at the top of the home page are listed under `hero_slides` in the front matter of `index.html`, in display order:
+
+```yaml
+hero_slides:
+  - img: /assets/img/hero/my-figure-1600.webp      # about 1600 px wide
+    img_small: /assets/img/hero/my-figure-800.webp # about 800 px wide, for phones
+    width: 1600                                    # pixel size of img
+    height: 1200
+    bg: dark                                       # light (white frame) or dark (black frame)
+    alt: "What the figure shows, in one sentence."
+    caption: "Short caption, may link to a paper ([Author et al., 2026](/publications/2026-03-01-JoN/))"
+```
+
+The frame is 3:2 and the whole figure is always shown. Slides change every 7 seconds; visitors can pause them, and they stay still for people who have turned on reduced motion. With one slide, the controls disappear.
+
 ## Checks
 
 A GitHub Actions workflow (`.github/workflows/check.yml`) builds the site with the GitHub Pages gem set and checks internal links and images on every pull request.
@@ -129,4 +146,4 @@ How-tos for data handling and analysis live in the [lab wiki](https://github.com
 
 ## Credits
 
-Fonts: Source Serif 4 and Inter, self-hosted, SIL Open Font License (see `assets/fonts/`).
+Fonts: Space Grotesk (headings) and Public Sans (text), self-hosted, SIL Open Font License (see `assets/fonts/`).

@@ -2,8 +2,10 @@
 layout: default
 ---
 {%- assign lab = site.data.lab -%}
-<section class="hero" aria-labelledby="hero-title">
-  <div class="wrap"><div class="hero-text">
+{%- assign slides = page.hero_slides -%}
+<section class="hero{% if slides %} hero-split{% endif %}" aria-labelledby="hero-title">
+  <div class="wrap hero-inner">
+  <div class="hero-text">
     <h1 class="hero-title" id="hero-title">{{ page.hero_title | default: page.title }}</h1>
     {%- if page.tagline %}
     <p class="hero-tagline">{{ page.tagline }}</p>
@@ -18,15 +20,52 @@ layout: default
       {%- endfor %}
     </ul>
     {%- endif %}
-  </div></div>
-  {%- if page.hero_img %}
-  <figure class="wrap hero-figure">
-    <img src="{{ page.hero_img | relative_url }}"
-         srcset="{{ page.hero_img_small | relative_url }} 1200w, {{ page.hero_img | relative_url }} 2400w"
-         sizes="(min-width: 1200px) 1120px, calc(100vw - 32px)"
-         width="2400" height="978" alt="{{ page.hero_alt | escape }}" fetchpriority="high" decoding="async">
-  </figure>
+  </div>
+  {%- if slides %}
+  {%- comment -%}
+    Carousel following the WAI-ARIA APG pattern. Without JavaScript only the first slide shows and the controls stay hidden;
+    site.js reveals the other slides and the controls, and handles rotation, pausing and the live region.
+  {%- endcomment %}
+  <section class="hero-carousel" aria-roledescription="carousel" aria-label="{{ page.hero_slides_label | default: 'Figures' }}" data-interval="7000">
+    {%- if slides.size > 1 %}
+    {%- comment -%} The controls come first in the tab order (APG); CSS places them under the frame. {%- endcomment %}
+    <div class="hero-controls" hidden>
+      <button type="button" class="hero-btn hero-rotate" aria-controls="hero-slides" aria-label="Stop automatic slide show">
+        <svg class="icon-pause" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><rect x="3.5" y="2.5" width="3" height="11" rx="0.5"/><rect x="9.5" y="2.5" width="3" height="11" rx="0.5"/></svg>
+        <svg class="icon-play" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M4.5 2.6v10.8a.5.5 0 0 0 .76.43l8.6-5.4a.5.5 0 0 0 0-.86l-8.6-5.4a.5.5 0 0 0-.76.43z"/></svg>
+      </button>
+      <button type="button" class="hero-btn hero-prev" aria-controls="hero-slides" aria-label="Previous figure">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="hero-dots">
+        {%- for s in slides %}
+        <button type="button" class="hero-dot" aria-controls="hero-slides" aria-label="Figure {{ forloop.index }} of {{ slides.size }}"{% if forloop.first %} aria-current="true"{% endif %}><span aria-hidden="true"></span></button>
+        {%- endfor %}
+      </div>
+      <button type="button" class="hero-btn hero-next" aria-controls="hero-slides" aria-label="Next figure">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    {%- endif %}
+    <div class="hero-slides" id="hero-slides" aria-live="polite">
+      {%- for s in slides %}
+      <figure class="hero-slide hero-slide-{{ s.bg | default: 'light' }}{% if forloop.first %} is-active{% endif %}" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ slides.size }}"{% unless forloop.first %} hidden{% endunless %}>
+        <div class="hero-frame">
+          <img src="{{ s.img | relative_url }}"
+               srcset="{{ s.img_small | relative_url }} 800w, {{ s.img | relative_url }} {{ s.width }}w"
+               sizes="(min-width: 1184px) 576px, (min-width: 960px) calc(51vw - 44px), (min-width: 704px) 640px, (min-width: 640px) calc(100vw - 66px), calc(100vw - 34px)"
+               width="{{ s.width }}" height="{{ s.height }}" alt="{{ s.alt | escape }}"
+               {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+        </div>
+        {%- if s.caption %}
+        <figcaption class="hero-caption"><span>{{ s.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></figcaption>
+        {%- endif %}
+      </figure>
+      {%- endfor %}
+    </div>
+  </section>
   {%- endif %}
+  </div>
 </section>
 
 {{ content }}

@@ -1,4 +1,4 @@
-/* Knapen Lab: menu toggle, publication filters, keyboard access to wide code blocks. No dependencies. */
+/* Knapen Lab: menu toggle, publication filters, home figure carousel, keyboard access to wide code blocks. No dependencies. */
 (function () {
   'use strict';
 
@@ -139,6 +139,91 @@
     select(fromHash(), false);
   }
 
+  /* ---- Home figure carousel (WAI-ARIA APG carousel pattern) ----
+     Rotation stops while the pointer is over the carousel, while focus is inside it and while the tab is hidden.
+     Pressing the pause button or any other control stops it until the visitor presses play.
+     With prefers-reduced-motion, it starts stopped (and CSS drops the fade). */
+  function initCarousel() {
+    var root = document.querySelector('.hero-carousel');
+    if (!root) return;
+    var slides = Array.prototype.slice.call(root.querySelectorAll('.hero-slide'));
+    var controls = root.querySelector('.hero-controls');
+    if (slides.length < 2 || !controls) return;
+
+    var live = root.querySelector('.hero-slides');
+    var rotate = root.querySelector('.hero-rotate');
+    var prev = root.querySelector('.hero-prev');
+    var next = root.querySelector('.hero-next');
+    var dots = Array.prototype.slice.call(root.querySelectorAll('.hero-dot'));
+    var interval = parseInt(root.getAttribute('data-interval'), 10) || 7000;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    var current = 0;
+    var stopped = reduce;   // stopped by the visitor (or by reduced motion) until play is pressed
+    var hovered = false;
+    var focused = false;
+    var timer = null;
+
+    function show(i) {
+      current = (i + slides.length) % slides.length;
+      slides.forEach(function (s, k) {
+        var on = k === current;
+        s.classList.toggle('is-active', on);
+        // Hide inactive slides from assistive technology; they stay rendered for the crossfade.
+        if (on) s.removeAttribute('aria-hidden'); else s.setAttribute('aria-hidden', 'true');
+      });
+      dots.forEach(function (d, k) {
+        if (k === current) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
+      });
+    }
+
+    function running() {
+      return !stopped && !hovered && !focused && !document.hidden;
+    }
+
+    function update() {
+      clearTimeout(timer);
+      timer = null;
+      var on = running();
+      if (on) {
+        timer = setTimeout(function () { show(current + 1); update(); }, interval);
+      }
+      // Announce slide changes only when they are not automatic.
+      live.setAttribute('aria-live', on ? 'off' : 'polite');
+      rotate.classList.toggle('is-stopped', stopped);
+      rotate.setAttribute('aria-label', stopped ? 'Start automatic slide show' : 'Stop automatic slide show');
+    }
+
+    function stop() { stopped = true; update(); }
+
+    rotate.addEventListener('click', function () {
+      stopped = !stopped;
+      // Pressing play starts rotation at once, even with focus or the pointer still on the button.
+      if (!stopped) { focused = false; hovered = false; }
+      update();
+    });
+    prev.addEventListener('click', function () { show(current - 1); stop(); });
+    next.addEventListener('click', function () { show(current + 1); stop(); });
+    dots.forEach(function (d, k) {
+      d.addEventListener('click', function () { show(k); stop(); });
+    });
+
+    // Hover pauses for mouse and pen; a tap on a touch screen should not leave the carousel paused.
+    root.addEventListener('pointerenter', function (e) { if (e.pointerType !== 'touch') { hovered = true; update(); } });
+    root.addEventListener('pointerleave', function () { if (hovered) { hovered = false; update(); } });
+    root.addEventListener('focusin', function () { focused = true; update(); });
+    root.addEventListener('focusout', function (e) {
+      if (!root.contains(e.relatedTarget)) { focused = false; update(); }
+    });
+    document.addEventListener('visibilitychange', update);
+
+    slides.forEach(function (s) { s.hidden = false; });
+    controls.hidden = false;
+    root.classList.add('is-enhanced');
+    show(0);
+    update();
+  }
+
   /* ---- Code blocks that scroll sideways must be reachable by keyboard ---- */
   function initScrollables() {
     var blocks = Array.prototype.slice.call(document.querySelectorAll('pre'));
@@ -160,6 +245,7 @@
   function init() {
     initMenu();
     initFilters();
+    initCarousel();
     initScrollables();
   }
 
