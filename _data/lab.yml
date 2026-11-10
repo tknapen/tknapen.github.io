@@ -36,6 +36,8 @@ funders:
 
 # Author names (exactly as written in publication front matter) that are
 # highlighted in publication lists: the PI and current and former lab members.
+# Matching is by exact string, so common names (e.g. "Zhang S") would also bold
+# unrelated co-authors with the same name: check new papers when adding them.
 lab_authors:
   - Knapen T
   - de Hollander G
@@ -52,7 +54,6 @@ lab_authors:
   - Zhang S
   - Funk X
   - van Es DM
-  - Barendregt M
 
 # Arrow of Time dataset (home-page callout and Software & data page)
 aot:
