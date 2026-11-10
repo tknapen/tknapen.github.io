@@ -33,7 +33,10 @@ description: "Publications of the Knapen Lab, with abstracts, links to articles,
       <button type="button" class="filter-btn" data-filter="theme:computational-models" aria-pressed="false">Computational models</button>
       <button type="button" class="filter-btn" data-filter="theme:perception-awareness" aria-pressed="false">Perception and awareness</button>
       {%- endif %}
+      {%- assign preprints = pubs | where: "type", "preprint" %}
+      {%- if preprints.size > 0 %}
       <button type="button" class="filter-btn" data-filter="type:preprint" aria-pressed="false">Preprints</button>
+      {%- endif %}
     </div>
     <div class="filter-search">
       <label for="pub-search">Search titles, authors and journals</label>

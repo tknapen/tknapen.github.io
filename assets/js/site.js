@@ -1,4 +1,4 @@
-/* Knapen Lab: menu toggle and publication filters. No dependencies. */
+/* Knapen Lab: menu toggle, publication filters, keyboard access to wide code blocks. No dependencies. */
 (function () {
   'use strict';
 
@@ -17,10 +17,13 @@
       setOpen(button.getAttribute('aria-expanded') !== 'true');
     });
 
+    // Escape closes the menu; focus returns to the button only if it was in the menu.
     document.addEventListener('keydown', function (e) {
       if ((e.key === 'Escape' || e.key === 'Esc') && button.getAttribute('aria-expanded') === 'true') {
+        var active = document.activeElement;
+        var inMenu = active === button || nav.contains(active);
         setOpen(false);
-        button.focus();
+        if (inMenu) button.focus();
       }
     });
 
@@ -47,6 +50,7 @@
     var total = entries.length;
     var current = 'all';
     var timer = null;
+    var touched = false;  // announce "all" only after the visitor has changed something
 
     // Cache searchable text once.
     var texts = entries.map(function (li) {
@@ -86,9 +90,11 @@
       });
       if (empty) empty.hidden = shown !== 0;
       if (status) {
-        status.textContent = (current === 'all' && terms.length === 0)
-          ? ''
-          : 'Showing ' + shown + ' of ' + total + ' publications.';
+        if (current === 'all' && terms.length === 0) {
+          status.textContent = touched ? 'Showing all ' + total + ' publications.' : '';
+        } else {
+          status.textContent = 'Showing ' + shown + ' of ' + total + ' publications.';
+        }
       }
     }
 
@@ -109,11 +115,12 @@
     }
 
     buttons.forEach(function (b) {
-      b.addEventListener('click', function () { select(b.getAttribute('data-filter'), true); });
+      b.addEventListener('click', function () { touched = true; select(b.getAttribute('data-filter'), true); });
     });
 
     if (input) {
       input.addEventListener('input', function () {
+        touched = true;
         clearTimeout(timer);
         timer = setTimeout(apply, 120);
       });
@@ -132,9 +139,28 @@
     select(fromHash(), false);
   }
 
+  /* ---- Code blocks that scroll sideways must be reachable by keyboard ---- */
+  function initScrollables() {
+    var blocks = Array.prototype.slice.call(document.querySelectorAll('pre'));
+    if (!blocks.length) return;
+    function update() {
+      blocks.forEach(function (pre) {
+        if (pre.scrollWidth > pre.clientWidth + 1) pre.setAttribute('tabindex', '0');
+        else pre.removeAttribute('tabindex');
+      });
+    }
+    update();
+    var t = null;
+    window.addEventListener('resize', function () {
+      clearTimeout(t);
+      t = setTimeout(update, 200);
+    });
+  }
+
   function init() {
     initMenu();
     initFilters();
+    initScrollables();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

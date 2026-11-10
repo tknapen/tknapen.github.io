@@ -1,5 +1,5 @@
 {%- comment -%}
-  One publication in a list. Params: pub (document), hlevel (heading level for the title, default 3).
+  One publication in a list. Params: pub (document), hlevel (heading level for the title, default 3), hide_selected (true: no Selected badge, for lists of selected papers only).
 {%- endcomment -%}
 {%- assign pub = include.pub -%}
 {%- assign h = include.hlevel | default: 3 -%}
@@ -14,7 +14,7 @@
     {%- if pub.citation %} {{ pub.citation }}{% endif %}
     <span class="pub-year-inline">{% if pub.journal or pub.citation %}({{ pub.date | date: "%Y" }}){% else %}{{ pub.date | date: "%Y" }}{% endif %}</span>
     {%- if ptype != "article" %} <span class="badge">{{ ptype | capitalize }}</span>{% endif %}
-    {%- if pub.selected %} <span class="badge badge-selected">Selected</span>{% endif %}
+    {%- if pub.selected and include.hide_selected != true %} <span class="badge badge-selected">Selected</span>{% endif %}
   </p>
   {%- if pub.doi or pub.links %}
   <ul class="pub-links">

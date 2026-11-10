@@ -39,7 +39,7 @@ layout: default
     </ol>
     {%- if theme_pubs.size > 10 %}
     <details class="more">
-      <summary>Show all {{ theme_pubs.size }} papers</summary>
+      <summary><span class="when-closed">Show all {{ theme_pubs.size }} papers</span><span class="when-open">Show fewer papers</span></summary>
       <ol class="pub-list" start="11">
         {%- for pub in theme_pubs offset: 10 %}
         {% include pub-entry.html pub=pub hlevel=3 %}
@@ -50,23 +50,32 @@ layout: default
   </section>
   {%- endif %}
 
+  {%- comment -%} The PI works on every theme, so only current members get cards; former members who worked on the theme are listed by name. {%- endcomment -%}
   {%- assign theme_people = "" | split: "" -%}
+  {%- assign theme_alumni = "" | split: "" -%}
   {%- assign sorted_people = site.people | sort: "order" -%}
   {%- for person in sorted_people -%}
-    {%- if person.status == "pi" or person.status == "current" -%}
-      {%- if person.themes contains slug -%}
+    {%- if person.themes contains slug -%}
+      {%- if person.status == "current" -%}
         {%- assign theme_people = theme_people | push: person -%}
+      {%- elsif person.status == "alumni" -%}
+        {%- assign theme_alumni = theme_alumni | push: person -%}
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
-  {%- if theme_people.size > 0 %}
+  {%- if theme_people.size > 0 or theme_alumni.size > 0 %}
   <section class="wrap section-block" aria-labelledby="people-heading">
     <h2 id="people-heading">People</h2>
+    {%- if theme_people.size > 0 %}
     <div class="grid grid-people">
       {%- for person in theme_people %}
       {% include person-card.html person=person hlevel=3 %}
       {%- endfor %}
     </div>
+    {%- endif %}
+    {%- if theme_alumni.size > 0 %}
+    <p class="section-note theme-alumni">Former lab members who worked on this theme: {% for p in theme_alumni %}{% assign p_body = p.content | strip_html | strip %}{% if p_body != "" %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.</p>
+    {%- endif %}
   </section>
   {%- endif %}
 

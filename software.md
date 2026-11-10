@@ -13,7 +13,7 @@ redirect_from:
 <div class="wrap software-page">
   <header class="page-header page-header-wide">
     <h1 class="page-title">Software &amp; data</h1>
-    <p class="page-lead">We share the code and data behind our papers.{% if lab.links.github_org and lab.links.github_org != "" %} Lab repositories are on GitHub in the <a href="{{ lab.links.github_org }}">VU-Cog-Sci organization</a>.{% endif %}</p>
+    <p class="page-lead">We share code and data from our papers.{% if lab.links.github_org and lab.links.github_org != "" %} Lab repositories are on GitHub in the <a href="{{ lab.links.github_org }}">VU-Cog-Sci organization</a>.{% endif %}</p>
   </header>
 
   {%- if sw.size > 0 %}

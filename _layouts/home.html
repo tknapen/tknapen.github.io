@@ -61,7 +61,8 @@ layout: default
           {%- if pub.img %}
           <img src="{{ pub.img | relative_url }}" alt="" loading="lazy" decoding="async">
           {%- else %}
-          <span class="card-placeholder" aria-hidden="true">{{ pub.journal | default: site.title }}</span>
+          {%- assign pub_type = pub.type | default: "article" %}
+          <span class="card-placeholder" aria-hidden="true">{% if pub_type != "article" %}<span class="card-placeholder-type">{{ pub_type | capitalize }}</span>{% endif %}<span class="card-placeholder-journal">{{ pub.journal | default: site.title }}</span></span>
           {%- endif %}
         </div>
         <div class="card-body">
@@ -120,7 +121,8 @@ layout: default
     </ol>
   </section>
 
-  {%- assign featured = site.data.software | where: "featured", true %}
+  {%- comment -%} The Arrow of Time dataset has its own callout above, so it is left out of this list. {%- endcomment %}
+  {%- assign featured = site.data.software | where: "featured", true | where_exp: "s", "s.name != 'Arrow of Time'" %}
   <section class="home-section" aria-labelledby="h-software">
     <div class="section-head">
       <h2 id="h-software">Software &amp; data</h2>

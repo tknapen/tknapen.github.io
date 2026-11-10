@@ -34,17 +34,26 @@ layout: default
   </header>
   {%- if page.img %}
   <figure class="pub-figure">
-    <img src="{{ page.img | relative_url }}" alt="{{ page.img_alt | default: 'Figure from this paper' | escape }}" decoding="async">
+    <img src="{{ page.img | relative_url }}" alt="{{ page.img_alt | default: '' | escape }}" decoding="async">
   </figure>
   {%- endif %}
   {%- assign body = content | strip_html | strip -%}
   {%- if body != "" %}
+  {%- if content contains "<h3" %}
+  {%- comment -%} The body has its own subheadings (e.g. Highlights, Abstract): promote them to h2 instead of adding a second "Abstract" heading. {%- endcomment %}
+  <div class="pub-abstract pub-abstract-sections">
+    <div class="prose">
+      {{ content | replace: "<h3", "<h2" | replace: "</h3>", "</h2>" }}
+    </div>
+  </div>
+  {%- else %}
   <section class="pub-abstract" aria-labelledby="abstract-heading">
     <h2 id="abstract-heading">Abstract</h2>
     <div class="prose">
       {{ content }}
     </div>
   </section>
+  {%- endif %}
   {%- endif %}
   <p class="back-link"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>
 </article>
