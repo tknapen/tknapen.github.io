@@ -20,8 +20,8 @@ affiliations:
 # Leave a value empty to hide that link everywhere on the site.
 links:
   x: https://x.com/tknapen
-  bluesky: ""        # e.g. https://bsky.app/profile/<handle>
-  linkedin: ""       # e.g. https://www.linkedin.com/in/<handle>
+  bluesky: https://bsky.app/profile/tknapen.bsky.social
+  linkedin: https://www.linkedin.com/in/tomas-knapen-92425319
   github: https://github.com/tknapen
   github_org: https://github.com/VU-Cog-Sci
   scholar: https://scholar.google.com/citations?user=kO1CLaIAAAAJ

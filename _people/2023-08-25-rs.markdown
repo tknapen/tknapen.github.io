@@ -6,7 +6,7 @@ order: 12
 photo: /img/people/rs.jpg
 start: 2023
 end:
-now: "Justus Liebig University Giessen"  # PubMed 41394692, 2026 (bioRxiv preprint)
+now: "Justus Liebig University Giessen (Hebart lab)"  # confirmed by the PI, November 2026
 pubname: "Satzger R"
 description: "Research intern from the MSc Artificial Intelligence at the Vrije Universiteit Amsterdam."
 ---

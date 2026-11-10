@@ -6,7 +6,7 @@ order: 6
 photo: /img/people/ma.jpg
 start: 2018
 end:
-now: "Imperial College London"  # PubMed 41285580, 2026
+now: "University of California, Berkeley (Gallant and Silver labs)"  # confirmed by the PI, November 2026
 pubname: "Aqil M"
 themes: [computational-models]
 description: "PhD student who developed divisive normalization pRF models and the prfpy package."

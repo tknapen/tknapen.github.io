@@ -12,7 +12,7 @@ We are in the final stretch of data collection for **Arrow of Time (AOT)**, an i
 
 <img class="col three" src="/img/posts/ccn-AOT.png" alt="Conference poster for the Arrow of Time dataset, with methods, example stimuli, data-quality maps and a QR code linking to the sign-up form.">
 
-Each participant contributes ~21 hours of 7T fMRI at 1.7mm isotropic resolution (TR 1.5s, SMS3), viewing 2160 short, creative-commons video clips selected to span a wide range of natural scene and motion statistics. Alongside the main video experiment, every subject also completes separate retinotopy and video motion-energy localizer runs, giving the dataset a rich set of functional anchors per individual.
+Each participant contributes ~21 hours of 7T fMRI at 1.7mm isotropic resolution (TR 1.6 s, SMS 3), viewing 2160 short, creative-commons video clips selected to span a wide range of natural scene and motion statistics. Alongside the main video experiment, every subject also completes separate retinotopy and video motion-energy localizer runs, giving the dataset a rich set of functional anchors per individual.
 
 Early looks at the data are encouraging: noise ceilings across visual cortex are high, the motion-energy and retinotopic maps are crisp, and single-subject semantic structure is already visible in the video-evoked responses. These are exactly the properties we were hoping for when we designed the protocol.
 

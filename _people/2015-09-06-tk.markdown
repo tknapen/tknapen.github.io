@@ -14,6 +14,8 @@ links:
   orcid: https://orcid.org/0000-0001-5863-8689
   github: https://github.com/tknapen
   x: https://x.com/tknapen
+  bluesky: https://bsky.app/profile/tknapen.bsky.social
+  linkedin: https://www.linkedin.com/in/tomas-knapen-92425319
 ---
 Tomas Knapen leads the lab. He has been a principal investigator and group leader in Cognitive Psychology at the Vrije Universiteit Amsterdam (Faculty of Behavioural and Movement Sciences) since 2013, and a senior researcher at the Spinoza Centre for Neuroimaging (KNAW) since 2017. Since 2019 he has also been affiliated with the Netherlands Institute for Neuroscience (KNAW).
 

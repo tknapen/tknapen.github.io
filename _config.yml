@@ -27,6 +27,8 @@ social:
   links:
     - https://x.com/tknapen
     - https://github.com/tknapen
+    - https://bsky.app/profile/tknapen.bsky.social
+    - https://www.linkedin.com/in/tomas-knapen-92425319
 
 plugins:
   - jekyll-seo-tag
