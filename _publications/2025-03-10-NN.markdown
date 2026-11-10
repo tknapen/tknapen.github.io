@@ -1,7 +1,7 @@
 ---
 title: "What makes a theory of consciousness unscientific?"
 date: 2025-03-10
-authors: [Klincewicz M, Cheng T, Schmitz M, Sebastián MÁ, Snyder JS, "…", Knapen T]
+authors: [IIT-Concerned, Klincewicz M, Cheng T, Schmitz M, Sebastián MÁ, Snyder JS]
 journal: Nature Neuroscience
 citation: "28(4), 689–693"
 doi: 10.1038/s41593-025-01881-x
@@ -11,3 +11,5 @@ themes: [perception-awareness]
 description: "Argues that integrated information theory is unscientific because its core claims cannot be tested, even in principle."
 ---
 Theories of consciousness have a long and controversial history. One well-known proposal, integrated information theory, has recently been labeled as pseudoscience, which has caused a heated open debate. Here we discuss the case and argue that the theory is unscientific because its core claims are untestable even in principle.
+
+*Tomas Knapen is a member of the IIT-Concerned group.*
