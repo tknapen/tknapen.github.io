@@ -9,7 +9,7 @@ pmid: "41299177"
 type: article
 themes: [topographic-maps, computational-models]
 selected: true
-img: /img/publications/nature_2025_bodymaps.png
+img: /img/publications/nature_2025_bodymaps.jpg
 description: "Somatotopic body maps tile dorsolateral visual cortex and align with visual field tuning, linking visual and bodily reference frames."
 ---
 Our sensory systems work together to generate a cohesive experience of the world around us. Watching others being touched activates brain areas representing our own sense of touch: the visual system recruits touch-related computations to simulate bodily consequences of visual inputs. One long-standing question is how the brain implements this interface between visual and somatosensory representations. Here, to address this question, we developed a model to simultaneously map somatosensory body part tuning and visual field tuning throughout the brain. Applying our model to ongoing co-activations during rest resulted in detailed maps of body-part tuning in the brain's endogenous somatotopic network. During video watching, somatotopic tuning explains responses throughout the entire dorsolateral visual system, revealing an array of somatotopic body maps that tile the cortical surface. The body-position tuning of these maps aligns with visual tuning, predicting both preferences for visual field locations and visual-category preferences for body parts. These results reveal a mode of brain organization in which aligned visual-somatosensory topographic maps connect visual and bodily reference frames. This cross-modal interface is ideally situated to translate raw sensory impressions into more abstract formats that are useful for action, social cognition and semantic processing.

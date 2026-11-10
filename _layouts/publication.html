@@ -12,7 +12,7 @@ layout: default
     <p class="pub-meta">
       {%- if page.journal %}<cite>{{ page.journal }}</cite>{% endif %}
       {%- if page.citation %} {{ page.citation }}{% endif %}
-      ({{ page.date | date: "%B %-d, %Y" }})
+      ({{ page.date | date: "%Y" }})
     </p>
     {%- if page.doi or page.links %}
     <ul class="button-row">
