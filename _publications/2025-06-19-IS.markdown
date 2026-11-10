@@ -7,7 +7,7 @@ citation: "28(7), 112967"
 doi: 10.1016/j.isci.2025.112967
 pmid: "40678499"
 type: article
-themes: [precision-imaging, computational-models]
+themes: [computational-models]
 description: "Targeted line-scanning shows that stimuli in the pRF center and in its surround evoke distinct response profiles across cortical depth in V1."
 ---
 Neuronal populations in visual cortex integrate stimulus-driven input from the retina with contextual input from neighboring neurons, each targeting distinct cortical layers. Using line-scanning fMRI with precise targeting, we recorded depth-resolved responses in human visual cortex to stimuli tailored to each participant's population receptive field (pRF) of the target patch. Stimuli in the center of the pRF evoked increasing responses toward the pial surface with a small peak at middle depths, consistent with feedforward input. Large stimuli in the surround elicited activity in superficial and deep layers, where descending connections terminate. Unexpectedly, medium-sized stimuli produced a complex pattern, possibly due to overlap from neuronal populations involved in stimulus- and context-related processes. Additionally, large surround stimuli evoked a negative deflection at middle depths, potentially reflecting suppression from lateral inhibitory circuits. These findings bridge invasive animal studies with human neuroimaging and highlight the potential for manipulating cortical computations non-invasively in cognitive neuroscience.

@@ -7,7 +7,7 @@ citation: "10(2), 403–416"
 doi: 10.1038/s41562-025-02320-4
 pmid: "41233531"
 type: article
-themes: [perception-awareness, precision-imaging]
+themes: [perception-awareness]
 selected: true
 img: /img/publications/nhb_2025_binocular_rivalry.png
 img_alt: "Panel a sketches left- and right-eye ocular dominance columns across cortical layers, with input from the LGN, mutual inhibition and feedback. Panel b shows the rivalry, replay and localizer stimuli."

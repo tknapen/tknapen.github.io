@@ -7,7 +7,7 @@ citation: "228, 117683"
 doi: 10.1016/j.neuroimage.2020.117683
 pmid: "33385565"
 type: article
-themes: [precision-imaging, perception-awareness]
+themes: [perception-awareness]
 selected: true
 description: "Laminar imaging of ocular dominance columns separates feedforward input at deep and middle depths from attentional feedback near the surface."
 ---
