@@ -1,126 +1,17 @@
 ---
-layout: default
+layout: home
+title: Knapen Lab
+hero_title: Knapen Lab
+tagline: Computational cognitive neuroscience at the Vrije Universiteit Amsterdam and the Spinoza Centre for Neuroimaging
+lead: "We study how the brain's topographic maps organize perception, action and social cognition. We combine intensive, high-resolution neuroimaging with computational models that link brain activity to the sensory world and to behavior."
+buttons:
+  - title: Our research
+    url: /research/
+  - title: Publications
+    url: /publications/
+  - title: Join the lab
+    url: /join/
+hero_img: /assets/img/hero-flatmap.jpg
+hero_img_small: /assets/img/hero-flatmap-1200.jpg
+hero_alt: "Flattened maps of both cerebral hemispheres, colored by the strength of responses to movie watching."
 ---
-<div class="header-bar">
-  <h2>Knapen Lab</h2>
-<h3>Computational Cognitive Neuroscience</h3>
-</div>
-<br/>
-  <video class="col one right" id="html5-video" width="320" height="240" autoplay loop playsinline poster="/img/polar_2mm_7T.png" style="border-radius: 10px; background: rgb(230, 230, 230); padding: 0px;">
-    <source src="/img/movs/rotate_avs.mp4" type="video/mp4" />
-    <source src="/img/movs/rotate_avs.ogv" type="video/ogg" />
-    <source src="/img/movs/rotate_avs.webm" type="video/webm" />
-    Your browser does not support the video tag.
-    </video>
-<p>We are the Computational Cognitive Neuroscience Lab led by Tomas Knapen. The lab is equally based both at the <a href="http://www.vupsy.nl" target="_blank">Cognitive Psychology</a> department at the Vrije Universiteit Amsterdam, and at the <a href="http://www.spinozacentre.nl" target="_blank">Spinoza Centre for Neuroimaging</a> of the <a href="http://www.knaw.nl" target="_blank">Royal Dutch Academy of Sciences</a>.<br />
-We perform computational modeling, imaging, psychophysics, and eye movement experiments to investigate how activations in the brain give rise to our conscious awareness of ourselves and the world around us. Our "Spiel" is that we try to understand the structure of the brain's responses, even those of high cognitive function, in light of vision and other sensations. Specifically, we investigate how sensory information intermixes with cognitive factors such as attention, semantic processing, and reward. For more information on the topics we research, please see <a href="{{ site.baseurl }}/science/">the science section</a>, or click any of the topics further below on this page.</p>
-<p>For information on the procedures that we use in the lab, please consult the <a href="https://github.com/tknapen/tknapen.github.io/wiki" target="_blank">lab wiki</a></p>
-<p>And, if you want to follow the goings-on in the lab, you can follow the lab on Twitter:</p>
-<a href="https://twitter.com/tknapen?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="en" data-show-count="false" style="margin: 5px 5px 0 0;">Follow @tknapen</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<!-- News (blog) section -->
-<div class="header-bar" style="padding-bottom: 10px;">
-  <h3>News from the lab:</h3>
-  <hr />
-</div>
-<ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        {% if post.img %}
-        <img class="col half" src="{{ post.img }}">
-        {% endif %}
-        <h6><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
-        <p>{{ post.description }}</p>
-        <hr/>
-      </li>
-    {% endfor %}
-</ul>
-<!-- Pagination links -->
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">
-      &laquo; Prev
-    </a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">
-        {{ page }}
-      </a>
-    {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">
-        {{ page }}
-      </a>
-    {% endif %}
-  {% endfor %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">
-      Next &raquo;
-    </a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
-</div>
-{% endif %}
-<br />
-
-<hr/>
-<!-- Topics (science) section -->
-<div class="header-bar">
-  <a href="{{ site.baseurl }}/science"><h3>Science Topics</h3></a>
-</div>
-
-{% assign projects = site.science | sample:8 %}
-<div class="slider">
-  <div class="slides">
-  {% for project in projects%}
-  {% assign loopindex = forloop.index %}
-    <div id="slide-{{ loopindex }}" class="thumbnail">
-        <a href="{{ site.baseurl }}{{ project.url }}">   
-          {% if project.img %}
-          <img src="{{ project.img }}"/>
-          {% else %}
-          <div class="blankbox"></div>
-          {% endif %}    
-          <span>
-              <br/>
-              <h2 class="slide">{{ project.title }}</h2>
-              <br/>
-              <h3 class="slide">{{ project.description }}</h3>
-          </span>
-        </a>
-
-  </div>
-{% endfor %}
-</div>
-{% for project in projects %}
-{% assign loopindex = forloop.index %}
-<a href="#slide-{{ loopindex }}">{{ loopindex }}</a>
-{% endfor %}
-</div>
-<hr/>
-<br /><br /><br />
-<!-- <div class="header-bar"> -->
-  <h2>Search the site:</h2>
-<!-- </div> -->
- 
-<div class="post-content" align="center">
-  <script>
-  (function() {
-    var cx = '014656635965441356498:q7qdwbnec7o';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
-</div>

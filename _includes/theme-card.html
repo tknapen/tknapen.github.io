@@ -1,0 +1,20 @@
+{%- comment -%} Params: theme (research document), large (true for the /research/ page), hlevel (default 3), eager (true: no lazy loading) {%- endcomment -%}
+{%- assign t = include.theme -%}
+{%- assign h = include.hlevel | default: 3 -%}
+<article class="card theme-card{% if include.large %} theme-card-large{% endif %}">
+  <a class="card-link" href="{{ t.url | relative_url }}">
+    <div class="card-media">
+      {%- if t.img %}
+      <img src="{{ t.img | relative_url }}" alt="" width="1200" height="750"{% unless include.eager %} loading="lazy"{% endunless %} decoding="async">
+      {%- endif %}
+    </div>
+    <div class="card-body">
+      <h{{ h }} class="card-title">{{ t.title }}</h{{ h }}>
+      {%- if t.tagline %}
+      <p class="card-text">{{ t.tagline }}</p>
+      {%- elsif t.description %}
+      <p class="card-text">{{ t.description }}</p>
+      {%- endif %}
+    </div>
+  </a>
+</article>

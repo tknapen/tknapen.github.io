@@ -1,15 +1,13 @@
 ---
-layout: post
-title: How Visual Cortical Organization Is Altered by Ophthalmologic and Neurologic Disorders
-description: review of population receptive field applications together with Serge Dumoulin
-date:   2018-6-11 12:00:00
-journal: Annual Reviews of Vision Science
+title: "How Visual Cortical Organization Is Altered by Ophthalmologic and Neurologic Disorders"
+date: 2018-06-11
+authors: [Dumoulin SO, Knapen T]
+journal: Annual Review of Vision Science
+citation: "4, 357–379"
+doi: 10.1146/annurev-vision-091517-033948
+pmid: "29889657"
+type: review
+themes: [computational-models, topographic-maps]
+description: "Reviews pRF changes in healthy people and in eye and brain disorders, and proposes a model of how pRFs change in the healthy visual system."
 ---
-
-"<a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-vision-091517-033948" target="_blank" alt="How Visual Cortical Organization Is Altered by Ophthalmologic and Neurologic Disorders." >How Visual Cortical Organization Is Altered by Ophthalmologic and Neurologic Disorders.</a>". 
-
-Serge O. Dumoulin and **Tomas Knapen**
-
-<img class="col one right" src="/img/science/retmaps.png">
-
 Receptive fields are a core property of cortical organization. Modern neuroimaging allows routine access to visual population receptive fields (pRFs), enabling investigations of clinical disorders. Yet how the underlying neural circuitry operates is controversial. The controversy surrounds observations that measurements of pRFs can change in healthy adults as well as in patients with a range of ophthalmological and neurological disorders. The debate relates to the balance between plasticity and stability of the underlying neural circuitry. We propose that to move the debate forward, the field needs to define the implied mechanism. First, we review the pRF changes in both healthy subjects and those with clinical disorders. Then, we propose a computational model that describes how pRFs can change in healthy humans. We assert that we can correctly interpret the pRF changes in clinical disorders only if we establish the capabilities and limitations of pRF dynamics in healthy humans with mechanistic models that provide quantitative predictions.

@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{%- assign parts = page.title | split: " " -%}
+<article class="wrap person-page">
+  <header class="person-header">
+    <div class="person-photo person-photo-large">
+      {%- if page.photo %}
+      <img src="{{ page.photo | relative_url }}" alt="Portrait of {{ page.title }}" width="400" height="500" decoding="async">
+      {%- else %}
+      <span class="initials" aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>
+      {%- endif %}
+    </div>
+    <div class="person-intro">
+      <p class="kicker"><a href="{{ '/people/' | relative_url }}">People</a></p>
+      <h1 class="page-title">{{ page.title }}</h1>
+      {%- if page.role and page.role != "" %}
+      <p class="person-role-large">{{ page.role }}</p>
+      {%- elsif page.status == nil and page.description %}
+      <p class="person-role-large">{{ page.description }}</p>
+      {%- endif %}
+      {%- if page.status == "alumni" %}
+      <p class="person-status">Alumni{% if page.start %}, {{ page.start }}{% if page.end and page.end != "" %}–{{ page.end }}{% endif %}{% endif %}{% if page.now and page.now != "" %}. Now at {{ page.now }}{% endif %}</p>
+      {%- elsif page.status == "current" and page.start %}
+      <p class="person-status">In the lab since {{ page.start }}</p>
+      {%- endif %}
+      {% include person-links.html links=page.links label="Links" %}
+    </div>
+  </header>
+  <div class="wrap-text-inner prose person-bio">
+    {{ content }}
+  </div>
+  {%- if page.pubname and page.pubname != "" %}
+  {%- assign my_pubs = site.publications | where: "authors", page.pubname | sort: "date" | reverse %}
+  {%- if my_pubs.size > 0 %}
+  <section class="section-block wrap-text-inner" aria-labelledby="pubs-heading">
+    <h2 id="pubs-heading">Publications from the lab</h2>
+    <ol class="pub-list">
+      {%- for pub in my_pubs %}
+      {% include pub-entry.html pub=pub hlevel=3 %}
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endif %}
+  {%- endif %}
+  <p class="back-link wrap-text-inner"><a href="{{ '/people/' | relative_url }}">All people</a></p>
+</article>

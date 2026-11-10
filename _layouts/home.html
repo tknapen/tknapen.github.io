@@ -1,0 +1,135 @@
+---
+layout: default
+---
+{%- assign lab = site.data.lab -%}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-text">
+    <h1 class="hero-title" id="hero-title">{{ page.hero_title | default: page.title }}</h1>
+    {%- if page.tagline %}
+    <p class="hero-tagline">{{ page.tagline }}</p>
+    {%- endif %}
+    {%- if page.lead %}
+    <p class="hero-lead">{{ page.lead }}</p>
+    {%- endif %}
+    {%- if page.buttons %}
+    <ul class="button-row">
+      {%- for b in page.buttons %}
+      <li><a class="button{% unless forloop.first %} button-secondary{% endunless %}" href="{{ b.url | relative_url }}">{{ b.title }}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+  {%- if page.hero_img %}
+  <figure class="wrap hero-figure">
+    <img src="{{ page.hero_img | relative_url }}"
+         srcset="{{ page.hero_img_small | relative_url }} 1200w, {{ page.hero_img | relative_url }} 2400w"
+         sizes="(min-width: 1200px) 1120px, calc(100vw - 32px)"
+         width="2400" height="978" alt="{{ page.hero_alt | escape }}" fetchpriority="high" decoding="async">
+  </figure>
+  {%- endif %}
+</section>
+
+{{ content }}
+
+{%- assign themes = site.research | sort: "order" %}
+{%- if themes.size > 0 %}
+<section class="wrap home-section" aria-labelledby="h-research">
+  <div class="section-head">
+    <h2 id="h-research">Research</h2>
+    <a class="section-more" href="{{ '/research/' | relative_url }}">All research</a>
+  </div>
+  <div class="grid grid-themes">
+    {%- for t in themes %}
+    {% include theme-card.html theme=t hlevel=3 %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+{%- assign selected = site.publications | where: "selected", true | sort: "date" | reverse %}
+{%- if selected.size > 0 %}
+<section class="wrap home-section" aria-labelledby="h-selected">
+  <div class="section-head">
+    <h2 id="h-selected">Selected work</h2>
+    <a class="section-more" href="{{ '/publications/' | relative_url }}">All publications</a>
+  </div>
+  <div class="grid grid-papers">
+    {%- for pub in selected limit: 4 %}
+    <article class="card paper-card">
+      <a class="card-link" href="{{ pub.url | relative_url }}">
+        <div class="card-media card-media-figure">
+          {%- if pub.img %}
+          <img src="{{ pub.img | relative_url }}" alt="" loading="lazy" decoding="async">
+          {%- endif %}
+        </div>
+        <div class="card-body">
+          <h3 class="card-title card-title-paper">{{ pub.title }}</h3>
+          {%- if pub.authors %}
+          <p class="pub-authors">{% include authors.html authors=pub.authors short=true %}</p>
+          {%- endif %}
+          <p class="pub-meta">{% if pub.journal %}<cite>{{ pub.journal }}</cite>, {% endif %}{{ pub.date | date: "%Y" }}</p>
+        </div>
+      </a>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+{%- if lab.aot %}
+<section class="wrap home-section" aria-labelledby="h-aot">
+  <div class="callout">
+    <div class="callout-text">
+      <h2 id="h-aot">Arrow of Time dataset</h2>
+      <p>{{ lab.aot.summary }}</p>
+      {%- if lab.aot.release %}
+      <p class="callout-release">{{ lab.aot.release }}</p>
+      {%- endif %}
+      <ul class="button-row">
+        {%- if lab.aot.signup %}<li><a class="button" href="{{ lab.aot.signup }}">Get notified about the release</a></li>{% endif %}
+        {%- if lab.aot.post %}<li><a class="button button-secondary" href="{{ lab.aot.post | relative_url }}">Read more<span class="visually-hidden"> about the Arrow of Time dataset</span></a></li>{% endif %}
+      </ul>
+    </div>
+    {%- if page.aot_img %}
+    <figure class="callout-media">
+      <img src="{{ page.aot_img | relative_url }}" alt="{{ page.aot_img_alt | escape }}" loading="lazy" decoding="async">
+    </figure>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}
+
+<div class="wrap home-split">
+  <section class="home-section" aria-labelledby="h-news">
+    <div class="section-head">
+      <h2 id="h-news">News</h2>
+      <a class="section-more" href="{{ '/news/' | relative_url }}">All news</a>
+    </div>
+    <ol class="news-list news-list-compact">
+      {%- for post in site.posts limit: 3 %}
+      <li class="news-item">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        <h3 class="news-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {%- if post.description %}
+        <p>{{ post.description }}</p>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+
+  {%- assign featured = site.data.software | where: "featured", true %}
+  <section class="home-section" aria-labelledby="h-software">
+    <div class="section-head">
+      <h2 id="h-software">Software &amp; data</h2>
+      <a class="section-more" href="{{ '/software/' | relative_url }}">All software and data</a>
+    </div>
+    {%- if featured.size > 0 %}
+    <div class="sw-stack">
+      {%- for item in featured limit: 4 %}
+      {% include software-card.html item=item hlevel=3 compact=true %}
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </section>
+</div>

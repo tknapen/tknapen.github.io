@@ -1,0 +1,27 @@
+{%- comment -%} Params: item (entry from site.data.software), hlevel (default 3), compact (true: name, status and description only, whole card links). {%- endcomment -%}
+{%- assign s = include.item -%}
+{%- assign h = include.hlevel | default: 3 -%}
+{%- assign is_aot = false -%}
+{%- if s.name contains "Arrow of Time" -%}{%- assign is_aot = true -%}{%- endif -%}
+<article class="sw-card">
+  <div class="sw-head">
+    <h{{ h }} class="sw-name">{% if s.url and s.url != "" %}<a href="{{ s.url }}">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</h{{ h }}>
+    {%- if s.status and s.status != "" %}
+    <span class="badge badge-status badge-{{ s.status | slugify }}">{{ s.status | capitalize }}</span>
+    {%- endif %}
+  </div>
+  {%- if s.description %}
+  <p class="sw-desc">{{ s.description }}</p>
+  {%- endif %}
+  {%- unless include.compact %}
+  {%- capture sw_links -%}
+    {%- if s.url and s.url != "" %}<li><a href="{{ s.url }}">{% if s.url contains "github.com" %}Code{% else %}Website{% endif %}<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
+    {%- if s.docs and s.docs != "" %}<li><a href="{{ s.docs }}">Documentation<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
+    {%- if s.paper and s.paper != "" %}<li><a href="{{ s.paper | relative_url }}">Related paper<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
+    {%- if is_aot and site.data.lab.aot.signup %}<li><a href="{{ site.data.lab.aot.signup }}">Get notified about the release</a></li>{% endif %}
+  {%- endcapture -%}
+  {%- if sw_links != "" %}
+  <ul class="sw-links">{{ sw_links }}</ul>
+  {%- endif %}
+  {%- endunless %}
+</article>

@@ -1,0 +1,27 @@
+{%- comment -%}
+  One publication in a list. Params: pub (document), hlevel (heading level for the title, default 3).
+{%- endcomment -%}
+{%- assign pub = include.pub -%}
+{%- assign h = include.hlevel | default: 3 -%}
+{%- assign ptype = pub.type | default: "article" -%}
+<li class="pub" data-themes="{{ pub.themes | join: ' ' }}" data-selected="{% if pub.selected %}true{% else %}false{% endif %}" data-type="{{ ptype }}">
+  <h{{ h }} class="pub-title"><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h{{ h }}>
+  {%- if pub.authors %}
+  <p class="pub-authors">{% include authors.html authors=pub.authors %}</p>
+  {%- endif %}
+  <p class="pub-meta">
+    {%- if pub.journal %}<cite>{{ pub.journal }}</cite>{% endif %}
+    {%- if pub.citation %} {{ pub.citation }}{% endif %}
+    {% if pub.journal or pub.citation %}({{ pub.date | date: "%Y" }}){% else %}{{ pub.date | date: "%Y" }}{% endif %}
+    {%- if ptype != "article" %} <span class="badge">{{ ptype | capitalize }}</span>{% endif %}
+    {%- if pub.selected %} <span class="badge badge-selected">Selected</span>{% endif %}
+  </p>
+  {%- if pub.doi or pub.links %}
+  <ul class="pub-links">
+    {%- if pub.doi %}<li><a href="https://doi.org/{{ pub.doi }}">DOI<span class="visually-hidden"> for {{ pub.title | escape }}</span></a></li>{% endif %}
+    {%- if pub.links.preprint %}<li><a href="{{ pub.links.preprint }}">Preprint<span class="visually-hidden"> for {{ pub.title | escape }}</span></a></li>{% endif %}
+    {%- if pub.links.code %}<li><a href="{{ pub.links.code }}">Code<span class="visually-hidden"> for {{ pub.title | escape }}</span></a></li>{% endif %}
+    {%- if pub.links.data %}<li><a href="{{ pub.links.data }}">Data<span class="visually-hidden"> for {{ pub.title | escape }}</span></a></li>{% endif %}
+  </ul>
+  {%- endif %}
+</li>

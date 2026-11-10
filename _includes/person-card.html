@@ -1,0 +1,20 @@
+{%- comment -%} Params: person (people document), hlevel (default 3). Links to the person page only when the page has body text. {%- endcomment -%}
+{%- assign p = include.person -%}
+{%- assign h = include.hlevel | default: 3 -%}
+{%- assign body = p.content | strip_html | strip -%}
+{%- assign parts = p.title | split: " " -%}
+<article class="person-card">
+  <div class="person-photo">
+    {%- if p.photo %}
+    <img src="{{ p.photo | relative_url }}" alt="" width="400" height="500" loading="lazy" decoding="async">
+    {%- else %}
+    <span class="initials" aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>
+    {%- endif %}
+  </div>
+  <h{{ h }} class="person-name">{% if body != "" %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h{{ h }}>
+  {%- if p.role and p.role != "" %}
+  <p class="person-role">{{ p.role }}</p>
+  {%- elsif p.status == nil and p.description %}
+  <p class="person-role">{{ p.description }}</p>
+  {%- endif %}
+</article>
