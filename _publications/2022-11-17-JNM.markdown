@@ -1,13 +1,21 @@
 ---
-layout: post
-title: Robust high spatio-temporal line-scanning fMRI in humans at 7T using multi-echo readouts, denoising and prospective motion correction
-description: Methods for robust high spatio-temporal line-scanning fMRI at 7T.
-date: 2022-11-17 12:00:00
+title: "Robust high spatio-temporal line-scanning fMRI in humans at 7T using multi-echo readouts, denoising and prospective motion correction"
+date: 2022-11-17
+authors: [Raimondo L, Priovoulos N, Passarinho C, Heij J, Knapen T, Dumoulin SO, Siero JCW, van der Zwaag W]
 journal: Journal of Neuroscience Methods
+citation: "384, 109746"
+doi: 10.1016/j.jneumeth.2022.109746
+pmid: "36403778"
+type: article
+themes: [precision-imaging]
+description: "Multi-echo readouts, NORDIC denoising and navigator-based motion correction improve the sensitivity and reliability of line-scanning fMRI at 7T."
 ---
+**Background.** Functional magnetic resonance imaging (fMRI), typically using blood oxygenation level-dependent (BOLD) contrast weighted imaging, allows the study of brain function with millimeter spatial resolution and temporal resolution of one to a few seconds. At a mesoscopic scale, neurons in the human brain are spatially organized in structures with dimensions of hundreds of micrometers, while they communicate at the millisecond timescale. For this reason, it is important to develop an fMRI method with simultaneous high spatial and temporal resolution. Line-scanning promises to reach this goal at the cost of volume coverage.
 
-"<a href="https://doi.org/10.1016/j.jneumeth.2022.109746" target="_blank" alt="Robust high spatio-temporal line-scanning fMRI in humans at 7T using multi-echo readouts, denoising and prospective motion correction" >Robust high spatio-temporal line-scanning fMRI in humans at 7T using multi-echo readouts, denoising and prospective motion correction</a>".
+**New method.** Here, we release a comprehensive update to human line-scanning fMRI. First, we investigated multi-echo line-scanning with five different protocols varying the number of echoes and readout bandwidth while keeping the TR constant. In these, we compared different echo combination approaches in terms of BOLD activation (sensitivity) and temporal signal-to-noise ratio. Second, we implemented an adaptation of NOise reduction with DIstribution Corrected principal component analysis (NORDIC) thermal noise removal for line-scanning fMRI data. Finally, we tested three image-based navigators for motion correction and investigated different ways of performing fMRI analysis on the timecourses which were influenced by the insertion of the navigators themselves.
 
-Luisa Raimondo, Nikos Priovoulos, Catarina Passarinho, Jurjen Heij, Tomas Knapen, Serge O. Dumoulin, Jeroen C.W. Siero, Wietske van der Zwaag
+**Results.** The presented improvements are relatively straightforward to implement; multi-echo readout and NORDIC denoising together, significantly improve data quality in terms of tSNR and t-statistical values, while motion correction makes line-scanning fMRI more robust.
 
-**Abstract** BACKGROUND Functional magnetic resonance imaging (fMRI), typically using blood oxygenation level-dependent (BOLD) contrast weighted imaging, allows study of brain function with millimeter spatial resolution and temporal resolution of one to a few seconds. At a mesoscopic scale, neurons are organized in structures of hundreds of micrometers and communicate at millisecond timescales, motivating methods with simultaneous high spatial and temporal resolution. Line-scanning promises this at the cost of volume coverage. NEW METHOD We provide a comprehensive update to human line-scanning fMRI, including multi-echo protocols, NORDIC denoising, and image-based navigators for motion correction, and we evaluate analysis strategies for the resulting time courses. RESULTS Multi-echo readout and NORDIC denoising significantly improved tSNR and t-statistics, while motion correction improved robustness. COMPARISON WITH EXISTING METHODS The combination of multi-echo acquisition and denoising in 1D line-scanning is novel and outperforms previous single-echo implementations. CONCLUSIONS The improved acquisition increases sensitivity and reliability, supporting future neuroscientific and clinical applications.
+**Comparison with existing methods.** Multi-echo acquisitions and denoising have previously been applied in 3D magnetic resonance imaging. Their combination and application to 1D line-scanning is novel. The current proposed method greatly outperforms the previous line-scanning acquisitions with single-echo acquisition, in terms of tSNR (4.0 for single-echo line-scanning and 36.2 for NORDIC-denoised multi-echo) and t-statistical values (3.8 for single-echo line-scanning and 25.1 for NORDIC-denoised multi-echo line-scanning).
+
+**Conclusions.** Line-scanning fMRI was advanced compared to its previous implementation in order to improve sensitivity and reliability. The improved line-scanning acquisition could be used, in the future, for neuroscientific and clinical applications.

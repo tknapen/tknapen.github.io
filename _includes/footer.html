@@ -1,7 +1,41 @@
+{%- assign lab = site.data.lab -%}
 <footer class="site-footer">
-
-  <div class="wrapper">
-  	<!-- <p>This site was built using <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and is hosted on <a href="https://github.com" target="_blank">Github</a> . &#169; 2015</p> -->
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-lab">
+        <p class="footer-name">{{ lab.name | default: site.title }}</p>
+        {%- if lab.email %}
+        <p><a href="mailto:{{ lab.email }}">{{ lab.email }}</a></p>
+        {%- endif %}
+      </div>
+      {%- for aff in lab.affiliations %}
+      <div class="footer-aff">
+        <p class="footer-aff-name">{% if aff.url %}<a href="{{ aff.url }}">{{ aff.name }}</a>{% else %}{{ aff.name }}{% endif %}</p>
+        {%- if aff.unit %}<p>{{ aff.unit }}</p>{% endif %}
+        {%- if aff.address %}<p>{{ aff.address }}</p>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    {%- if lab.funders and lab.funders.size > 0 %}
+    <p class="footer-funders">Funded by
+      {%- for f in lab.funders %}
+      {%- if forloop.last and forloop.length > 1 %} and{% elsif forloop.first == false %},{% endif %}
+      {% if f.url %}<a href="{{ f.url }}">{{ f.name }}</a>{% else %}{{ f.name }}{% endif %}
+      {%- endfor %}.</p>
+    {%- endif %}
+    <div class="footer-bottom">
+      <ul class="footer-links" aria-label="Lab elsewhere">
+        {%- if lab.links.github_org and lab.links.github_org != "" %}<li><a href="{{ lab.links.github_org }}">GitHub (lab)</a></li>{% endif %}
+        {%- if lab.links.github and lab.links.github != "" %}<li><a href="{{ lab.links.github }}">GitHub</a></li>{% endif %}
+        {%- if lab.links.scholar and lab.links.scholar != "" %}<li><a href="{{ lab.links.scholar }}">Google Scholar</a></li>{% endif %}
+        {%- if lab.links.orcid and lab.links.orcid != "" %}<li><a href="{{ lab.links.orcid }}">ORCID</a></li>{% endif %}
+        {%- if lab.links.x and lab.links.x != "" %}<li><a href="{{ lab.links.x }}">X</a></li>{% endif %}
+        {%- if lab.links.bluesky and lab.links.bluesky != "" %}<li><a href="{{ lab.links.bluesky }}">Bluesky</a></li>{% endif %}
+        {%- if lab.links.linkedin and lab.links.linkedin != "" %}<li><a href="{{ lab.links.linkedin }}">LinkedIn</a></li>{% endif %}
+        {%- if lab.links.wiki and lab.links.wiki != "" %}<li><a href="{{ lab.links.wiki }}">Lab wiki</a></li>{% endif %}
+        <li><a href="{{ '/feed.xml' | relative_url }}">News feed</a></li>
+      </ul>
+      <p class="footer-copy">&copy; {{ site.time | date: "%Y" }} {{ lab.name | default: site.title }}</p>
+    </div>
   </div>
-
 </footer>

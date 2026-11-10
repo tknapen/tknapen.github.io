@@ -1,22 +1,29 @@
+{%- assign current_section = "" -%}
+{%- for item in site.data.navigation -%}
+  {%- if page.url == item.url -%}
+    {%- assign current_section = item.url -%}
+  {%- elsif page.url contains item.url -%}
+    {%- assign current_section = item.url -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if current_section == "" -%}
+  {%- if page.collection == "posts" -%}{%- assign current_section = "/news/" -%}
+  {%- elsif page.collection == "resources" -%}{%- assign current_section = "/software/" -%}
+  {%- endif -%}
+{%- endif -%}
 <header class="site-header">
-
-  <div class="wrapper">
-
-    <nav class="site-nav">
-
-      <div class="trigger">
-        <!-- {{ site.title }} instead of blog -->
-        <a class="page-link" href="{{ site.baseurl }}/">blog</a>
-
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-
-      </div>
+  <div class="wrap header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ site.data.lab.name | default: site.title }}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <svg class="nav-toggle-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+      <span>Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        {%- for item in site.data.navigation %}
+        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% elsif current_section == item.url %} class="is-current" aria-current="true"{% endif %}>{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
     </nav>
-
   </div>
-
 </header>

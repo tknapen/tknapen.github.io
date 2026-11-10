@@ -1,12 +1,16 @@
 ---
-layout: page
 title: Marco Aqil
-date: 2018-07-01 07:59:00
-description: PhD Student shared with Dumoulin Lab
-img: /img/posts/pupil_eye.png
+role: PhD student (with Serge Dumoulin)
+status: alumni
+order: 6
+photo: /img/people/ma.jpg
+start: 2018
+end:
+now: "University of California, Berkeley (Gallant and Silver labs)"  # confirmed by the PI, November 2026
+pubname: "Aqil M"
+themes: [computational-models]
+description: "PhD student who developed divisive normalization pRF models and the prfpy package."
 ---
+Marco Aqil was a PhD student on Serge Dumoulin's VICI project, shared between the Dumoulin lab and ours. He developed new population receptive field (pRF) models to explain nonlinear processing in the visual system, and related these processing characteristics to their biological foundations.
 
-<img class="col one right" src="/img/people/ma.jpg">
-
-Marco's is a PhD student on Serge Dumoulin's VICI project. He is developing novel pRF models to explain non-linear processing in the visual system, and relate these processing characteristics to biological foundations. 
-
+He proposed a pRF model based on divisive normalization that captures disparate response signatures throughout the human visual hierarchy with a single computation ([Aqil et al., 2021](/publications/2021-11-15-PNAS/)). He then linked the model's parameters to serotonin and GABA receptor densities ([Aqil et al., 2024](/publications/2024-01-03-SA/)) and used it to study how psilocybin alters contextual computations in vision ([Aqil et al., 2025](/publications/2025-11-21-NC/)). With Tomas Knapen he developed [prfpy](https://github.com/VU-Cog-Sci/prfpy), the lab's package for fitting pRF models.

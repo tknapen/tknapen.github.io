@@ -1,0 +1,107 @@
+# Software and datasets from the lab, rendered on /software/ and (featured: true, max 4) on the home page.
+# Fields: name, kind (software | dataset), status (maintained | beta | in development | upcoming | archived | available),
+# description, install (optional command), url (verified only), docs, extra_links (label + url),
+# paper (internal URL of the related paper), themes, featured.
+# GitHub URLs were checked with the GitHub search API in November 2026.
+
+- name: prfmodel (Popylar)
+  kind: software
+  status: beta
+  description: "Python package for fitting population receptive field models (including compressive spatial summation, difference-of-Gaussians and divisive normalization variants) and related models such as connective field and contrast sensitivity models, on GPU-accelerated backends (TensorFlow, PyTorch or JAX, through Keras 3). Developed by the Popylar team with the Netherlands eScience Center."
+  install: pip install "prfmodel[tensorflow]"
+  url: https://github.com/popylar-org/prfmodel
+  docs: https://popylar-org.github.io/prfmodel/
+  extra_links:
+    - label: Workshop materials (Coimbra, November 2026)
+      url: https://popylar-org.github.io/2026-11-05_workshop-coimbra/
+    - label: PyPI
+      url: https://pypi.org/project/prfmodel/
+  themes: [computational-models, topographic-maps]
+  featured: true
+
+- name: prfpy
+  kind: software
+  status: available
+  description: "Python package to simulate and fit population receptive field (pRF) models to time series data, including the divisive normalization pRF model. prfmodel, developed in the Popylar project, builds on it."
+  url: https://github.com/VU-Cog-Sci/prfpy
+  paper: /publications/2021-11-15-PNAS/
+  themes: [computational-models, topographic-maps]
+  featured: true
+
+- name: nideconv
+  kind: software
+  status: maintained
+  description: "Python package to estimate the shape of responses in fMRI, pupil and other time series by deconvolution, including hierarchical Bayesian estimation."
+  url: https://github.com/VU-Cog-Sci/nideconv
+  docs: https://nideconv.readthedocs.io/en/latest/
+  themes: [computational-models]
+  featured: true
+
+- name: pRFtime
+  kind: software
+  status: available
+  description: "Python toolbox for spatiotemporal forward modeling of brain signals. It combines pRF maps from fMRI with MEG to estimate when each visual field map contributes to the measured response."
+  url: https://github.com/kateic/pRFtime
+  paper: /publications/2026-07-10-PCB/
+  themes: [precision-imaging, computational-models]
+
+- name: linescanning
+  kind: software
+  status: available
+  description: "Tools for planning, reconstructing and preprocessing line-scanning fMRI data at the Spinoza Centre, including the selection of a target location on the cortical surface."
+  url: https://github.com/gjheij/linescanning
+  docs: https://linescanning.readthedocs.io/en/latest/
+  paper: /publications/2023-08-22-HBM/
+  themes: [precision-imaging]
+
+- name: exptools2
+  kind: software
+  status: available
+  description: "Python package that wraps PsychoPy to build psychophysics and fMRI experiments with accurate timing and logging, with optional eye tracking."
+  url: https://github.com/VU-Cog-Sci/exptools2
+
+- name: nsd_access
+  kind: software
+  status: available
+  description: "Python package for loading data from the Natural Scenes Dataset (NSD), a 7T fMRI dataset: regions of interest, mapping-experiment results and single-trial response estimates, in volume or surface formats."
+  url: https://github.com/tknapen/nsd_access
+  themes: [precision-imaging]
+
+- name: Vicarious somatotopy analysis code
+  kind: software
+  status: available
+  description: "Analysis code for the vicarious body maps study, which fits connective field models of somatosensory and visual topography to 7T Human Connectome Project data."
+  url: https://github.com/N-HEDGER/Vicarious_somatotopy
+  paper: /publications/2025-11-26-NAT/
+  themes: [topographic-maps, computational-models]
+
+- name: Arrow of Time
+  kind: dataset
+  status: upcoming
+  description: "An intensive 7T fMRI dataset of brain responses to 2,160 brief naturalistic videos, with about 21 hours of scanning per participant at 1.7 mm isotropic resolution, plus retinotopy and motion-energy localizers for every participant."
+  url: /2026/04/24/AOT.html
+  themes: [precision-imaging]
+
+- name: Vicarious body-map atlas
+  kind: dataset
+  status: available
+  description: "An atlas of the somatotopic body maps described in the vicarious body maps study. The paper's data availability statement describes how to obtain it."
+  paper: /publications/2025-11-26-NAT/
+  themes: [topographic-maps]
+
+- name: HCP 59k pycortex subject
+  kind: dataset
+  status: available
+  description: "A pycortex subject (999999) for the 59k-vertex surfaces of the Human Connectome Project CIFTI format, for plotting surface data on flatmaps."
+  url: https://figshare.com/articles/dataset/59k_HCP_subject_entry_for_pycortex_database/13372958
+  docs: /resources/hcp_999999/
+  themes: [precision-imaging]
+
+- name: Cerebellar retinotopy atlas
+  kind: dataset
+  status: available
+  description: "Atlas of the retinotopic maps in the human cerebellum (oculomotor vermis, lobule VIIb and lobule VIIIb), derived from Human Connectome Project retinotopy data, in 2 mm MNI space, with the code that produced it."
+  url: https://github.com/daanvanes/hcp_cerebellum_retinotopy
+  paper: /publications/2019-05-20-CB/
+  themes: [topographic-maps]
+  featured: true

@@ -1,0 +1,13 @@
+---
+title: "Disruption of implicit perceptual memory by intervening neutral stimuli"
+date: 2007-08-13
+authors: [Kanai R, Knapen T, van Ee R, Verstraten FA]
+journal: Vision Research
+citation: "47(20), 2675–2683"
+doi: 10.1016/j.visres.2007.06.016
+pmid: "17697690"
+type: article
+themes: [perception-awareness]
+description: "A neutral stimulus shown between a prime and an ambiguous test reduces the bias to perceive the test in the same way as the prime."
+---
+After viewing directional motion, one is likely to perceive a subsequently presented directionally ambiguous motion as being in the same direction as the prior motion. The perceptual bias towards the most recent percept gradually develops as the interval between the prior stimulus and a subsequent test becomes longer. This form of positive bias, or priming, is created in an automatic fashion. It remain unclear how such perceptual bias could be eliminated by a stimulus manipulation. Here we examine whether presentation of a stimulus, which was neutral as to the competing perceptual interpretations, during the interval between prior and test stimuli, disrupts the development of the priming effect. In experiments with ambiguous motion, we used stationary gratings as the neutral stimuli, and in an experiment with binocular rivalry between orthogonal gratings, we used a plaid pattern consisting of the two rival gratings. In both cases, presenting the neutral stimuli reduced the perceptual bias. These findings show that the visual system dynamically calibrates its internal bias using a recent percept and that this internal bias can be nullified by presenting neutral stimuli.

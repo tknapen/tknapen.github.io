@@ -1,11 +1,17 @@
 ---
-layout: page
-title: Ines Verissimo
-date: 2018-07-02 07:59:00
-description: PhD student @ VU
-img: /img/prf/eccen_quadrant.png
+title: Inês Veríssimo
+role: PhD student (with Chris Olivers)
+status: alumni
+order: 7
+photo: /img/people/iv.jpg
+start: 2018
+end:
+now: ""
+pubname: "Veríssimo IS"
+themes: [topographic-maps]
+description: "PhD student in Chris Olivers' lab, co-supervised by Tomas Knapen."
+links:
+  website: https://iverissimo.github.io/ISV/
+  github: https://github.com/iverissimo
 ---
-
-<img class="col one right" src="/img/people/iv.jpg">
-
-Ines is a PhD student in the lab of Chris Olivers and is co-supervised by Tomas. Her interests are in retinotopic and somatotopic mapping, and the interactions between feature-based attention and visual-spatial representations. 
+Inês Veríssimo was a PhD student in Chris Olivers' lab at the Vrije Universiteit Amsterdam, co-supervised by Tomas Knapen. Her interests were in retinotopic and somatotopic mapping, and in the interactions between feature-based attention and visual-spatial representations.

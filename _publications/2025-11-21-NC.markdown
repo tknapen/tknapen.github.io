@@ -1,16 +1,16 @@
 ---
-layout: post
-title: Psilocybin alters visual contextual computations
-description: Effects of psilocybin on contextual computations in visual processing.
-date: 2025-11-21 12:00:00
+title: "Psilocybin alters visual contextual computations"
+date: 2025-11-21
+authors: [Aqil M, de Hollander G, Vreugdenhil N, Knapen T, Dumoulin SO]
 journal: Nature Communications
+citation: "16(1), 10271"
+doi: 10.1038/s41467-025-65150-y
+pmid: "41271688"
+type: article
+themes: [computational-models, perception-awareness]
+selected: true
 img: /img/publications/natcomms_2025_psilocybin.png
+img_alt: "Panel a shows psychometric curves for an Ebbinghaus illusion size judgment under placebo, 5 mg and 10 mg psilocybin. Panels b and c show a larger illusion at both doses than under placebo."
+description: "Psilocybin changes contextual effects in perception and in visual cortex responses, and a computational model links the two."
 ---
-
-"<a href="https://doi.org/10.1038/s41467-025-65150-y" target="_blank" alt="Psilocybin alters visual contextual computations" >Psilocybin alters visual contextual computations</a>".
-
-Marco Aqil, Gilles de Hollander, Nina Vreugdenhil, Tomas Knapen, Serge O. Dumoulin
-
-<img class="col one right" src="/img/publications/natcomms_2025_psilocybin.png">
-
-**Abstract** Psilocybin alters perception and brain dynamics. Here we combined psychophysics, ultra-high-field fMRI, and computational modeling to test its effects on contextual computations. We found that psilocybin alters contextual perception in the Ebbinghaus illusion, alters contextual modulation in cortical responses to visual stimuli, and is captured by a computational model linking these effects. These findings suggest altered contextual computation as a potential general mechanism underlying psychedelic action.
+Psilocybin alters perception and brain dynamics. Here, we investigate the effects of psilocybin using psychophysics, ultra-high field functional MRI, and computational modeling. We find that psilocybin alters contextual perception in the Ebbinghaus illusion, as well as contextual modulation in cortical responses to visual stimuli. We propose a computational model capable of capturing and linking these changes. Leveraging vision as a beachhead, our findings highlight the alteration of contextual computations as a potential general mechanism underlying psychedelic action.

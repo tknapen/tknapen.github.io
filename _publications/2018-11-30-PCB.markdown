@@ -1,0 +1,13 @@
+---
+title: "How pupil responses track value-based decision-making during and after reinforcement learning"
+date: 2018-11-30
+authors: [Van Slooten JC, Jahfari S, Knapen T, Theeuwes J]
+journal: PLoS Computational Biology
+citation: "14(11), e1006632"
+doi: 10.1371/journal.pcbi.1006632
+pmid: "30500813"
+type: article
+themes: [computational-models, perception-awareness]
+description: "During reinforcement learning, the pupil tracks value beliefs before choice, and value uncertainty and reward prediction errors after feedback."
+---
+Cognition can reveal itself in the pupil, as latent cognitive processes map onto specific pupil responses. For instance, the pupil dilates when we make decisions and these pupil size fluctuations reflect decision-making computations during and after a choice. Surprisingly little is known, however, about how pupil responses relate to decisions driven by the learned value of stimuli. This understanding is important, as most real-life decisions are guided by the outcomes of earlier choices. The goal of this study was to investigate which cognitive processes the pupil reflects during value-based decision-making. We used a reinforcement learning task to study pupil responses during value-based decisions and subsequent decision evaluations, employing computational modeling to quantitatively describe the underlying cognitive processes. We found that the pupil closely tracks reinforcement learning processes independently across participants and across trials. Prior to choice, the pupil dilated as a function of trial-by-trial fluctuations in value beliefs about the to-be chosen option and predicted an individual's tendency to exploit high value options. After feedback a biphasic pupil response was observed, the amplitude of which correlated with participants' learning rates. Furthermore, across trials, early feedback-related dilation scaled with value uncertainty, whereas later constriction scaled with signed reward prediction errors. These findings show that pupil size fluctuations can provide detailed information about the computations underlying value-based decisions and the subsequent updating of value beliefs. As these processes are affected in a host of psychiatric disorders, our results indicate that pupillometry can be used as an accessible tool to non-invasively study the processes underlying ongoing reinforcement learning in the clinic.

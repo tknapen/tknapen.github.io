@@ -1,0 +1,17 @@
+---
+layout: post
+title: PLoS Computational Biology paper combining fMRI and MEG published
+description: A forward model that combines pRF maps from fMRI with MEG estimates when each visual field map contributes to the measured response.
+date: 2026-07-10 12:00:00
+journal: PLoS Computational Biology
+---
+
+[Non-invasive mapping of the temporal processing hierarchy in the human visual cortex](https://doi.org/10.1371/journal.pcbi.1014434)
+
+K Eickhoff, A Hillebrand, T Knapen, MC de Jong, SO Dumoulin
+
+See the [publication page](/publications/2026-07-10-PCB/) for the full reference and links.
+
+The paper introduces a forward model that links population receptive field maps measured with fMRI to responses measured with MEG. For each visual field map, the model predicts its contribution to the MEG signal. Comparing these predictions with the measured responses shows how much each map contributes, and when. Primary visual cortex explained most of the variance in the MEG sensors, and did so earlier than extrastriate areas.
+
+The method is available as the Python toolbox [pRFtime](https://github.com/kateic/pRFtime).

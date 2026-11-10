@@ -1,0 +1,13 @@
+---
+title: "Global saccadic adaptation"
+date: 2010-06-25
+authors: [Rolfs M, Knapen T, Cavanagh P]
+journal: Vision Research
+citation: "50(18), 1882–1890"
+doi: 10.1016/j.visres.2010.06.010
+pmid: "20600235"
+type: article
+themes: [perception-awareness]
+description: "Adapting saccades in all directions at once yields strong adaptation that generalizes across space, beyond a sum of direction-specific effects."
+---
+Our actions need constant calibration to arrive accurately at locations of their intended goals; errors in execution must drive rapid adjustments. As an example, saccadic eye movements are vital for bringing objects of interest into the high-acuity center of vision and they must be continually tuned to compensate for ongoing changes in body, muscle strength and neural variability. This adaptation of eye movement responses can be induced artificially by systematically displacing the saccade targets by a constant proportion during each saccade. Observers do not notice these shifts and yet the oculomotor system does, rapidly compensating for the landing error until the saccades finally land close to the artificially displaced target. This recalibration has been described as spatially selective, dropping off with distance in direction and amplitude from the adapted saccade vector. However, we now report that this local adaptation property is a consequence of adapting to only one direction at a time, the method generally used in previous studies. When we induced adaptation in all directions, using a quasi-random walk where each target was displaced 25% back toward to the previous fixation, we found strong, spatially generalized adaptation that could not be accounted for by an accumulation of many vector-specific adaptations. This global adaptation is a plausible strategy for calibration given the absence of any obvious growth changes or muscle deficits that would lead to vector specific losses and it provides a robust model for testing motor calibration.

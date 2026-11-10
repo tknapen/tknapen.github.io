@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{%- assign parts = page.title | split: " " -%}
+<article class="wrap person-page">
+  <header class="person-header">
+    <div class="person-photo person-photo-large">
+      {%- if page.photo %}
+      <img src="{{ page.photo | relative_url }}" alt="Portrait of {{ page.title }}" width="400" height="500" decoding="async">
+      {%- else %}
+      <span class="initials" aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>
+      {%- endif %}
+    </div>
+    <div class="person-intro">
+      <p class="kicker"><a href="{{ '/people/' | relative_url }}">People</a></p>
+      <h1 class="page-title">{{ page.title }}</h1>
+      {%- if page.role and page.role != "" %}
+      <p class="person-role-large">{{ page.role }}</p>
+      {%- elsif page.status == nil and page.description %}
+      <p class="person-role-large">{{ page.description }}</p>
+      {%- endif %}
+      {%- if page.status == "alumni" %}
+      <p class="person-status">Former lab member{% if page.start %}{% if page.end and page.end != "" %}, {{ page.start }}–{{ page.end }}{% else %} (joined {{ page.start }}){% endif %}{% endif %}{% if page.now and page.now != "" %}. Now at {{ page.now }}{% endif %}</p>
+      {%- elsif page.status == "current" and page.start %}
+      {%- assign this_year = site.time | date: "%Y" | plus: 0 %}<p class="person-status">{% if page.start > this_year %}Joins the lab in {{ page.start }}{% else %}In the lab since {{ page.start }}{% endif %}</p>
+      {%- endif %}
+      {% include person-links.html links=page.links label="Links" %}
+    </div>
+  </header>
+  <div class="wrap-text-inner prose person-bio">
+    {{ content }}
+  </div>
+  {%- if page.pubname and page.pubname != "" %}
+  {%- assign my_pubs = site.publications | where: "authors", page.pubname | sort: "date" | reverse %}
+  {%- assign all_pubs_count = my_pubs.size %}
+  {%- comment -%} The PI is an author on nearly every paper: show the selected papers and link to the full list. {%- endcomment %}
+  {%- assign hide_sel = false %}
+  {%- if page.status == "pi" %}{% assign my_pubs = my_pubs | where: "selected", true %}{% assign hide_sel = true %}{% endif %}
+  {%- if my_pubs.size > 0 %}
+  <section class="section-block wrap-text-inner" aria-labelledby="pubs-heading">
+    <h2 id="pubs-heading">{% if page.status == "pi" %}Selected publications{% else %}Publications from the lab{% endif %}</h2>
+    <ol class="pub-list">
+      {%- for pub in my_pubs %}
+      {% include pub-entry.html pub=pub hlevel=3 hide_selected=hide_sel %}
+      {%- endfor %}
+    </ol>
+    {%- if page.status == "pi" and all_pubs_count > my_pubs.size %}
+    <p class="section-note section-note-after"><a class="more-link" href="{{ '/publications/' | relative_url }}">All {{ site.publications.size }} publications</a></p>
+    {%- endif %}
+  </section>
+  {%- endif %}
+  {%- endif %}
+  <p class="back-link wrap-text-inner"><a href="{{ '/people/' | relative_url }}">All people</a></p>
+</article>

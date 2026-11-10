@@ -1,0 +1,13 @@
+---
+title: "The reference frame of the tilt aftereffect"
+date: 2010-01-19
+authors: [Knapen T, Rolfs M, Wexler M, Cavanagh P]
+journal: Journal of Vision
+citation: "10(1), 8"
+doi: 10.1167/10.1.8
+pmid: "20143901"
+type: article
+themes: [topographic-maps, perception-awareness]
+description: "The tilt aftereffect depends on whether adaptation and test share a retinal location, not on their position relative to the head or world."
+---
+Perceptual aftereffects provide a sensitive tool to investigate the influence of eye and head position on visual processing. There have been recent indications that the TAE is remapped around the time of a saccade to remain aligned to the adapting location in the world. Here, we investigate the spatial frame of reference of the TAE by independently manipulating retinal position, gaze orientation, and head orientation between adaptation and test. The results show that the critical factor in the TAE is the correspondence between the adaptation and test locations in a retinotopic frame of reference, whereas world- and head-centric frames of reference do not play a significant role. Our results confirm that adaptation to orientation takes place at retinotopic levels of visual processing. We suggest that the remapping process that plays a role in visual stability does not transfer feature gain information around the time of eye (or head) movements.

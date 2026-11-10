@@ -1,0 +1,32 @@
+{%- comment -%}
+  Renders an author list. Params: authors (array of "Lastname Initials"), short (true, for cards: when more than 3 authors, the first author, then an ellipsis and any lab authors, or "et al." if there are none).
+  Lab authors (site.data.lab.lab_authors) are bold. Lists longer than 12: first 10, an ellipsis, lab authors not yet shown, last author.
+{%- endcomment -%}
+{%- assign _au = include.authors -%}
+{%- assign _lab = site.data.lab.lab_authors -%}
+{%- if _au.first -%}
+  {%- assign _n = _au.size -%}
+  {%- if include.short and _n > 3 -%}
+    {%- assign _a = _au.first -%}
+    {%- if _lab contains _a %}<strong>{{ _a | replace: " ", " " }}</strong>{% else %}{{ _a | replace: " ", " " }}{% endif -%}
+    {%- assign _shown = 0 -%}
+    {%- for _b in _au offset: 1 -%}
+      {%- if _lab contains _b %}{% if _shown == 0 %} … {% else %}, {% endif %}<strong>{{ _b | replace: " ", " " }}</strong>{% assign _shown = _shown | plus: 1 %}{% endif -%}
+    {%- endfor -%}
+    {%- if _shown == 0 %} et al.{% endif -%}
+  {%- elsif _n > 12 -%}
+    {%- for _a in _au limit: 10 -%}
+      {%- if _lab contains _a %}<strong>{{ _a | replace: " ", " " }}</strong>{% else %}{{ _a | replace: " ", " " }}{% endif %}, {% endfor -%}
+    …
+    {%- for _a in _au offset: 10 -%}
+      {%- if forloop.last == false and _lab contains _a %}, <strong>{{ _a | replace: " ", " " }}</strong>{% endif -%}
+    {%- endfor -%}
+    {%- assign _a = _au.last -%}, {% if _lab contains _a %}<strong>{{ _a | replace: " ", " " }}</strong>{% else %}{{ _a | replace: " ", " " }}{% endif %}
+  {%- else -%}
+    {%- for _a in _au -%}
+      {%- if _lab contains _a %}<strong>{{ _a | replace: " ", " " }}</strong>{% else %}{{ _a | replace: " ", " " }}{% endif %}{% unless forloop.last %}, {% endunless -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- elsif _au -%}
+  {{ _au }}
+{%- endif -%}

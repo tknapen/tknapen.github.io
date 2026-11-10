@@ -1,0 +1,13 @@
+---
+title: "Distance in feature space determines exclusivity in visual rivalry"
+date: 2007-10-22
+authors: [Knapen T, Kanai R, Brascamp J, van Boxtel J, van Ee R]
+journal: Vision Research
+citation: "47(26), 3269–3275"
+doi: 10.1016/j.visres.2007.09.005
+pmid: "17950397"
+type: article
+themes: [perception-awareness]
+description: "Exclusive dominance in monocular and binocular rivalry grows with the distance between rival patterns in feature space, such as color and depth."
+---
+Visual rivalry is thought to be a distributed process that simultaneously takes place at multiple levels in the visual processing hierarchy. Also, the different types of rivalry, such as binocular and monocular rivalry, are thought to engage shared underlying mechanisms. We hypothesized that the amount of perceptual suppression during rivalry as measured by the total duration of fully exclusive perceptual dominance is determined by a distance in a neurally represented feature space. This hypothesis can be contrasted with the possibility that the brain constructs an internal model of the outside world using full-fledged object representations, and that perceptual suppression is due to an appraisal of the likelihood of the particular stimulus configuration at a high, object-based level. We applied color and stereo-depth differences between monocular rivalry stimulus gratings, and manipulated color and eye-of-origin information in binocular rivalry using the flicker & switch presentation paradigm. Our data show that exclusivity in visual rivalry increases with increased difference in feature space without regard for real-world constraints, and that eye-of-origin information may be regarded as a segregating feature that functions in a manner similar to color and stereo-depth information. Moreover, distances defined in multiple feature dimensions additively and independently increase the amount of perceptual exclusivity and coherence in both monocular and binocular rivalry. We conclude that exclusivity in visual rivalry is determined by a distance in feature space that is subtended by multiple stimulus features.

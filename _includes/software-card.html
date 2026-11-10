@@ -1,0 +1,41 @@
+{%- comment -%} Params: item (entry from site.data.software), hlevel (default 3), compact (true: name, status and description only, whole card links). {%- endcomment -%}
+{%- assign s = include.item -%}
+{%- assign h = include.hlevel | default: 3 -%}
+{%- assign aot = site.data.lab.aot -%}
+{%- assign is_aot = false -%}
+{%- if s.name contains "Arrow of Time" -%}{%- assign is_aot = true -%}{%- endif -%}
+{%- comment -%} The Arrow of Time entry gets its own links below (description post and sign-up form), so its url is not repeated as a generic link. {%- endcomment -%}
+{%- assign sw_url = s.url -%}
+{%- assign show_url = false -%}
+{%- if s.url and s.url != "" -%}{%- assign show_url = true -%}{%- endif -%}
+{%- if is_aot -%}
+  {%- if aot.post and aot.post != "" -%}{%- assign sw_url = aot.post -%}{%- endif -%}
+  {%- if s.url == aot.signup or s.url == aot.post -%}{%- assign show_url = false -%}{%- endif -%}
+{%- endif -%}
+<article class="sw-card">
+  <div class="sw-head">
+    <h{{ h }} class="sw-name">{% if sw_url and sw_url != "" %}<a href="{{ sw_url | relative_url }}">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</h{{ h }}>
+    {%- if s.status and s.status != "" %}
+    <span class="badge badge-status badge-{{ s.status | slugify }}">{{ s.status | capitalize }}</span>
+    {%- endif %}
+  </div>
+  {%- if s.description %}
+  <p class="sw-desc">{{ s.description }}</p>
+  {%- endif %}
+  {%- unless include.compact %}
+  {%- if s.install and s.install != "" %}
+  <pre class="sw-install"><code>{{ s.install }}</code></pre>
+  {%- endif %}
+  {%- capture sw_links -%}
+    {%- if show_url %}<li><a href="{{ s.url | relative_url }}">{% if s.url contains "github.com" %}Code{% elsif s.url contains "://" %}{% if s.kind == "dataset" %}Data{% else %}Website{% endif %}{% else %}Read more{% endif %}<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
+    {%- if s.docs and s.docs != "" %}<li><a href="{{ s.docs | relative_url }}">Documentation<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
+    {%- if s.paper and s.paper != "" %}<li><a href="{{ s.paper | relative_url }}">Related paper<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
+    {%- for l in s.extra_links %}<li><a href="{{ l.url | relative_url }}">{{ l.label }}</a></li>{% endfor %}
+    {%- if is_aot and aot.post and aot.post != "" %}<li><a href="{{ aot.post | relative_url }}">About the dataset</a></li>{% endif %}
+    {%- if is_aot and aot.signup and aot.signup != "" %}<li><a href="{{ aot.signup }}">Get notified about the release</a></li>{% endif %}
+  {%- endcapture -%}
+  {%- if sw_links != "" %}
+  <ul class="sw-links">{{ sw_links }}</ul>
+  {%- endif %}
+  {%- endunless %}
+</article>

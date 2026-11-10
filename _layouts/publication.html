@@ -1,0 +1,59 @@
+---
+layout: default
+---
+{%- assign ptype = page.type | default: "article" -%}
+<article class="wrap wrap-text publication">
+  <header class="page-header">
+    <p class="kicker"><a href="{{ '/publications/' | relative_url }}">Publications</a> <span aria-hidden="true">·</span> {{ page.date | date: "%Y" }}{% if ptype != "article" %} <span class="badge">{{ ptype | capitalize }}</span>{% endif %}</p>
+    <h1 class="page-title pub-page-title">{{ page.title }}</h1>
+    {%- if page.authors %}
+    <p class="pub-authors pub-authors-full">{% include authors.html authors=page.authors %}</p>
+    {%- endif %}
+    <p class="pub-meta">
+      {%- if page.journal %}<cite>{{ page.journal }}</cite>{% endif %}
+      {%- if page.citation %} {{ page.citation }}{% endif %}
+      ({{ page.date | date: "%Y" }})
+    </p>
+    {%- if page.doi or page.links %}
+    <ul class="button-row">
+      {%- if page.doi %}<li><a class="button" href="https://doi.org/{{ page.doi }}">Article (DOI)</a></li>{% endif %}
+      {%- if page.links.preprint %}<li><a class="button button-secondary" href="{{ page.links.preprint }}">Preprint</a></li>{% endif %}
+      {%- if page.links.code %}<li><a class="button button-secondary" href="{{ page.links.code }}">Code</a></li>{% endif %}
+      {%- if page.links.data %}<li><a class="button button-secondary" href="{{ page.links.data }}">Data</a></li>{% endif %}
+      {%- if page.pmid %}<li><a class="button button-secondary" href="https://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/">PubMed</a></li>{% endif %}
+    </ul>
+    {%- endif %}
+    {%- if page.themes and page.themes.size > 0 %}
+    <ul class="chips" aria-label="Research themes">
+      {%- for slug in page.themes %}
+      {%- assign th = site.research | where_exp: "t", "t.url contains slug" | first %}
+      <li><a class="chip" href="{{ '/research/' | append: slug | append: '/' | relative_url }}">{% if th %}{{ th.title }}{% else %}{{ slug | replace: "-", " " | capitalize }}{% endif %}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </header>
+  {%- if page.img %}
+  <figure class="pub-figure">
+    <img src="{{ page.img | relative_url }}" alt="{{ page.img_alt | default: '' | escape }}" decoding="async">
+  </figure>
+  {%- endif %}
+  {%- assign body = content | strip_html | strip -%}
+  {%- if body != "" %}
+  {%- if content contains "<h3" %}
+  {%- comment -%} The body has its own subheadings (e.g. Highlights, Abstract): promote them to h2 instead of adding a second "Abstract" heading. {%- endcomment %}
+  <div class="pub-abstract pub-abstract-sections">
+    <div class="prose">
+      {{ content | replace: "<h3", "<h2" | replace: "</h3>", "</h2>" }}
+    </div>
+  </div>
+  {%- else %}
+  <section class="pub-abstract" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading">Abstract</h2>
+    <div class="prose">
+      {{ content }}
+    </div>
+  </section>
+  {%- endif %}
+  {%- endif %}
+  <p class="back-link"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>
+</article>

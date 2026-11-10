@@ -1,39 +1,24 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <div class="header-bar">
-    <h2 style="font-variant: small-caps;">{{ page.title }}</h2>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y — %H:%M" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </div>
-
-  <article class="post-content">
+<article class="wrap wrap-text post">
+  <header class="page-header">
+    <p class="kicker"><a href="{{ '/news/' | relative_url }}">News</a> <span aria-hidden="true">·</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+    <h1 class="page-title">{{ page.title }}</h1>
+  </header>
+  {%- if page.closed %}
+  <p class="notice" role="note"><strong>This position has been filled.</strong> <a href="{{ '/join/' | relative_url }}">Join the lab</a> explains how to get in touch about positions.</p>
+  {%- endif %}
+  <div class="prose">
     {{ content }}
-  </article>
-
-</div>
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    /*
-    var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        
-        s.src = '//tknapen.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-{% endif %}
+  </div>
+  <nav class="post-nav" aria-label="More news">
+    {%- if page.previous %}
+    <a class="post-nav-prev" href="{{ page.previous.url | relative_url }}"><span class="post-nav-label">Previous</span> {{ page.previous.title }}</a>
+    {%- endif %}
+    {%- if page.next %}
+    <a class="post-nav-next" href="{{ page.next.url | relative_url }}"><span class="post-nav-label">Next</span> {{ page.next.title }}</a>
+    {%- endif %}
+  </nav>
+  <p class="back-link"><a href="{{ '/news/' | relative_url }}">All news</a></p>
+</article>

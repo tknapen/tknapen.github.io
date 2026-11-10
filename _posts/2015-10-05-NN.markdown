@@ -1,24 +1,21 @@
 ---
 layout: post
-title:  New paper out in Nature Neuroscience!
+title: Nature Neuroscience paper on bistable perception published
 date:   2015-10-05 16:40:16
-description: Paper on neural correlates of perceptual switches in bistable perception published!
+description: Paper on neural correlates of perceptual switches in bistable perception.
 img: /img/publications/bistable_brain.png
 ---
 
-<img class="col one right" src="/img/publications/bistable_brain.png">
+<img class="col one right" src="/img/publications/bistable_brain.png" alt="Inflated cortical surface with fMRI activity in frontal and parietal regions in red and yellow, and deactivations in blue.">
 
 New paper published!
 
-"<a href="http://www.nature.com/neuro/journal/vaop/ncurrent/full/nn.4130.html" target="_blank" alt="Negligible fronto-parietal BOLD activity accompanying unreportable switches in bistable perception" >Negligible fronto-parietal BOLD activity accompanying unreportable switches in bistable perception</a>". 
+"<a href="http://www.nature.com/neuro/journal/vaop/ncurrent/full/nn.4130.html" target="_blank" alt="Negligible fronto-parietal BOLD activity accompanying unreportable switches in bistable perception" >Negligible fronto-parietal BOLD activity accompanying unreportable switches in bistable perception</a>".
+
+See the [publication page](/publications/2015-10-05-NN/) for the full reference and links.
 
 In this paper we show that binocular rivalry transitions keep happening even when the observers are not aware of them because they cannot distinguish between the different eyes' images. When performing fMRI using this novel paradigm, we show that frontal and parietal brain regions' activations become negligible.
 
 Thus, this paper, by Jan Brascamp, Randolph Blake and Tomas shows how frontal and parietal activations in bistable perception are likely due to noticing transitions instead of causing them. 
 
-There's a <a href="https://www.youtube.com/watch?v=WYqZnGtwZgI">cool movie about our study on YouTube:</a>
-<br />
-
-<!-- <div align = "center"> -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WYqZnGtwZgI" frameborder="0" allowfullscreen></iframe>
-<!-- </div> -->
+There's a <a href="https://www.youtube.com/watch?v=WYqZnGtwZgI">cool movie about our study on YouTube</a>.

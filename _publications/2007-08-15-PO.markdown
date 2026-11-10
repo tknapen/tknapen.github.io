@@ -1,0 +1,13 @@
+---
+title: "Stimulus motion propels traveling waves in binocular rivalry"
+date: 2007-08-15
+authors: [Knapen T, van Ee R, Blake R]
+journal: PLoS ONE
+citation: "2(8), e739"
+doi: 10.1371/journal.pone.0000739
+pmid: "17710139"
+type: article
+themes: [perception-awareness]
+description: "Traveling waves of dominance in binocular rivalry are biased in the motion direction of the stimulus that is gaining dominance."
+---
+State transitions in the nervous system often take shape as traveling waves, whereby one neural state is replaced by another across space in a wave-like manner. In visual perception, transitions between the two mutually exclusive percepts that alternate when the two eyes view conflicting stimuli (binocular rivalry) may also take shape as traveling waves. The properties of these waves point to a neural substrate of binocular rivalry alternations that have the hallmark signs of lower cortical areas. In a series of experiments, we show a potent interaction between traveling waves in binocular rivalry and stimulus motion. The course of the traveling wave is biased in the motion direction of the suppressed stimulus that gains dominance by means of the wave-like transition. Thus, stimulus motion may propel the traveling wave across the stimulus to the extent that the stimulus motion dictates the traveling wave's direction completely. Using a computational model, we show that a speed-dependent asymmetry in lateral inhibitory connections between retinotopically organized and motion-sensitive neurons can explain our results. We argue that such a change in suppressive connections may play a vital role in the resolution of dynamic occlusion situations.

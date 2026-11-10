@@ -1,0 +1,86 @@
+# Site-wide facts about the lab. Edit here; pages and the footer read from this file.
+
+name: Knapen Lab
+pi: Tomas Knapen
+email: tknapen@gmail.com
+
+affiliations:
+  - name: Vrije Universiteit Amsterdam
+    unit: Cognitive Psychology, Faculty of Behavioural and Movement Sciences
+    url: https://vu.nl
+    address: Van der Boechorststraat 7, 1081 BT Amsterdam
+  - name: Spinoza Centre for Neuroimaging
+    unit: Royal Netherlands Academy of Arts and Sciences (KNAW)
+    url: https://www.spinozacentre.nl
+    address: Meibergdreef 75, 1105 BK Amsterdam
+  - name: Netherlands Institute for Neuroscience
+    unit: KNAW (affiliated)
+    url: https://nin.nl
+
+# Leave a value empty to hide that link everywhere on the site.
+links:
+  x: https://x.com/tknapen
+  bluesky: https://bsky.app/profile/tknapen.bsky.social
+  linkedin: https://www.linkedin.com/in/tomas-knapen-92425319
+  github: https://github.com/tknapen
+  github_org: https://github.com/VU-Cog-Sci
+  scholar: https://scholar.google.com/citations?user=kO1CLaIAAAAJ
+  orcid: https://orcid.org/0000-0001-5863-8689
+  wiki: https://github.com/tknapen/tknapen.github.io/wiki
+
+funders:
+  - name: NWO (Dutch Research Council)
+    url: https://www.nwo.nl/en
+  - name: Netherlands eScience Center
+    url: https://www.esciencecenter.nl
+  - name: Tiny Blue Dot Foundation
+    url: https://www.tinybluedotfoundation.org
+
+# Author names (exactly as written in publication front matter) that are
+# highlighted in publication lists: the PI and current and former lab members.
+# Matching is by exact string, so common names (e.g. "Zhang S") would also bold
+# unrelated co-authors with the same name: check new papers when adding them.
+lab_authors:
+  - Knapen T
+  - de Hollander G
+  - Szinte M
+  - Hedger N
+  - Aqil M
+  - Veríssimo IS
+  - Raimondo L
+  - Heij J
+  - Sheikh Abdirashid S
+  - van de Klundert R
+  - Wang N
+  - Satzger R
+  - Zhang S
+  - Funk X
+  - van Es DM
+
+# Arrow of Time dataset (home-page callout and Software & data page)
+aot:
+  name: Arrow of Time (AOT)
+  summary: >-
+    An intensive 7T fMRI dataset of brain responses to 2,160 brief naturalistic
+    videos, with about 21 hours of scanning per participant at 1.7 mm isotropic
+    resolution, plus retinotopy and motion-energy localizers for every participant.
+  release: The first release is planned around the turn of the year (2026/27).
+  signup: https://forms.gle/BMmfyWEZKL7vU5Va9
+  post: /2026/04/24/AOT.html
+
+# prfmodel, developed in the Popylar project (home-page callout and Software & data page)
+popylar:
+  heading: "prfmodel: population receptive field modeling in Python"
+  summary: >-
+    prfmodel fits population receptive field (pRF) models and related models, such as
+    connective field and contrast sensitivity models, on GPU-accelerated backends
+    (TensorFlow, PyTorch or JAX). It is developed by the Popylar team with research
+    software engineers of the Netherlands eScience Center.
+  install: pip install "prfmodel[tensorflow]"
+  note: >-
+    Version 0.2.0 (beta) was released for our hands-on workshop in Coimbra,
+    5–6 November 2026. The practicals and the slides of several lectures are public.
+  docs: https://popylar-org.github.io/prfmodel/
+  code: https://github.com/popylar-org/prfmodel
+  workshop: https://popylar-org.github.io/2026-11-05_workshop-coimbra/
+  post: /2026/11/06/popylar-workshop-coimbra.html

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New preprint - Retinotopic maps in the Cerebellum
+title: Preprint on retinotopic maps in the cerebellum
 description: Retinotopic maps of visual space in the human cerebellum
 date:   2018-10-29 12:00:00
 img: /img/posts/cerebellum_retmap.png
@@ -10,6 +10,8 @@ img: /img/posts/cerebellum_retmap.png
 
 D.M. van Es, W. van der Zwaag, T. Knapen
 
-<img class="col two right" src="/img/posts/cerebellum_retmap.png">
+The published version is on the [publication page](/publications/2019-05-20-CB/).
+
+<img class="col two right" src="/img/posts/cerebellum_retmap.png" alt="Axial, sagittal and coronal slices of the cerebellum with voxels colored by preferred polar angle, showing visual field maps in both hemispheres.">
 
 **New preprint on Biorxiv:** While the cerebellum is instrumental for motor control, it is not traditionally implicated in vision. Here, we report the existence of 5 ipsilateral visual field maps in the human cerebellum. These maps are located within the oculomotor vermis and cerebellar nodes of the dorsal attention and visual networks. These findings imply that the cerebellum is closely involved in visuospatial cognition, and that its contributions are anchored in sensory coordinates.

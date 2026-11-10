@@ -1,16 +1,15 @@
 ---
-layout: post
-title: Cognitive and ocular factors jointly determine pupil responses under equiluminance
-description: Cognitive and non-cognitive pupil size signals
-date:   2016-05-18 16:00:00
+title: "Cognitive and Ocular Factors Jointly Determine Pupil Responses under Equiluminance"
+date: 2016-05-18
+authors: [Knapen T, de Gee JW, Brascamp J, Nuiten S, Hoppenbrouwers S, Theeuwes J]
 journal: PLoS ONE
+citation: "11(5), e0155574"
+doi: 10.1371/journal.pone.0155574
+pmid: "27191166"
+type: article
+themes: [perception-awareness, computational-models]
+img: /img/publications/blink_pupil.png
+img_alt: "Pupil response to blinks over 5 seconds, a deep constriction followed by a smaller dilation, plotted as data with overlaid partial and total fits."
+description: "Blinks and eye movements evoke pupil responses that overshadow cognitive ones, even without visual change; we give analysis recommendations."
 ---
-
-"<a href="http://dx.doi.org/10.1371/journal.pone.0155574" target="_blank" alt="Cognitive and ocular factors jointly determine pupil responses under equiluminance" >Cognitive and ocular factors jointly determine pupil responses under equiluminance</a>". 
-
-<strong>Knapen T.\*</strong>, de Gee JW*, Brascamp J, Nuiten S, Hoppenbrouwers S & Theeuwes J<br /> 
-<strong>PLoS ONE</strong> (2016). May 18, 2016. * - contributed equally
-
-<img class="col one right" src="/img/publications/blink_pupil.png">
-
 Changes in pupil diameter can reflect high-level cognitive signals that depend on central neuromodulatory mechanisms. However, brain mechanisms that adjust pupil size are also exquisitely sensitive to changes in luminance and other events that would be considered a nuisance in cognitive experiments recording pupil size. We implemented a simple auditory experiment involving no changes in visual stimulation. Using finite impulse-response fitting we found pupil responses triggered by different types of events. Among these are pupil responses to auditory events and associated surprise: cognitive effects. However, these cognitive responses were overshadowed by pupil responses associated with blinks and eye movements, both inevitable nuisance factors that lead to changes in effective luminance. Of note, these latter pupil responses were not recording artifacts caused by blinks and eye movements, but endogenous pupil responses that occurred in the wake of these events. Furthermore, we identified slow (tonic) changes in pupil size that differentially influenced faster (phasic) pupil responses. Fitting all pupil responses using gamma functions, we provide accurate characterisations of cognitive and non-cognitive response shapes, and quantify each response's dependence on tonic pupil size. These results allow us to create a set of recommendations for pupil size analysis in cognitive neuroscience, which we have implemented in freely available software.

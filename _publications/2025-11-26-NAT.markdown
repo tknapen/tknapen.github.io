@@ -1,16 +1,16 @@
 ---
-layout: post
-title: Vicarious body maps bridge vision and touch in the human brain
-description: Vicarious body maps link visual and tactile processing in human cortex.
-date: 2025-11-26 12:00:00
+title: "Vicarious body maps bridge vision and touch in the human brain"
+date: 2025-11-26
+authors: [Hedger N, Naselaris T, Kay K, Knapen T]
 journal: Nature
-img: /img/publications/nature_2025_bodymaps.png
+citation: "650(8100), 173–181"
+doi: 10.1038/s41586-025-09796-0
+pmid: "41299177"
+type: article
+themes: [topographic-maps, computational-models]
+selected: true
+img: /img/publications/nature_2025_bodymaps.jpg
+img_alt: "Panels a to d sketch the model linking V1 visual field and S1 body position maps through connective fields. Panels e to g show effect size and somatotopic body position maps on the cortex."
+description: "Somatotopic body maps tile dorsolateral visual cortex and align with visual field tuning, linking visual and bodily reference frames."
 ---
-
-"<a href="https://doi.org/10.1038/s41586-025-09796-0" target="_blank" alt="Vicarious body maps bridge vision and touch in the human brain" >Vicarious body maps bridge vision and touch in the human brain</a>".
-
-Nicholas Hedger, Thomas Naselaris, Kendrick Kay, Tomas Knapen
-
-<img class="col one right" src="/img/publications/nature_2025_bodymaps.png">
-
-**Abstract** Our sensory systems work together to generate a cohesive experience of the world. Observing touch to others activates regions representing one's own touch, suggesting that visual processing recruits touch-related computations. To examine this interface, we developed a model that jointly maps somatosensory body-part tuning and visual field tuning across the brain. During rest, the model recovered detailed body-part tuning in endogenous somatotopic networks. During movie viewing, somatotopic tuning explained responses throughout dorsolateral visual cortex, revealing multiple somatotopic body maps tiled across cortex. Body-position tuning aligned with visual tuning, predicting both visual field preferences and category preferences for body parts. These results suggest aligned visual-somatosensory topographic maps that connect visual and bodily reference frames and help translate sensory input into representations useful for action, social cognition, and semantic processing.
+Our sensory systems work together to generate a cohesive experience of the world around us. Watching others being touched activates brain areas representing our own sense of touch: the visual system recruits touch-related computations to simulate bodily consequences of visual inputs. One long-standing question is how the brain implements this interface between visual and somatosensory representations. Here, to address this question, we developed a model to simultaneously map somatosensory body part tuning and visual field tuning throughout the brain. Applying our model to ongoing co-activations during rest resulted in detailed maps of body-part tuning in the brain's endogenous somatotopic network. During video watching, somatotopic tuning explains responses throughout the entire dorsolateral visual system, revealing an array of somatotopic body maps that tile the cortical surface. The body-position tuning of these maps aligns with visual tuning, predicting both preferences for visual field locations and visual-category preferences for body parts. These results reveal a mode of brain organization in which aligned visual-somatosensory topographic maps connect visual and bodily reference frames. This cross-modal interface is ideally situated to translate raw sensory impressions into more abstract formats that are useful for action, social cognition and semantic processing.

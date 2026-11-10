@@ -1,13 +1,16 @@
 ---
-layout: page
-title: Ron Van De Klundert
-date: 2021-09-01 07:59:00
-description: PhD Student @ VU
-img: /img/posts/pupil_eye.png
+title: Ron van de Klundert
+role: PhD student
+status: alumni
+order: 11
+photo: /img/people/rk.jpg
+start: 2021
+end:
+now: ""
+pubname: "van de Klundert R"
+themes: [computational-models]
+description: "PhD student who worked on brain-based encoding models."
+links:
+  github: https://github.com/RonvdKlundert
 ---
-
-<img class="col one right" src="/img/people/rk.jpg">
-
-After a master's in Cognitive Sciences at the UvA, Ron has just started his PhD in the lab. 
-
-He'll be working on brain-based encoding models. 
+Ron van de Klundert joined the lab as a PhD student in September 2021, after a master's in cognitive sciences at the University of Amsterdam. His PhD project was on brain-based encoding models.

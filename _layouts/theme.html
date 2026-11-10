@@ -1,0 +1,105 @@
+---
+layout: default
+---
+{%- assign slug = page.url | split: "/" | last -%}
+<article class="theme-page">
+  <header class="wrap theme-hero">
+    <div class="theme-hero-text">
+      <p class="kicker"><a href="{{ '/research/' | relative_url }}">Research</a></p>
+      <h1 class="page-title">{{ page.title }}</h1>
+      {%- if page.tagline %}
+      <p class="page-lead">{{ page.tagline }}</p>
+      {%- endif %}
+    </div>
+    {%- if page.img %}
+    <figure class="theme-hero-media">
+      <img src="{{ page.img | relative_url }}" alt="{{ page.img_alt | escape }}" width="1200" height="750" decoding="async">
+    </figure>
+    {%- endif %}
+  </header>
+
+  <div class="wrap theme-body">
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+
+  {%- assign tagged = site.publications | where: "themes", slug | sort: "date" | reverse -%}
+  {%- assign tagged_sel = tagged | where: "selected", true -%}
+  {%- assign tagged_rest = tagged | where_exp: "p", "p.selected != true" -%}
+  {%- assign theme_pubs = tagged_sel | concat: tagged_rest -%}
+  {%- if theme_pubs.size > 0 %}
+  <section class="wrap wrap-text section-block" aria-labelledby="papers-heading">
+    <h2 id="papers-heading">Papers</h2>
+    <p class="section-note">{{ theme_pubs.size }} {% if theme_pubs.size == 1 %}paper{% else %}papers{% endif %} on this theme, selected papers first. <a href="{{ '/publications/' | relative_url }}#{{ slug }}">Filter the full list</a>.</p>
+    <ol class="pub-list">
+      {%- for pub in theme_pubs limit: 10 %}
+      {% include pub-entry.html pub=pub hlevel=3 %}
+      {%- endfor %}
+    </ol>
+    {%- if theme_pubs.size > 10 %}
+    <details class="more">
+      <summary><span class="when-closed">Show all {{ theme_pubs.size }} papers</span><span class="when-open">Show fewer papers</span></summary>
+      <ol class="pub-list" start="11">
+        {%- for pub in theme_pubs offset: 10 %}
+        {% include pub-entry.html pub=pub hlevel=3 %}
+        {%- endfor %}
+      </ol>
+    </details>
+    {%- endif %}
+  </section>
+  {%- endif %}
+
+  {%- comment -%} The PI works on every theme, so only current members get cards; former members who worked on the theme are listed by name. {%- endcomment -%}
+  {%- assign theme_people = "" | split: "" -%}
+  {%- assign theme_alumni = "" | split: "" -%}
+  {%- assign sorted_people = site.people | sort: "order" -%}
+  {%- for person in sorted_people -%}
+    {%- if person.themes contains slug -%}
+      {%- if person.status == "current" -%}
+        {%- assign theme_people = theme_people | push: person -%}
+      {%- elsif person.status == "alumni" -%}
+        {%- assign theme_alumni = theme_alumni | push: person -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if theme_people.size > 0 or theme_alumni.size > 0 %}
+  <section class="wrap section-block" aria-labelledby="people-heading">
+    <h2 id="people-heading">People</h2>
+    {%- if theme_people.size > 0 %}
+    <div class="grid grid-people">
+      {%- for person in theme_people %}
+      {% include person-card.html person=person hlevel=3 %}
+      {%- endfor %}
+    </div>
+    {%- endif %}
+    {%- if theme_alumni.size > 0 %}
+    <p class="section-note theme-alumni">Former lab members who worked on this theme: {% for p in theme_alumni %}{% assign p_body = p.content | strip_html | strip %}{% if p_body != "" %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.</p>
+    {%- endif %}
+  </section>
+  {%- endif %}
+
+  {%- assign theme_sw = site.data.software | where: "themes", slug -%}
+  {%- if theme_sw.size > 0 %}
+  <section class="wrap section-block" aria-labelledby="software-heading">
+    <h2 id="software-heading">Software &amp; data</h2>
+    <div class="grid grid-sw">
+      {%- for item in theme_sw %}
+      {% include software-card.html item=item hlevel=3 %}
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- assign others = site.research | sort: "order" %}
+  {%- if others.size > 1 %}
+  <nav class="wrap section-block other-themes" aria-labelledby="other-themes-heading">
+    <h2 id="other-themes-heading">Other themes</h2>
+    <ul>
+      {%- for t in others %}{% unless t.url == page.url %}
+      <li><a href="{{ t.url | relative_url }}">{{ t.title }}</a></li>
+      {%- endunless %}{% endfor %}
+    </ul>
+  </nav>
+  {%- endif %}
+</article>

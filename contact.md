@@ -1,26 +1,50 @@
 ---
 layout: page
-title: contact
+title: Contact
 permalink: /contact/
+description: "Email, addresses and online profiles of the Knapen Lab."
+hide_description: true
 ---
+{%- assign lab = site.data.lab -%}
+{%- assign l = lab.links -%}
 
-Here, you can find email and other address information. 
+The best way to reach us is by email to Tomas Knapen: [{{ lab.email }}](mailto:{{ lab.email }}). For positions and student projects, see [Join the lab](/join/).
 
-<hr/>
-<br/>
-Check out our growing list of code projects on GitHub, or just hit the envelope to send Tomas an email.
-<span class="contacticon center">
-	<a href="mailto:tknapen@gmail.com"><i class="fa fa-envelope-square"></i></a>
-	<a href="https://github.com/VU-Cog-Sci" target="_blank"><i class="fa fa-github-square"></i></a>
-	<a href="https://twitter.com/Tknapen" target="_blank"><i class="fa fa-twitter-square"></i></a>
-</span>
+## Addresses
 
-<hr />
-<br />
-We're located in the Medical Department building at the VU campus, and the <a href="http://www.spinozacentre.nl" target="_blank">Spinoza Centre Amsterdam </a>, where we also do our neuroimaging data acquisition.  
-Tomas is in room MF C-577A. 
-<br />
-<hr />
-<br />
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9751.033700444188!2d4.859073362900956!3d52.33852847276829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e1e2a03de6c7%3A0x953c61fd17a0eff4!2sVan+der+Boechorststraat+1%2C+1081+BT+Amsterdam!5e0!3m2!1sen!2snl!4v1444335314032" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<ul class="contact-affiliations">
+{%- for a in lab.affiliations %}
+<li><a href="{{ a.url }}">{{ a.name }}</a>{% if a.unit and a.unit != "" %}<br>{{ a.unit }}{% endif %}{% if a.address and a.address != "" %}<br>{{ a.address }}{% endif %}</li>
+{%- endfor %}
+</ul>
 
+We acquire our imaging data at the Spinoza Centre for Neuroimaging.
+
+## Online
+
+<ul class="contact-links">
+{%- if l.github_org and l.github_org != "" %}
+<li><a href="{{ l.github_org }}">GitHub: lab repositories (VU-Cog-Sci)</a></li>
+{%- endif %}
+{%- if l.github and l.github != "" %}
+<li><a href="{{ l.github }}">GitHub: Tomas Knapen</a></li>
+{%- endif %}
+{%- if l.scholar and l.scholar != "" %}
+<li><a href="{{ l.scholar }}">Google Scholar</a></li>
+{%- endif %}
+{%- if l.orcid and l.orcid != "" %}
+<li><a href="{{ l.orcid }}">ORCID</a></li>
+{%- endif %}
+{%- if l.x and l.x != "" %}
+<li><a href="{{ l.x }}">X</a></li>
+{%- endif %}
+{%- if l.bluesky and l.bluesky != "" %}
+<li><a href="{{ l.bluesky }}">Bluesky</a></li>
+{%- endif %}
+{%- if l.linkedin and l.linkedin != "" %}
+<li><a href="{{ l.linkedin }}">LinkedIn</a></li>
+{%- endif %}
+{%- if l.wiki and l.wiki != "" %}
+<li><a href="{{ l.wiki }}">Lab wiki</a></li>
+{%- endif %}
+</ul>

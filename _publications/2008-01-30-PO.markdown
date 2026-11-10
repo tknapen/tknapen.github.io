@@ -1,0 +1,13 @@
+---
+title: "Multi-timescale perceptual history resolves visual ambiguity"
+date: 2008-01-30
+authors: [Brascamp JW, Knapen T, Kanai R, Noest AJ, van Ee R, van den Berg AV]
+journal: PLoS ONE
+citation: "3(1), e1497"
+doi: 10.1371/journal.pone.0001497
+pmid: "18231584"
+type: article
+themes: [perception-awareness]
+description: "Which interpretation an ambiguous stimulus evokes when it reappears depends on perceptual history over both seconds and minutes."
+---
+When visual input is inconclusive, does previous experience aid the visual system in attaining an accurate perceptual interpretation? Prolonged viewing of a visually ambiguous stimulus causes perception to alternate between conflicting interpretations. When viewed intermittently, however, ambiguous stimuli tend to evoke the same percept on many consecutive presentations. This perceptual stabilization has been suggested to reflect persistence of the most recent percept throughout the blank that separates two presentations. Here we show that the memory trace that causes stabilization reflects not just the latest percept, but perception during a much longer period. That is, the choice between competing percepts at stimulus reappearance is determined by an elaborate history of prior perception. Specifically, we demonstrate a seconds-long influence of the latest percept, as well as a more persistent influence based on the relative proportion of dominance during a preceding period of at least one minute. In case short-term perceptual history and long-term perceptual history are opposed (because perception has recently switched after prolonged stabilization), the long-term influence recovers after the effect of the latest percept has worn off, indicating independence between time scales. We accommodate these results by adding two positive adaptation terms, one with a short time constant and one with a long time constant, to a standard model of perceptual switching.

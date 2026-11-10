@@ -1,0 +1,17 @@
+{%- comment -%} Param: links (hash with email, website, scholar, orcid, github, x, bluesky, linkedin). Empty values are skipped. {%- endcomment -%}
+{%- assign l = include.links -%}
+{%- if l -%}
+{%- capture person_links -%}
+  {%- if l.email and l.email != "" %}<li><a href="mailto:{{ l.email }}">Email</a></li>{% endif %}
+  {%- if l.website and l.website != "" %}<li><a href="{{ l.website }}">Website</a></li>{% endif %}
+  {%- if l.scholar and l.scholar != "" %}<li><a href="{{ l.scholar }}">Google Scholar</a></li>{% endif %}
+  {%- if l.orcid and l.orcid != "" %}<li><a href="{{ l.orcid }}">ORCID</a></li>{% endif %}
+  {%- if l.github and l.github != "" %}<li><a href="{{ l.github }}">GitHub</a></li>{% endif %}
+  {%- if l.x and l.x != "" %}<li><a href="{{ l.x }}">X</a></li>{% endif %}
+  {%- if l.bluesky and l.bluesky != "" %}<li><a href="{{ l.bluesky }}">Bluesky</a></li>{% endif %}
+  {%- if l.linkedin and l.linkedin != "" %}<li><a href="{{ l.linkedin }}">LinkedIn</a></li>{% endif %}
+{%- endcapture -%}
+{%- if person_links != "" %}
+<ul class="link-list"{% if include.label %} aria-label="{{ include.label }}"{% endif %}>{{ person_links }}</ul>
+{%- endif -%}
+{%- endif -%}

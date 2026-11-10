@@ -1,11 +1,15 @@
 ---
-layout: page
 title: Nick Hedger
-date: 2017-07-03 07:59:00
-description: Leverhulme Trust Fellow, Reading & Amsterdam
-img: /img/prf/eccen_quadrant.png
+role: Leverhulme Trust fellow (University of Reading)
+status: alumni
+order: 5
+start: 2017
+end:
+now: "University of Reading"  # PubMed 41152530, 2025
+pubname: "Hedger N"
+themes: [topographic-maps, computational-models]
+description: "Leverhulme Trust fellow who extended connective field models to new modalities and mapped vicarious body maps."
 ---
+Nick Hedger worked with the lab as a Leverhulme Trust fellow while holding a junior faculty position at the University of Reading. He worked on extending connective field models to other species and modalities, and was interested in clinical applications of these brain-based encoding models.
 
-<img class="col one right" src="/img/people/nh.jpg">
-
-Nick Hedger has a junior faculty position at Reading University, where he is a Leverhulme Trust fellow. He is working on extending connective field models to other species and modalities, and is interested in trying to find clinical applications of these brain-based encoding models. 
+With Thomas Naselaris, Kendrick Kay and Tomas Knapen, he developed a model that maps somatosensory body-part tuning and visual field tuning across the brain at the same time. During movie watching, somatotopic tuning explained responses throughout dorsolateral visual cortex, revealing multiple body maps tiled across cortex and aligned with visual field tuning ([Hedger et al., 2025](/publications/2025-11-26-NAT/)).

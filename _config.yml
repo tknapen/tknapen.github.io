@@ -1,54 +1,94 @@
-# Site settings
-title: Knapen lab website
-email: tknapen@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Website of the Knapen Computational Cognitive Neuroscience lab at the Vrije Universiteit Amsterdam.
-baseurl:  # the subpath of your site, e.g. /blog/
-url:  https://tknapen.github.io # the base hostname & protocol for your site
-twitter_username: tknapen
-github_username:  tknapen
-comments: true
+# Knapen Lab website
+#
+# Built by GitHub Pages (Jekyll 3.10, see Gemfile). Local preview:
+#   bundle install && bundle exec jekyll serve
+# How to add papers, people and news: see README.md.
+
+title: Knapen Lab
+tagline: Computational cognitive neuroscience
+description: >-
+  Knapen Lab, Vrije Universiteit Amsterdam and Spinoza Centre for Neuroimaging:
+  how the brain's topographic maps organize perception, action and social cognition.
+url: https://tknapen.github.io
+baseurl: ""
+repository: tknapen/tknapen.github.io
+lang: en
+
+# Used by jekyll-seo-tag for titles, descriptions and link-preview cards
+logo: /assets/img/social-card.png
+twitter:
+  username: tknapen
+  card: summary_large_image
+author:
+  name: Tomas Knapen
+  twitter: tknapen
+social:
+  name: Knapen Lab
+  links:
+    - https://x.com/tknapen
+    - https://github.com/tknapen
+    - https://bsky.app/profile/tknapen.bsky.social
+    - https://www.linkedin.com/in/tomas-knapen-92425319
 
 plugins:
+  - jekyll-seo-tag
+  - jekyll-redirect-from
   - jekyll-sitemap
-  - jekyll-paginate
+  - jekyll-feed
 
-# Build settings
+feed:
+  path: /feed.xml
+  posts_limit: 20
+
 markdown: kramdown
 kramdown:
   input: GFM
-  # hard_wrap: false
   syntax_highlighter: rouge
-  syntax_highlighter_opts: 
-    # css_class: highlight
-    inline_theme: thankful_eyes
-    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
-
-# highlighter: rouge
-# permalink: pretty
-
-# Pagination
-paginate: 4
-paginate_path: "/blog/page:num/"
 
 collections:
-  science:
+  research:
     output: true
-    permalink: /science/:path/
+    permalink: /research/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
   people:
     output: true
     permalink: /people/:path/
   resources:
     output: true
     permalink: /resources/:path/
-  publications:
-    output: true
-    permalink: /publications/:path/
 
+defaults:
+  # Link-preview image for every page (jekyll-seo-tag reads page.image only)
+  - scope: { path: "" }
+    values: { image: /assets/img/social-card.png }
+  - scope: { path: "google8d229e177b46e04e.html" }
+    values: { sitemap: false }
+  - scope: { path: "img" }
+    values: { sitemap: false }
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "", type: publications }
+    values: { layout: publication, author: { name: Knapen Lab, twitter: tknapen } }
+  - scope: { path: "", type: people }
+    values: { layout: person }
+  - scope: { path: "", type: research }
+    values: { layout: theme }
+  - scope: { path: "", type: resources }
+    values: { layout: page }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - tools
+  - .github
+  - "*.psd"
 
 future: true
+
+# No GitHub Pages default theme (it would add unused CSS and fallback layouts)
+theme: null

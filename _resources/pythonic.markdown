@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Programming Dos and Don'ts
+title: "Programming dos and don'ts"
 date: 2021-12-08 18:00:00
 description: Basic rules for coding, best practices
 ---
@@ -52,20 +52,14 @@ Make sure you understand what is meant by each of these lines in the [Zen of Pyt
 - the names of variables, classes, and functions/methods should be descriptive, unambiguous, and correct. The reader should immediately understand what your code does from the name's implications as to types of inputs, outputs, etc. 
 - always use docstrings, following [pep257](https://www.python.org/dev/peps/pep-0257/). Keep them up to date. 
 - use git, preferably in a [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)-type setup
-- .....
 
-### Software Design Principles
+### Software design principles
 
 You are part of a software development team, whether you like it or not. This means that we all need to have a basic grasp of software design principles. Tomas has a folder of pdfs of books, several of which treat these principles. There are some valuable youtube resources too:
 
 - [Arjan Codes](https://www.youtube.com/c/ArjanCodes) where, Arjan explains python software design principles
 - [mCoding](https://www.youtube.com/c/mCodingWithJamesMurphy) where James Murphy explains the innards of python
 
-### Test-driven developement
+### Test-driven development
 
-One of those things that we scientists can learn from programmers is test-driven developement, in which you first write the tests that your code should pass, and only then write the actual code. This is a good practice for several reasons; it forces you to think about what you're going to be coding, but it also makes your code more robust. Moreover, it gives you a lasting target for the performance of your code, which is essential for continuous integration. 
-
-
-<hr/>
-
-We will be expanding this document in the coming period. 
+One of those things that we scientists can learn from programmers is test-driven developement, in which you first write the tests that your code should pass, and only then write the actual code. This is a good practice for several reasons; it forces you to think about what you're going to be coding, but it also makes your code more robust. Moreover, it gives you a lasting target for the performance of your code, which is essential for continuous integration.
