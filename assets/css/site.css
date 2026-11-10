@@ -685,7 +685,6 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 .pub-filters {
   margin: 0 0 1rem;
   padding: 1.25rem 0 0.5rem;
-  max-width: 980px;
 }
 .pub-filters[hidden] { display: none; }
 .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
