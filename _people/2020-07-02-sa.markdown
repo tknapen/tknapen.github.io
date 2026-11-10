@@ -1,11 +1,16 @@
 ---
-layout: page
-title: Sumiya Abdirashid
-date: 2020-07-02 07:59:00
-description: PhD Student shared with Dumoulin Lab
-img: /img/prf/eccen_quadrant.png
+title: Sumiya Sheikh Abdirashid
+role: PhD student (with Serge Dumoulin)
+status: alumni
+order: 8
+photo: /img/people/sa.png
+start: 2020
+end:
+now: ""
+pubname: "Sheikh Abdirashid S"
+themes: [computational-models, perception-awareness]
+description: "PhD student who used pRF models to study how attention changes visual processing."
 ---
+Sumiya Sheikh Abdirashid was a PhD student on Serge Dumoulin's VICI project, shared between the Dumoulin lab and ours. Her project used population receptive field (pRF) models to study how attention influences visual processing.
 
-<img class="col one right" src="/img/people/sa.png">
-
-Sumiya is a PhD student on Serge Dumoulin's VICI project, where we investigate attentional influences on visual processing using pRF models. 
+Using 7T fMRI, she manipulated the precision of attention while measuring pRFs. Focused attention attracted pRFs toward the attended location more strongly than attention distributed across the display, and a Gaussian attention field model explained the results ([Sheikh Abdirashid et al., 2025](/publications/2025-09-02-JoV/)).

@@ -10,7 +10,7 @@ Martin Szinte, now a Post-Doc in Heiner Deubel's lab in Munich, will start as a 
 
 From around summer 2016, Martin will use MRI-derived forward models to investigate human eye movement planning and visual stability.  
 
-<img class="col three" src="/img/science/retmaps.png">
+<img class="col three" src="/img/science/retmaps.png" alt="Inflated cortical surfaces colored by preferred visual field position, with visual areas from V1 to the intraparietal sulcus outlined.">
 
 
 <hr />

@@ -1,12 +1,16 @@
 ---
-layout: page
 title: Jurjen Heij
-date: 2020-07-02 07:59:00
-description: PhD Student @ Spinoza, linescanning
-img: /img/science/more_time_signals.png
+role: PhD student (line-scanning fMRI)
+status: alumni
+order: 7
+photo: /img/people/jh.jpg
+start: 2020
+end:
+now: ""
+pubname: "Heij J"
+themes: [precision-imaging]
+description: "Neuroscience PhD student who developed methods to target line-scanning fMRI to a chosen patch of cortex."
 ---
+Jurjen Heij was a neuroscience PhD student at the Spinoza Centre working on line-scanning fMRI. He developed the methods to plan the line so that it targets a small, preselected patch of cortex, and used pRF modeling and time-course estimation to answer his research questions.
 
-<img class="col one right" src="/img/people/jh.jpg">
-
-Jurjen is a neuroscience PhD student working on linescanning. He is developing the methods to plan the line, perfectly targeting a tiny patch of cortex. He's using pRF modeling and time-course estimation to answer his questions. 
-
+His framework selects a target location from anatomical and functional data and places the line there in a later session ([Heij et al., 2023](/publications/2023-08-22-HBM/)). With it he showed that stimuli in the center and in the surround of a population receptive field evoke distinct response profiles across cortical depth in V1 ([Heij et al., 2025](/publications/2025-06-19-IS/)). He also used quantitative 7T MRI to study intracortical myelination in major depressive disorder ([Heij et al., 2024](/publications/2024-06-20-TP/)). His analysis tools are in the [linescanning](https://github.com/gjheij/linescanning) package.

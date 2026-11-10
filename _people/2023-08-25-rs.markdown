@@ -1,13 +1,13 @@
 ---
-layout: page
 title: Robert Satzger
-date: 2023-08-25 07:59:00
-description: Research Intern
-img: /img/publications/bistable_brain.png
+role: Research intern (MSc Artificial Intelligence)
+status: alumni
+order: 10
+photo: /img/people/rs.jpg
+start: 2023
+end:
+now: "Justus Liebig University Giessen"  # PubMed 41394692, 2026 (bioRxiv preprint)
+pubname: "Satzger R"
+description: "Research intern from the MSc Artificial Intelligence at the Vrije Universiteit Amsterdam."
 ---
-
-<img class="col one right" src="/img/people/rs.jpg">
-
-Robert is doing a research internship as part of the Cognitive Science track within the MSc Artificial Intelligence at the VU.
-
-He is investigating how the brain generates predictions of visual features.
+Robert Satzger did a research internship in the lab in 2023, as part of the Cognitive Science track of the MSc Artificial Intelligence at the Vrije Universiteit Amsterdam. He investigated how the brain generates predictions of visual features.

@@ -12,7 +12,7 @@ In this project, we will investigate how expectations and attention influence vi
 
 We're really happy with Martijn as our PostDoc, and are excited about starting this project using the 7T scanner at the Spinoza center.
 
-<img class="col three" src="/img/posts/mylenet.png">
+<img class="col three" src="/img/posts/mylenet.png" alt="Diagram of a convolutional neural network: an input image passes through alternating convolution and subsampling layers of feature maps to a fully connected network.">
 
 
 <hr />

@@ -1,13 +1,12 @@
 ---
-layout: page
 title: Ningkai Wang
-date: 2021-09-02 07:59:00
-description: PhD Student @ VU
-img: /img/posts/pupil_eye.png
+role: PhD student (co-supervised with Jan Theeuwes)
+status: current
+order: 1
+photo: /img/people/nw.jpg
+start: 2021
+pubname: "Wang N"
+themes: [computational-models]
+description: "PhD student working on statistical and reinforcement learning and fMRI of the hippocampus."
 ---
-
-<img class="col one right" src="/img/people/nw.jpg">
-
-Ningkai has a Chinese PhD student grant to do a PhD in the lab of Jan Theeuwes, co-supervised by Tomas.
-
-He'll be working on statistical/reinforcement learning, and fMRI of the hippocampus.
+Ningkai Wang is a PhD student in Jan Theeuwes' lab at the Vrije Universiteit Amsterdam, co-supervised by Tomas Knapen. He started in September 2021 on a Chinese PhD scholarship. His project concerns statistical and reinforcement learning, and uses fMRI of the hippocampus to study them.

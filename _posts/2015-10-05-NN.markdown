@@ -6,7 +6,7 @@ description: Paper on neural correlates of perceptual switches in bistable perce
 img: /img/publications/bistable_brain.png
 ---
 
-<img class="col one right" src="/img/publications/bistable_brain.png">
+<img class="col one right" src="/img/publications/bistable_brain.png" alt="Inflated cortical surface with fMRI activity in frontal and parietal regions in red and yellow, and deactivations in blue.">
 
 New paper published!
 
@@ -16,9 +16,4 @@ In this paper we show that binocular rivalry transitions keep happening even whe
 
 Thus, this paper, by Jan Brascamp, Randolph Blake and Tomas shows how frontal and parietal activations in bistable perception are likely due to noticing transitions instead of causing them. 
 
-There's a <a href="https://www.youtube.com/watch?v=WYqZnGtwZgI">cool movie about our study on YouTube:</a>
-<br />
-
-<!-- <div align = "center"> -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WYqZnGtwZgI" frameborder="0" allowfullscreen></iframe>
-<!-- </div> -->
+There's a <a href="https://www.youtube.com/watch?v=WYqZnGtwZgI">cool movie about our study on YouTube</a>.
