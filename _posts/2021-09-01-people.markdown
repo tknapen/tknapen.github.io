@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to the lab, Ron, Ningkai, & Niklas!
-description: New PhD and Master's students starting this month!
+title: Welcome to Ron, Ningkai and Niklas
+description: New PhD and master's students starting this month.
 date: 2021-09-01 12:00:00
 ---
 

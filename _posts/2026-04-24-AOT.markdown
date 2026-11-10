@@ -16,6 +16,6 @@ Each participant contributes ~21 hours of 7T fMRI at 1.7mm isotropic resolution 
 
 Early looks at the data are encouraging: noise ceilings across visual cortex are high, the motion-energy and retinotopic maps are crisp, and single-subject semantic structure is already visible in the video-evoked responses. These are exactly the properties we were hoping for when we designed the protocol.
 
-The plan remains to release AOT as an open resource for the community, with a public, downloadable version before the end of the year. If you would like to be notified when the dataset goes live, please fill in [the sign-up form](https://forms.gle/BMmfyWEZKL7vU5Va9). We will keep that list updated as we finalize the release.
+The plan remains to release AOT as an open resource for the community, with a public, downloadable first release (see the update above). If you would like to be notified when the dataset goes live, please fill in [the sign-up form](https://forms.gle/BMmfyWEZKL7vU5Va9). We will keep that list updated as we finalize the release.
 
 More details, including a proper data paper, will follow once scanning wraps.

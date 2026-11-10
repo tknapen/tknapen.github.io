@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New paper on Saccadic Adaptation
+title: PLoS ONE paper on saccadic adaptation published
 description: Implicit and explicit learning in reactive and voluntary saccade adaptation
 date:   2019-01-16 12:00:00
 img: /img/science/sa.png
@@ -9,6 +9,8 @@ img: /img/science/sa.png
 "<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0203248" target="_blank" alt="Implicit and explicit learning in reactive and voluntary saccade adaptation" >Implicit and explicit learning in reactive and voluntary saccade adaptation</a>". 
 
 D.M. van Es, T. Knapen
+
+See the [publication page](/publications/2019-01-16-PO/) for the full reference and links.
 
 <img class="col two right" src="/img/science/sa.png" alt="Saccade adaptation data over trials, with an increasing phase in red and a decreasing phase in green, each with a fitted learning curve.">
 

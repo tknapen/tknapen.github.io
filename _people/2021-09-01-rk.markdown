@@ -11,4 +11,4 @@ pubname: "van de Klundert R"
 themes: [computational-models]
 description: "PhD student who worked on brain-based encoding models."
 ---
-Ron van de Klundert joined the lab as a PhD student in September 2021, after a master's in cognitive sciences at the University of Amsterdam. He started in the same month as Ningkai Wang. His PhD project was on brain-based encoding models: models that describe how responses in the brain depend on the sensory input, so that a model fitted to one set of measurements can be tested on its predictions for new stimuli.
+Ron van de Klundert joined the lab as a PhD student in September 2021, after a master's in cognitive sciences at the University of Amsterdam. His PhD project was on brain-based encoding models.

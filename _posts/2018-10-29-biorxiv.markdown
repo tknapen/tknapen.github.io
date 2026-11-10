@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New preprint - Retinotopic maps in the Cerebellum
+title: Preprint on retinotopic maps in the cerebellum
 description: Retinotopic maps of visual space in the human cerebellum
 date:   2018-10-29 12:00:00
 img: /img/posts/cerebellum_retmap.png
@@ -9,6 +9,8 @@ img: /img/posts/cerebellum_retmap.png
 "<a href="https://www.biorxiv.org/content/early/2018/10/29/455170" target="_blank" alt="Retinotopic maps of visual space in the human cerebellum" >Retinotopic maps of visual space in the human cerebellum</a>". 
 
 D.M. van Es, W. van der Zwaag, T. Knapen
+
+The published version is on the [publication page](/publications/2019-05-20-CB/).
 
 <img class="col two right" src="/img/posts/cerebellum_retmap.png" alt="Axial, sagittal and coronal slices of the cerebellum with voxels colored by preferred polar angle, showing visual field maps in both hemispheres.">
 

@@ -24,7 +24,7 @@
   {%- endif %}
   {%- unless include.compact %}
   {%- capture sw_links -%}
-    {%- if show_url %}<li><a href="{{ s.url | relative_url }}">{% if s.url contains "github.com" %}Code{% elsif s.url contains "://" %}Website{% else %}Read more{% endif %}<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
+    {%- if show_url %}<li><a href="{{ s.url | relative_url }}">{% if s.url contains "github.com" %}Code{% elsif s.url contains "://" %}{% if s.kind == "dataset" %}Data{% else %}Website{% endif %}{% else %}Read more{% endif %}<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
     {%- if s.docs and s.docs != "" %}<li><a href="{{ s.docs | relative_url }}">Documentation<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
     {%- if s.paper and s.paper != "" %}<li><a href="{{ s.paper | relative_url }}">Related paper<span class="visually-hidden">: {{ s.name }}</span></a></li>{% endif %}
     {%- if is_aot and aot.post and aot.post != "" %}<li><a href="{{ aot.post | relative_url }}">About the dataset</a></li>{% endif %}

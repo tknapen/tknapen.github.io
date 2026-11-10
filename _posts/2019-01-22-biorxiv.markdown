@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Preprint on the Role of Visual Cortex in Reinforcement Learning online!
+title: Preprint on visual cortex in reinforcement learning
 description: Learning in visual regions as support for the bias in future value-driven choice
 date:   2019-01-22 12:00:00
 ---
@@ -8,6 +8,8 @@ date:   2019-01-22 12:00:00
 "<a href="https://www.biorxiv.org/content/early/2019/01/21/523340" target="_blank" alt="Learning in visual regions as support for the bias in future value-driven choice" >Learning in visual regions as support for the bias in future value-driven choice</a>". 
 
 S Jahfari, J Theeuwes, T Knapen
+
+The published version is on the [publication page](/publications/2020-04-01-CC/).
 
 <img class="col two right" src="/img/prf/retmaps.png" alt="Inflated cortical surfaces colored by preferred polar angle, with visual areas from V1 to the intraparietal sulcus outlined and labeled.">
 

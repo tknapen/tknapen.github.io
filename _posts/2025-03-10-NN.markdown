@@ -10,4 +10,6 @@ journal: Nature Neuroscience
 
 Michal Klincewicz et al. (including Tomas Knapen)
 
+See the [publication page](/publications/2025-03-10-NN/) for the full reference and links.
+
 **Abstract** Theories of consciousness have a long and controversial history. One well-known proposal, integrated information theory, has recently been labeled as pseudoscience, which has caused a heated open debate. Here we discuss the case and argue that the theory is unscientific because its core claims are untestable even in principle.

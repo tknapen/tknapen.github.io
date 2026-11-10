@@ -5,12 +5,12 @@ status: alumni
 order: 2
 photo: /img/people/gh.jpg
 start: 2017
-end:
+end: 2020  # PubMed 33385565 (Dec 2020): VU and Zurich; 34378532 (Aug 2021): Zurich only
 now: "University of Zurich"  # PubMed 42864364, 2026
 pubname: "de Hollander G"
 themes: [precision-imaging, perception-awareness]
-description: "Postdoctoral researcher who used laminar 7T fMRI to study binocular rivalry in primary visual cortex."
+description: "Postdoctoral researcher who used laminar 7T fMRI to study ocular dominance columns and binocular rivalry in primary visual cortex."
 ---
 Gilles de Hollander joined the lab in 2017 as a postdoctoral researcher funded by an NWO-CAS grant, a collaboration with the Beijing lab of Peng Zhang and Sheng He. After a master's in artificial intelligence, he did his PhD in Birte Forstmann's lab at the University of Amsterdam. There he combined cognitive modeling with 7T structural and functional MRI to study the functional anatomy of the subthalamic nucleus, a small node of the basal ganglia, and optimized fMRI protocols for that region.
 
-In the lab he used laminar-resolved fMRI to study the neural substrate of binocular rivalry in primary visual cortex. This work separated feedforward and feedback activity within the layers of human ocular dominance columns ([de Hollander et al., 2021](/publications/2021-03-12-NI/)) and contributed to a study of how rivalry is resolved at the mesoscale ([Qian et al., 2025](/publications/2025-11-13-NHB/)).
+In the lab he worked on the neural substrate of binocular rivalry in primary visual cortex with laminar-resolved 7T fMRI. Imaging ocular dominance columns across cortical depth, he separated the effect of monocular stimulation, largest at deep and middle depths, from the effect of spatial attention near the pial surface ([de Hollander et al., 2020](/publications/2021-03-12-NI/)). He also contributed to a study of how rivalry is resolved at the mesoscale ([Qian et al., 2025](/publications/2025-11-13-NHB/)).

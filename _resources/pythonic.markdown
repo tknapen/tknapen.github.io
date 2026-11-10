@@ -53,13 +53,13 @@ Make sure you understand what is meant by each of these lines in the [Zen of Pyt
 - always use docstrings, following [pep257](https://www.python.org/dev/peps/pep-0257/). Keep them up to date. 
 - use git, preferably in a [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)-type setup
 
-### Software Design Principles
+### Software design principles
 
 You are part of a software development team, whether you like it or not. This means that we all need to have a basic grasp of software design principles. Tomas has a folder of pdfs of books, several of which treat these principles. There are some valuable youtube resources too:
 
 - [Arjan Codes](https://www.youtube.com/c/ArjanCodes) where, Arjan explains python software design principles
 - [mCoding](https://www.youtube.com/c/mCodingWithJamesMurphy) where James Murphy explains the innards of python
 
-### Test-driven developement
+### Test-driven development
 
 One of those things that we scientists can learn from programmers is test-driven developement, in which you first write the tests that your code should pass, and only then write the actual code. This is a good practice for several reasons; it forces you to think about what you're going to be coding, but it also makes your code more robust. Moreover, it gives you a lasting target for the performance of your code, which is essential for continuous integration.

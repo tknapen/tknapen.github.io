@@ -5,7 +5,7 @@
 
 - name: prfpy
   kind: software
-  status: maintained
+  status: available
   description: "Python package to simulate and fit population receptive field (pRF) models to time series data, including the divisive normalization pRF model."
   url: https://github.com/VU-Cog-Sci/prfpy
   paper: /publications/2021-11-15-PNAS/
@@ -17,6 +17,7 @@
   status: in development
   description: "A next-generation community package for population receptive field modeling, built with research software engineers at the Netherlands eScience Center. Its prfmodel package fits pRF and connective field models."
   url: https://github.com/popylar-org/prfmodel
+  docs: https://popylar-org.github.io/prfmodel/
   themes: [computational-models, topographic-maps]
   featured: true
 
@@ -52,6 +53,13 @@
   description: "Python package that wraps PsychoPy to build psychophysics and fMRI experiments with accurate timing and logging, with optional eye tracking."
   url: https://github.com/VU-Cog-Sci/exptools2
 
+- name: nsd_access
+  kind: software
+  status: available
+  description: "Python package for loading data from the Natural Scenes Dataset (NSD), a 7T fMRI dataset: regions of interest, mapping-experiment results and single-trial response estimates, in volume or surface formats."
+  url: https://github.com/tknapen/nsd_access
+  themes: [precision-imaging]
+
 - name: Vicarious somatotopy analysis code
   kind: software
   status: available
@@ -64,9 +72,8 @@
   kind: dataset
   status: upcoming
   description: "An intensive 7T fMRI dataset of brain responses to 2,160 brief naturalistic videos, with about 21 hours of scanning per participant at 1.7 mm isotropic resolution, plus retinotopy and motion-energy localizers for every participant."
-  url: https://forms.gle/BMmfyWEZKL7vU5Va9
+  url: /2026/04/24/AOT.html
   themes: [precision-imaging]
-  featured: true
 
 - name: Vicarious body-map atlas
   kind: dataset
@@ -82,3 +89,12 @@
   url: https://figshare.com/articles/dataset/59k_HCP_subject_entry_for_pycortex_database/13372958
   docs: /resources/hcp_999999/
   themes: [precision-imaging]
+
+- name: Cerebellar retinotopy atlas
+  kind: dataset
+  status: available
+  description: "Atlas of the retinotopic maps in the human cerebellum (oculomotor vermis, lobule VIIb and lobule VIIIb), derived from Human Connectome Project retinotopy data, in 2 mm MNI space, with the code that produced it."
+  url: https://github.com/daanvanes/hcp_cerebellum_retinotopy
+  paper: /publications/2019-05-20-CB/
+  themes: [topographic-maps]
+  featured: true

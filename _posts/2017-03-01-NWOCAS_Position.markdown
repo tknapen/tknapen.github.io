@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Open position - High resolution fMRI of bistable perception
+title: "Open position: high-resolution fMRI of bistable perception"
 date:   2017-03-01 12:00:00
 description: Open PhD/postdoc position on CAS/NWO collaboration.
 closed: true

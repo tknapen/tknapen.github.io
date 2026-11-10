@@ -14,7 +14,7 @@ Email Tomas Knapen at [{{ lab.email }}](mailto:{{ lab.email }}) with your CV and
 
 ## Master's research projects
 
-Students from the Vrije Universiteit Amsterdam and other Amsterdam programs, in psychology, neuroscience, artificial intelligence or related fields, can do their master's research project in the lab. [Robert Satzger](/people/2023-08-25-rs/), for example, did his research internship here as part of the VU's MSc Artificial Intelligence.
+Master's students can do their research project in the lab. [Robert Satzger](/people/2023-08-25-rs/), for example, did his research internship here as part of the VU's MSc Artificial Intelligence.
 
 ## Fellowships
 

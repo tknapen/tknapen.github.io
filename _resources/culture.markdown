@@ -6,7 +6,7 @@ description: General rules we try to follow in our work.
 ---
 
 
-## Overall Goal of our Research
+## Overall goal of our research
 
 Our goal is to produce research outcomes that will still be considered a valid contribution by scientists far into the future. This means that we want to do our science well, not fast. So:
 - not cutting corners (*houtje-touwtje* solutions are not solutions but workarounds)

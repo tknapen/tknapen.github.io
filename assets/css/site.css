@@ -1047,5 +1047,13 @@ pre code, pre kbd, pre samp { font-size: inherit; }
   a { color: inherit; }
 }
 
+/* ---------- Forced colors (Windows contrast themes) ---------- */
+@media (forced-colors: active) {
+  /* Transparent borders become visible in forced colors: hide the inactive nav underlines, keep the current one */
+  .site-nav a, .no-js .site-nav a { border-bottom-color: Canvas; }
+  .site-nav a[aria-current="page"], .site-nav a.is-current,
+  .no-js .site-nav a[aria-current="page"], .no-js .site-nav a.is-current { border-bottom-color: CanvasText; }
+}
+
 /* The hidden attribute always wins over component display rules. */
 [hidden] { display: none !important; }

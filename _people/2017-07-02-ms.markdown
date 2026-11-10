@@ -5,12 +5,12 @@ status: alumni
 order: 1
 photo: /img/people/ms.png
 start: 2016
-end:
+end: 2019  # PubMed 31004064 (Apr 2019): VU only; 31575909 (Oct 2019): INT Marseille first
 now: "Institut de Neurosciences de la Timone, Aix-Marseille Université"  # PubMed 42559195, 2026
 pubname: "Szinte M"
 themes: [topographic-maps, perception-awareness]
-description: "Marie Curie postdoctoral fellow who studied eye movements and visual stability with 7T fMRI."
+description: "Marie Curie postdoctoral fellow, an expert in eye movements and their link to perception."
 ---
 Martin Szinte joined the lab in 2016 on a Marie Curie fellowship. He did his PhD in Patrick Cavanagh's lab in Paris, followed by an extended postdoctoral fellowship on a Humboldt grant in Heiner Deubel's lab in Munich. His expertise is in eye movements and their link to perception.
 
-In Amsterdam he used 7T fMRI and MRI-derived forward models to study how the brain plans eye movements and keeps vision stable across them. With Tomas Knapen he showed that the default network deactivates as a function of the position of a visual stimulus, so that it encodes visual space by means of deactivation ([Szinte & Knapen, 2020](/publications/2020-05-18-CC/)).
+His Marie Curie project in Amsterdam set out to study eye movement planning and visual stability with 7T fMRI and MRI-derived forward models. With Tomas Knapen he showed that the default network deactivates as a function of the position of a visual stimulus, so that it encodes visual space by means of deactivation ([Szinte & Knapen, 2020](/publications/2020-05-18-CC/)).

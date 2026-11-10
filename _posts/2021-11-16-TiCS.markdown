@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TiCS review on visuospatial coding out!
+title: Review on visuospatial coding in Trends in Cognitive Sciences
 description: Review on how the brain uses visual space as a fundamental coding mechanism
 date: 2021-11-16 12:00:00
 journal: Trends in Cognitive Sciences
@@ -9,6 +9,8 @@ journal: Trends in Cognitive Sciences
 "<a href="https://doi.org/10.1016/j.tics.2021.10.011" target="_blank" alt="Visuospatial coding as ubiquitous scaffolding for human cognition" >Visuospatial coding as ubiquitous scaffolding for human cognition</a>".
 
 I Groen, T Dekker, T Knapen, E Silson
+
+See the [publication page](/publications/2021-11-16-TiCS/) for the full reference and links.
 
 ***Highlights***
 
