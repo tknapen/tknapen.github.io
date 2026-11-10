@@ -8,7 +8,7 @@ start: 2017
 end: 2020  # PubMed 33385565 (Dec 2020): VU and Zurich; 34378532 (Aug 2021): Zurich only
 now: "University of Zurich"  # PubMed 42864364, 2026
 pubname: "de Hollander G"
-themes: [precision-imaging, perception-awareness]
+themes: [perception-awareness]
 description: "Postdoctoral researcher who used laminar 7T fMRI to study ocular dominance columns and binocular rivalry in primary visual cortex."
 ---
 Gilles de Hollander joined the lab in 2017 as a postdoctoral researcher funded by an NWO-CAS grant, a collaboration with the Beijing lab of Peng Zhang and Sheng He. After a master's in artificial intelligence, he did his PhD in Birte Forstmann's lab at the University of Amsterdam. There he combined cognitive modeling with 7T structural and functional MRI to study the functional anatomy of the subthalamic nucleus, a small node of the basal ganglia, and optimized fMRI protocols for that region.
