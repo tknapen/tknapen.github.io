@@ -1,16 +1,15 @@
 ---
-layout: post
-title: Mesoscale cortical mechanisms of perceptual conflict resolution in binocular rivalry
-description: Mesoscale mechanisms of perceptual conflict resolution in binocular rivalry.
-date: 2025-11-13 12:00:00
+title: "Mesoscale cortical mechanisms of perceptual conflict resolution in binocular rivalry"
+date: 2025-11-13
+authors: [Qian C, Zhang Z, Chen Z, de Hollander G, Knapen T, He S, Zhang P]
 journal: Nature Human Behaviour
+citation: "10(2), 403–416"
+doi: 10.1038/s41562-025-02320-4
+pmid: "41233531"
+type: article
+themes: [perception-awareness, precision-imaging]
+selected: true
 img: /img/publications/nhb_2025_binocular_rivalry.png
+description: "Binocular rivalry arises from inhibition between ocular dominance columns in V1, coordinated by eye-specific feedback from parietal cortex."
 ---
-
-"<a href="https://doi.org/10.1038/s41562-025-02320-4" target="_blank" alt="Mesoscale cortical mechanisms of perceptual conflict resolution in binocular rivalry" >Mesoscale cortical mechanisms of perceptual conflict resolution in binocular rivalry</a>".
-
-Chencan Qian, Zihao Zhang, Zhiqiang Chen, Gilles de Hollander, Tomas Knapen, Sheng He, Peng Zhang
-
-<img class="col one right" src="/img/publications/nhb_2025_binocular_rivalry.png">
-
-**Abstract** How does the human brain resolve conflicts in sensory input to generate conscious perception? Using high-resolution 7 T functional MRI, we investigated column- and layer-specific activity in cortical and subcortical regions during binocular rivalry. Eye-specific rivalry arose from interocular inhibition between adjacent ocular dominance columns in superficial primary visual cortex, but not between ocular layers in the lateral geniculate nucleus. Eye-specific feedback from intraparietal sulcus actively biased and synchronized local competitions in primary visual cortex into coherent perceptual representations, even without awareness of eye-of-origin information. These findings identify mesoscale mechanisms of perceptual conflict resolution in humans: local conflicts are resolved by inhibitory sensory-cortical microcircuits, while parietal feedback biases and integrates local competition into unified conscious perception.
+How does the human brain resolve conflicts in sensory input to generate conscious perception? Using high-resolution 7 T functional MRI, we addressed this question by investigating column- and layer-specific activity in cortical and subcortical regions in humans during binocular rivalry. The results show that eye-specific rivalry arises from interocular inhibition between adjacent ocular dominance columns in the superficial layers of the primary visual cortex, but not between ocular layers of the lateral geniculate nucleus of the thalamus. Eye-specific feedback from the intraparietal sulcus plays an active role in biasing and synchronizing local competitions in the primary visual cortex into perceptually coherent representations, even without awareness of eye-of-origin information. These findings reveal the mesoscale mechanisms of perceptual conflict resolution in humans: local conflicts in sensory input are resolved by inhibitory microcircuits in the sensory cortex, while feedback signals from the parietal attention network bias and integrate local competitions into unified conscious perception.

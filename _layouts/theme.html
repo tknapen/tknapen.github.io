@@ -18,8 +18,10 @@ layout: default
     {%- endif %}
   </header>
 
-  <div class="wrap wrap-text prose theme-body">
-    {{ content }}
+  <div class="wrap theme-body">
+    <div class="prose">
+      {{ content }}
+    </div>
   </div>
 
   {%- assign tagged = site.publications | where: "themes", slug | sort: "date" | reverse -%}

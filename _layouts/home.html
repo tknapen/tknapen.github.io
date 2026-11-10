@@ -3,7 +3,7 @@ layout: default
 ---
 {%- assign lab = site.data.lab -%}
 <section class="hero" aria-labelledby="hero-title">
-  <div class="wrap hero-text">
+  <div class="wrap"><div class="hero-text">
     <h1 class="hero-title" id="hero-title">{{ page.hero_title | default: page.title }}</h1>
     {%- if page.tagline %}
     <p class="hero-tagline">{{ page.tagline }}</p>
@@ -18,7 +18,7 @@ layout: default
       {%- endfor %}
     </ul>
     {%- endif %}
-  </div>
+  </div></div>
   {%- if page.hero_img %}
   <figure class="wrap hero-figure">
     <img src="{{ page.hero_img | relative_url }}"
@@ -60,6 +60,8 @@ layout: default
         <div class="card-media card-media-figure">
           {%- if pub.img %}
           <img src="{{ pub.img | relative_url }}" alt="" loading="lazy" decoding="async">
+          {%- else %}
+          <span class="card-placeholder" aria-hidden="true">{{ pub.journal | default: site.title }}</span>
           {%- endif %}
         </div>
         <div class="card-body">

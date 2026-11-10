@@ -1,5 +1,5 @@
 {%- comment -%}
-  Renders an author list. Params: authors (array of "Lastname Initials"), short (true: first author et al. when more than 3).
+  Renders an author list. Params: authors (array of "Lastname Initials"), short (true, for cards: when more than 3 authors, the first author, then an ellipsis and any lab authors, or "et al." if there are none).
   Lab authors (site.data.lab.lab_authors) are bold. Lists longer than 12: first 10, an ellipsis, lab authors not yet shown, last author.
 {%- endcomment -%}
 {%- assign _au = include.authors -%}
@@ -8,11 +8,16 @@
   {%- assign _n = _au.size -%}
   {%- if include.short and _n > 3 -%}
     {%- assign _a = _au.first -%}
-    {%- if _lab contains _a %}<strong>{{ _a }}</strong>{% else %}{{ _a }}{% endif %} et al.
+    {%- if _lab contains _a %}<strong>{{ _a }}</strong>{% else %}{{ _a }}{% endif -%}
+    {%- assign _shown = 0 -%}
+    {%- for _b in _au offset: 1 -%}
+      {%- if _lab contains _b %}{% if _shown == 0 %} … {% else %}, {% endif %}<strong>{{ _b }}</strong>{% assign _shown = _shown | plus: 1 %}{% endif -%}
+    {%- endfor -%}
+    {%- if _shown == 0 %} et al.{% endif -%}
   {%- elsif _n > 12 -%}
     {%- for _a in _au limit: 10 -%}
       {%- if _lab contains _a %}<strong>{{ _a }}</strong>{% else %}{{ _a }}{% endif %}, {% endfor -%}
-    <span aria-label="and others">…</span>
+    …
     {%- for _a in _au offset: 10 -%}
       {%- if forloop.last == false and _lab contains _a %}, <strong>{{ _a }}</strong>{% endif -%}
     {%- endfor -%}
