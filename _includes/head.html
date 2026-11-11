@@ -1,7 +1,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');</script>
+  {%- comment -%} Runs before the stylesheet: marks JS as available and applies a stored color scheme choice (light or dark; none means automatic), so the page never flashes the wrong scheme. {%- endcomment %}
+  <script>(function (d) { d.className = d.className.replace(/\bno-js\b/, 'js'); var t; try { t = localStorage.getItem('color-scheme'); } catch (e) {} if (t === 'light' || t === 'dark') { d.setAttribute('data-theme', t); d.style.colorScheme = t; } })(document.documentElement);</script>
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
   <link rel="preload" href="{{ '/assets/fonts/public-sans-latin-wght-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ '/assets/fonts/space-grotesk-latin-wght-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">

@@ -1,6 +1,82 @@
-/* Knapen Lab: menu toggle, publication filters, home figure carousel, keyboard access to wide code blocks. No dependencies. */
+/* Knapen Lab: color scheme switch, menu toggle, publication filters, home figure carousel, keyboard access to wide code blocks. No dependencies. */
 (function () {
   'use strict';
+
+  /* ---- Color scheme switch ----
+     Automatic follows the system setting; Light and Dark set data-theme on <html> (read early by the script in
+     head.html). The choice is stored in localStorage when storage is available, otherwise it lasts for this page. */
+  var SCHEME_KEY = 'color-scheme';
+  var systemDark = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  /* The first click always changes what the visitor sees: automatic -> the opposite of the system setting ->
+     the system's own scheme -> automatic. */
+  function nextScheme(m) {
+    var sys = systemDark && systemDark.matches ? 'dark' : 'light';
+    var other = sys === 'dark' ? 'light' : 'dark';
+    return m === 'auto' ? other : (m === other ? sys : 'auto');
+  }
+  var SCHEME_NAME = { auto: 'automatic, follows your system', light: 'light', dark: 'dark' };
+  var SCHEME_BG = { light: '#ffffff', dark: '#121316' };
+
+  function storedScheme() {
+    try {
+      var v = window.localStorage.getItem(SCHEME_KEY);
+      return v === 'light' || v === 'dark' ? v : 'auto';
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function storeScheme(mode) {
+    try {
+      if (mode === 'auto') window.localStorage.removeItem(SCHEME_KEY);
+      else window.localStorage.setItem(SCHEME_KEY, mode);
+    } catch (e) { /* storage blocked: the choice applies to this page only */ }
+  }
+
+  function initScheme() {
+    var button = document.querySelector('.theme-toggle');
+    if (!button) return;
+    var root = document.documentElement;
+    var status = document.getElementById('theme-status');
+    var metas = Array.prototype.slice.call(document.querySelectorAll('meta[name="theme-color"]'));
+    var metaDefaults = metas.map(function (m) { return m.getAttribute('content'); });
+    var initial = root.getAttribute('data-theme');
+    var mode = initial === 'light' || initial === 'dark' ? initial : 'auto';
+
+    function apply(announce) {
+      if (mode === 'auto') root.removeAttribute('data-theme');
+      else root.setAttribute('data-theme', mode);
+      root.style.colorScheme = mode === 'auto' ? '' : mode;
+      // The browser bar follows the chosen scheme; in automatic mode the media queries on the metas decide.
+      metas.forEach(function (m, i) {
+        m.setAttribute('content', mode === 'auto' ? metaDefaults[i] : SCHEME_BG[mode]);
+      });
+      button.setAttribute('aria-label', 'Color scheme: ' + SCHEME_NAME[mode] + '. Switch to ' + SCHEME_NAME[nextScheme(mode)].replace(/,.*/, ''));
+      if (announce && status) status.textContent = 'Color scheme: ' + SCHEME_NAME[mode] + '.';
+    }
+
+    button.addEventListener('click', function () {
+      mode = nextScheme(mode);
+      storeScheme(mode);
+      apply(true);
+    });
+
+    // A choice made in another tab applies here too.
+    window.addEventListener('storage', function (e) {
+      if (e.key !== SCHEME_KEY && e.key !== null) return;
+      var s = storedScheme();
+      if (s && s !== mode) { mode = s; apply(false); }
+    });
+
+    // The label names the next scheme, which depends on the system setting.
+    var onSystemChange = function () { apply(false); };
+    if (systemDark) {
+      if (systemDark.addEventListener) systemDark.addEventListener('change', onSystemChange);
+      else if (systemDark.addListener) systemDark.addListener(onSystemChange);
+    }
+
+    apply(false);
+  }
 
   /* ---- Mobile menu ---- */
   function initMenu() {
@@ -243,6 +319,7 @@
   }
 
   function init() {
+    initScheme();
     initMenu();
     initFilters();
     initCarousel();

@@ -33,6 +33,8 @@ Then open http://localhost:4000. The `Gemfile` pins the same gem versions GitHub
 
 Do not rename existing files in `_publications/`, `_people/` or `_posts/`: the filename is the URL, and other sites link to them. Images for papers go in `img/publications/`, portraits in `img/people/` (about 800 px on the long side is plenty). Leave `img/wiki/` alone: the lab wiki links to those files.
 
+Colors are tokens (CSS custom properties) at the top of `assets/css/site.css`. The site follows the visitor's light or dark system setting, and the switch in the header lets them choose light, dark or automatic (stored in their browser). The light palette is the `:root` block; the dark palette is written twice, once for the system setting and once for `data-theme="dark"`, and the two blocks must stay identical. Use a token for any new color rather than a literal value. In dark mode, figures sit on a light panel (`--figure-bg`, `--image-bg`) so transparent images keep readable labels. The page background colors also appear in the two `theme-color` tags in `_includes/head.html` and in `SCHEME_BG` in `assets/js/site.js`; change them together with `--bg`.
+
 ## Add a publication
 
 Create `_publications/2026-03-01-JoN.markdown` (date of publication, short journal code):

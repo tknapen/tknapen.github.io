@@ -25,5 +25,12 @@
         {%- endfor %}
       </ul>
     </nav>
+    {%- comment -%} Color scheme switch (site.js); hidden without JS, when the site follows the system setting. {%- endcomment %}
+    <button class="theme-toggle" type="button" aria-label="Color scheme: automatic, follows your system">
+      <svg class="icon-auto" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 2.75a7.25 7.25 0 0 1 0 14.5z" fill="currentColor"/></svg>
+      <svg class="icon-light" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="3.6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 1.75v2.1M10 16.15v2.1M1.75 10h2.1M16.15 10h2.1M4.17 4.17l1.48 1.48M14.35 14.35l1.48 1.48M4.17 15.83l1.48-1.48M14.35 5.65l1.48-1.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <svg class="icon-dark" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M16.6 12.3A7 7 0 0 1 7.7 3.4a7 7 0 1 0 8.9 8.9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+    </button>
+    <span class="visually-hidden" role="status" id="theme-status"></span>
   </div>
 </header>
