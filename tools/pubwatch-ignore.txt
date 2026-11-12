@@ -1,0 +1,10 @@
+# Records that tools/pubwatch.py should not report again: one DOI or PMID per line,
+# with the reason after a #. Add an entry when a candidate turns out not to belong
+# on the site (another T Knapen, a correction notice, a preprint of a paper that is
+# already listed under a different title, a conference abstract).
+
+31059496                    # PLoS Comput Biol 2019 correction notice for the pupil/reinforcement learning paper
+41268644                    # Eur J Anaesthesiol 2026, a different T Knapen (gastric volume study)
+10.1097/eja.0000000000002316  # same anaesthesiology paper, by DOI
+10.31219/osf.io/5pds4       # OSF preprint "Hardcore fMRI" (2024), preprint of Trends Neurosci 2024 "Principles of intensive human neuroimaging"
+10.1101/2024.10.21.619382   # bioRxiv "Vicarious Somatotopic Maps Tile Visual Cortex", preprint of Nature 2025 "Vicarious body maps bridge vision and touch"
