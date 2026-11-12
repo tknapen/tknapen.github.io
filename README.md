@@ -67,13 +67,15 @@ eLife Reviewed Preprints are entered as `journal: eLife`, `citation: "Reviewed P
 
 ## Check for new publications
 
-`tools/pubwatch.py` lists papers and preprints by Tomas Knapen that have no file in `_publications/` yet. It queries PubMed and Crossref, which also registers bioRxiv, OSF and eLife preprints. Google Scholar is not used because it has no API and blocks automated access. The script matches records to existing files by DOI, PMID and title, and prints three lists: new candidates, site preprints that have since been published, and records that look like versions of existing entries. It changes no files.
+`tools/pubwatch.py` lists papers and preprints by Tomas Knapen that have no file in `_publications/` yet. It queries PubMed and Crossref, which also registers bioRxiv, OSF and eLife preprints. Google Scholar is not used because it has no API and blocks automated access. The script matches records to existing files by DOI, PMID, linked versions and title. It prints three lists: new candidates (with the evidence that the Knapen author is Tomas Knapen), updates to existing files (a preprint that has been published, an eLife Reviewed Preprint that became a Version of Record, a missing PMID), and records that look like versions of existing entries. It changes no files.
 
 ```bash
 python3 tools/pubwatch.py
 ```
 
-A weekly scheduled Claude Code task runs the script, adds what it finds and opens a pull request; nothing goes live until that pull request is merged. Records that should not be reported again (another T Knapen, a correction notice, a preprint of a paper listed under a different title) go in `tools/pubwatch-ignore.txt` with the reason. Journal of Vision conference abstracts are skipped automatically.
+`--json` gives the same lists with abstracts, and `--since YYYY-MM-DD` widens the Crossref window (default: the last two years; PubMed is always searched in full). The exit status is 0 when the check ran, 1 when a source failed and the check is partial, and 2 when nothing could be checked.
+
+A weekly scheduled Claude Code task runs the script, adds what it finds and opens a pull request; nothing goes live until that pull request is merged. Records that should not be reported again (another T Knapen, a preprint of a paper listed under a different title) go in `tools/pubwatch-ignore.txt`, one DOI or PMID per line followed by `# reason`. Corrections, peer-review records and conference abstracts (Journal of Vision/VSS, ISMRM, CCN) are skipped automatically.
 
 ## Add or update a person
 

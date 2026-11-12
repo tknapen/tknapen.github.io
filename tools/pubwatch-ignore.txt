@@ -1,7 +1,8 @@
 # Records that tools/pubwatch.py should not report again: one DOI or PMID per line,
-# with the reason after a #. Add an entry when a candidate turns out not to belong
-# on the site (another T Knapen, a correction notice, a preprint of a paper that is
-# already listed under a different title, a conference abstract).
+# then spaces, "#" and the reason. Add both the PMID and the DOI when a record has
+# both. Use it for another T Knapen, or a preprint of a paper that is already listed
+# under a different title. Corrections, peer-review records and conference abstracts
+# are skipped by the script itself.
 
 31059496                    # PLoS Comput Biol 2019 correction notice for the pupil/reinforcement learning paper
 41268644                    # Eur J Anaesthesiol 2026, a different T Knapen (gastric volume study)
