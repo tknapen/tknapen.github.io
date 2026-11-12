@@ -62,7 +62,7 @@ aot:
   name: Arrow of Time (AOT)
   summary: >-
     An intensive 7T fMRI dataset of brain responses to 2,160 brief naturalistic
-    videos, with about 21 hours of scanning per participant at 1.7 mm isotropic
+    videos, with 15 hours of scanning per participant at 1.7 mm isotropic
     resolution, plus retinotopy and motion-energy localizers for every participant.
   # The home-page callout shows `short` with the numbers below set large (same facts as `summary`).
   # Each label is read before its number by screen readers, so it must make sense on its own.
@@ -72,7 +72,7 @@ aot:
   stats:
     - value: "2,160"
       label: Naturalistic videos
-    - value: "≈21 h"
+    - value: "15 h"
       label: 7T scanning per participant
     - value: "1.7 mm"
       label: Isotropic resolution
