@@ -2,7 +2,7 @@
 layout: default
 ---
 {%- assign slug = page.url | split: "/" | last -%}
-<article class="theme-page">
+<article class="theme-page" data-hue="{{ slug }}">
   <header class="wrap theme-hero">
     <div class="theme-hero-text">
       <p class="kicker"><a href="{{ '/research/' | relative_url }}">Research</a></p>
@@ -34,7 +34,7 @@ layout: default
     <p class="section-note">{{ theme_pubs.size }} {% if theme_pubs.size == 1 %}paper{% else %}papers{% endif %} on this theme, selected papers first. <a href="{{ '/publications/' | relative_url }}#{{ slug }}">Filter the full list</a>.</p>
     <ol class="pub-list">
       {%- for pub in theme_pubs limit: 10 %}
-      {% include pub-entry.html pub=pub hlevel=3 %}
+      {% include pub-entry.html pub=pub hlevel=3 current_theme=slug %}
       {%- endfor %}
     </ol>
     {%- if theme_pubs.size > 10 %}
@@ -42,7 +42,7 @@ layout: default
       <summary><span class="when-closed">Show all {{ theme_pubs.size }} papers</span><span class="when-open">Show fewer papers</span></summary>
       <ol class="pub-list" start="11">
         {%- for pub in theme_pubs offset: 10 %}
-        {% include pub-entry.html pub=pub hlevel=3 %}
+        {% include pub-entry.html pub=pub hlevel=3 current_theme=slug %}
         {%- endfor %}
       </ol>
     </details>
@@ -97,7 +97,8 @@ layout: default
     <h2 id="other-themes-heading">Other themes</h2>
     <ul>
       {%- for t in others %}{% unless t.url == page.url %}
-      <li><a href="{{ t.url | relative_url }}">{{ t.title }}</a></li>
+      {%- assign o_slug = t.url | split: "/" | last %}
+      <li><a href="{{ t.url | relative_url }}" data-hue="{{ o_slug }}">{{ t.title }}</a></li>
       {%- endunless %}{% endfor %}
     </ul>
   </nav>

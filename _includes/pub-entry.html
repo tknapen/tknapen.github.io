@@ -1,10 +1,12 @@
 {%- comment -%}
   One publication in a list. Params: pub (document), hlevel (heading level for the title, default 3), hide_selected (true: no Selected badge, for lists of selected papers only).
+  Shows the paper's themes (with their colour dots; current_theme leaves out the theme of the page the list is on)
+  and, when the paper has a figure (img), a thumbnail.
 {%- endcomment -%}
 {%- assign pub = include.pub -%}
 {%- assign h = include.hlevel | default: 3 -%}
 {%- assign ptype = pub.type | default: "article" -%}
-<li class="pub" data-themes="{{ pub.themes | join: ' ' }}" data-selected="{% if pub.selected %}true{% else %}false{% endif %}" data-type="{{ ptype }}">
+<li class="pub{% if pub.img %} has-thumb{% endif %}" data-themes="{{ pub.themes | join: ' ' }}" data-selected="{% if pub.selected %}true{% else %}false{% endif %}" data-type="{{ ptype }}">
   <h{{ h }} class="pub-title"><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h{{ h }}>
   {%- if pub.authors %}
   <p class="pub-authors">{% include authors.html authors=pub.authors %}</p>
@@ -16,6 +18,15 @@
     {%- if ptype != "article" %} <span class="badge">{{ ptype | capitalize }}</span>{% endif %}
     {%- if pub.selected and include.hide_selected != true %} <span class="badge badge-selected">Selected</span>{% endif %}
   </p>
+  {%- assign shown_themes = pub.themes | where_exp: "s", "s != include.current_theme" %}
+  {%- if shown_themes and shown_themes.size > 0 %}
+  <ul class="pub-themes" aria-label="{% if include.current_theme %}Also in{% else %}Research themes{% endif %}">
+    {%- for slug in shown_themes %}
+    {%- assign th = site.research | where_exp: "t", "t.url contains slug" | first %}
+    <li data-hue="{{ slug }}">{% if th %}{{ th.title }}{% else %}{{ slug | replace: "-", " " | capitalize }}{% endif %}</li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
   {%- if pub.doi or pub.links %}
   <ul class="pub-links">
     {%- if pub.doi %}<li><a href="https://doi.org/{{ pub.doi }}">DOI<span class="visually-hidden"> for {{ pub.title | escape }}</span></a></li>{% endif %}
@@ -23,5 +34,8 @@
     {%- if pub.links.code %}<li><a href="{{ pub.links.code }}">Code<span class="visually-hidden"> for {{ pub.title | escape }}</span></a></li>{% endif %}
     {%- if pub.links.data %}<li><a href="{{ pub.links.data }}">Data<span class="visually-hidden"> for {{ pub.title | escape }}</span></a></li>{% endif %}
   </ul>
+  {%- endif %}
+  {%- if pub.img %}
+  <a class="pub-thumb" href="{{ pub.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ pub.img | relative_url }}" alt="" width="160" height="120" loading="lazy" decoding="async"></a>
   {%- endif %}
 </li>

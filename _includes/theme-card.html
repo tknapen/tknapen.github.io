@@ -1,7 +1,8 @@
 {%- comment -%} Params: theme (research document), large (true for the /research/ page), hlevel (default 3), eager (true: no lazy loading) {%- endcomment -%}
 {%- assign t = include.theme -%}
 {%- assign h = include.hlevel | default: 3 -%}
-<article class="card theme-card{% if include.large %} theme-card-large{% endif %}">
+{%- assign t_slug = t.url | split: "/" | last -%}
+<article class="card theme-card{% if include.large %} theme-card-large{% endif %}" data-hue="{{ t_slug }}">
   <a class="card-link" href="{{ t.url | relative_url }}">
     <div class="card-media">
       {%- if t.img %}

@@ -78,7 +78,7 @@
 - name: Arrow of Time
   kind: dataset
   status: upcoming
-  description: "An intensive 7T fMRI dataset of brain responses to 2,160 brief naturalistic videos, with about 21 hours of scanning per participant at 1.7 mm isotropic resolution, plus retinotopy and motion-energy localizers for every participant."
+  description: "An intensive 7T fMRI dataset of brain responses to 2,160 brief naturalistic videos, with 15 hours of scanning per participant at 1.7 mm isotropic resolution, plus retinotopy and motion-energy localizers for every participant."
   url: /2026/04/24/AOT.html
   themes: [precision-imaging]
 
