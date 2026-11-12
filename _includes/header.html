@@ -13,7 +13,7 @@
 {%- endif -%}
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="wordmark" href="{{ '/' | relative_url }}"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ site.data.lab.name | default: site.title }}</a>
+    <a class="wordmark" href="{{ '/' | relative_url }}"{% if page.url == "/" %} aria-current="page"{% endif %}><span class="logomark" aria-hidden="true"><span class="logomark-ring"></span><span class="logomark-inner"></span><span class="logomark-dot"></span></span>{{ site.data.lab.name | default: site.title }}</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <svg class="nav-toggle-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
       <span>Menu</span>

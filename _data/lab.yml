@@ -64,6 +64,17 @@ aot:
     An intensive 7T fMRI dataset of brain responses to 2,160 brief naturalistic
     videos, with about 21 hours of scanning per participant at 1.7 mm isotropic
     resolution, plus retinotopy and motion-energy localizers for every participant.
+  # The home-page callout shows `short` with the numbers below set large (same facts as `summary`).
+  short: >-
+    An intensive 7T fMRI dataset of brain responses to brief naturalistic videos,
+    with retinotopy and motion-energy localizers for every participant.
+  stats:
+    - value: "2,160"
+      label: naturalistic videos
+    - value: "≈21 h"
+      label: of 7T scanning per participant
+    - value: "1.7 mm"
+      label: isotropic resolution
   release: The first release is planned around the turn of the year (2026/27).
   signup: https://forms.gle/BMmfyWEZKL7vU5Va9
   post: /2026/04/24/AOT.html

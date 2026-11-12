@@ -7,7 +7,15 @@ description: "Publications of the Knapen Lab, with abstracts, links to articles,
 {%- assign lab = site.data.lab -%}
 {%- assign pubs = site.publications | sort: "date" | reverse -%}
 {%- assign themes = site.research | sort: "order" -%}
+{%- assign by_year = pubs | group_by_exp: "p", "p.date | date: '%Y'" %}
+{%- comment -%} Publications per year for the small bar chart: oldest to newest year, including years without papers. {%- endcomment -%}
+{%- assign first_year = by_year.last.name | plus: 0 -%}
+{%- assign last_year = by_year.first.name | plus: 0 -%}
+{%- assign max_count = 0 -%}{%- assign max_year = last_year -%}
+{%- for g in by_year -%}{%- if g.items.size > max_count -%}{%- assign max_count = g.items.size -%}{%- assign max_year = g.name -%}{%- endif -%}{%- endfor -%}
+{%- assign mid_year = first_year | plus: last_year | divided_by: 2 -%}
 <div class="wrap pubs-page">
+  <div class="pubs-intro">
   <header class="page-header page-header-wide">
     <h1 class="page-title">Publications</h1>
     <p class="page-lead">{{ pubs.size }} publications, newest first.</p>
@@ -17,6 +25,21 @@ description: "Publications of the Knapen Lab, with abstracts, links to articles,
     <p class="page-note">{{ lab.pi | default: "The PI" }}'s profiles on {% if has_scholar %}<a href="{{ lab.links.scholar }}">Google Scholar</a>{% endif %}{% if has_scholar and has_orcid %} and {% endif %}{% if has_orcid %}<a href="{{ lab.links.orcid }}">ORCID</a>{% endif %} may list papers not yet added here.</p>
     {%- endif %}
   </header>
+  {%- if max_count > 0 and last_year > first_year %}
+  <figure class="pub-hist">
+    <div class="pub-hist-bars" role="img" aria-label="Bar chart of publications per year from {{ first_year }} to {{ last_year }}; the most in one year is {{ max_count }}, in {{ max_year }}.">
+      {%- for y in (first_year..last_year) %}
+      {%- assign y_name = y | append: "" %}
+      {%- assign g = by_year | where: "name", y_name | first %}
+      {%- if g %}{% assign n = g.items.size %}{% else %}{% assign n = 0 %}{% endif %}
+      <span style="--h: {{ n | times: 100 | divided_by: max_count }}%" title="{{ y }}: {{ n }}"></span>
+      {%- endfor %}
+    </div>
+    <div class="pub-hist-axis" aria-hidden="true"><span>{{ first_year }}</span><span>{{ mid_year }}</span><span>{{ last_year }}</span></div>
+    <figcaption>Publications per year</figcaption>
+  </figure>
+  {%- endif %}
+  </div>
 
   <div class="pub-filters" id="pub-filters" hidden>
     <div class="filter-buttons" role="group" aria-label="Filter publications">
@@ -25,7 +48,7 @@ description: "Publications of the Knapen Lab, with abstracts, links to articles,
       {%- if themes.size > 0 %}
       {%- for t in themes %}
       {%- assign tslug = t.url | split: "/" | last %}
-      <button type="button" class="filter-btn" data-filter="theme:{{ tslug }}" aria-pressed="false">{{ t.title }}</button>
+      <button type="button" class="filter-btn" data-filter="theme:{{ tslug }}" data-hue="{{ tslug }}" aria-pressed="false">{{ t.title }}</button>
       {%- endfor %}
       {%- else %}
       <button type="button" class="filter-btn" data-filter="theme:topographic-maps" aria-pressed="false">Topographic maps</button>
@@ -45,7 +68,6 @@ description: "Publications of the Knapen Lab, with abstracts, links to articles,
     <p class="filter-status" id="pub-status" aria-live="polite"></p>
   </div>
 
-  {%- assign by_year = pubs | group_by_exp: "p", "p.date | date: '%Y'" %}
   <div class="pub-years">
     {%- for group in by_year %}
     <section class="pub-year" aria-labelledby="y{{ group.name }}">

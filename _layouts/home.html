@@ -6,6 +6,7 @@ layout: default
 <section class="hero{% if slides %} hero-split{% endif %}" aria-labelledby="hero-title">
   <div class="wrap hero-inner">
   <div class="hero-text">
+    {% include ornament.html kind="rings" class="hero-ornament" %}
     <h1 class="hero-title" id="hero-title">{{ page.hero_title | default: page.title }}</h1>
     {%- if page.tagline %}
     <p class="hero-tagline">{{ page.tagline }}</p>
@@ -58,7 +59,7 @@ layout: default
                {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
         </div>
         {%- if s.caption %}
-        <figcaption class="hero-caption"><span>{{ s.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></figcaption>
+        <figcaption class="hero-caption"><span><span class="fig-label" aria-hidden="true">Fig. {{ forloop.index }}/{{ slides.size }}</span>{{ s.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></figcaption>
         {%- endif %}
       </figure>
       {%- endfor %}
@@ -101,7 +102,7 @@ layout: default
           <img src="{{ pub.img | relative_url }}" alt="" loading="lazy" decoding="async">
           {%- else %}
           {%- assign pub_type = pub.type | default: "article" %}
-          <span class="card-placeholder" aria-hidden="true">{% if pub_type != "article" %}<span class="card-placeholder-type">{{ pub_type | capitalize }}</span>{% endif %}<span class="card-placeholder-journal">{{ pub.journal | default: site.title }}</span></span>
+          <span class="card-placeholder" aria-hidden="true">{% include ornament.html kind="rings" class="placeholder-rings" %}{% if pub_type != "article" %}<span class="card-placeholder-type">{{ pub_type | capitalize }}</span>{% endif %}<span class="card-placeholder-journal">{{ pub.journal | default: site.title }}</span></span>
           {%- endif %}
         </div>
         <div class="card-body">
@@ -122,6 +123,7 @@ layout: default
 {%- if lab.popylar %}
 <section class="home-section" aria-labelledby="h-popylar">
   <div class="callout">
+    {% include ornament.html kind="isolines" class="callout-ornament callout-ornament-isolines" %}
     <div class="callout-text">
       <h2 id="h-popylar">{{ lab.popylar.heading }}</h2>
       <p>{{ lab.popylar.summary }}</p>
@@ -144,9 +146,19 @@ layout: default
 {%- if lab.aot %}
 <section class="home-section" aria-labelledby="h-aot">
   <div class="callout">
+    {% include ornament.html kind="contours" class="callout-ornament callout-ornament-contours" %}
     <div class="callout-text">
       <h2 id="h-aot">Arrow of Time dataset</h2>
+      {%- if lab.aot.stats %}
+      <p>{{ lab.aot.short | default: lab.aot.summary }}</p>
+      <dl class="callout-stats">
+        {%- for st in lab.aot.stats %}
+        <div><dt>{{ st.label }}</dt><dd>{{ st.value }}</dd></div>
+        {%- endfor %}
+      </dl>
+      {%- else %}
       <p>{{ lab.aot.summary }}</p>
+      {%- endif %}
       {%- if lab.aot.release %}
       <p class="callout-release">{{ lab.aot.release }}</p>
       {%- endif %}

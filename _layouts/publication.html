@@ -27,7 +27,7 @@ layout: default
     <ul class="chips" aria-label="Research themes">
       {%- for slug in page.themes %}
       {%- assign th = site.research | where_exp: "t", "t.url contains slug" | first %}
-      <li><a class="chip" href="{{ '/research/' | append: slug | append: '/' | relative_url }}">{% if th %}{{ th.title }}{% else %}{{ slug | replace: "-", " " | capitalize }}{% endif %}</a></li>
+      <li><a class="chip" data-hue="{{ slug }}" href="{{ '/research/' | append: slug | append: '/' | relative_url }}">{% if th %}{{ th.title }}{% else %}{{ slug | replace: "-", " " | capitalize }}{% endif %}</a></li>
       {%- endfor %}
     </ul>
     {%- endif %}
