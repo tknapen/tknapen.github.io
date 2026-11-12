@@ -35,6 +35,10 @@ Do not rename existing files in `_publications/`, `_people/` or `_posts/`: the f
 
 Colors are tokens (CSS custom properties) at the top of `assets/css/site.css`. The site follows the visitor's light or dark system setting, and the switch in the header lets them choose light, dark or automatic (stored in their browser). The light palette is the `:root` block; the dark palette is written twice, once for the system setting and once for `data-theme="dark"`, and the two blocks must stay identical. Use a token for any new color rather than a literal value. In dark mode, figures sit on a light panel (`--figure-bg`, `--image-bg`) so transparent images keep readable labels. The page background colors also appear in the two `theme-color` tags in `_includes/head.html` and in `SCHEME_BG` in `assets/js/site.js`; change them together with `--bg`.
 
+Each research theme has a colour, `--hue-<theme slug>` (light and dark values in the token blocks), used only for small marks next to the theme's name: the strip on theme cards and theme pages, and dots on publication filters, paper chips and theme labels. Elements get the colour through `data-hue="<theme slug>"` and the `[data-hue=…]` rules in the "Flourishes" section of `site.css`. A new theme needs a `--hue-…` token in all three token blocks and a `[data-hue=…]` rule; without them its marks fall back to grey.
+
+The line ornaments (eccentricity rings, pRF isolines, contour lines) are inline SVG in `_includes/ornament.html`, drawn in `--ornament` at `--ornament-opacity`. They are decorative (`aria-hidden`) and hidden in print and in forced-colours mode. The logomark in the header is CSS (`.logomark`, using `--polar-wheel`); the favicon (`assets/img/favicon.svg`, with `favicon-48.png` rendered from it) uses the same motif.
+
 ## Add a publication
 
 Create `_publications/2026-03-01-JoN.markdown` (date of publication, short journal code):
