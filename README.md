@@ -48,7 +48,7 @@ journal: Journal of Neuroscience
 citation: "46(9), e1234252026"          # optional
 doi: 10.1523/JNEUROSCI.1234-25.2026
 pmid: "40000000"                        # optional
-type: article                           # article | review | perspective | preprint
+type: article                           # article | review | perspective | preprint | chapter
 themes: [topographic-maps]              # 1-2 of: topographic-maps, precision-imaging, computational-models, perception-awareness
 selected: false                         # true puts it in "Selected work"
 img: /img/publications/my_figure.png    # optional
@@ -61,7 +61,21 @@ links:                                  # optional
 Abstract text.
 ```
 
-Lab members' names are printed in bold automatically when they match an entry in `lab_authors` in `_data/lab.yml`. When a preprint is published, update its file (journal, DOI, `type: article`) rather than adding a second one.
+Lab members' names are printed in bold automatically when they match an entry in `lab_authors` in `_data/lab.yml`. When a preprint is published, update its file (journal, DOI, `type: article`) rather than adding a second one; move the preprint DOI to `links.preprint`.
+
+eLife Reviewed Preprints are entered as `journal: eLife`, `citation: "Reviewed Preprint"`, `type: preprint`, with the eLife DOI without a version suffix. When the Version of Record appears, set `type: article`, replace the citation and add the PMID. Book chapters use `type: chapter`, with the book title as `journal`.
+
+## Check for new publications
+
+`tools/pubwatch.py` lists papers and preprints by Tomas Knapen that have no file in `_publications/` yet. It queries PubMed and Crossref, which also registers bioRxiv, OSF and eLife preprints. Google Scholar is not used because it has no API and blocks automated access. The script matches records to existing files by DOI, PMID, linked versions and title. It prints three lists: new candidates (with the evidence that the Knapen author is Tomas Knapen), updates to existing files (a preprint that has been published, an eLife Reviewed Preprint that became a Version of Record, a missing PMID), and records that look like versions of existing entries. It changes no files.
+
+```bash
+python3 tools/pubwatch.py
+```
+
+`--json` gives the same lists with abstracts, and `--since YYYY-MM-DD` widens the Crossref window (default: the last two years; PubMed is always searched in full). The exit status is 0 when the check ran, 1 when a source failed and the check is partial, and 2 when nothing could be checked.
+
+A weekly scheduled Claude Code task runs the script, adds what it finds and opens a pull request; nothing goes live until that pull request is merged. Records that should not be reported again (another T Knapen, a preprint of a paper listed under a different title) go in `tools/pubwatch-ignore.txt`, one DOI or PMID per line followed by `# reason`. Corrections, peer-review records and conference abstracts (Journal of Vision/VSS, ISMRM, CCN) are skipped automatically.
 
 ## Add or update a person
 

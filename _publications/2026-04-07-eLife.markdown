@@ -1,0 +1,15 @@
+---
+title: "Hierarchical cortical plasticity in congenital sight impairment"
+date: 2026-04-07
+authors: [Maimon-Mor RO, Farahbakhsh M, Hedger N, Rider AT, Anderson EJ, Rees G, Knapen T, Michaelides M, Dekker TM]
+journal: eLife
+citation: "Reviewed Preprint"
+doi: 10.7554/eLife.100404
+type: preprint
+themes: [topographic-maps]
+selected: false
+description: "In achromatopsia, where vision relies on rods alone from birth, V1 shows no retinotopic remapping while higher-order cortex reorganizes its read-out of V1 inputs."
+links:
+  preprint: https://doi.org/10.1101/2024.07.04.602138
+---
+A robust learning system balances adaptability to new experiences with stability of its foundational architecture. To investigate how the human brain implements this we used a new approach to study plasticity and stability across hierarchical processing stages in visual cortex. We compare the rod system of individuals born with rod-only photoreceptor inputs (achromatopsia) to the typically developed rod system, allowing us to dissociate impacts of life-long versus transient responses to altered input. Cortical input stages (V1) exhibited high stability, with input-deprived cortex showing no retinotopic remapping and exhibiting structural hallmarks of deprivation. However, plasticity manifested as reorganised read-out of these inputs by higher-order cortex, in a pattern that could compensate for the lower resolution of a rod-only system and its lack of high-density foveal input. We propose that these hierarchical dynamics robustly optimize processing of available input and could reflect a broader principle of brain organisation with important implications for emerging sight-rescue therapies.

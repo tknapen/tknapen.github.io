@@ -1,0 +1,12 @@
+---
+title: "Sensory modeling: Understanding computation in sensory systems through image-computable models"
+date: 2024-06-21
+authors: [Roth ZN, Merriam EP, Knapen T]
+journal: Computational and Network Modeling of Neuroimaging Data
+citation: "In K. Kay (Ed.), pp. 31–52, Elsevier"
+doi: 10.1016/B978-0-443-13480-7.00007-7
+type: chapter
+themes: [computational-models]
+selected: false
+description: "Reviews the most common image-computable models in visual neuroscience, such as Gabor filter banks and the steerable pyramid, and their recent applications to fMRI data."
+---

@@ -1,0 +1,12 @@
+---
+title: "Attraction of population receptive fields towards the attended locus is invariant to contrast"
+date: 2025-07-04
+authors: [Sheikh Abdirashid S, Knapen T, Dumoulin SO]
+journal: bioRxiv
+doi: 10.1101/2025.07.01.662547
+type: preprint
+themes: [computational-models, perception-awareness]
+selected: false
+description: "Stimulus contrast changes response amplitudes but not the attraction of pRFs toward the attended locus, a result that attention field models explain better than a Bayesian account."
+---
+Attention enhances perception and spatial resolution. One mechanism by which attention achieves this is by attracting receptive fields towards the attended locus. The literature remains unclear on whether stimulus-driven parameters like contrast should alter this attraction. On one hand, Bayesian interpretation predicts changes in attraction due to contrast, whereas attention field models do not. Here we investigate whether stimulus contrast alters attention-driven attraction towards the attended locus. We used a demanding attentional task at fixation (0.1°) while mapping population receptive fields (pRFs) using either a low-contrast (5% Michelson contrast) or a high-contrast (80% Michelson contrast) checkerboard bar. Behavioral performance across conditions was matched. We show large and consistent differences in the amplitude of responses, but surprisingly, no difference in the amount of attraction towards the attended locus. The variance explained in this experiment was comparable to that of similar studies, which did observe pRF property changes, suggesting sufficient sensitivity to detect attraction towards the attended locus had it occurred at a similar magnitude. Our results cannot be explained by the Bayesian interpretation that predicts attention-based attraction effects varying with contrast. Instead, attention field models better account for our observations.

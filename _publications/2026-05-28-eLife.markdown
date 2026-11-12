@@ -1,0 +1,15 @@
+---
+title: "Naturalistic Audiovisual Stimulation Reveals the Tonotopic Organization of Human Auditory Cortex"
+date: 2026-05-28
+authors: [Hedger N, Knapen T]
+journal: eLife
+citation: "Reviewed Preprint"
+doi: 10.7554/eLife.110711
+type: preprint
+themes: [topographic-maps, computational-models]
+selected: false
+description: "Fitting a pRF model to movie-watching data reveals tonotopic maps in auditory cortex; regions farther from the core respond more compressively, with speech selectivity in their low-frequency portions."
+links:
+  preprint: https://doi.org/10.1101/2021.07.05.447566
+---
+Despite the importance of audition in spatial, semantic, and social function, there is no consensus regarding the detailed organisation of human auditory cortex. Using a novel application of a population receptive field model to a high-powered naturalistic audiovisual movie-watching dataset, we simultaneously estimate the basic spectral tuning properties and category selectivity of human auditory cortex. This revealed unprecedentedly clear tonotopic maps which showcase the modes of organization and computational motifs of the auditory cortex. Specifically, we find that regions more remote from the auditory core exhibit more compressive, non-linear response properties with finely-tuned, speech selectivity in low frequency portions of their tonotopic maps. These patterns of organisation mirror aspects of the visual cortical hierarchy, wherein tuning properties progress from a stimulus category-agnostic ‘front end’ towards more advanced regions increasingly optimised for behaviorally relevant stimulus categories.
