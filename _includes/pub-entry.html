@@ -1,6 +1,7 @@
 {%- comment -%}
   One publication in a list. Params: pub (document), hlevel (heading level for the title, default 3), hide_selected (true: no Selected badge, for lists of selected papers only).
-  Shows the paper's themes (with their colour dots) and, when the paper has a figure (img), a thumbnail.
+  Shows the paper's themes (with their colour dots; current_theme leaves out the theme of the page the list is on)
+  and, when the paper has a figure (img), a thumbnail.
 {%- endcomment -%}
 {%- assign pub = include.pub -%}
 {%- assign h = include.hlevel | default: 3 -%}
@@ -17,9 +18,10 @@
     {%- if ptype != "article" %} <span class="badge">{{ ptype | capitalize }}</span>{% endif %}
     {%- if pub.selected and include.hide_selected != true %} <span class="badge badge-selected">Selected</span>{% endif %}
   </p>
-  {%- if pub.themes and pub.themes.size > 0 %}
-  <ul class="pub-themes" aria-label="Research themes">
-    {%- for slug in pub.themes %}
+  {%- assign shown_themes = pub.themes | where_exp: "s", "s != include.current_theme" %}
+  {%- if shown_themes and shown_themes.size > 0 %}
+  <ul class="pub-themes" aria-label="{% if include.current_theme %}Also in{% else %}Research themes{% endif %}">
+    {%- for slug in shown_themes %}
     {%- assign th = site.research | where_exp: "t", "t.url contains slug" | first %}
     <li data-hue="{{ slug }}">{% if th %}{{ th.title }}{% else %}{{ slug | replace: "-", " " | capitalize }}{% endif %}</li>
     {%- endfor %}

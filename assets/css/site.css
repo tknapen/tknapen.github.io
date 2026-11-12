@@ -1388,6 +1388,8 @@ pre code, pre kbd, pre samp { font-size: inherit; }
 
 /* Logomark in the header */
 .logomark { position: relative; display: inline-block; width: 1.5rem; height: 1.5rem; flex: none; }
+@media (max-width: 359px) { .logomark { display: none; } }
+@media (min-width: 900px) and (max-width: 959px) { .header-inner { column-gap: 1.5rem; } }
 .logomark-ring {
   position: absolute;
   inset: 0;
@@ -1418,7 +1420,7 @@ pre code, pre kbd, pre samp { font-size: inherit; }
 .ornament * { vector-effect: non-scaling-stroke; }
 
 /* Eccentricity rings behind the hero title, centred near its first letter */
-.hero { overflow: hidden; overflow: clip; }
+.hero { overflow: hidden; overflow: clip; padding-bottom: 6px; margin-bottom: -6px; }  /* room for focus rings */
 .hero-text { position: relative; isolation: isolate; }
 .hero-ornament {
   position: absolute;
@@ -1427,9 +1429,11 @@ pre code, pre kbd, pre samp { font-size: inherit; }
   height: 720px;
   left: -352px;
   top: -300px;
-  /* fade out towards the edge of the drawing, so the hero's clipping edges never cut a visible line */
-  -webkit-mask-image: radial-gradient(closest-side, #000 45%, transparent 100%);
-  mask-image: radial-gradient(closest-side, #000 45%, transparent 100%);
+  /* fade out towards the edge of the drawing and towards the header, so the hero's clipping edges cut no visible line */
+  -webkit-mask-image: radial-gradient(closest-side, #000 45%, transparent 100%), linear-gradient(to bottom, transparent 200px, #000 330px);
+  -webkit-mask-composite: source-in;
+  mask-image: radial-gradient(closest-side, #000 45%, transparent 100%), linear-gradient(to bottom, transparent 200px, #000 330px);
+  mask-composite: intersect;
 }
 
 /* Section rules: a short, heavier segment at the start, like a figure's scale bar */
@@ -1457,6 +1461,7 @@ body { counter-reset: home-section; }
   letter-spacing: 0.04em;
   color: var(--muted);
 }
+@media (min-width: 900px) and (max-width: 1023px) { .home-split .section-head h2::before { display: none; } }
 
 /* Corner marks around the hero figure, 9px outside the 3:2 frame (needs container units for the frame height) */
 @supports (top: 1cqi) {
@@ -1464,20 +1469,20 @@ body { counter-reset: home-section; }
   .hero-slide::before {
     content: "";
     position: absolute;
-    left: -9px;
-    right: -9px;
-    top: -9px;
-    height: calc(66.667cqi + 18px);
+    left: -6px;
+    right: -6px;
+    top: -6px;
+    height: calc(66.667cqi + 12px);
     pointer-events: none;
     background:
-      linear-gradient(var(--corner-mark), var(--corner-mark)) left top / 14px 1.5px,
-      linear-gradient(var(--corner-mark), var(--corner-mark)) left top / 1.5px 14px,
-      linear-gradient(var(--corner-mark), var(--corner-mark)) right top / 14px 1.5px,
-      linear-gradient(var(--corner-mark), var(--corner-mark)) right top / 1.5px 14px,
-      linear-gradient(var(--corner-mark), var(--corner-mark)) left bottom / 14px 1.5px,
-      linear-gradient(var(--corner-mark), var(--corner-mark)) left bottom / 1.5px 14px,
-      linear-gradient(var(--corner-mark), var(--corner-mark)) right bottom / 14px 1.5px,
-      linear-gradient(var(--corner-mark), var(--corner-mark)) right bottom / 1.5px 14px;
+      linear-gradient(var(--corner-mark), var(--corner-mark)) left top / 12px 1.5px,
+      linear-gradient(var(--corner-mark), var(--corner-mark)) left top / 1.5px 12px,
+      linear-gradient(var(--corner-mark), var(--corner-mark)) right top / 12px 1.5px,
+      linear-gradient(var(--corner-mark), var(--corner-mark)) right top / 1.5px 12px,
+      linear-gradient(var(--corner-mark), var(--corner-mark)) left bottom / 12px 1.5px,
+      linear-gradient(var(--corner-mark), var(--corner-mark)) left bottom / 1.5px 12px,
+      linear-gradient(var(--corner-mark), var(--corner-mark)) right bottom / 12px 1.5px,
+      linear-gradient(var(--corner-mark), var(--corner-mark)) right bottom / 1.5px 12px;
     background-repeat: no-repeat;
   }
 }
@@ -1490,6 +1495,7 @@ body { counter-reset: home-section; }
   white-space: nowrap;
   margin-right: 0.6rem;
 }
+.hero-carousel:not(.is-enhanced) .fig-label { display: none; }  /* without JS only the first figure is shown */
 
 /* Rings in cards for papers without a figure */
 .placeholder-rings { position: absolute; width: 240px; height: 240px; right: -70px; top: -70px; }
@@ -1499,12 +1505,12 @@ body { counter-reset: home-section; }
 
 /* Textures in the home-page callouts and the footer */
 .callout { position: relative; overflow: hidden; isolation: isolate; }
-.callout-ornament { position: absolute; z-index: -1; opacity: calc(var(--ornament-opacity) * 1.4); }
+.callout-ornament { position: absolute; z-index: -1; }
 .callout-ornament-isolines { width: 240px; height: 240px; right: -104px; top: -104px; }
 .callout-ornament-contours { inset: 0; width: 100%; height: 100%; }
 .callout-stats {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 6.5rem), 1fr));
   gap: 1rem;
   max-width: 42em;
   margin: 0.25rem 0 1rem;
@@ -1523,9 +1529,11 @@ body { counter-reset: home-section; }
   line-height: 1.1;
   color: var(--text);
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 .site-footer { position: relative; overflow: hidden; isolation: isolate; }
-.footer-ornament { position: absolute; z-index: -1; right: -40px; bottom: -70px; width: 440px; height: 320px; }
+.footer-ornament { position: absolute; z-index: -1; right: -40px; bottom: -110px; width: 440px; height: 320px; }
+@media (max-width: 639px) { .footer-ornament { width: 240px; height: 175px; right: -70px; bottom: -60px; } }
 
 /* Theme colours */
 [data-hue="topographic-maps"] { --theme-hue: var(--hue-topographic-maps); }
@@ -1582,7 +1590,8 @@ body { counter-reset: home-section; }
 .pub-thumb:hover { border-color: var(--rule-strong); }
 .pub-thumb img { display: block; width: 100%; height: 100%; object-fit: contain; }
 @media (max-width: 559px) {
-  .pub.has-thumb { grid-template-columns: minmax(0, 1fr) 4.5rem; column-gap: 1rem; }
+  .pub.has-thumb { display: block; }
+  .pub-thumb { display: none; }
 }
 
 /* Publications per year, beside the page title */
@@ -1595,14 +1604,20 @@ body { counter-reset: home-section; }
 .pub-hist figcaption { margin-top: 0.15rem; font-size: 0.8125rem; color: var(--muted); }
 
 @media (forced-colors: active) {
-  .ornament, .hero-slide::before, .section-head::before, .section-block > h2::before, .pub-year::before { display: none; }
+  .ornament, .hero-slide::before, .section-head::before, .section-block > h2::before, .pub-year::before,
+  .filter-btn[data-hue]::before, .chip[data-hue]::before, .pub-themes li::before,
+  .other-themes a[data-hue]::before, .theme-page[data-hue] .theme-hero .kicker::before { display: none; }
   .logomark-ring { background: none; -webkit-mask: none; mask: none; border: 2px solid CanvasText; }
   .logomark-inner { border-color: CanvasText; }
   .logomark-dot { background: CanvasText; }
   .pub-hist-bars span { forced-color-adjust: none; background: CanvasText; }
 }
 @media print {
-  .ornament, .hero-slide::before { display: none; }
+  .ornament, .hero-slide::before, .logomark,
+  .section-head::before, .section-block > h2::before, .pub-year::before,
+  .filter-btn[data-hue]::before, .chip[data-hue]::before, .pub-themes li::before,
+  .other-themes a[data-hue]::before, .theme-page[data-hue] .theme-hero .kicker::before { display: none; }
+  .pub-hist-bars span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 
 /* ---------- Motion ---------- */

@@ -27,7 +27,7 @@ description: "Publications of the Knapen Lab, with abstracts, links to articles,
   </header>
   {%- if max_count > 0 and last_year > first_year %}
   <figure class="pub-hist">
-    <div class="pub-hist-bars" role="img" aria-label="Bar chart of publications per year from {{ first_year }} to {{ last_year }}; the most in one year is {{ max_count }}, in {{ max_year }}.">
+    <div class="pub-hist-bars" aria-hidden="true">
       {%- for y in (first_year..last_year) %}
       {%- assign y_name = y | append: "" %}
       {%- assign g = by_year | where: "name", y_name | first %}
@@ -36,7 +36,14 @@ description: "Publications of the Knapen Lab, with abstracts, links to articles,
       {%- endfor %}
     </div>
     <div class="pub-hist-axis" aria-hidden="true"><span>{{ first_year }}</span><span>{{ mid_year }}</span><span>{{ last_year }}</span></div>
-    <figcaption>Publications per year</figcaption>
+    <figcaption>Publications per year<span class="visually-hidden">, {{ first_year }} to {{ last_year }}, most in {{ max_year }} ({{ max_count }})</span></figcaption>
+    <ul class="visually-hidden">
+      {%- for y in (first_year..last_year) %}
+      {%- assign y_name = y | append: "" %}
+      {%- assign g = by_year | where: "name", y_name | first %}
+      <li>{{ y }}: {% if g %}{{ g.items.size }}{% else %}0{% endif %}</li>
+      {%- endfor %}
+    </ul>
   </figure>
   {%- endif %}
   </div>

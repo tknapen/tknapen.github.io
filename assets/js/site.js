@@ -128,9 +128,12 @@
     var timer = null;
     var touched = false;  // announce "all" only after the visitor has changed something
 
-    // Cache searchable text once.
+    // Cache searchable text once: title, authors, journal and links, but not the theme labels
+    // (the theme buttons filter by theme; matching their names in search would inflate results).
     var texts = entries.map(function (li) {
-      return normalize(li.textContent);
+      var copy = li.cloneNode(true);
+      Array.prototype.forEach.call(copy.querySelectorAll('.pub-themes'), function (n) { n.parentNode.removeChild(n); });
+      return normalize(copy.textContent);
     });
 
     function normalize(s) {

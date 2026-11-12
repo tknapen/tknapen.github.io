@@ -34,7 +34,7 @@ layout: default
     <p class="section-note">{{ theme_pubs.size }} {% if theme_pubs.size == 1 %}paper{% else %}papers{% endif %} on this theme, selected papers first. <a href="{{ '/publications/' | relative_url }}#{{ slug }}">Filter the full list</a>.</p>
     <ol class="pub-list">
       {%- for pub in theme_pubs limit: 10 %}
-      {% include pub-entry.html pub=pub hlevel=3 %}
+      {% include pub-entry.html pub=pub hlevel=3 current_theme=slug %}
       {%- endfor %}
     </ol>
     {%- if theme_pubs.size > 10 %}
@@ -42,7 +42,7 @@ layout: default
       <summary><span class="when-closed">Show all {{ theme_pubs.size }} papers</span><span class="when-open">Show fewer papers</span></summary>
       <ol class="pub-list" start="11">
         {%- for pub in theme_pubs offset: 10 %}
-        {% include pub-entry.html pub=pub hlevel=3 %}
+        {% include pub-entry.html pub=pub hlevel=3 current_theme=slug %}
         {%- endfor %}
       </ol>
     </details>
