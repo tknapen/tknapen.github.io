@@ -11,4 +11,14 @@ themes: [computational-models]
 selected: true
 description: "A divisive normalization pRF model captures disparate response signatures throughout the human visual hierarchy with a single computation."
 ---
+### Abstract
+
 Neural processing is hypothesized to apply the same mathematical operations in a variety of contexts, implementing so-called canonical neural computations. Divisive normalization (DN) is considered a prime candidate for a canonical computation. Here, we propose a population receptive field (pRF) model based on DN and evaluate it using ultra-high-field functional MRI (fMRI). The DN model parsimoniously captures seemingly disparate response signatures with a single computation, superseding existing pRF models in both performance and biological plausibility. We observe systematic variations in specific DN model parameters across the visual hierarchy and show how they relate to differences in response modulation and visuospatial information integration. The DN model delivers a unifying framework for visuospatial responses throughout the human visual hierarchy and provides insights into its underlying information-encoding computations. These findings extend the role of DN as a canonical computation to neuronal populations throughout the human visual hierarchy.
+
+### The model in two animations
+
+The model divides the response of a Gaussian activation pool by that of a larger normalization pool at the same position. The animations are simulations made with [prfmodel](/software/) for illustrative parameter values; they are not figures from the paper.
+
+{% include clip.html id="dn-bar-sweep" %}
+
+{% include clip.html id="dn-size-tuning" %}

@@ -1655,7 +1655,7 @@ body { counter-reset: home-section; }
 .clip-credit { white-space: nowrap; color: var(--muted); text-decoration-color: var(--rule-strong); }
 .clip-credit:hover { color: var(--accent); text-decoration-color: currentColor; }
 /* In running text a clip may be wider than the text column, so its labels stay legible */
-.theme-body { container-type: inline-size; }
+.theme-body, .pub-abstract { container-type: inline-size; }
 @supports (width: 1cqi) {
   .prose .clip { width: min(100cqi, 58rem); max-width: none; }
 }

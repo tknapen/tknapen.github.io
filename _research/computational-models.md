@@ -29,6 +29,18 @@ An fMRI voxel samples hundreds of thousands of neurons. On a retinotopic map, ne
 
 {% include clip.html id="prf-fit" %}
 
+### Dividing by a normalization pool
+
+In the divisive normalization pRF model, the transformation stage is a division. A Gaussian activation pool drives the response, and a larger Gaussian normalization pool at the same position divides it ([Aqil et al., 2021](/publications/2021-11-15-PNAS/)). The two animations below are simulations of this model, computed with [prfmodel](/software/) for illustrative parameter values.
+
+**A bar crosses the pRF.** The activation pool responds only while the bar is near the pRF; the normalization pool responds over a wider range. Their ratio peaks at the pRF and falls slightly below baseline on either side, where the bar drives the normalization pool but hardly the activation pool: surround suppression.
+
+{% include clip.html id="dn-bar-sweep" %}
+
+**A disc grows over the pRF.** The response rises while the disc fills the activation pool, and then falls as the disc keeps filling the normalization pool: larger stimuli give smaller responses, known as oversaturation. In the simulation, a larger normalization constant gives a weaker response that falls less, and the fall disappears when the two pools have the same size.
+
+{% include clip.html id="dn-size-tuning" %}
+
 ### From brain to brain
 
 Connective field models apply the same idea from brain to brain. They explain a region's responses from a Gaussian patch of activity on a topographic source map such as primary visual cortex (V1). Depending on the source map, the patch's center stands for a location in visual space or a position on the body, and its size, in millimeters of cortex, measures the spatial scale of integration. They need only brain activity, so they can be fit to data from any experiment, including movie watching and rest ([Knapen, 2021](/publications/2021-01-12-PNAS/)). For behavior and the pupil, we use models of learning and decision making to estimate latent processes trial by trial. Our model-fitting software is listed under [software and data](/software/).

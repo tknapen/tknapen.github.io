@@ -1,6 +1,7 @@
 # Animations shown on the site (rendered by _includes/clip.html; all of them are listed on /animations/).
 # Each clip is a silent MP4 in assets/clips/<id>.mp4 with a still in assets/clips/<id>.webp, both made by
-# tools/add_clip.sh. A dark-background render of the same clip goes in assets/clips/dark/ under the same name
+# tools/add_clip.sh, or by tools/render.py in github.com/tknapen/site-animations for clips made for the site.
+# A dark-background render of the same clip goes in assets/clips/dark/ under the same name
 # (tools/add_clip.sh ... --dark) and is then shown automatically to visitors in dark mode; nothing changes here.
 # Fields: id, title (short, also the accessible name), caption (what the animation shows, in full sentences:
 # it is the text alternative), width and height in pixels, seconds, page and page_title (where the clip is
@@ -39,6 +40,34 @@
   width: 1280
   height: 612
   seconds: 20
+  page: /research/computational-models/
+  page_title: Computational models
+
+- id: dn-bar-sweep
+  title: A bar crosses a divisive normalization pRF
+  caption: >-
+    Simulation of the divisive normalization pRF model. Left, the visual field with the pRF: the solid
+    circle marks the activation pool (σ₁), the dashed circle the larger normalization pool (σ₂). As a bar
+    crosses the field, the activation pool (numerator) responds only near the pRF and the normalization
+    pool (denominator) over a wider range. Their ratio, the response, peaks at the pRF and dips below
+    zero on both sides. Simulated with prfmodel; parameter values are illustrative.
+  width: 1280
+  height: 640
+  seconds: 12
+  page: /research/computational-models/
+  page_title: Computational models
+
+- id: dn-size-tuning
+  title: Size tuning and oversaturation
+  caption: >-
+    Simulation of the divisive normalization pRF model. A disc grows around the pRF center. The response
+    rises while the disc fills the activation pool (solid circle), then falls as the disc keeps filling
+    the larger normalization pool (dashed circle). A larger normalization constant d gives a weaker
+    response that falls less, and when the two pools have the same size the response levels off without
+    falling. Simulated with prfmodel; parameter values are illustrative.
+  width: 1280
+  height: 640
+  seconds: 24
   page: /research/computational-models/
   page_title: Computational models
 

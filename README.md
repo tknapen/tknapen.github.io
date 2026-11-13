@@ -183,6 +183,8 @@ tools/add_clip.sh my-render-dark.mp4 my-clip --dark
 
 It goes to `assets/clips/dark/` and is used automatically for visitors in dark mode. Until a dark render exists, the light one is shown on a light panel, like the figures.
 
+Clips made for the site itself are manim8 projects in [site-animations](https://github.com/tknapen/site-animations). Its `tools/render.py <project> --profile final --site <path to this checkout>` renders a clip in the light and the dark site style and copies both, with their stills, into `assets/clips/`; only the entry in `_data/clips.yml` and the include remain to be written.
+
 A clip plays once when it scrolls into view and then holds its last frame; the button under it pauses and replays. It does not start by itself for visitors who prefer reduced motion, and without JavaScript the browser's own video controls are shown.
 
 ## Checks
