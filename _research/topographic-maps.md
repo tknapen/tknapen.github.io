@@ -14,7 +14,7 @@ We estimate each brain location's preferred position in visual space with popula
 
 Fitting a pRF to every voxel gives each one a preferred position in the visual field. Across the cortical surface these preferences change smoothly from voxel to voxel, and that orderly progression is the map.
 
-{% include clip.html id="prf-map" %}
+{% include clip.html id="fields-to-map" %}
 
 ## What we have found
 

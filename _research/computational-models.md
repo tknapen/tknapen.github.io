@@ -23,11 +23,11 @@ An fMRI voxel samples hundreds of thousands of neurons. On a retinotopic map, ne
 
 **A chain of stages.** The prediction comes from a sequence of operations on the stimulus: extracting features, pooling them over space with the receptive field, transforming the pooled signal, neural dynamics and the hemodynamic response. Most stages have parameters of their own, and the pRF models we use differ in what these stages compute.
 
-{% include clip.html id="model-stages" %}
+{% include clip.html id="model-as-chain" %}
 
 **Fitting.** For each voxel we search for the parameters whose prediction best matches the measured time series: first a grid search over candidate positions and sizes, then iterative refinement of the best candidate.
 
-{% include clip.html id="prf-fit" %}
+{% include clip.html id="grid-and-fit" %}
 
 ### Dividing by a normalization pool
 
