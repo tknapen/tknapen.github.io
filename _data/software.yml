@@ -108,6 +108,17 @@
   url: /2026/04/24/AOT.html
   themes: [precision-imaging]
 
+- name: gaze_prf
+  kind: dataset
+  status: available
+  description: "7T fMRI data from the retinotopic reference frame study: pRF mapping with the stimulus array at three horizontal screen positions, while participants attended either the bar stimulus or a stimulus at fixation. The data are on OpenNeuro (ds004091) and the analysis code is on GitHub."
+  url: https://openneuro.org/datasets/ds004091
+  extra_links:
+    - label: Analysis code
+      url: https://github.com/mszinte/gaze_prf
+  paper: /publications/2026-05-01-eLife/
+  themes: [topographic-maps]
+
 - name: Vicarious body-map atlas
   kind: dataset
   status: available

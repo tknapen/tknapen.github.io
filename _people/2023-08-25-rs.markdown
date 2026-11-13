@@ -5,7 +5,7 @@ status: alumni
 order: 12
 photo: /img/people/rs.jpg
 start: 2023
-end:
+end: 2023  # a research internship in 2023 (see the text below)
 now: "Justus Liebig University Giessen (Hebart lab)"  # confirmed by the PI, November 2026
 pubname: "Satzger R"
 description: "Research intern from the MSc Artificial Intelligence at the Vrije Universiteit Amsterdam."

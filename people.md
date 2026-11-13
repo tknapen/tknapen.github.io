@@ -62,7 +62,7 @@ description: "Members and alumni of the Knapen Lab."
         <tr>
           <th scope="row">{% if body != "" %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</th>
           <td data-label="Role">{{ p.role }}</td>
-          <td data-label="Years">{% if p.start %}{% if p.end and p.end != "" %}{{ p.start }}–{{ p.end }}{% else %}Joined {{ p.start }}{% endif %}{% endif %}</td>
+          <td data-label="Years">{% if p.start %}{% if p.end and p.end != "" %}{{ p.start }}{% if p.end != p.start %}–{{ p.end }}{% endif %}{% else %}Joined {{ p.start }}{% endif %}{% endif %}</td>
           <td data-label="Now">{{ p.now }}</td>
         </tr>
         {%- endfor %}

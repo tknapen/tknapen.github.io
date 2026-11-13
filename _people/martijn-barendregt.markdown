@@ -4,7 +4,7 @@ role: Postdoctoral researcher
 status: alumni
 order: 2
 start: 2016   # post 2016-01-20; PubMed 27677897 (Sep 2016) lists VU Amsterdam
-end:
+end: 2020  # approximate: four years after joining, as given by the PI, November 2026
 now: ""
 sitemap: false  # no bio: keep the empty person page out of sitemap.xml; remove when a bio is added
 pubname: "Barendregt M"

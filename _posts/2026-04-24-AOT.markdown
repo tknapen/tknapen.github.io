@@ -6,7 +6,7 @@ date: 2026-04-24 12:00:00
 img: /img/posts/ccn-AOT.png
 ---
 
-**Update, November 2026:** The first release of Arrow of Time is planned around the turn of the year. To be notified when it is available, please fill in the [sign-up form](https://forms.gle/BMmfyWEZKL7vU5Va9).
+**Update, November 2026:** The last scanning sessions take place this month, and basic processing of the data is done. The first release of Arrow of Time is planned around the turn of the year. To be notified when it is available, please fill in the [sign-up form](https://forms.gle/BMmfyWEZKL7vU5Va9).
 
 We are in the final stretch of data collection for **Arrow of Time (AOT)**, an intensive 7T fMRI dataset of brain responses to brief naturalistic videos. Over the past year we have been scanning participants on our Philips 7T, and we are now working through the last few subjects on the roster.
 

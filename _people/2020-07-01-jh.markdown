@@ -5,7 +5,7 @@ status: alumni
 order: 9
 photo: /img/people/jh.jpg
 start: 2020
-end:
+end: 2024  # approximate: four years after joining, as given by the PI, November 2026
 now: ""
 pubname: "Heij J"
 themes: [precision-imaging]

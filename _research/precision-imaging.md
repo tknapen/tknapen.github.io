@@ -12,7 +12,7 @@ Testing a model voxel by voxel takes many hours of high-quality data from one br
 
 With colleagues, we have described the principles of what we call intensive fMRI: extensive sampling of cognitive phenomena in a few individuals, to support computational modeling of single voxels. It depends on experiments designed for a rich hypothesis space and on careful optimization of data quality ([Kupers et al., 2024](/publications/2024-10-24-TINS/)).
 
-Our intensive dataset, Arrow of Time, has 15 hours of 7T fMRI per participant (1.7 mm isotropic, repetition time 1.6 s), recorded while participants watched 2,160 brief naturalistic videos, plus retinotopy and motion-energy localizers.
+Our intensive dataset, Arrow of Time, has 15 hours of 7 tesla (7T, ultra-high-field) fMRI per participant (1.7 mm isotropic, repetition time 1.6 s), recorded while participants watched 2,160 brief naturalistic videos, plus retinotopy and motion-energy localizers.
 
 Line-scanning fMRI gives up volume coverage to sample a single line through cortex at very high spatial resolution and sampling rate. MEG adds millisecond timing to fMRI's spatial detail.
 
