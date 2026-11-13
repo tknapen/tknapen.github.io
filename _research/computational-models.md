@@ -15,6 +15,22 @@ Our encoding models explain a brain response from the sensory input or from acti
 
 An fMRI voxel samples hundreds of thousands of neurons. On a retinotopic map, neurons with similar receptive fields lie close together, so each voxel has a preference: its population receptive field (pRF), the region of visual space it responds to. We fit pRF models to responses to mapping stimuli and extend them with computations such as divisive normalization.
 
+### A pRF model in three steps
+
+**From stimulus to signal.** A mapping stimulus, here a bar that sweeps across the visual field, drives a voxel whenever it overlaps the voxel's receptive field. The model turns that overlap into a predicted neural response and then, through the hemodynamic response, into a predicted BOLD time series.
+
+{% include clip.html id="stimulus-to-bold" %}
+
+**A chain of stages.** The prediction comes from a sequence of operations on the stimulus: extracting features, pooling them over space with the receptive field, transforming the pooled signal, neural dynamics and the hemodynamic response. Most stages have parameters of their own, and the pRF models we use differ in what these stages compute.
+
+{% include clip.html id="model-stages" %}
+
+**Fitting.** For each voxel we search for the parameters whose prediction best matches the measured time series: first a grid search over candidate positions and sizes, then iterative refinement of the best candidate.
+
+{% include clip.html id="prf-fit" %}
+
+### From brain to brain
+
 Connective field models apply the same idea from brain to brain. They explain a region's responses from a Gaussian patch of activity on a topographic source map such as primary visual cortex (V1). Depending on the source map, the patch's center stands for a location in visual space or a position on the body, and its size, in millimeters of cortex, measures the spatial scale of integration. They need only brain activity, so they can be fit to data from any experiment, including movie watching and rest ([Knapen, 2021](/publications/2021-01-12-PNAS/)). For behavior and the pupil, we use models of learning and decision making to estimate latent processes trial by trial. Our model-fitting software is listed under [software and data](/software/).
 
 ## What we have found

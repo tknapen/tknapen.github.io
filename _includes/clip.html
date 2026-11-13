@@ -1,0 +1,39 @@
+{%- comment -%}
+  One animation from _data/clips.yml. Params: id (required), credit (false: no link to /animations/),
+  hlevel (if set, the clip's title is shown above it as a heading of that level).
+  Without JavaScript the video has the browser's own controls. With it (initClips in assets/js/site.js) the clip
+  plays once when it scrolls into view, holds its last frame, and gets a play/pause/replay button; it does not
+  start by itself for visitors who asked for reduced motion. In dark mode the dark render is used when
+  assets/clips/dark/<id>.mp4 exists; otherwise the light render is shown on a light panel, like the figures.
+{%- endcomment -%}
+{%- assign clip = site.data.clips | where: "id", include.id | first -%}
+{%- if clip -%}
+{%- assign clip_src = "/assets/clips/" | append: clip.id | append: ".mp4" -%}
+{%- assign clip_poster = "/assets/clips/" | append: clip.id | append: ".webp" -%}
+{%- assign clip_dark_src = "/assets/clips/dark/" | append: clip.id | append: ".mp4" -%}
+{%- assign clip_dark_poster = "/assets/clips/dark/" | append: clip.id | append: ".webp" -%}
+{%- assign has_dark = site.static_files | where: "path", clip_dark_src | first -%}
+{%- assign has_dark_poster = site.static_files | where: "path", clip_dark_poster | first -%}
+<figure class="clip" data-clip>
+  {%- if include.hlevel %}
+  <h{{ include.hlevel }} class="clip-title" id="clip-{{ clip.id }}">{{ clip.title }}</h{{ include.hlevel }}>
+  {%- endif %}
+  <div class="clip-frame">
+    <video class="clip-video" controls muted playsinline preload="none" width="{{ clip.width }}" height="{{ clip.height }}"
+           poster="{{ clip_poster | relative_url }}" aria-label="Animation: {{ clip.title | escape }}"
+           data-src="{{ clip_src | relative_url }}" data-poster="{{ clip_poster | relative_url }}"
+           {%- if has_dark %} data-src-dark="{{ clip_dark_src | relative_url }}"{% if has_dark_poster %} data-poster-dark="{{ clip_dark_poster | relative_url }}"{% endif %}{% endif %}>
+      <source src="{{ clip_src | relative_url }}" type="video/mp4">
+    </video>
+    <span class="clip-progress" aria-hidden="true"></span>
+  </div>
+  <figcaption class="clip-caption">
+    <button type="button" class="hero-btn clip-toggle" data-title="{{ clip.title | escape }}" aria-label="Play animation: {{ clip.title | escape }}" hidden>
+      <svg class="icon-play" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M4.5 2.6v10.8a.5.5 0 0 0 .76.43l8.6-5.4a.5.5 0 0 0 0-.86l-8.6-5.4a.5.5 0 0 0-.76.43z"/></svg>
+      <svg class="icon-pause" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><rect x="3.5" y="2.5" width="3" height="11" rx="0.5"/><rect x="9.5" y="2.5" width="3" height="11" rx="0.5"/></svg>
+      <svg class="icon-replay" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M3.2 8a4.8 4.8 0 1 0 1.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.2v3.2h3.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <span class="clip-text"><span class="fig-label" aria-hidden="true">Animation</span>{{ clip.caption }}{% unless include.credit == false %} <a class="clip-credit" href="{{ '/animations/' | relative_url }}">How we make these<span class="visually-hidden"> animations</span></a>{% endunless %}</span>
+  </figcaption>
+</figure>
+{%- endif -%}

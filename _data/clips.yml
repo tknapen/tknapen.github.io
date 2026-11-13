@@ -1,0 +1,56 @@
+# Animations shown on the site (rendered by _includes/clip.html; all of them are listed on /animations/).
+# Each clip is a silent MP4 in assets/clips/<id>.mp4 with a still in assets/clips/<id>.webp, both made by
+# tools/add_clip.sh. A dark-background render of the same clip goes in assets/clips/dark/ under the same name
+# (tools/add_clip.sh ... --dark) and is then shown automatically to visitors in dark mode; nothing changes here.
+# Fields: id, title (short, also the accessible name), caption (what the animation shows, in full sentences:
+# it is the text alternative), width and height in pixels, seconds, page and page_title (where the clip is
+# used in context, for the link on /animations/), home (true: the clip shown on the home page, one only).
+
+- id: stimulus-to-bold
+  title: From stimulus to predicted BOLD signal
+  caption: >-
+    A bar sweeps across the visual field in eight directions. Each time it crosses the receptive field
+    (small circle), the model predicts a neural response. The slower hemodynamic response turns that into
+    the predicted BOLD signal.
+  width: 1280
+  height: 618
+  seconds: 12
+  page: /research/computational-models/
+  page_title: Computational models
+
+- id: model-stages
+  title: The model as a chain of stages
+  caption: >-
+    The model takes parameters θ and a stimulus and returns a predicted time series. Inside, it is a chain
+    of stages: stimulus features, spatial pooling, a transformation, neural dynamics and the hemodynamic
+    response function (HRF).
+  width: 1280
+  height: 586
+  seconds: 16
+  page: /research/computational-models/
+  page_title: Computational models
+
+- id: prf-fit
+  title: Fitting a population receptive field
+  caption: >-
+    Fitting one voxel. A grid search tries receptive field positions and sizes; refinement then adjusts the
+    best candidate until the prediction (blue) follows the measured time series (black). The variance
+    explained, R², rises to 0.86.
+  width: 1280
+  height: 612
+  seconds: 20
+  page: /research/computational-models/
+  page_title: Computational models
+
+- id: prf-map
+  title: From fitted receptive fields to a map
+  caption: >-
+    Each dot is the fitted receptive field center of one voxel, and each square is that voxel on a schematic
+    sheet of cortex. Colored by distance from fixation, and then by direction from fixation, neighboring
+    voxels prefer neighboring positions: a map of the visual field.
+  width: 1116
+  height: 592
+  seconds: 18
+  page: /research/topographic-maps/
+  page_title: Topographic maps
+  home: true

@@ -1,4 +1,4 @@
-/* Knapen Lab: color scheme switch, menu toggle, publication filters, home figure carousel, keyboard access to wide code blocks. No dependencies. */
+/* Knapen Lab: color scheme switch, menu toggle, publication filters, home figure carousel, keyboard access to wide code blocks, animations. No dependencies. */
 (function () {
   'use strict';
 
@@ -321,12 +321,107 @@
     });
   }
 
+  /* ---- Animations (_includes/clip.html) ----
+     A clip plays once when most of it is in view and then holds its last frame; the button under it, or a click
+     on the clip, pauses, resumes or replays it. It does not start by itself when the visitor prefers reduced
+     motion. In dark mode the dark render is used where one exists (data-src-dark). */
+  function initClips() {
+    var figures = Array.prototype.slice.call(document.querySelectorAll('[data-clip]'));
+    if (!figures.length) return;
+    var root = document.documentElement;
+    var reduce = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+
+    function darkNow() {
+      var t = root.getAttribute('data-theme');
+      if (t === 'dark' || t === 'light') return t === 'dark';
+      return !!(systemDark && systemDark.matches);
+    }
+
+    var clips = figures.map(function (fig) {
+      var video = fig.querySelector('video');
+      var button = fig.querySelector('.clip-toggle');
+      if (!video || !button || !video.play) return null;
+      var title = button.getAttribute('data-title') || 'animation';
+      var c = { fig: fig, video: video, started: false, away: false };
+
+      function label() {
+        var playing = !video.paused && !video.ended;
+        fig.classList.toggle('is-playing', playing);
+        fig.classList.toggle('is-ended', video.ended);
+        button.setAttribute('aria-label', (playing ? 'Pause' : (video.ended ? 'Replay' : 'Play')) + ' animation: ' + title);
+      }
+      function play() {
+        c.started = true;
+        var p = video.play();
+        if (p && p.catch) p.catch(function () { label(); });
+      }
+      c.play = play;
+      c.setSource = function () {
+        var dark = darkNow() && video.getAttribute('data-src-dark');
+        var src = dark || video.getAttribute('data-src');
+        if (video.getAttribute('src') === src) return;
+        var wasPlaying = !video.paused && !video.ended;
+        video.pause();
+        video.setAttribute('poster', (dark && video.getAttribute('data-poster-dark')) || (dark ? '' : video.getAttribute('data-poster')));
+        video.setAttribute('src', src);
+        video.load();
+        fig.classList.toggle('is-dark-render', !!dark);
+        fig.style.removeProperty('--progress');
+        if (wasPlaying) play(); else label();
+      };
+      function toggle() {
+        if (video.paused || video.ended) play();
+        else video.pause();
+      }
+
+      video.removeAttribute('controls');
+      video.muted = true;
+      button.hidden = false;
+      c.setSource();
+      button.addEventListener('click', toggle);
+      video.addEventListener('click', toggle);
+      ['play', 'playing', 'pause', 'ended', 'emptied'].forEach(function (ev) { video.addEventListener(ev, label); });
+      video.addEventListener('timeupdate', function () {
+        if (video.duration) fig.style.setProperty('--progress', (video.currentTime / video.duration).toFixed(4));
+      });
+      label();
+      return c;
+    }).filter(Boolean);
+
+    // Follow the colour scheme: the header switch (data-theme) and the system setting.
+    function resync() { clips.forEach(function (c) { c.setSource(); }); }
+    if (window.MutationObserver) new MutationObserver(resync).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+    if (systemDark) {
+      if (systemDark.addEventListener) systemDark.addEventListener('change', resync);
+      else if (systemDark.addListener) systemDark.addListener(resync);
+    }
+
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var c = null;
+        for (var i = 0; i < clips.length; i++) if (clips[i].video === entry.target) c = clips[i];
+        if (!c) return;
+        var v = c.video;
+        if (entry.intersectionRatio >= 0.6) {
+          if (c.away) { c.away = false; c.play(); }                               // resume what scrolling away paused
+          else if (!c.started && !(reduce && reduce.matches)) c.play();           // first time in view
+        } else if (entry.intersectionRatio < 0.2 && !v.paused && !v.ended) {
+          c.away = true;
+          v.pause();
+        }
+      });
+    }, { threshold: [0, 0.2, 0.6, 1] });
+    clips.forEach(function (c) { io.observe(c.video); });
+  }
+
   function init() {
     initScheme();
     initMenu();
     initFilters();
     initCarousel();
     initScrollables();
+    initClips();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

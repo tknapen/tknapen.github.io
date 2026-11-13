@@ -1,7 +1,7 @@
 # Software and datasets from the lab, rendered on /software/ and (featured: true, max 4) on the home page.
 # Fields: name, kind (software | dataset), status (maintained | beta | in development | upcoming | archived | available),
 # description, install (optional command), url (verified only), docs, extra_links (label + url),
-# paper (internal URL of the related paper), themes, featured.
+# paper (internal URL of the related paper), themes, featured, group (animations: also listed on /animations/).
 # GitHub URLs were checked with the GitHub search API in November 2026.
 
 - name: prfmodel (Popylar)
@@ -36,6 +36,32 @@
   docs: https://nideconv.readthedocs.io/en/latest/
   themes: [computational-models]
   featured: true
+
+- name: lecturekit
+  kind: software
+  status: in development
+  description: "Builds a lecture from one Markdown source into a Reveal.js deck for the room and a Beamer PDF for study, with figures drawn from numbers (TikZ), clips rendered from code (Manim), a timing budget checked at every build, and light and dark themes from one brand file. A Quarto extension and a Python package."
+  url: https://github.com/tknapen/lecturekit
+  extra_links:
+    - label: Example lectures (lecturekit-expo)
+      url: https://github.com/tknapen/lecturekit-expo
+    - label: Animations on this site
+      url: /animations/
+  group: animations
+  themes: []
+  featured: true
+
+- name: manim8
+  kind: software
+  status: in development
+  description: "A local-first system for reproducible, consistently styled scientific animations with Manim. An animation is specified in versioned YAML, composed from registered components, reviewed through still frames at named checkpoints, and rendered under a versioned style."
+  url: https://github.com/tknapen/manim8
+  extra_links:
+    - label: Animations on this site
+      url: /animations/
+  group: animations
+  themes: []
+  featured: false
 
 - name: pRFtime
   kind: software
