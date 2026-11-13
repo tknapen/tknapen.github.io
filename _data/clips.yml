@@ -12,33 +12,33 @@
   caption: >-
     A bar sweeps across the visual field in eight directions. Each time it crosses the receptive field
     (small circle), the model predicts a neural response. The slower hemodynamic response turns that into
-    the predicted BOLD signal.
+    the predicted BOLD signal. Simulated with prfmodel.
   width: 1280
-  height: 618
+  height: 640
   seconds: 12
   page: /research/computational-models/
   page_title: Computational models
 
-- id: model-stages
+- id: model-as-chain
   title: The model as a chain of stages
   caption: >-
     The model takes parameters θ and a stimulus and returns a predicted time series. Inside, it is a chain
     of stages: stimulus features, spatial pooling, a transformation, neural dynamics and the hemodynamic
-    response function (HRF).
+    response function (HRF). Four stages carry fitted parameters. The time series shown are synthetic.
   width: 1280
-  height: 586
+  height: 640
   seconds: 16
   page: /research/computational-models/
   page_title: Computational models
 
-- id: prf-fit
+- id: grid-and-fit
   title: Fitting a population receptive field
   caption: >-
-    Fitting one voxel. A grid search tries receptive field positions and sizes; refinement then adjusts the
-    best candidate until the prediction (blue) follows the measured time series (black). The variance
-    explained, R², rises to 0.86.
+    Fitting one measured voxel. A grid search tries receptive field positions and sizes and keeps the best
+    one (dashed circle); refinement then adjusts it until the prediction follows the measured time series.
+    The variance explained, R², is 0.84 at the best grid point and 0.86 after refinement.
   width: 1280
-  height: 612
+  height: 640
   seconds: 20
   page: /research/computational-models/
   page_title: Computational models
@@ -71,14 +71,15 @@
   page: /research/computational-models/
   page_title: Computational models
 
-- id: prf-map
+- id: fields-to-map
   title: From fitted receptive fields to a map
   caption: >-
     Each dot is the fitted receptive field center of one voxel, and each square is that voxel on a schematic
     sheet of cortex. Colored by distance from fixation, and then by direction from fixation, neighboring
-    voxels prefer neighboring positions: a map of the visual field.
-  width: 1116
-  height: 592
+    voxels prefer neighboring positions: a map of the visual field. The voxels are simulated, and each is
+    fitted on its own.
+  width: 1280
+  height: 640
   seconds: 18
   page: /research/topographic-maps/
   page_title: Topographic maps
