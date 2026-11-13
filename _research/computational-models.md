@@ -43,7 +43,11 @@ In the divisive normalization pRF model, the transformation stage is a division.
 
 ### From brain to brain
 
-Connective field models apply the same idea from brain to brain. They explain a region's responses from a Gaussian patch of activity on a topographic source map such as primary visual cortex (V1). Depending on the source map, the patch's center stands for a location in visual space or a position on the body, and its size, in millimeters of cortex, measures the spatial scale of integration. They need only brain activity, so they can be fit to data from any experiment, including movie watching and rest ([Knapen, 2021](/publications/2021-01-12-PNAS/)). For behavior and the pupil, we use models of learning and decision making to estimate latent processes trial by trial. Our model-fitting software is listed under [software and data](/software/).
+Connective field models apply the same idea from brain to brain. They explain a region's responses from a Gaussian patch of activity on a topographic source map such as primary visual cortex (V1). Depending on the source map, the patch's center stands for a location in visual space or a position on the body, and its size, in millimeters of cortex, measures the spatial scale of integration. They need only brain activity, so they can be fit to data from any experiment, including movie watching and rest ([Knapen, 2021](/publications/2021-01-12-PNAS/)).
+
+{% include clip.html id="connective-field" %}
+
+For behavior and the pupil, we use models of learning and decision making to estimate latent processes trial by trial. Our model-fitting software is listed under [software and data](/software/).
 
 ## What we have found
 
