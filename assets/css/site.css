@@ -1395,22 +1395,16 @@ pre code, pre kbd, pre samp { font-size: inherit; }
   inset: 0;
   border-radius: 50%;
   background: var(--polar-wheel);
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px));
-  mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px));
-}
-.logomark-inner {
-  position: absolute;
-  inset: 29%;
-  border-radius: 50%;
-  border: 1.5px solid var(--accent);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4.5px), #000 calc(100% - 4.5px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 4.5px), #000 calc(100% - 4.5px));
 }
 .logomark-dot {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 3px;
-  height: 3px;
-  margin: -1.5px 0 0 -1.5px;
+  width: 5px;
+  height: 5px;
+  margin: -2.5px 0 0 -2.5px;
   border-radius: 50%;
   background: var(--text);
 }
@@ -1608,7 +1602,6 @@ body { counter-reset: home-section; }
   .filter-btn[data-hue]::before, .chip[data-hue]::before, .pub-themes li::before,
   .other-themes a[data-hue]::before, .theme-page[data-hue] .theme-hero .kicker::before { display: none; }
   .logomark-ring { background: none; -webkit-mask: none; mask: none; border: 2px solid CanvasText; }
-  .logomark-inner { border-color: CanvasText; }
   .logomark-dot { background: CanvasText; }
   .pub-hist-bars span { forced-color-adjust: none; background: CanvasText; }
 }
@@ -1618,6 +1611,67 @@ body { counter-reset: home-section; }
   .filter-btn[data-hue]::before, .chip[data-hue]::before, .pub-themes li::before,
   .other-themes a[data-hue]::before, .theme-page[data-hue] .theme-hero .kicker::before { display: none; }
   .pub-hist-bars span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* ---------- Animations ----------
+   Clips from _data/clips.yml, placed with _includes/clip.html (behaviour: initClips in site.js). */
+.clip { margin: 2rem 0; min-width: 0; }
+.clip-title { font-size: 1.25rem; margin: 0 0 0.75rem; }
+.clip-frame {
+  position: relative;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--figure-bg);   /* light renders sit on a light panel in dark mode too */
+}
+.clip.is-dark-render .clip-frame { background: #000; border-color: var(--rule); }
+.clip-video { display: block; width: 100%; height: auto; }
+.js .clip-video { cursor: pointer; }
+.clip-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: calc(var(--progress, 0) * 100%);
+  background: #303a47;            /* fixed: light renders are always on a white panel */
+  pointer-events: none;
+}
+.clip.is-dark-render .clip-progress { background: #aec2dc; }
+.clip-caption {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 0.6rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.clip-text { padding-top: 0.2rem; max-width: 46rem; text-wrap: pretty; }
+.clip-toggle { flex: none; }
+.clip-toggle .icon-pause, .clip-toggle .icon-replay { display: none; }
+.clip.is-playing .clip-toggle .icon-play, .clip.is-ended .clip-toggle .icon-play { display: none; }
+.clip.is-playing .clip-toggle .icon-pause { display: block; }
+.clip.is-ended .clip-toggle .icon-replay { display: block; fill: none; }
+.clip-credit { white-space: nowrap; color: var(--muted); text-decoration-color: var(--rule-strong); }
+.clip-credit:hover { color: var(--accent); text-decoration-color: currentColor; }
+/* In running text a clip may be wider than the text column, so its labels stay legible */
+.theme-body { container-type: inline-size; }
+@supports (width: 1cqi) {
+  .prose .clip { width: min(100cqi, 58rem); max-width: none; }
+}
+.clip-list { display: grid; gap: 3rem; max-width: 58rem; }
+.clip-list .clip { margin: 0; }
+.clip-where { margin: 0.5rem 0 0; font-size: 0.875rem; color: var(--muted); }
+
+/* Home page: one animation beside a short text */
+.home-animation { display: grid; gap: 1.5rem 3rem; align-items: start; }
+.home-animation .clip { margin: 0; }
+.home-animation-text p { color: var(--text-mid); max-width: 34em; }
+@media (min-width: 900px) {
+  .home-animation { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); }
+}
+@media print {
+  .clip-toggle, .clip-progress, .clip-credit { display: none; }
 }
 
 /* ---------- Motion ---------- */

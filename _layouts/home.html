@@ -119,6 +119,23 @@ layout: default
 </section>
 {%- endif %}
 
+{%- assign home_clip = site.data.clips | where: "home", true | first %}
+{%- if home_clip %}
+<section class="wrap home-section" aria-labelledby="h-animations">
+  <div class="section-head">
+    <h2 id="h-animations">Animations</h2>
+    <a class="section-more" href="{{ '/animations/' | relative_url }}">All animations</a>
+  </div>
+  <div class="home-animation">
+    <div class="home-animation-text">
+      <p>We explain our models and methods with short animations, rendered from code for our lectures and talks.</p>
+      <p>They are made with <a href="https://github.com/tknapen/lecturekit">lecturekit</a> and <a href="https://github.com/tknapen/manim8">manim8</a>, two open-source packages from the lab for building lectures and scientific animations.</p>
+    </div>
+    {% include clip.html id=home_clip.id credit=false %}
+  </div>
+</section>
+{%- endif %}
+
 <div class="wrap callout-pair">
 {%- if lab.popylar %}
 <section class="home-section" aria-labelledby="h-popylar">

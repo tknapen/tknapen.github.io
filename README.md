@@ -25,6 +25,7 @@ Then open http://localhost:4000. The `Gemfile` pins the same gem versions GitHub
 | Publications | `_publications/YYYY-MM-DD-<abbr>.markdown` | `/publications/<file>/` |
 | People | `_people/<name>.markdown` | `/people/<file>/` |
 | Software and datasets | `_data/software.yml` | `/software/` |
+| Animations | `_data/clips.yml`, `assets/clips/` | `/animations/` and wherever a page includes one |
 | News | `_posts/YYYY-MM-DD-<name>.markdown` | `/YYYY/MM/DD/<name>.html` |
 | Lab handbook pages | `_resources/` | `/resources/<file>/` |
 | Lab-wide facts (affiliations, links, funders, dataset info) | `_data/lab.yml` | used on many pages |
@@ -37,7 +38,7 @@ Colors are tokens (CSS custom properties) at the top of `assets/css/site.css`. T
 
 Each research theme has a colour, `--hue-<theme slug>` (light and dark values in the token blocks), used only for small marks next to the theme's name: the strip on theme cards and theme pages, and dots on publication filters, paper chips and theme labels. Elements get the colour through `data-hue="<theme slug>"` and the `[data-hue=…]` rules in the "Flourishes" section of `site.css`. A new theme needs a `--hue-…` token in all three token blocks and a `[data-hue=…]` rule; without them its marks fall back to grey.
 
-The line ornaments (eccentricity rings, pRF isolines, contour lines) are inline SVG in `_includes/ornament.html`, drawn in `--ornament` at `--ornament-opacity`. They are decorative (`aria-hidden`) and hidden in print and in forced-colours mode. The logomark in the header is CSS (`.logomark`, using `--polar-wheel`); the favicon (`assets/img/favicon.svg`, with `favicon-48.png` rendered from it) uses the same motif.
+The line ornaments (eccentricity rings, pRF isolines, contour lines) are inline SVG in `_includes/ornament.html`, drawn in `--ornament` at `--ornament-opacity`. They are decorative (`aria-hidden`) and hidden in print and in forced-colours mode. The logomark in the header is CSS (`.logomark`, using `--polar-wheel`): the polar-angle colour ring around a fixation dot. The tab icon is the same mark. `tools/make_favicon.py` writes `assets/img/favicon.svg`, whose dot is graphite or white depending on the browser's colour scheme; `favicon-48.png` and `apple-touch-icon.png` in the same folder are renders of it for browsers that do not take SVG icons.
 
 ## Add a publication
 
@@ -155,6 +156,34 @@ hero_slides:
 ```
 
 The frame is 3:2 and the whole figure is always shown. Slides change every 7 seconds; visitors can pause them, and they stay still for people who have turned on reduced motion. With one slide, the controls disappear.
+
+## Add an animation
+
+Animations are short silent clips, listed in `_data/clips.yml` and stored in `assets/clips/`. To add one:
+
+```bash
+tools/add_clip.sh my-render.mp4 my-clip
+```
+
+This writes `assets/clips/my-clip.mp4` (H.264, at most 1280 px wide) and `my-clip.webp` (the last frame, shown before the clip plays; `--poster-at 4.5` picks another moment), and prints an entry to paste into `_data/clips.yml`. Fill in its `title` and `caption`. The caption is also the text alternative, so it should say what the animation shows.
+
+Place the clip on any page, in Markdown or HTML, with:
+
+```liquid
+{% include clip.html id="my-clip" %}
+```
+
+Every clip in `_data/clips.yml` is also shown on `/animations/`; `page` and `page_title` give the link to where it is explained, and `home: true` puts one clip on the home page.
+
+For dark mode, render the same clip on a dark background and add it under the same id:
+
+```bash
+tools/add_clip.sh my-render-dark.mp4 my-clip --dark
+```
+
+It goes to `assets/clips/dark/` and is used automatically for visitors in dark mode. Until a dark render exists, the light one is shown on a light panel, like the figures.
+
+A clip plays once when it scrolls into view and then holds its last frame; the button under it pauses and replays. It does not start by itself for visitors who prefer reduced motion, and without JavaScript the browser's own video controls are shown.
 
 ## Checks
 

@@ -12,6 +12,10 @@ Early sensory cortex is laid out as maps: neighboring neurons respond to neighbo
 
 We estimate each brain location's preferred position in visual space with population receptive field (pRF) [models](/research/computational-models/). Topographic connectivity derives preferred positions in visual space or on the body from the pattern of activity on a source map, such as primary visual cortex (V1) or primary somatosensory cortex (S1). It needs only brain activity, so it also works during movie watching and rest. We analyze large public datasets, such as the Human Connectome Project (HCP) retinotopy data, alongside individuals scanned over many runs.
 
+Fitting a pRF to every voxel gives each one a preferred position in the visual field. Across the cortical surface these preferences change smoothly from voxel to voxel, and that orderly progression is the map.
+
+{% include clip.html id="prf-map" %}
+
 ## What we have found
 
 **The cerebellum contains maps of visual space.** In the HCP retinotopy data we found five ipsilateral retinotopic maps in three clusters of the human cerebellum (oculomotor vermis, lobule VIIb and lobule VIIIb), and released an atlas of them ([van Es et al., 2019](/publications/2019-05-20-CB/)). Connectivity with V1 later revealed an eccentricity gradient in the oculomotor vermis during movie watching, absent in a simple mapping experiment, and a new topographic area in Crus II that appeared during movies but not at rest ([Zuiderbaan et al., 2026](/publications/2025-11-25-JoN/)).
