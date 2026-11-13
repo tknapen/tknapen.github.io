@@ -25,7 +25,7 @@
       {%- endfor %}.</p>
     {%- endif %}
     <div class="footer-bottom">
-      <ul class="footer-links" aria-label="Lab elsewhere">
+      <ul class="footer-links" aria-label="More from the lab">
         {%- if lab.links.github_org and lab.links.github_org != "" %}<li><a href="{{ lab.links.github_org }}">GitHub (lab)</a></li>{% endif %}
         {%- if lab.links.github and lab.links.github != "" %}<li><a href="{{ lab.links.github }}">GitHub</a></li>{% endif %}
         {%- if lab.links.scholar and lab.links.scholar != "" %}<li><a href="{{ lab.links.scholar }}">Google Scholar</a></li>{% endif %}
@@ -34,6 +34,7 @@
         {%- if lab.links.bluesky and lab.links.bluesky != "" %}<li><a href="{{ lab.links.bluesky }}">Bluesky</a></li>{% endif %}
         {%- if lab.links.linkedin and lab.links.linkedin != "" %}<li><a href="{{ lab.links.linkedin }}">LinkedIn</a></li>{% endif %}
         {%- if lab.links.wiki and lab.links.wiki != "" %}<li><a href="{{ lab.links.wiki }}">Lab wiki</a></li>{% endif %}
+        <li><a href="{{ '/animations/' | relative_url }}">Animations</a></li>
         <li><a href="{{ '/feed.xml' | relative_url }}">News feed</a></li>
       </ul>
       <p class="footer-copy">&copy; {{ site.time | date: "%Y" }} {{ lab.name | default: site.title }}</p>

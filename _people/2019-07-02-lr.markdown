@@ -5,7 +5,7 @@ status: alumni
 order: 8
 photo: /img/people/lr.jpg
 start: 2019
-end:
+end: 2023  # approximate: four years after joining, as given by the PI, November 2026
 now: ""
 pubname: "Raimondo L"
 themes: [precision-imaging]

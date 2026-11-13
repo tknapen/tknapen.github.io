@@ -5,7 +5,7 @@ status: alumni
 order: 6
 photo: /img/people/ma.jpg
 start: 2018
-end:
+end: 2022  # approximate: four years after joining, as given by the PI, November 2026
 now: "University of California, Berkeley (Gallant and Silver labs)"  # confirmed by the PI, November 2026
 pubname: "Aqil M"
 themes: [computational-models]

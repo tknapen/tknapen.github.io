@@ -5,7 +5,7 @@ status: alumni
 order: 7
 photo: /img/people/iv.jpg
 start: 2018
-end:
+end: 2022  # approximate: four years after joining, as given by the PI, November 2026
 now: ""
 pubname: "Veríssimo IS"
 themes: [topographic-maps]

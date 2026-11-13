@@ -5,7 +5,7 @@ status: alumni
 order: 11
 photo: /img/people/rk.jpg
 start: 2021
-end:
+end: 2025  # approximate: four years after joining, as given by the PI, November 2026
 now: ""
 pubname: "van de Klundert R"
 themes: [computational-models]

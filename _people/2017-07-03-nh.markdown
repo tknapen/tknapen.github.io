@@ -4,7 +4,7 @@ role: Leverhulme Trust fellow (University of Reading)
 status: alumni
 order: 5
 start: 2017
-end:
+end: 2021  # approximate: four years after joining, as given by the PI, November 2026
 now: "University of Reading"  # PubMed 41152530, 2025
 pubname: "Hedger N"
 themes: [topographic-maps, computational-models]

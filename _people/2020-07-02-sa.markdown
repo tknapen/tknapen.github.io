@@ -5,7 +5,7 @@ status: alumni
 order: 10
 photo: /img/people/sa.png
 start: 2020
-end:
+end: 2024  # approximate: four years after joining, as given by the PI, November 2026
 now: ""
 pubname: "Sheikh Abdirashid S"
 themes: [computational-models, perception-awareness]
