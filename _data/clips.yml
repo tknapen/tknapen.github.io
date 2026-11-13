@@ -71,6 +71,22 @@
   page: /research/computational-models/
   page_title: Computational models
 
+- id: connective-field
+  title: Fitting a connective field
+  caption: >-
+    Simulation of a connective field fit. Left, a model sheet of V1, one square per voxel, colored by
+    distance from fixation. The ring is the candidate patch, and the squares are inked by the weight it
+    gives them. Right, a target voxel elsewhere in the brain with the patch's prediction: the weighted sum
+    of the V1 voxels under it. The patch tries positions and sizes, keeps the best one (thin dashed ring),
+    and is then refined. The target inherits the visual field position of the patch's center voxel. The
+    dashed ring at the end is the connective field the target was simulated with. Simulated with prfmodel;
+    sizes are in voxels of the model sheet, which has no physical scale.
+  width: 1280
+  height: 640
+  seconds: 15
+  page: /research/computational-models/
+  page_title: Computational models
+
 - id: fields-to-map
   title: From fitted receptive fields to a map
   caption: >-
