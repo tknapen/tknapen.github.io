@@ -6,6 +6,8 @@
 # Fields: id, title (short, also the accessible name), caption (what the animation shows, in full sentences:
 # it is the text alternative), width and height in pixels, seconds, page and page_title (where the clip is
 # used in context, for the link on /animations/), home (true: the clip shown on the home page, one only).
+# Optional: loop (true: the clip repeats until paused), label (the word before the caption, default
+# "Animation"), listed (false: not shown on /animations/, for movies that are not animations).
 
 - id: stimulus-to-bold
   title: From stimulus to predicted BOLD signal
@@ -86,6 +88,22 @@
   seconds: 15
   page: /research/computational-models/
   page_title: Computational models
+
+- id: aot-registration-qc
+  title: Registration check across sessions
+  label: Movie
+  caption: >-
+    Registration check for one Arrow of Time participant. Each frame is one of 140 runs from all sessions.
+    Top: the first functional volume of the run after registration to the participant's reference anatomy
+    (cyan outline). Bottom: that session's anatomical image in the same space. A brain that stays in place
+    from frame to frame means the sessions are aligned.
+  width: 1280
+  height: 1024
+  seconds: 30
+  loop: true
+  listed: false
+  page: /arrow-of-time/
+  page_title: Arrow of Time
 
 - id: fields-to-map
   title: From fitted receptive fields to a map

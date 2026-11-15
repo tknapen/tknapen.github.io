@@ -16,6 +16,7 @@ description: "Short animations that explain the Knapen Lab's models and methods,
     <p class="section-note">Each clip plays once when it comes into view. The button under it pauses or replays it.</p>
     <div class="clip-list">
       {%- for c in site.data.clips %}
+      {%- if c.listed == false %}{% continue %}{% endif %}
       <div>
         {% include clip.html id=c.id credit=false hlevel=3 %}
         {%- if c.page %}

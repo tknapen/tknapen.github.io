@@ -61,16 +61,18 @@ lab_authors:
 aot:
   name: Arrow of Time (AOT)
   summary: >-
-    An intensive 7T fMRI dataset of brain responses to 2,160 brief naturalistic
-    videos, with 15 hours of scanning per participant at 1.7 mm isotropic
-    resolution, plus retinotopy and motion-energy localizers for every participant.
+    An intensive 7T fMRI dataset of brain responses to over 2,000 brief naturalistic
+    videos, each played forward and backward, in eight participants: 15 hours of
+    scanning per participant at 1.7 mm isotropic resolution, plus retinotopy and
+    motion-energy localizers for every participant.
   # The home-page callout shows `short` with the numbers below set large (same facts as `summary`).
   # Each label is read before its number by screen readers, so it must make sense on its own.
   short: >-
     An intensive 7T fMRI dataset of brain responses to brief naturalistic videos,
-    with retinotopy and motion-energy localizers for every participant.
+    each played forward and backward, with retinotopy and motion-energy localizers
+    for every participant.
   stats:
-    - value: "2,160"
+    - value: "2,000+"
       label: Naturalistic videos
     - value: "15 h"
       label: 7T scanning per participant
@@ -78,6 +80,7 @@ aot:
       label: Isotropic resolution
   release: The first release is planned around the turn of the year (2026/27).
   signup: https://forms.gle/BMmfyWEZKL7vU5Va9
+  page: /arrow-of-time/          # the dataset's own page: what it is for, its design, first results
   post: /2026/04/24/AOT.html
 
 # prfmodel, developed in the Popylar project (home-page callout and Software & data page)

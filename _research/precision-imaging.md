@@ -12,7 +12,7 @@ Testing a model voxel by voxel takes many hours of high-quality data from one br
 
 With colleagues, we have described the principles of what we call intensive fMRI: extensive sampling of cognitive phenomena in a few individuals, to support computational modeling of single voxels. It depends on experiments designed for a rich hypothesis space and on careful optimization of data quality ([Kupers et al., 2024](/publications/2024-10-24-TINS/)).
 
-Our intensive dataset, Arrow of Time, has 15 hours of 7 tesla (7T, ultra-high-field) fMRI per participant (1.7 mm isotropic, repetition time 1.6 s), recorded while participants watched 2,160 brief naturalistic videos, plus retinotopy and motion-energy localizers.
+Our intensive dataset, [Arrow of Time](/arrow-of-time/), is built on one manipulation: each of over 2,000 brief naturalistic videos is shown four times, twice as recorded and twice played backward. Reversal leaves every frame intact and keeps the amount of motion, but it turns many clips into events that do not happen: water climbs back into a glass, a fallen object rises. The comparison therefore asks which responses depend on how the world unfolds in time, and not only on what is in the image. The dataset has 15 hours of 7 tesla (7T, ultra-high-field) fMRI per participant (1.7 mm isotropic, repetition time 1.6 s) in eight participants, plus retinotopy and motion-energy localizers that tie each person's responses to their own visual field maps.
 
 Line-scanning fMRI gives up volume coverage to sample a single line through cortex at very high spatial resolution and sampling rate. MEG adds millisecond timing to fMRI's spatial detail.
 
@@ -30,4 +30,4 @@ Line-scanning fMRI gives up volume coverage to sample a single line through cort
 
 ## Open questions
 
-How well do models fit to many hours of data in one brain generalize to new stimuli and to other people? Which questions need a dense, multipurpose dataset, and which a fast measurement aimed at one location? We are preparing [Arrow of Time](/2026/04/24/AOT.html) as an open resource; its first release is planned around the turn of the year 2026/27 ([get notified](https://forms.gle/BMmfyWEZKL7vU5Va9)).
+How well do models fit to many hours of data in one brain generalize to new stimuli and to other people? Which questions need a dense, multipurpose dataset, and which a fast measurement aimed at one location? We are preparing [Arrow of Time](/arrow-of-time/) as an open resource; its first release is planned around the turn of the year 2026/27 ([get notified](https://forms.gle/BMmfyWEZKL7vU5Va9)).
