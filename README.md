@@ -26,6 +26,7 @@ Then open http://localhost:4000. The `Gemfile` pins the same gem versions GitHub
 | People | `_people/<name>.markdown` | `/people/<file>/` |
 | Software and datasets | `_data/software.yml` | `/software/` |
 | Animations | `_data/clips.yml`, `assets/clips/` | `/animations/` and wherever a page includes one |
+| Arrow of Time dataset page | `arrow-of-time.md`, facts in `_data/lab.yml` (`aot`) | `/arrow-of-time/` |
 | News | `_posts/YYYY-MM-DD-<name>.markdown` | `/YYYY/MM/DD/<name>.html` |
 | Lab handbook pages | `_resources/` | `/resources/<file>/` |
 | Lab-wide facts (affiliations, links, funders, dataset info) | `_data/lab.yml` | used on many pages |
@@ -184,6 +185,8 @@ tools/add_clip.sh my-render-dark.mp4 my-clip --dark
 It goes to `assets/clips/dark/` and is used automatically for visitors in dark mode. Until a dark render exists, the light one is shown on a light panel, like the figures.
 
 Clips made for the site itself are manim8 projects in [site-animations](https://github.com/tknapen/site-animations). Its `tools/render.py <project> --profile final --site <path to this checkout>` renders a clip in the light and the dark site style and copies both, with their stills, into `assets/clips/`; only the entry in `_data/clips.yml` and the include remain to be written.
+
+In `_data/clips.yml`, `loop: true` makes a clip repeat until it is paused, `label` replaces the word "Animation" before its caption, and `listed: false` keeps it off `/animations/` (used for the registration movie on the Arrow of Time page).
 
 A clip plays once when it scrolls into view and then holds its last frame; the button under it pauses and replays. It does not start by itself for visitors who prefer reduced motion, and without JavaScript the browser's own video controls are shown.
 

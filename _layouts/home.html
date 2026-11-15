@@ -181,7 +181,7 @@ layout: default
       {%- endif %}
       <ul class="button-row">
         {%- if lab.aot.signup %}<li><a class="button" href="{{ lab.aot.signup }}">Get notified about the release</a></li>{% endif %}
-        {%- if lab.aot.post %}<li><a class="button button-secondary" href="{{ lab.aot.post | relative_url }}">Read more<span class="visually-hidden"> about the Arrow of Time dataset</span></a></li>{% endif %}
+        {%- assign aot_about = lab.aot.page | default: lab.aot.post %}{%- if aot_about %}<li><a class="button button-secondary" href="{{ aot_about | relative_url }}">Read more<span class="visually-hidden"> about the Arrow of Time dataset</span></a></li>{% endif %}
       </ul>
     </div>
     {%- if page.aot_img %}
