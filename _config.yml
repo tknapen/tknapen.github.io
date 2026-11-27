@@ -67,6 +67,9 @@ defaults:
     values: { sitemap: false }
   - scope: { path: "img" }
     values: { sitemap: false }
+  # Slide decks hosted as static folders: reachable by URL, not listed in the sitemap
+  - scope: { path: "talks" }
+    values: { sitemap: false }
   - scope: { path: "", type: posts }
     values: { layout: post }
   - scope: { path: "", type: publications }

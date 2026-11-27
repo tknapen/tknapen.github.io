@@ -1,0 +1,8 @@
+/* Title page logos for the light preset: VU Amsterdam and the Netherlands Institute for Neuroscience. */
+.reveal .slides section#title-slide{
+  min-height:560px;
+  background-image:url(assets/images/logo-vu-light.png),url(assets/images/logo-nin-light.png);
+  background-repeat:no-repeat,no-repeat;
+  background-position:right 300px bottom 14px,right 0 bottom 14px;
+  background-size:auto 64px,auto 64px;
+}

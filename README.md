@@ -29,6 +29,7 @@ Then open http://localhost:4000. The `Gemfile` pins the same gem versions GitHub
 | Arrow of Time dataset page | `arrow-of-time.md`, facts in `_data/lab.yml` (`aot`) | `/arrow-of-time/` |
 | News | `_posts/YYYY-MM-DD-<name>.markdown` | `/YYYY/MM/DD/<name>.html` |
 | Lab handbook pages | `_resources/` | `/resources/<file>/` |
+| Slide decks, hosted as they are | `talks/<name>/` | `/talks/<name>/` |
 | Lab-wide facts (affiliations, links, funders, dataset info) | `_data/lab.yml` | used on many pages |
 | Menu | `_data/navigation.yml` | |
 | Layouts, styles, scripts | `_layouts/`, `_includes/`, `assets/` | |
@@ -189,6 +190,10 @@ Clips made for the site itself are manim8 projects in [site-animations](https://
 In `_data/clips.yml`, `loop: true` makes a clip repeat until it is paused, `label` replaces the word "Animation" before its caption, and `listed: false` keeps it off `/animations/` (used for the registration movie on the Arrow of Time page).
 
 A clip plays once when it scrolls into view and then holds its last frame; the button under it pauses and replays. It does not start by itself for visitors who prefer reduced motion, and without JavaScript the browser's own video controls are shown.
+
+## Host a slide deck
+
+A deck exported as a static folder (for example a lecturekit web copy: `index.html` with its assets beside it) goes in `talks/<name>/` unchanged and is served at `/talks/<name>/`. Nothing on the site links to it and it is left out of the sitemap, so it is reachable only by its URL. Delete any `README.md` in the folder first: GitHub Pages would turn it into a page. No file or folder name may begin with `_` or `.`, because Jekyll skips those. The link check does not look inside `talks/`.
 
 ## Checks
 
