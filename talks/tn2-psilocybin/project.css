@@ -1,0 +1,40 @@
+/* Title page logos: in project-light.css and project-dark.css (one per preset). */
+
+/* Paper of origin under a findings slide: `::: {.source .live-only}` (the study PDF gets a raw LaTeX line). */
+.reveal .slides section .source{position:absolute;right:45px;bottom:72px;margin:0;font-size:15px;font-style:italic;color:var(--muted);text-align:right}
+.reveal .slides section .source p{margin:0}
+
+/* Keynote: no role labels above the slide titles (they suit lectures to students); the space goes to content. */
+.reveal section[data-role-label]::before{display:none}
+.reveal section[data-role-label] > h2::before{display:none}
+
+/* One statement line that changes with a reveal: an r-stack of bullets, left aligned like ordinary bullets. */
+.reveal .r-stack.lineswap{justify-items:stretch}
+.reveal .r-stack.lineswap > *{margin:0;width:100%}
+
+/* `{.vmid}` on a slide: its staged visual sits in the middle of the free height, each stage centred on the same spot. */
+.reveal .slides>section.vmid:is(.present,.past,.future):not([style*="display: none"]){display:flex !important;flex-direction:column}
+.reveal .slides>section.vmid>.live-only{margin-top:auto;margin-bottom:auto}
+.reveal .slides>section.vmid .r-stack{align-items:center}
+.reveal .slides>section.vmid .r-stack ul{text-align:left;margin-top:14px}
+
+/* `{.tagline}` on a clip slide: the line under the clip is the slide's statement, in body size and colour. */
+.reveal .slides section.tagline .movie-caption{font-size:1em;color:var(--body);margin-top:10px}
+
+/* A small picture in a line of text (the icons on "Self, other and the body"). */
+.reveal .slides section img.inline-icon{display:inline-block;height:2em;width:auto;vertical-align:middle;margin:0 0 0 .4em}
+
+/* The funder's graphic beside the teaser clip, with one line under it. */
+.reveal .slides>section.funded:is(.present,.past,.future):not([style*="display: none"]){padding-bottom:58px}
+.reveal .slides>section.funded>.columns{flex:1 1 0;min-height:0;align-items:stretch;gap:24px}
+.reveal .slides>section.funded>.columns>.column:first-child{flex:1 1 0;min-width:0;min-height:0;display:flex;flex-direction:column}
+.reveal .slides>section.funded>.columns>.column.funder{flex:0 0 272px;align-self:center;text-align:center;font-size:.7em;color:var(--muted)}
+.reveal .column.funder p{margin:6px 0 0}
+.reveal .column.funder img{margin:0 auto}
+
+/* `{.longtitle}`: a title of more than about 38 capitals stays on one line. */
+.reveal .slides section.longtitle h2{font-size:46px}
+
+/* Two pictures side by side, the left one the main one (the closing slide). */
+.reveal .columns.wideleft > .column:first-child{flex:1.2 1 0}
+.reveal .columns.wideleft{align-items:center}
