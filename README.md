@@ -193,7 +193,7 @@ A clip plays once when it scrolls into view and then holds its last frame; the b
 
 ## Host a slide deck
 
-A deck exported as a static folder (for example a lecturekit web copy: `index.html` with its assets beside it) goes in `talks/<name>/` unchanged and is served at `/talks/<name>/`. Nothing on the site links to it and it is left out of the sitemap, so it is reachable only by its URL. Delete any `README.md` in the folder first: GitHub Pages would turn it into a page. No file or folder name may begin with `_` or `.`, because Jekyll skips those. The link check does not look inside `talks/`.
+A deck exported as a static folder (for example a lecturekit web copy: `index.html` with its assets beside it) goes in `talks/<name>/` unchanged and is served at `/talks/<name>/`. It is left out of the sitemap, so it is reachable only by its URL and through whatever links to it; a short news post with the link (see `_posts/2026-11-27-tn2-psilocybin-slides.markdown`) is the usual way to announce one. Delete any `README.md` in the folder first: GitHub Pages would turn it into a page. No file or folder name may begin with `_` or `.`, because Jekyll skips those. The link check does not look inside `talks/`.
 
 ## Checks
 
